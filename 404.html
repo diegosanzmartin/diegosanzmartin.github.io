@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Not Found</title>
+  <script>
+    // Obtén la ruta solicitada
+    const path = window.location.pathname;
+
+    // Mapea rutas personalizadas
+    const routes = {
+      "/permissions": "/permissions.html"
+    };
+
+    // Si la ruta existe en el mapa, redirige
+    if (routes[path]) {
+      window.location.href = routes[path];
+    } else {
+      // Mostrar un mensaje para rutas no mapeadas
+      document.body.innerHTML = `<h1>404 - Page Not Found</h1>`;
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>

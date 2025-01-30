@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Permissions Searcher</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <div class="search">
+                <input type="text" id="search" placeholder="Type to search...">
+                <input type="number" id="items" min="1" value="10">
+                <select id="type">
+                    <option value="permissions">permissions</option>
+                    <option value="roles">roles</option>
+                </select>
+            </div>
+            <div class="buttons">
+                <img class="icon" src="./gcloud.svg">
+                <img class="icon" id="working" src="./aws.png">
+                <img class="icon" id="working" src="./azure.png">
+            </div>
+        </div>
+        <div class="text-box">
+            <p id="text">0 / 10306 permissions</p>
+        </div>
+        <div class="table">
+            <table>
+                <thead id="thead">
+                    <tr>
+                        <th>ID</th>
+                        <th>role</th>
+                        <th>nº permissions</th>
+                    </tr>
+                </thead>
+                <tbody id="table">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
