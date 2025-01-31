@@ -234,10 +234,10 @@ function searchRoles(query) {
 }
 
 // Event listeners
-searchElement.addEventListener('keydown', event => {
-    if (event.key === 'Enter') {
-        const query = event.target.value.trim();
-        const type = document.getElementById("type").value;
+searchElement.addEventListener('input', event => {
+    const query = event.target.value.trim();
+    const type = document.getElementById("type").value;
+    if (query) {
         type === 'permissions' ? searchPermissions(query) : searchRoles(query);
     }
 });
