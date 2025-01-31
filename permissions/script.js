@@ -61,6 +61,7 @@ async function fetchJsonFiles() {
 
         roles = await rolesResponse.json();
         permissions = await permissionsResponse.json();
+	searchPermissions('.*');
     } catch (error) {
         console.error('Error:', error);
     }
