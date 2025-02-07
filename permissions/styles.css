@@ -123,11 +123,14 @@ body {
 
 .nosel {
     filter: grayscale(1);
-    cursor: not-allowed;
 }
 
-#gcp {
+#gcp, #aws {
     cursor: pointer;
+}
+
+#azure {
+    cursor: not-allowed;
 }
 
 /* Media queries for mobile responsiveness */

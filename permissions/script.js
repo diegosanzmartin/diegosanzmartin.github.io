@@ -1,4 +1,38 @@
 // Variables globales
+let cloudProvider = "gcp";
+const cloud = {
+    "gcp": {
+        "roles": {
+            "header": ["ID", "Group", "Permissions"],
+            "url": "./data/gcp_roles.json"
+        },
+        "permissions": {
+            "header": ["ID", "Rol", "Nº Permissions"],
+            "url": "./data/gcp_perm.json"
+        }
+    },
+    "aws": {
+        "roles": {
+            "header": ["ID", "Group", "Actions"],
+            "url": "./data/aws_policies.json"
+        },
+        "permissions": {
+            "header": ["ID", "Policy", "Nº Actions"],
+            "url": "./data/aws_actions.json"
+        }
+    },
+    "azure": {
+        "roles": {
+            "header": [],
+            "url": ""
+        },
+        "permissions": {
+            "header": [],
+            "url": ""
+        }
+    }
+};
+
 let roles = {};
 let permissions = {};
 let commonPermissions = {};
@@ -11,6 +45,12 @@ const itemsElement = document.getElementById("items");
 const searchElement = document.getElementById('search');
 const docElement = document.getElementById('doc');
 
+const cloudProviders = {
+    gcp: document.getElementById("gcp"),
+    aws: document.getElementById("aws"),
+    // azure: document.getElementById("azure"),
+};
+
 // Función para parsear consultas regex
 function parseRegexQuery(query) {
     const regexMatch = query.match(/^\/(.*)\/([gimuy]*)$/);
@@ -19,7 +59,6 @@ function parseRegexQuery(query) {
             const [, pattern, flags] = regexMatch;
             return new RegExp(pattern, flags);
         }
-        console.log('Regex válido:', query);
         return new RegExp(query, 'i');
     } catch (e) {
         console.error('Regex inválido:', e);
@@ -52,16 +91,16 @@ function searchRegex(query, data) {
 async function fetchJsonFiles() {
     try {
         const [rolesResponse, permissionsResponse] = await Promise.all([
-            fetch('./gcp_roles.json'),
-            fetch('./gcp_perm.json')
+            fetch(cloud[cloudProvider].roles.url),
+            fetch(cloud[cloudProvider].permissions.url)
         ]);
 
         if (!rolesResponse.ok || !permissionsResponse.ok) {
             throw new Error('Error al cargar los archivos JSON');
         }
 
-        roles = await rolesResponse.json();
-        permissions = await permissionsResponse.json();
+        roles[cloudProvider] = await rolesResponse.json();
+        permissions[cloudProvider] = await permissionsResponse.json();
 	searchPermissions('.*');
     } catch (error) {
         console.error('Error:', error);
@@ -90,11 +129,11 @@ function getCommon(results) {
     let commonRoles = null;
 
     results.forEach((e) => {
-        const roles = permissions[e];
+        const localRoles = permissions[cloudProvider][e];
         if (commonRoles === null) {
-            commonRoles = new Set(Object.keys(roles));
+            commonRoles = new Set(Object.keys(localRoles));
         } else {
-            const currentRoles = new Set(Object.keys(roles));
+            const currentRoles = new Set(Object.keys(localRoles));
             commonRoles = new Set([...commonRoles].filter(role => currentRoles.has(role)));
         }
     });
@@ -103,7 +142,7 @@ function getCommon(results) {
     if (commonRoles !== null) {
         const firstKey = results[0];
         commonRoles.forEach(role => {
-            common[role] = permissions[firstKey][role];
+            common[role] = permissions[cloudProvider][firstKey][role];
         });
     }
 
@@ -117,12 +156,13 @@ function getCommon(results) {
 // Función auxiliar para realizar búsquedas
 function performSearch(data, query, typeLabel) {
     const itemsLimit = validateNumber(itemsElement.value);
-    const totalResults = searchRegex(query, data)
+    const actualQuery = query.trim() === "" ? ".*" : query;
+    const totalResults = searchRegex(actualQuery, data);
     const results = totalResults.slice(0, itemsLimit);
 
     itemsElement.value = itemsLimit;
 
-    showLimit = itemsLimit > totalResults.length ? totalResults.length : itemsLimit
+    const showLimit = itemsLimit > totalResults.length ? totalResults.length : itemsLimit;
 
     textElement.textContent = `${showLimit} / ${totalResults.length} ${typeLabel}`;
     return results;
@@ -173,7 +213,7 @@ const createTableFormatter = (config) => function(results) {
 
 // Configuraciones para diferentes tipos de datos
 const permissionsFormatter = createTableFormatter({
-    getData: result => permissions[result],
+    getData: result => permissions[cloudProvider][result],
     getItems: data => Object.keys(data),
     getFirstRow: (result, data, firstItem, rowSpan) => `
         <td rowspan="${rowSpan}">${result}</td>
@@ -188,7 +228,7 @@ const permissionsFormatter = createTableFormatter({
 });
 
 const rolesFormatter = createTableFormatter({
-    getData: result => roles[result],
+    getData: result => roles[cloudProvider][result],
     getItems: data => data.permissions.length === 0 ? [''] : data.permissions,
     getFirstRow: (result, data, firstItem, rowSpan) => `
         <td rowspan="${rowSpan}">${result}</td>
@@ -218,8 +258,8 @@ const commonPermissionsFormatter = createTableFormatter({
 
 // Funciones de búsqueda
 function searchPermissions(query) {
-    initializeTable(['ID', 'Rol', 'Nº Permissions']);
-    const results = performSearch(permissions, query, 'permissions');
+    initializeTable(cloud[cloudProvider].permissions.header);
+    const results = performSearch(permissions[cloudProvider], query, 'permissions');
     if (query.includes(',')) {
         getCommon(results);
         commonPermissionsFormatter([results.join(', ')]);
@@ -229,9 +269,26 @@ function searchPermissions(query) {
 }
 
 function searchRoles(query) {
-    initializeTable(['ID', 'Grupo', 'Permissions']);
-    const results = performSearch(roles, query, 'roles');
+    initializeTable(cloud[cloudProvider].roles.header);
+    const results = performSearch(roles[cloudProvider], query, 'roles');
+    console.log(results.length);
     rolesFormatter(results);
+}
+
+function setActiveCloud(selected) {
+    cloudProvider = selected;
+    Object.keys(cloudProviders).forEach(key => {
+        cloudProviders[key].className = key === selected ? "" : "nosel";
+    });
+
+    // Check if data for the selected cloud provider exists
+    if (!roles[cloudProvider] || !permissions[cloudProvider]) {
+        fetchJsonFiles();
+    } else {
+        const query = searchElement.value.trim();
+        const type = document.getElementById("type").value;
+        type === 'permissions' ? searchPermissions(query) : searchRoles(query);
+    }
 }
 
 // Event listeners
@@ -243,7 +300,6 @@ searchElement.addEventListener('input', event => {
     }
 });
 
-// Event listeners
 itemsElement.addEventListener('keydown', event => {
     if (event.key === 'Enter') {
         const query = searchElement.value.trim();
@@ -255,6 +311,10 @@ itemsElement.addEventListener('keydown', event => {
 docElement.addEventListener("click", function() {
     docUrl = "https://github.com/diegosanzmartin/diegosanzmartin.github.io/blob/main/permissions/README.md"
     window.open(docUrl, "_blank");
+});
+
+Object.keys(cloudProviders).forEach(cloudProvider => {
+    cloudProviders[cloudProvider].addEventListener("click", () => setActiveCloud(cloudProvider));
 });
 
 // Cargar datos al iniciar
