@@ -9,6 +9,7 @@ const thead = document.getElementById("thead");
 const textElement = document.getElementById("text");
 const itemsElement = document.getElementById("items");
 const searchElement = document.getElementById('search');
+const docElement = document.getElementById('doc');
 
 // Función para parsear consultas regex
 function parseRegexQuery(query) {
@@ -249,6 +250,11 @@ itemsElement.addEventListener('keydown', event => {
         const type = document.getElementById("type").value;
         type === 'permissions' ? searchPermissions(query) : searchRoles(query);
     }
+});
+
+docElement.addEventListener("click", function() {
+    docUrl = "https://github.com/diegosanzmartin/diegosanzmartin.github.io/blob/main/permissions/README.md"
+    window.open(docUrl, "_blank");
 });
 
 // Cargar datos al iniciar

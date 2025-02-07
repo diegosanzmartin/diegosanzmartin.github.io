@@ -63,7 +63,6 @@ body {
     border: none;
     margin-left: 10px;
     border-radius: 5px;
-    cursor: pointer;
     transition: background-color 0.3s ease;
     padding: 2px;
     width: 30px;
@@ -71,7 +70,7 @@ body {
 }
 
 .buttons img:hover {
-    background-color: #1b1b1b;
+    background-color: #6d6d6d;
 }
 
 /* Text box styling */
@@ -124,6 +123,11 @@ body {
 
 .nosel {
     filter: grayscale(1);
+    cursor: not-allowed;
+}
+
+#gcp {
+    cursor: pointer;
 }
 
 /* Media queries for mobile responsiveness */
@@ -195,4 +199,51 @@ body {
     .buttons {
         gap: 5px;
     }
+}
+
+.search #doc {
+    width: 39px;
+    height: 39px;
+    padding: 7px 0;
+    border-radius: 5px;
+    background-color: #333;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(80, 80, 80);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+    font-size: 14px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
