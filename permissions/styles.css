@@ -130,12 +130,8 @@ body {
     filter: grayscale(1);
 }
 
-#gcp, #aws {
+#gcp, #aws, #azure {
     cursor: pointer;
-}
-
-#azure {
-    cursor: not-allowed;
 }
 
 /* Media queries for mobile responsiveness */

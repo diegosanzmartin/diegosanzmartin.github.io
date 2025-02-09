@@ -23,12 +23,12 @@ const cloud = {
     },
     "azure": {
         "roles": {
-            "header": [],
-            "url": ""
+            "header": ["ID", "Actions"],
+            "url": "./data/azure_roles.json"
         },
         "permissions": {
-            "header": [],
-            "url": ""
+            "header": ["ID", "Rol", "Nº Actions"],
+            "url": "./data/azure_actions.json"
         }
     }
 };
@@ -48,7 +48,7 @@ const docElement = document.getElementById('doc');
 const cloudProviders = {
     gcp: document.getElementById("gcp"),
     aws: document.getElementById("aws"),
-    // azure: document.getElementById("azure"),
+    azure: document.getElementById("azure"),
 };
 
 // Función para parsear consultas regex
