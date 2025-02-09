@@ -241,6 +241,7 @@ const createTableFormatter = (config) => function(results) {
         if (page > 1) {
             page -= 1;
             setActiveCloud(cloudProvider);
+            window.scrollTo(0, 0);
         }
     });
 
@@ -248,6 +249,7 @@ const createTableFormatter = (config) => function(results) {
         if (page < maxPage) {
             page += 1;
             setActiveCloud(cloudProvider);
+            window.scrollTo(0, 0);
         }
     });
 
