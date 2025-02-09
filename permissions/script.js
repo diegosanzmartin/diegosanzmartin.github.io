@@ -3,17 +3,17 @@ let cloudProvider = "gcp";
 const cloud = {
     "gcp": {
         "roles": {
-            "header": ["ID", "Group", "Permissions"],
+            "header": ["ID", "Permissions"],
             "url": "./data/gcp_roles.json"
         },
         "permissions": {
             "header": ["ID", "Rol", "Nº Permissions"],
-            "url": "./data/gcp_perm.json"
+            "url": "./data/gcp_permissions.json"
         }
     },
     "aws": {
         "roles": {
-            "header": ["ID", "Group", "Actions"],
+            "header": ["ID", "Actions"],
             "url": "./data/aws_policies.json"
         },
         "permissions": {
@@ -232,7 +232,6 @@ const rolesFormatter = createTableFormatter({
     getItems: data => data.permissions.length === 0 ? [''] : data.permissions,
     getFirstRow: (result, data, firstItem, rowSpan) => `
         <td rowspan="${rowSpan}">${result}</td>
-        <td rowspan="${rowSpan}">${data.group}</td>
         <td class="pointer" onclick="searchPermissions('${firstItem}')">${firstItem}</td>
     `,
     getRowContent: item => `
