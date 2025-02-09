@@ -33,6 +33,8 @@ const cloud = {
     }
 };
 
+let page = 1;
+let maxPage = 1;
 let roles = {};
 let permissions = {};
 let commonPermissions = {};
@@ -158,7 +160,12 @@ function performSearch(data, query, typeLabel) {
     const itemsLimit = validateNumber(itemsElement.value);
     const actualQuery = query.trim() === "" ? ".*" : query;
     const totalResults = searchRegex(actualQuery, data);
-    const results = totalResults.slice(0, itemsLimit);
+
+    const init = itemsLimit * (page - 1);
+    const end = itemsLimit * page;
+    const results = totalResults.slice(init, end);
+
+    maxPage = Math.max(1, Math.ceil(totalResults.length / itemsLimit));
 
     itemsElement.value = itemsLimit;
 
@@ -198,7 +205,7 @@ const createTableFormatter = (config) => function(results) {
         if (hiddenRows.length > 0) {
             const showMoreRow = document.createElement("tr");
             showMoreRow.style.cursor = 'pointer';
-            showMoreRow.innerHTML = `<td class="showmore" colspan="${config.colSpan}">+ Show ${hiddenRows.length} more</td>`;
+            showMoreRow.innerHTML = `<td colspan="${config.colSpan}">+ Show ${hiddenRows.length} more</td>`;
             showMoreRow.addEventListener('click', () => {
                 hiddenRows.forEach(row => {
                     row.querySelectorAll('td').forEach(td => td.style.display = '');
@@ -209,6 +216,45 @@ const createTableFormatter = (config) => function(results) {
             table.appendChild(showMoreRow);
         }
     });
+
+    const lastRow = document.createElement("tr");
+    const prevPage = document.createElement("td");
+    const nPage = document.createElement("td");
+    const nextPage = document.createElement("td");
+
+    prevPage.innerHTML = `◀ Prev Page`
+    nPage.innerHTML = `${page} / ${maxPage}`
+    nextPage.innerHTML = `Next Page ▶`
+
+    if (page === 1) {
+        prevPage.className = 'pageFin';
+        nextPage.className = 'clickable';
+    } else if (page === maxPage) {
+        prevPage.className = 'clickable';
+        nextPage.className = 'pageFin';
+    } else {
+        prevPage.className = 'clickable';
+        nextPage.className = 'clickable';
+    }
+
+    prevPage.addEventListener('click', () => {
+        if (page > 1) {
+            page -= 1;
+            setActiveCloud(cloudProvider);
+        }
+    });
+
+    nextPage.addEventListener('click', () => {
+        if (page < maxPage) {
+            page += 1;
+            setActiveCloud(cloudProvider);
+        }
+    });
+
+    lastRow.appendChild(prevPage);
+    lastRow.appendChild(nPage);
+    lastRow.appendChild(nextPage);
+    table.appendChild(lastRow);
 };
 
 // Configuraciones para diferentes tipos de datos
@@ -270,7 +316,6 @@ function searchPermissions(query) {
 function searchRoles(query) {
     initializeTable(cloud[cloudProvider].roles.header);
     const results = performSearch(roles[cloudProvider], query, 'roles');
-    console.log(results.length);
     rolesFormatter(results);
 }
 
@@ -292,6 +337,7 @@ function setActiveCloud(selected) {
 
 // Event listeners
 searchElement.addEventListener('input', event => {
+    page = 1;
     const query = event.target.value.trim();
     const type = document.getElementById("type").value;
     if (query) {
@@ -299,10 +345,11 @@ searchElement.addEventListener('input', event => {
     }
 });
 
-itemsElement.addEventListener('keydown', event => {
-    if (event.key === 'Enter') {
-        const query = searchElement.value.trim();
-        const type = document.getElementById("type").value;
+itemsElement.addEventListener('input', event => {
+    page = 1;
+    const query = searchElement.value.trim();
+    const type = document.getElementById("type").value;
+    if (query) {
         type === 'permissions' ? searchPermissions(query) : searchRoles(query);
     }
 });

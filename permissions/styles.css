@@ -134,6 +134,17 @@ body {
     cursor: pointer;
 }
 
+.clickable {
+    cursor: pointer;
+    user-select: none;
+}
+
+.pageFin {
+    cursor: not-allowed;
+    user-select: none;
+    filter: invert(0.9);
+}
+
 /* Media queries for mobile responsiveness */
 @media screen and (max-width: 768px) {
     .search {
