@@ -23,7 +23,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 20px;
     background-color: #1f1f1f;
     padding: 10px;
@@ -37,16 +36,20 @@ body {
     justify-content: flex-start;
 }
 
-.search input, .search select {
+.search textarea, 
+.search select,
+.search input {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #333;
     background-color: #2a2a2a;
     color: white;
+    height: 39px;
 }
 
 #search {
-    width: 200px;
+    width: 250px;
+    max-width: 350px;
 }
 
 #items {
@@ -56,6 +59,8 @@ body {
 .buttons {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .buttons img {
@@ -178,6 +183,10 @@ body {
 
     .search input, .search select {
         width: 100%;
+    }
+
+    #search {
+        max-width: 400px;
     }
 
     .top-bar {
