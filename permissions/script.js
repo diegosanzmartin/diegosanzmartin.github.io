@@ -262,7 +262,7 @@ const createTableFormatter = (config) => function(results) {
 // Configuraciones para diferentes tipos de datos
 const permissionsFormatter = createTableFormatter({
     getData: result => permissions[cloudProvider][result],
-    getItems: data => Object.keys(data),
+    getItems: data => Object.keys(data).sort((a, b) => data[a] - data[b]),
     getFirstRow: (result, data, firstItem, rowSpan) => `
         <td rowspan="${rowSpan}">${result}</td>
         <td class="pointer" onclick="searchRoles('${firstItem}')">${firstItem}</td>
@@ -290,7 +290,7 @@ const rolesFormatter = createTableFormatter({
 
 const commonPermissionsFormatter = createTableFormatter({
     getData: result => commonPermissions[result],
-    getItems: data => Object.keys(data),
+    getItems: data => Object.keys(data).sort((a, b) => data[a] - data[b]),
     getFirstRow: (result, data, firstItem, rowSpan) => `
         <td rowspan="${rowSpan}">${result}</td>
         <td class="pointer" onclick="searchRoles('${firstItem}')">${firstItem}</td>
