@@ -46,6 +46,7 @@ const textElement = document.getElementById("text");
 const itemsElement = document.getElementById("items");
 const searchElement = document.getElementById('search');
 const docElement = document.getElementById('doc');
+const typeElement = document.getElementById('type');
 
 const cloudProviders = {
     gcp: document.getElementById("gcp"),
@@ -65,6 +66,15 @@ function parseRegexQuery(query) {
     } catch (e) {
         console.error('Regex inválido:', e);
         return new RegExp('', 'i');
+    }
+}
+
+function fillQuery(query) {
+    if(query) {
+        return query
+    }
+    else {
+        return ".*"
     }
 }
 
@@ -335,27 +345,21 @@ function setActiveCloud(selected) {
         fetchJsonFiles();
     } else {
         const query = searchElement.value.trim();
-        const type = document.getElementById("type").value;
+        const type = typeElement.value;
         type === 'permissions' ? searchPermissions(query) : searchRoles(query);
     }
 }
 
-// Event listeners
-searchElement.addEventListener('input', event => {
-    const query = event.target.value.trim();
-    const type = document.getElementById("type").value;
-    if (query) {
-        type === 'permissions' ? searchPermissions(query) : searchRoles(query);
-    }
-});
+function handleSearch() {
+    const query = fillQuery(searchElement.value.trim());
+    const type = typeElement.value;
+    type === 'permissions' ? searchPermissions(query) : searchRoles(query);
+}
 
-itemsElement.addEventListener('input', event => {
-    const query = searchElement.value.trim();
-    const type = document.getElementById("type").value;
-    if (query) {
-        type === 'permissions' ? searchPermissions(query) : searchRoles(query);
-    }
-});
+// Event listeners
+searchElement.addEventListener('input', handleSearch);
+itemsElement.addEventListener('input', handleSearch);
+typeElement.addEventListener('change', handleSearch);
 
 docElement.addEventListener("click", function() {
     docUrl = "https://github.com/diegosanzmartin/diegosanzmartin.github.io/blob/main/permissions/README.md"
