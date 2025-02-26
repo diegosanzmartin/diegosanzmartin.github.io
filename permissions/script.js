@@ -306,6 +306,7 @@ const commonPermissionsFormatter = createTableFormatter({
 
 // Funciones de búsqueda
 function searchPermissions(query) {
+    page = 1;
     initializeTable(cloud[cloudProvider].permissions.header);
     const results = performSearch(permissions[cloudProvider], query, 'permissions');
     if (query.includes(',')) {
@@ -317,6 +318,7 @@ function searchPermissions(query) {
 }
 
 function searchRoles(query) {
+    page = 1;
     initializeTable(cloud[cloudProvider].roles.header);
     const results = performSearch(roles[cloudProvider], query, 'roles');
     rolesFormatter(results);
@@ -340,7 +342,6 @@ function setActiveCloud(selected) {
 
 // Event listeners
 searchElement.addEventListener('input', event => {
-    page = 1;
     const query = event.target.value.trim();
     const type = document.getElementById("type").value;
     if (query) {
@@ -349,7 +350,6 @@ searchElement.addEventListener('input', event => {
 });
 
 itemsElement.addEventListener('input', event => {
-    page = 1;
     const query = searchElement.value.trim();
     const type = document.getElementById("type").value;
     if (query) {
