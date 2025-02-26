@@ -36,15 +36,30 @@ body {
     justify-content: flex-start;
 }
 
-.search textarea, 
+.search textarea,
 .search select,
-.search input {
+.search input,
+.search .regex-btn {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #333;
     background-color: #2a2a2a;
     color: white;
     height: 39px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + label {
+    background-color: #2a8dbf;
+}
+
+.search .regex-btn {
+    cursor: pointer;
+    user-select: none;
+    padding: 10px 12px;
 }
 
 #search {

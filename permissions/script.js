@@ -47,6 +47,7 @@ const itemsElement = document.getElementById("items");
 const searchElement = document.getElementById('search');
 const docElement = document.getElementById('doc');
 const typeElement = document.getElementById('type');
+const regexElement = document.getElementById('regex');
 
 const cloudProviders = {
     gcp: document.getElementById("gcp"),
@@ -55,14 +56,21 @@ const cloudProviders = {
 };
 
 // Función para parsear consultas regex
+function escapeRegex(text) {
+    return text.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+}
+
 function parseRegexQuery(query) {
     const regexMatch = query.match(/^\/(.*)\/([gimuy]*)$/);
+    const isregex = regexElement.checked;
+
     try {
-        if (regexMatch) {
+        if (isregex && regexMatch) {
+            console.log("checked");
             const [, pattern, flags] = regexMatch;
             return new RegExp(pattern, flags);
         }
-        return new RegExp(query, 'i');
+        return new RegExp(isregex ? query : escapeRegex(query), 'i');
     } catch (e) {
         console.error('Regex inválido:', e);
         return new RegExp('', 'i');
@@ -356,10 +364,15 @@ function handleSearch() {
     type === 'permissions' ? searchPermissions(query) : searchRoles(query);
 }
 
+function toggleRegex() {
+
+}
+
 // Event listeners
 searchElement.addEventListener('input', handleSearch);
 itemsElement.addEventListener('input', handleSearch);
 typeElement.addEventListener('change', handleSearch);
+regexElement.addEventListener('change', handleSearch);
 
 docElement.addEventListener("click", function() {
     docUrl = "https://github.com/diegosanzmartin/diegosanzmartin.github.io/blob/main/permissions/README.md"
