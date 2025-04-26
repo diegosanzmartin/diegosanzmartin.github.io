@@ -1,0 +1,1013 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    color-scheme: light dark;
+    --green: #00b755;
+    --yellow: #daaf38;
+    --red: #ca4754;
+    --black: #222;
+    --gray: #999;
+}
+
+body {
+    background: var(--black);
+    font-family: Menlo, monospace;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: "aside editor";
+    height: 100vh;
+}
+
+header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    grid-area: header;
+}
+
+/* ASIDE */
+
+aside {
+    background: #242424;
+    padding: 20px;
+    grid-area: aside;
+    border-right: 1px solid #444;
+    overflow-y: auto;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+}
+
+aside h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+aside h3 {
+    font-size: 0.9rem;
+    margin: 1rem 0 0.5rem;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+aside .search-box {
+    width: 100%;
+    padding: 8px 10px;
+    background: #333;
+    border: 1px solid #444;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+aside .new-page-btn {
+    width: 100%;
+    padding: 8px;
+    background: #333;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+aside .new-page-btn:hover {
+    background: #444;
+}
+
+aside .nav-list, aside .folder-children {
+    list-style: none;
+    margin-left: 5px;
+    transition: opacity 0.3s ease;
+}
+
+aside .nav-item, aside .nav-file {
+    padding: 4px 0;
+    cursor: pointer;
+    color: #aaa;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+aside .nav-item:hover, aside .nav-file:hover {
+    color: white;
+}
+
+aside .nav-item.active, aside .nav-file.active-file {
+    color: var(--green) !important;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* Drag indicator */
+.drag-indicator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--green);
+    z-index: 100;
+    pointer-events: none;
+    display: none;
+}
+
+.drag-indicator.top {
+    top: 0;
+}
+
+.drag-indicator.bottom {
+    bottom: 0;
+}
+
+aside .nav-h2 {
+    margin-left: 15px;
+    font-size: 0.9em;
+}
+
+aside .nav-h3 {
+    margin-left: 30px;
+    font-size: 0.85em;
+}
+
+aside .folder-label {
+    cursor: pointer;
+    padding: 3px 0;
+    color: #ddd;
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+aside .folder-label:hover {
+    color: white;
+}
+
+aside .folder-icon {
+    margin-right: 5px;
+}
+
+aside .folder-children {
+    padding-left: 15px;
+}
+
+aside .folder-children.collapsed {
+    display: none;
+}
+
+aside .nav-folder {
+    margin: 2px 0;
+}
+
+/* Data management section */
+
+.nav-section {
+    padding-top: 10px;
+    border-top: 1px dashed #555;
+    margin-bottom: 40px;
+}
+
+.export-section {
+    position: fixed;
+    margin-top: 1.5rem;
+    border-top: 1px dashed #555;
+    bottom: 0;
+    padding: 10px;
+    width: 209px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    background: #242424;
+}
+
+.export-btn {
+    width: 100%;
+    padding: 8px;
+    background: #333;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.export-btn:hover {
+    background-color: var(--green);
+    color: #111;
+}
+
+.storage-info {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    color: #999;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* EDITOR */
+
+h1, h2, h3 {
+    outline: none;
+}
+
+editor {
+    padding: 40px 20px 700px 60px;
+    grid-area: editor;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 800px;
+}
+
+line {
+    /* background-color: var(--yellow); */
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 29px;
+    position: relative;
+    transition: transform 0.1s, box-shadow 0.1s;
+    cursor: text;
+}
+
+text {
+    font-size: 16px;
+    display: inline-block;
+    width: 100%;
+    outline: none;
+}
+
+code {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    width: 100%;
+    outline: none;
+    background-color: #545454;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+line select {
+    border: transparent;
+    border-radius: 5px;
+    background-color: #545454;
+    box-shadow: 0px 8px #545454;
+    outline: none;
+    padding: 3px;
+}
+
+.i {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    filter: invert(0.7);
+    cursor: pointer;
+    opacity: 0;
+}
+
+line:hover .i {
+    opacity: 1;
+}
+
+.i:hover {
+    opacity: 1;
+    filter: invert(1);
+}
+
+.icon {
+    filter: invert(0.7);
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+}
+
+.icon:hover {
+    filter: invert(1);
+}
+
+.context-menu {
+    position: absolute;
+    background-color: #383838;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none;
+    min-width: 150px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.context-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.context-menu ul li {
+    padding: 8px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+.context-menu ul li img {
+    filter: invert(1);
+    width: 18px;
+    height: 18px;
+}
+
+.context-menu ul li:hover {
+    background-color: #424242;
+}
+
+.context-menu ul li.divider {
+    height: 1px;
+    background-color: #555;
+    margin: 5px 0;
+    padding: 0;
+    cursor: default;
+}
+
+.context-menu ul li.divider:hover {
+    background-color: #555;
+}
+
+/* Text Editing Toolbar */
+.text-toolbar {
+    position: absolute;
+    background-color: #383838;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+    padding: 5px;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0.9;
+}
+
+.text-toolbar:hover {
+    opacity: 1;
+}
+
+.text-toolbar .toolbar-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.text-toolbar .toolbar-button:hover {
+    background-color: #4a4a4a;
+}
+
+.text-toolbar .toolbar-button.active {
+    background-color: #555;
+}
+
+.text-toolbar .toolbar-button img {
+    width: 16px;
+    height: 16px;
+    filter: invert(0.8);
+}
+
+.text-toolbar .border{
+    border-right: 1px solid #555;
+    margin-right: 10px;
+}
+
+/* Color Picker Submenu */
+.color-submenu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #383838;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 5px;
+    display: none;
+    z-index: 1010;
+    width: auto;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 20px);
+    grid-gap: 3px;
+    margin-bottom: 5px;
+}
+
+.color-option {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid #666;
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.color-option:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.custom-color-option {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.custom-color-input {
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #555;
+    border-radius: 3px;
+    background-color: #222;
+    color: white;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+/* Link Dialog */
+.link-dialog {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #383838;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+    z-index: 1010;
+    width: 250px;
+}
+
+.link-dialog input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #555;
+    border-radius: 3px;
+    background-color: #222;
+    color: white;
+}
+
+.link-dialog button {
+    padding: 5px 10px;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.link-dialog button.cancel {
+    background-color: #555;
+}
+
+/* File tree context menu */
+.file-tree-context-menu {
+    position: absolute;
+    min-width: 150px;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: none;
+}
+
+.file-tree-context-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.file-tree-context-menu ul li {
+    padding: 6px 12px;
+    color: #ddd;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.file-tree-context-menu ul li:hover {
+    background-color: #444;
+}
+
+.file-tree-context-menu ul li.divider {
+    height: 1px;
+    background-color: #444;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.file-tree-context-menu .menu-icon {
+    margin-right: 8px;
+}
+
+/* Special styling for delete option */
+.file-tree-context-menu ul li.delete {
+    color: #ff6b6b;
+}
+
+.file-tree-context-menu ul li.delete:hover {
+    background-color: rgba(255, 107, 107, 0.2);
+    color: #ff6b6b;
+}
+
+.file-tree-context-menu ul li.delete .menu-icon {
+    color: #ff6b6b;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 5px;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+td,
+th {
+    border: 1px solid #444;
+    text-align: left;
+    padding: 8px;
+    font-size: 16px;
+    display: inline-block;
+    outline: none;
+    min-height: 40px;
+    box-sizing: border-box;
+    transition: background-color 0.2s;
+}
+
+th {
+    background-color: #333;
+    font-weight: bold;
+}
+
+td:hover,
+th:hover {
+    background-color: #3a3a3a;
+}
+
+td:focus,
+th:focus {
+    background-color: #404040;
+    border-color: #666;
+}
+
+/* Estilos para tablas con header vertical */
+table.vertical-header tr:first-child th {
+    display: none;
+}
+
+table.vertical-header tr td:first-child {
+    font-weight: bold;
+    background-color: #333;
+}
+
+/* Controles de tabla */
+.table-controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+    background-color: #333;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.table-controls label {
+    font-size: 14px;
+    margin-right: 5px;
+    color: #ddd;
+}
+
+.table-input {
+    width: 50px;
+    padding: 4px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: white;
+    border-radius: 3px;
+}
+
+.table-button {
+    padding: 4px 10px;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.table-button:hover {
+    background-color: #00a84c;
+}
+
+line img {
+    display: block;
+    margin: auto;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: rgb(77, 77, 77);
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* History Menu */
+historymenu {
+    position: absolute;
+    right: 0;
+    background-color: #383838;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+}
+
+historymenu img {
+    filter: invert(0.7);
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+
+historymenu img:hover {
+    filter: invert(1);
+}
+
+/* File tree modal */
+.file-tree-modal {
+    position: absolute;
+    width: 250px;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1010;
+    padding: 15px;
+    display: none;
+}
+
+.file-tree-modal input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.file-tree-modal .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.file-tree-modal button {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.file-tree-modal button.confirm {
+    background-color: var(--green);
+    color: white;
+}
+
+.file-tree-modal button.cancel {
+    background-color: #444;
+    color: #ddd;
+}
+
+/* Drag and Drop styles */
+.line-dragging {
+    opacity: 0.7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: grabbing !important;
+    background-color: #333;
+    z-index: 1000;
+    transform: scale(1.01);
+    position: relative;
+}
+
+.line-drag-over {
+    border-top: 2px solid var(--green);
+    margin-top: -2px;
+    animation: pulse 1s infinite;
+}
+
+.line-dragging * {
+    pointer-events: none !important;
+    cursor: grabbing !important;
+}
+
+.line-dragging [contenteditable] {
+    user-select: none;
+}
+
+/* File Tree Drag and Drop styles */
+.nav-file {
+    cursor: pointer;
+    padding: 4px;
+    margin: 2px 0;
+    border-radius: 4px;
+    transition: background-color 0.2s, transform 0.1s;
+    user-select: none;
+    position: relative;
+    /* Make it draggable */
+    -webkit-user-drag: element;
+    -moz-user-drag: element;
+    user-drag: element;
+    draggable: true;
+}
+
+.nav-file:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-file.dragging {
+    opacity: 0.5;
+    transform: scale(0.98);
+    background-color: rgba(0, 150, 100, 0.2);
+    border: 1px dashed var(--green);
+}
+
+.drop-target {
+    background-color: rgba(0, 183, 85, 0.3) !important;
+    box-shadow: 0 0 0 1px var(--green);
+    position: relative;
+    animation: pulse-bg 1s infinite;
+}
+
+.folder-label {
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    user-select: none;
+    transition: background-color 0.2s;
+}
+
+.folder-label:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.folder-label.drop-target::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--green);
+}
+
+@keyframes pulse {
+    0% { border-top-color: var(--green); }
+    50% { border-top-color: #00ff7e; }
+    100% { border-top-color: var(--green); }
+}
+
+@keyframes pulse-bg {
+    0% { background-color: rgba(0, 183, 85, 0.1); }
+    50% { background-color: rgba(0, 183, 85, 0.3); }
+    100% { background-color: rgba(0, 183, 85, 0.1); }
+}
+
+/* File tree context menu */
+.file-tree-context-menu {
+    position: absolute;
+    background-color: #383838;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: none;
+    min-width: 180px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.file-tree-context-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px 0;
+    border-left: none;
+}
+
+.file-tree-context-menu ul li {
+    padding: 8px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ddd;
+    transition: background-color 0.2s;
+}
+
+.file-tree-context-menu ul li .menu-icon {
+    width: 16px;
+    text-align: center;
+}
+
+.file-tree-context-menu ul li:hover {
+    background-color: var(--green);
+    color: #111;
+}
+
+.file-tree-context-menu ul li.divider {
+    height: 1px;
+    background-color: #555;
+    margin: 5px 0;
+    padding: 0;
+    cursor: default;
+}
+
+.file-tree-context-menu ul li.divider:hover {
+    background-color: #555;
+    color: #ddd;
+}
+
+/* Modal for renaming and new items */
+.file-tree-modal {
+    position: absolute;
+    background-color: #383838;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    display: none;
+    min-width: 220px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.file-tree-modal input {
+    width: 100%;
+    padding: 6px 8px;
+    background: #222;
+    border: 1px solid #555;
+    border-radius: 4px;
+    color: #ddd;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.file-tree-modal .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.file-tree-modal button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.file-tree-modal button.confirm {
+    background-color: var(--green);
+    color: #111;
+}
+
+.file-tree-modal button.cancel {
+    background-color: #555;
+    color: #ddd;
+}
+
+/* File tree styles */
+.file-tree-section {
+    margin-bottom: 1rem;
+}
+
+.file-tree {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.file-tree ul {
+    list-style: none;
+    margin-left: 1rem;
+    padding-left: 0.5rem;
+    border-left: 1px dashed #555;
+}
+
+.folder-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 4px 0;
+    color: #ccc;
+    transition: color 0.2s;
+}
+
+.folder-label:hover {
+    color: white;
+}
+
+.folder-icon {
+    margin-right: 6px;
+}
+
+.nav-folder {
+    margin: 4px 0;
+}
+
+.nav-file {
+    padding: 4px 0 4px 1.5rem;
+    cursor: pointer;
+    color: #aaa;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.nav-file:hover {
+    color: white;
+}
+
+.file-icon {
+    margin-right: 6px;
+}
+
+.folder-children {
+    max-height: 500px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.folder-children.collapsed {
+    max-height: 0;
+}
+
+/* Diagram */
+
+diagram-menu {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    right: 0;
+    margin: 6px 11px;
+}
+
+diagram-menu img {
+    background: #545454;
+    padding: 3px;
+    border-radius: 9999px;
+    width: 25px;
+    height: 25px;
+}
+
+diagram-menu select {
+    box-shadow: 0px 0px #00000000;
+    background-color: #919191;
+}
+
+diagram-menu diagram {
+    display: block;
+    height: 36.5px;
+}
