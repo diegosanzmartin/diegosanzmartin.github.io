@@ -26,6 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             dataService.saveData();
         }
+
+        if (e.ctrlKey && e.key === 'o') {
+            e.preventDefault();
+            dataService.loadData().then(() => {
+                // No es necesario hacer nada más aquí, los listeners se encargarán de actualizar la UI.
+            });
+        }
     });
 
     // Actualizar nav cada vez que se guarda

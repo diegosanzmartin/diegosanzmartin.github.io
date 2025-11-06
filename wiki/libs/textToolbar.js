@@ -88,6 +88,7 @@ textToolbar.appendChild(linkDialog);
 // Current active element and command
 let activeElement = null;
 let activeCommand = null;
+let savedSelection = null;
 
 // Initialize the text toolbar functionality
 export function initTextToolbar(dataServiceInstance) {
@@ -146,6 +147,9 @@ function handleSelection(event) {
         const selection = window.getSelection();
         if (!selection.rangeCount) return;
         
+        // Save the selection if it's within a contenteditable element
+        savedSelection = saveSelection(document.querySelector('editor'));
+
         let node = selection.anchorNode;
         while (node && node.nodeType !== 1) {
             node = node.parentNode;
@@ -322,6 +326,12 @@ function handleColorOptionClick(event) {
     if (activeElement) {
         activeElement.focus();
         
+        // Check if the selection was collapsed *before* restoring and executing.
+        const wasCollapsed = savedSelection ? savedSelection.collapsed : true;
+
+        // Restore the selection before applying the command
+        restoreSelection(savedSelection);
+
         // Apply color using execCommand with appropriate command
         if (command === 'foreColor') {
             document.execCommand('foreColor', false, color);
@@ -335,26 +345,28 @@ function handleColorOptionClick(event) {
         }
         
         // If no text was selected, we'll insert a colored space
-        const selection = window.getSelection();
-        if (selection.rangeCount > 0 && selection.getRangeAt(0).collapsed) {
-            // Create a non-breaking space with the color
-            const span = document.createElement('span');
-            if (command === 'foreColor') {
-                span.style.color = color;
-            } else {
-                span.style.backgroundColor = color;
+        if (wasCollapsed) {
+            const selection = window.getSelection();
+            if (selection.rangeCount > 0 && selection.getRangeAt(0).collapsed) {
+                // Create a non-breaking space with the color
+                const span = document.createElement('span');
+                if (command === 'foreColor') {
+                    span.style.color = color;
+                } else {
+                    span.style.backgroundColor = color;
+                }
+                span.innerHTML = '&nbsp;';
+                
+                // Insert the colored space
+                const range = selection.getRangeAt(0);
+                range.insertNode(span);
+                
+                // Move cursor after the span
+                range.setStartAfter(span);
+                range.setEndAfter(span);
+                selection.removeAllRanges();
+                selection.addRange(range);
             }
-            span.innerHTML = '&nbsp;';
-            
-            // Insert the colored space
-            const range = selection.getRangeAt(0);
-            range.insertNode(span);
-            
-            // Move cursor after the span
-            range.setStartAfter(span);
-            range.setEndAfter(span);
-            selection.removeAllRanges();
-            selection.addRange(range);
         }
     }
     
@@ -373,6 +385,8 @@ function handleCustomColorInput(event) {
         // Validate color format
         if (/^#([0-9A-F]{3}){1,2}$/i.test(color)) {
             if (command === 'foreColor') {
+                // Restore selection before executing command
+                restoreSelection(savedSelection);
                 document.execCommand('foreColor', false, color);
             } else if (command === 'backColor') {
                 try {
@@ -395,6 +409,9 @@ function applyLink(event) {
     const text = linkDialog.querySelector('.link-text-input').value.trim();
     
     if (url) {
+        // Restore selection before applying the link
+        restoreSelection(savedSelection);
+
         // If text is provided and no text is selected, insert new link
         const selection = window.getSelection();
         if (text && selection.toString() === '') {

@@ -3,6 +3,7 @@ export class DataService {
     constructor() {
         this.data = [];
         this.currentFileIndex = 0;  // Index of the currently active file in data array
+        this.fileHandle = null; // To store the file handle for direct saving
         this.listeners = {
             'data-changed': [],
             'save-completed': [],
@@ -16,52 +17,43 @@ export class DataService {
      */
     async loadData() {
         try {
-            // Try to load data from localStorage first
-            const localData = localStorage.getItem('wiki_data');
-            if (localData) {
-                this.data = JSON.parse(localData);
-                
-                // Use the loaded local data
-                if (this.data.length > 0) {
-                    this.currentFileIndex = 0;
-                    this.notifyListeners('file-changed', this.getCurrentFile());
-                    this.notifyListeners('data-changed', this.getCurrentFile());
-                    return this.data;
-                }
-            }
-            
-            // If no local data, fetch from file
-            const response = await fetch('data.json');
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            this.data = await response.json();
-            
-            // Default to the first file if it exists
+            // Ask user to open a file
+            // [this.fileHandle] = await window.showOpenFilePicker({
+            //     types: [{
+            //         description: 'JSON Files',
+            //         accept: { 'application/json': ['.json'] }
+            //     }]
+            // });
+            [this.fileHandle] = await window.showOpenFilePicker();
+
+            const file = await this.fileHandle.getFile();
+            const contents = await file.text();
+            this.data = JSON.parse(contents);
+
             if (this.data.length > 0) {
                 this.currentFileIndex = 0;
                 this.notifyListeners('file-changed', this.getCurrentFile());
             } else {
-                // Initialize with a single blank page if there are no files
-                this.data = [{
-                    updated: Date.now(),
-                    history: [],
-                    path: {"root": null},
-                    lines: []
-                }];
-                this.currentFileIndex = 0;
+                this.initializeEmptyData();
             }
-            
-            // Save to localStorage initially
-            localStorage.setItem('wiki_data', JSON.stringify(this.data));
-            
+
             this.notifyListeners('data-changed', this.getCurrentFile());
             return this.data;
         } catch (error) {
             console.error('Error loading data:', error);
-            this.notifyListeners('error', error);
-            
-            // Initialize with empty data as fallback
+            if (error.name !== 'AbortError') { // User cancelled the picker
+                this.notifyListeners('error', error);
+            }
+            this.initializeEmptyData();
+            return this.data;
+        }
+    }
+
+    /**
+     * Initializes the data with a single empty file.
+     */
+    initializeEmptyData() {
+        if (this.data.length === 0) {
             this.data = [{
                 updated: Date.now(),
                 history: [],
@@ -69,33 +61,63 @@ export class DataService {
                 lines: []
             }];
             this.currentFileIndex = 0;
-            
-            return this.data;
+            this.notifyListeners('data-changed', this.getCurrentFile());
         }
     }
 
     /**
-     * Save data to localStorage only
+     * Save data to the opened file handle.
      */
-    saveData() {
-        if (!this.data || this.data.length === 0) return;
-        
+    async saveData() {
+        if (!this.fileHandle) {
+            await this.saveDataAs();
+            return;
+        }
+
         try {
             // Update the timestamp for the current file
             const currentFile = this.getCurrentFile();
             if (currentFile) {
                 currentFile.updated = Date.now();
             }
-            
-            // Save data to localStorage
-            localStorage.setItem('wiki_data', JSON.stringify(this.data));
-            
-            console.log('Data saved to localStorage');
+
+            const writable = await this.fileHandle.createWritable();
+            await writable.write(JSON.stringify(this.data, null, 2));
+            await writable.close();
+
+            console.log('Data saved to file.');
             this.notifyListeners('save-completed', this.data);
-            
+
         } catch (error) {
             console.error('Error saving data:', error);
             this.notifyListeners('error', error);
+        }
+    }
+
+    /**
+     * Prompts the user to select a file location and saves the data.
+     */
+    async saveDataAs() {
+        if (!this.data || this.data.length === 0) {
+            console.log('No data to save.');
+            return;
+        }
+
+        try {
+            // this.fileHandle = await window.showSaveFilePicker({
+            //     types: [{
+            //         description: 'JSON Files',
+            //         accept: { 'application/json': ['.json'] }
+            //     }]
+            // });
+            this.fileHandle = await window.showSaveFilePicker();
+            // Once the file handle is obtained, call saveData to write the content.
+            await this.saveData();
+        } catch (error) {
+            if (error.name !== 'AbortError') { // User cancelled the picker
+                console.error('Error saving file:', error);
+                this.notifyListeners('error', error);
+            }
         }
     }
     
@@ -140,15 +162,18 @@ export class DataService {
     
     /**
      * Import data from a JSON file
-     * @param {File} file - The file object to import
+     * @param {File|FileHandle} fileOrHandle - The file or file handle object to import
      */
-    async importDataFromFile(file) {
-        if (!file) {
-            console.log('No file selected');
+    async importDataFromFile(fileOrHandle) {
+        if (!fileOrHandle) {
+            console.log('No file or handle selected');
             return;
         }
         
         try {
+            const isHandle = 'createWritable' in fileOrHandle;
+            const file = isHandle ? await fileOrHandle.getFile() : fileOrHandle;
+
             const reader = new FileReader();
             
             const fileLoadPromise = new Promise((resolve, reject) => {
@@ -175,11 +200,12 @@ export class DataService {
             
             // Update the data
             this.data = importedData;
+            if (isHandle) {
+                this.fileHandle = fileOrHandle;
+            }
             this.currentFileIndex = 0;
             
-            // Save to localStorage
-            localStorage.setItem('wiki_data', JSON.stringify(this.data));
-            
+            await this.saveData();
             // Notify listeners
             this.notifyListeners('data-changed', this.getCurrentFile());
             this.notifyListeners('file-changed', this.getCurrentFile());
