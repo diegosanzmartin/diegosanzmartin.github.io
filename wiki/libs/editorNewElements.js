@@ -216,25 +216,12 @@ function newImageLine({ id = shortUUID(), value = "", height = "" } = {}) {
     const $img = document.createElement('img');
     const $actions = createActionElement($line);
 
-    $img.src = value;
-    $img.style.height = height + 'px' || 'auto';
-    $img.style.maxWidth = '100%';
-
-    const aspectRatio = $img.naturalWidth / $img.naturalHeight;
-
-    // Add resize control
-    const $resizeInput = document.createElement('input');
-    $resizeInput.type = 'range';
-    $resizeInput.min = '30';
-    $resizeInput.max = `${parseInt(710 / aspectRatio)}`;
-    $resizeInput.value = parseInt(height) || 300;
-    $resizeInput.addEventListener('input', () => {
-        $img.style.height = $resizeInput.value + 'px';
-    });
-
+    $img.src = value || './icons/image.svg'; // Placeholder if no value
+    $img.style.height = height ? `${height}px` : 'auto';
+    $img.style.maxWidth = '710px';
+    $img.style.cursor = 'pointer';
     $line.setAttribute("data-id", id);
     $line.appendChild($actions);
-    $line.appendChild($resizeInput);
     $line.appendChild($img);
     return $line;
 }

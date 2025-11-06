@@ -3,6 +3,7 @@ import { Sidebar } from './sidebar.js';
 import { DataService } from './dataService.js';
 import { NavUpdater } from './navUpdater.js';
 
+import { newImageLine } from './editorNewElements.js';
 document.addEventListener('DOMContentLoaded', () => {
     const dataService = new DataService();
     const editor = new Editor(dataService);
@@ -32,6 +33,39 @@ document.addEventListener('DOMContentLoaded', () => {
             dataService.loadData().then(() => {
                 // No es necesario hacer nada más aquí, los listeners se encargarán de actualizar la UI.
             });
+        }
+    });
+
+    // Global paste event listener for images
+    document.addEventListener('paste', (event) => {
+        const items = (event.clipboardData || event.originalEvent.clipboardData).items;
+        let imageFound = false;
+
+        for (const item of items) {
+            if (item.type.indexOf('image') === 0) {
+                imageFound = true;
+                event.preventDefault();
+                const blob = item.getAsFile();
+                if (blob) {
+                    const reader = new FileReader();
+                    reader.onload = (e) => {
+                        const imageDataUrl = e.target.result;
+                        const $newline = newImageLine({ value: imageDataUrl });
+
+                        const $editor = document.querySelector('editor');
+                        const targetLine = document.activeElement.closest('line');
+
+                        if (targetLine) {
+                            targetLine.insertAdjacentElement("afterend", $newline);
+                        } else {
+                            $editor.appendChild($newline);
+                        }
+                        $newline.dispatchEvent(new Event('input', { bubbles: true }));
+                    };
+                    reader.readAsDataURL(blob);
+                }
+                break; // Process only the first image found
+            }
         }
     });
 
