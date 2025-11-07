@@ -1037,7 +1037,7 @@ export class Sidebar {
                 childrenContainer.classList.add('collapsed');
                 folderLabel.classList.add('collapsed');
                 if (folderLabel.querySelector('.folder-icon')) {
-                    folderLabel.querySelector('.folder-icon').textContent = '📂';
+                    folderLabel.querySelector('.folder-icon').textContent = '📁';
                 }
             }
         });
