@@ -111,7 +111,8 @@ export function initTextToolbar(dataServiceInstance) {
     
     // Set up toolbar button click handlers
     textToolbar.querySelectorAll('.toolbar-button').forEach(button => {
-        button.addEventListener('click', handleToolbarButtonClick);
+        button.addEventListener('mousedown', e => e.preventDefault()); // Prevent focus loss
+        button.addEventListener('click', handleToolbarButtonClick); // Handle command
     });
 
     // Initialize existing contenteditable elements
@@ -136,35 +137,20 @@ export function initTextToolbar(dataServiceInstance) {
 
 // Handle selection or focus on contenteditable elements
 function handleSelection(event) {
-    // Find the active contenteditable element
-    let element = null;
-    
-    // Check if the event is a focus event
-    if (event.type === 'focus' && event.target.hasAttribute('contenteditable')) {
-        element = event.target;
-    } else {
-        // Check for selection
-        const selection = window.getSelection();
-        if (!selection.rangeCount) return;
-        
-        // Save the selection if it's within a contenteditable element
-        savedSelection = saveSelection(document.querySelector('editor'));
+    const selection = window.getSelection();
+    if (!selection.rangeCount) return;
 
-        let node = selection.anchorNode;
-        while (node && node.nodeType !== 1) {
-            node = node.parentNode;
-        }
-        
-        if (node && node.hasAttribute('contenteditable')) {
-            element = node;
-        }
-    }
-    
-    if (!element) {
-        // No contenteditable element found
-        return;
-    }
-    
+    const range = selection.getRangeAt(0);
+    const container = range.commonAncestorContainer;
+
+    // Find the closest contenteditable ancestor
+    const element = container.nodeType === Node.ELEMENT_NODE
+        ? container.closest('[contenteditable="true"]')
+        : container.parentElement.closest('[contenteditable="true"]');
+
+    if (!element) return;
+
+    savedSelection = range.cloneRange();
     // Store the active element
     activeElement = element;
     
@@ -322,51 +308,18 @@ function handleColorOptionClick(event) {
     const color = event.currentTarget.dataset.color;
     const command = colorSubmenu.dataset.command;
     
-    // Make sure the active element has focus
-    if (activeElement) {
-        activeElement.focus();
-        
-        // Check if the selection was collapsed *before* restoring and executing.
-        const wasCollapsed = savedSelection ? savedSelection.collapsed : true;
+    // Restore the selection before applying the command
+    restoreSelection(savedSelection);
 
-        // Restore the selection before applying the command
-        restoreSelection(savedSelection);
-
-        // Apply color using execCommand with appropriate command
-        if (command === 'foreColor') {
-            document.execCommand('foreColor', false, color);
-        } else if (command === 'backColor') {
-            // Some browsers use 'hiliteColor' for background color
-            try {
-                document.execCommand('hiliteColor', false, color);
-            } catch (e) {
-                document.execCommand('backColor', false, color);
-            }
-        }
-        
-        // If no text was selected, we'll insert a colored space
-        if (wasCollapsed) {
-            const selection = window.getSelection();
-            if (selection.rangeCount > 0 && selection.getRangeAt(0).collapsed) {
-                // Create a non-breaking space with the color
-                const span = document.createElement('span');
-                if (command === 'foreColor') {
-                    span.style.color = color;
-                } else {
-                    span.style.backgroundColor = color;
-                }
-                span.innerHTML = '&nbsp;';
-                
-                // Insert the colored space
-                const range = selection.getRangeAt(0);
-                range.insertNode(span);
-                
-                // Move cursor after the span
-                range.setStartAfter(span);
-                range.setEndAfter(span);
-                selection.removeAllRanges();
-                selection.addRange(range);
-            }
+    // Apply color using execCommand with appropriate command
+    if (command === 'foreColor') {
+        document.execCommand('foreColor', false, color);
+    } else if (command === 'backColor') {
+        // Some browsers use 'hiliteColor' for background color
+        try {
+            document.execCommand('hiliteColor', false, color);
+        } catch (e) {
+            document.execCommand('backColor', false, color);
         }
     }
     
