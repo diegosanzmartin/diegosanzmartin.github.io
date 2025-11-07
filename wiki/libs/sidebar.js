@@ -1028,7 +1028,7 @@ export class Sidebar {
                 // Toggle folder icon
                 const folderIcon = folderLabel.querySelector('.folder-icon');
                 if (folderIcon) {
-                    folderIcon.textContent = childrenContainer.classList.contains('collapsed') ? '📂' : '📁';
+                    folderIcon.textContent = childrenContainer.classList.contains('collapsed') ? '📁' : '📂';
                 }
             });
             
