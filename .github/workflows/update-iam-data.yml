@@ -1,0 +1,52 @@
+name: Update IAM data
+
+on:
+  schedule:
+    # Lunes a las 06:00 UTC. Cambia a '0 6 * * *' para ejecutarlo a diario.
+    - cron: "0 6 * * 1"
+  workflow_dispatch: {}        # permite lanzarlo a mano desde la pestaña Actions
+
+permissions:
+  contents: write              # necesario para commitear los datos regenerados
+
+concurrency:
+  group: update-iam-data       # evita ejecuciones solapadas
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Regenerar datos desde iam-dataset
+        env:
+          # URLs de origen desde GitHub Secrets (OBLIGATORIOS: ya no hay URL por defecto).
+          # Si falta alguno, el script correspondiente aborta con error.
+          GCP_IAM_DATABASE: ${{ secrets.GCP_IAM_DATABASE }}
+          AWS_IAM_DATABASE: ${{ secrets.AWS_IAM_DATABASE }}
+          AZURE_IAM_DATABASE: ${{ secrets.AZURE_IAM_DATABASE }}
+        run: |
+          set -euo pipefail
+          python3 permissions/tools/regen_gcp.py
+          python3 permissions/tools/regen_aws.py
+          python3 permissions/tools/regen_azure.py
+
+      - name: Commitear si hay cambios
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -z "$(git status --porcelain permissions/data)" ]; then
+            echo "Sin cambios en los datos: nada que commitear."
+            exit 0
+          fi
+          git add permissions/data
+          git commit -m "chore(data): actualizar permisos"
+          git push
