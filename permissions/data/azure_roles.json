@@ -366,9 +366,7 @@
             "Anyscale.Platform/*/delete",
             "Anyscale.Platform/*/read",
             "Anyscale.Platform/*/write",
-            "Microsoft.Authorization/*/read",
-            "Microsoft.Authorization/roleAssignments/delete",
-            "Microsoft.Authorization/roleAssignments/write"
+            "Microsoft.Authorization/*/read"
         ],
         "group": "BuiltInRole"
     },
@@ -2987,6 +2985,120 @@
         ],
         "group": "BuiltInRole"
     },
+    "Azure Local Migrate Execute Expert": {
+        "permissions": [
+            "Microsoft.ApplicationMigration/*/read",
+            "Microsoft.Authorization/*/read",
+            "Microsoft.Authorization/locks/delete",
+            "Microsoft.Authorization/locks/write",
+            "Microsoft.Authorization/roleAssignments/delete",
+            "Microsoft.Authorization/roleAssignments/write",
+            "Microsoft.AzureStackHCI/*/Read",
+            "Microsoft.AzureStackHCI/LogicalNetworks/join/action",
+            "Microsoft.AzureStackHCI/NetworkInterfaces/*",
+            "Microsoft.AzureStackHCI/VirtualHardDisks/*",
+            "Microsoft.AzureStackHCI/VirtualMachineInstances/Write",
+            "Microsoft.AzureStackHCI/VirtualMachines/Write",
+            "Microsoft.DataReplication/*/read",
+            "Microsoft.DataReplication/replicationVaults/protectedItems/*",
+            "Microsoft.DataReplication/replicationVaults/replicationExtensions/*",
+            "Microsoft.DataReplication/replicationVaults/replicationPolicies/*",
+            "Microsoft.DependencyMap/*/read",
+            "Microsoft.DependencyMap/maps/*/action",
+            "Microsoft.ExtendedLocation/customLocations/read",
+            "Microsoft.Insights/alertRules/*",
+            "Microsoft.KubernetesConfiguration/extensions/read",
+            "Microsoft.Migrate/*/read",
+            "Microsoft.MySQLDiscovery/*/read",
+            "Microsoft.OffAzure/*/read",
+            "Microsoft.ResourceConnector/appliances/read",
+            "Microsoft.Resources/checkResourceName/action",
+            "Microsoft.Resources/deploymentScripts/read",
+            "Microsoft.Resources/deploymentScripts/write",
+            "Microsoft.Resources/deployments/*",
+            "Microsoft.Resources/deployments/validate/action",
+            "Microsoft.Resources/links/read",
+            "Microsoft.Resources/links/write",
+            "Microsoft.Resources/subscriptions/locations/read",
+            "Microsoft.Resources/subscriptions/read",
+            "Microsoft.Resources/subscriptions/resourceGroups/read",
+            "Microsoft.Resources/subscriptions/resourceGroups/write",
+            "Microsoft.Storage/storageAccounts/*/read",
+            "Microsoft.Storage/storageAccounts/*/write",
+            "Microsoft.Storage/storageAccounts/listKeys/action",
+            "Microsoft.Support/*"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Azure Local Migrate Owner": {
+        "permissions": [
+            "Microsoft.ApplicationMigration/*",
+            "Microsoft.Authorization/*/read",
+            "Microsoft.Authorization/locks/delete",
+            "Microsoft.Authorization/locks/write",
+            "Microsoft.Authorization/roleAssignments/delete",
+            "Microsoft.Authorization/roleAssignments/write",
+            "Microsoft.AzureArcData/register/action",
+            "Microsoft.AzureStackHCI/*/Read",
+            "Microsoft.AzureStackHCI/LogicalNetworks/join/action",
+            "Microsoft.AzureStackHCI/NetworkInterfaces/*",
+            "Microsoft.AzureStackHCI/VirtualHardDisks/*",
+            "Microsoft.AzureStackHCI/VirtualMachineInstances/Write",
+            "Microsoft.AzureStackHCI/VirtualMachines/Write",
+            "Microsoft.DataReplication/*/read",
+            "Microsoft.DataReplication/register/action",
+            "Microsoft.DataReplication/replicationFabrics/*",
+            "Microsoft.DataReplication/replicationVaults/*",
+            "Microsoft.DependencyMap/*",
+            "Microsoft.ExtendedLocation/customLocations/read",
+            "Microsoft.GuestConfiguration/register/action",
+            "Microsoft.HybridCompute/machines/delete",
+            "Microsoft.HybridCompute/machines/read",
+            "Microsoft.HybridCompute/machines/write",
+            "Microsoft.HybridCompute/register/action",
+            "Microsoft.HybridConnectivity/register/action",
+            "Microsoft.Insights/alertRules/*",
+            "Microsoft.KeyVault/checkNameAvailability/read",
+            "Microsoft.KeyVault/register/action",
+            "Microsoft.KeyVault/vaults/*",
+            "Microsoft.KubernetesConfiguration/extensions/read",
+            "Microsoft.Migrate/*",
+            "Microsoft.MySQLDiscovery/*",
+            "Microsoft.Network/privateDnsZones/A/write",
+            "Microsoft.Network/privateDnsZones/join/action",
+            "Microsoft.Network/privateDnsZones/virtualNetworkLinks/write",
+            "Microsoft.Network/privateDnsZones/write",
+            "Microsoft.Network/privateEndpoints/privateDnsZoneGroups/read",
+            "Microsoft.Network/privateEndpoints/privateDnsZoneGroups/write",
+            "Microsoft.Network/privateEndpoints/read",
+            "Microsoft.Network/privateEndpoints/write",
+            "Microsoft.Network/register/action",
+            "Microsoft.Network/virtualNetworks/join/action",
+            "Microsoft.Network/virtualNetworks/read",
+            "Microsoft.Network/virtualNetworks/subnets/join/action",
+            "Microsoft.Network/virtualNetworks/subnets/read",
+            "Microsoft.Network/virtualNetworks/subnets/write",
+            "Microsoft.OffAzure/*",
+            "Microsoft.RecoveryServices/operations/read",
+            "Microsoft.RecoveryServices/register/action",
+            "Microsoft.RecoveryServices/vaults/*",
+            "Microsoft.ResourceConnector/appliances/read",
+            "Microsoft.Resources/checkResourceName/action",
+            "Microsoft.Resources/deploymentScripts/read",
+            "Microsoft.Resources/deploymentScripts/write",
+            "Microsoft.Resources/deployments/*",
+            "Microsoft.Resources/deployments/validate/action",
+            "Microsoft.Resources/links/read",
+            "Microsoft.Resources/links/write",
+            "Microsoft.Resources/subscriptions/locations/read",
+            "Microsoft.Resources/subscriptions/read",
+            "Microsoft.Resources/subscriptions/resourceGroups/read",
+            "Microsoft.Resources/subscriptions/resourceGroups/write",
+            "Microsoft.Storage/storageAccounts/*",
+            "Microsoft.Support/*"
+        ],
+        "group": "BuiltInRole"
+    },
     "Azure Machine Learning Workspace Connection Secrets Reader": {
         "permissions": [
             "Microsoft.MachineLearningServices/workspaces/connections/listsecrets/action",
@@ -3282,6 +3394,7 @@
         "permissions": [
             "Microsoft.ApplicationMigration/*/read",
             "Microsoft.Authorization/*/read",
+            "Microsoft.DataReplication/replicationVaults/protectedItems/read",
             "Microsoft.Insights/alertRules/*",
             "Microsoft.Migrate/*/read",
             "Microsoft.MySQLDiscovery/*/read",
@@ -6179,7 +6292,44 @@
             "Microsoft.Insights/AlertRules/Read",
             "Microsoft.Insights/AlertRules/Resolved/Action",
             "Microsoft.Insights/AlertRules/Throttled/Action",
-            "Microsoft.Insights/AlertRules/Write"
+            "Microsoft.Insights/AlertRules/Write",
+            "Microsoft.Network/privateEndpoints/privateLinkServiceProxies/read",
+            "Microsoft.Network/virtualNetworks/read",
+            "Microsoft.Network/virtualNetworks/subnets/read",
+            "Microsoft.Resources/deployments/*/read",
+            "Microsoft.Resources/deployments/read",
+            "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Container Registry Connected Registry Administrator": {
+        "permissions": [
+            "Microsoft.ContainerRegistry/registries/connectedRegistries/deactivate/action",
+            "Microsoft.ContainerRegistry/registries/connectedRegistries/delete",
+            "Microsoft.ContainerRegistry/registries/connectedRegistries/read",
+            "Microsoft.ContainerRegistry/registries/connectedRegistries/resync/action",
+            "Microsoft.ContainerRegistry/registries/connectedRegistries/write",
+            "Microsoft.ContainerRegistry/registries/generateCredentials/action",
+            "Microsoft.ContainerRegistry/registries/read",
+            "Microsoft.ContainerRegistry/registries/scopeMaps/delete",
+            "Microsoft.ContainerRegistry/registries/scopeMaps/operationStatuses/read",
+            "Microsoft.ContainerRegistry/registries/scopeMaps/read",
+            "Microsoft.ContainerRegistry/registries/scopeMaps/write",
+            "Microsoft.ContainerRegistry/registries/tokens/delete",
+            "Microsoft.ContainerRegistry/registries/tokens/operationStatuses/read",
+            "Microsoft.ContainerRegistry/registries/tokens/read",
+            "Microsoft.ContainerRegistry/registries/tokens/write"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Container Registry Connected Registry Reader": {
+        "permissions": [
+            "Microsoft.ContainerRegistry/registries/connectedRegistries/read",
+            "Microsoft.ContainerRegistry/registries/read",
+            "Microsoft.ContainerRegistry/registries/scopeMaps/operationStatuses/read",
+            "Microsoft.ContainerRegistry/registries/scopeMaps/read",
+            "Microsoft.ContainerRegistry/registries/tokens/operationStatuses/read",
+            "Microsoft.ContainerRegistry/registries/tokens/read"
         ],
         "group": "BuiltInRole"
     },
@@ -6233,13 +6383,16 @@
             "Microsoft.Insights/AlertRules/Resolved/Action",
             "Microsoft.Insights/AlertRules/Throttled/Action",
             "Microsoft.Insights/AlertRules/Write",
+            "Microsoft.Network/privateEndpoints/privateLinkServiceProxies/delete",
+            "Microsoft.Network/privateEndpoints/privateLinkServiceProxies/read",
             "Microsoft.Network/privateEndpoints/privateLinkServiceProxies/write",
             "Microsoft.Network/virtualNetworks/read",
             "Microsoft.Network/virtualNetworks/subnets/joinViaServiceEndpoint/action",
             "Microsoft.Network/virtualNetworks/subnets/read",
             "Microsoft.Network/virtualNetworks/subnets/write",
             "Microsoft.Resources/deployments/*",
-            "Microsoft.Resources/subscriptions/resourceGroups/read"
+            "Microsoft.Resources/subscriptions/resourceGroups/read",
+            "Microsoft.Support/*"
         ],
         "group": "BuiltInRole"
     },
@@ -7108,25 +7261,8 @@
     },
     "Defender Unified RBAC Scoped Reader": {
         "permissions": [
-            "Microsoft.Authorization/*/read",
-            "Microsoft.Insights/workbooks/read",
-            "Microsoft.OperationalInsights/querypacks/*/read",
-            "Microsoft.OperationalInsights/workspaces/*/read",
-            "Microsoft.OperationalInsights/workspaces/LinkedServices/read",
-            "Microsoft.OperationalInsights/workspaces/analytics/query/action",
-            "Microsoft.OperationalInsights/workspaces/dataSources/read",
-            "Microsoft.OperationalInsights/workspaces/query/*/read",
             "Microsoft.OperationalInsights/workspaces/query/read",
-            "Microsoft.OperationalInsights/workspaces/read",
-            "Microsoft.OperationalInsights/workspaces/savedSearches/read",
-            "Microsoft.OperationsManagement/solutions/read",
-            "Microsoft.Resources/deployments/*",
-            "Microsoft.Resources/subscriptions/resourceGroups/read",
-            "Microsoft.Resources/templateSpecs/*/read",
-            "Microsoft.SecurityInsights/*/read",
-            "Microsoft.SecurityInsights/dataConnectorsCheckRequirements/action",
-            "Microsoft.SecurityInsights/threatIntelligence/indicators/query/action",
-            "Microsoft.SecurityInsights/threatIntelligence/queryIndicators/action"
+            "Microsoft.OperationalInsights/workspaces/read"
         ],
         "group": "BuiltInRole"
     },
@@ -8451,6 +8587,12 @@
     },
     "Genome EndUser": {
         "permissions": [],
+        "group": "BuiltInRole"
+    },
+    "Genome SuperAdmin": {
+        "permissions": [
+            "Microsoft.Genome/*"
+        ],
         "group": "BuiltInRole"
     },
     "GeoCatalog Administrator": {
@@ -9795,7 +9937,7 @@
         ],
         "group": "BuiltInRole"
     },
-    "Logic Apps Standard Operator (Preview)": {
+    "Logic Apps Standard Operator": {
         "permissions": [
             "Microsoft.Authorization/*/read",
             "Microsoft.Insights/alertRules/*",
@@ -11040,7 +11182,12 @@
             "Microsoft.EnterpriseSupport/enterpriseSupports/delete",
             "Microsoft.EnterpriseSupport/enterpriseSupports/read",
             "Microsoft.EnterpriseSupport/enterpriseSupports/write",
+            "Microsoft.EnterpriseSupport/operationStatuses/read",
             "Microsoft.EnterpriseSupport/register/action",
+            "Microsoft.EnterpriseSupport/supportPlans/cancel/action",
+            "Microsoft.EnterpriseSupport/supportPlans/delete",
+            "Microsoft.EnterpriseSupport/supportPlans/read",
+            "Microsoft.EnterpriseSupport/supportPlans/write",
             "Microsoft.Hardware/orderPreview/action",
             "Microsoft.Hardware/orders/delete",
             "Microsoft.Hardware/orders/read",
@@ -11054,6 +11201,10 @@
             "Microsoft.ProfessionalService/resources/delete",
             "Microsoft.ProfessionalService/resources/read",
             "Microsoft.ProfessionalService/resources/write",
+            "Microsoft.ProgramEnrollment/eduEnrollments/delete",
+            "Microsoft.ProgramEnrollment/eduEnrollments/read",
+            "Microsoft.ProgramEnrollment/eduEnrollments/write",
+            "Microsoft.ProgramEnrollment/register/action",
             "Microsoft.Resources/subscriptions/resourceGroups/read",
             "Microsoft.SaaS/register/action",
             "Microsoft.SaaS/resources/delete",
@@ -11123,7 +11274,9 @@
             "Microsoft.EnterpriseSupport/enterpriseSupports/delete",
             "Microsoft.EnterpriseSupport/enterpriseSupports/read",
             "Microsoft.EnterpriseSupport/enterpriseSupports/write",
+            "Microsoft.EnterpriseSupport/operationStatuses/read",
             "Microsoft.EnterpriseSupport/register/action",
+            "Microsoft.EnterpriseSupport/supportPlans/cancel/action",
             "Microsoft.EnterpriseSupport/supportPlans/delete",
             "Microsoft.EnterpriseSupport/supportPlans/read",
             "Microsoft.EnterpriseSupport/supportPlans/write",
@@ -11140,6 +11293,10 @@
             "Microsoft.ProfessionalService/resources/delete",
             "Microsoft.ProfessionalService/resources/read",
             "Microsoft.ProfessionalService/resources/write",
+            "Microsoft.ProgramEnrollment/eduEnrollments/delete",
+            "Microsoft.ProgramEnrollment/eduEnrollments/read",
+            "Microsoft.ProgramEnrollment/eduEnrollments/write",
+            "Microsoft.ProgramEnrollment/register/action",
             "Microsoft.Resources/subscriptions/resourceGroups/read",
             "Microsoft.Resources/subscriptions/resourceGroups/write",
             "Microsoft.SaaS/register/action",
@@ -11378,12 +11535,6 @@
             "Microsoft.PolicyInsights/*",
             "Microsoft.Resources/deployments/*",
             "Microsoft.Support/*"
-        ],
-        "group": "BuiltInRole"
-    },
-    "ResourceBuilder Contributor": {
-        "permissions": [
-            "Microsoft.ResourceBuilder/registeredSubscriptions/read"
         ],
         "group": "BuiltInRole"
     },
@@ -12429,6 +12580,22 @@
         ],
         "group": "BuiltInRole"
     },
+    "Storage File Backup Contributor": {
+        "permissions": [
+            "Microsoft.Authorization/denyAssignments/read",
+            "Microsoft.Authorization/permissions/read",
+            "Microsoft.Authorization/roleAssignments/read",
+            "Microsoft.Authorization/roleDefinitions/read",
+            "Microsoft.Storage/storageAccounts/fileServices/read",
+            "Microsoft.Storage/storageAccounts/fileServices/shares/delete",
+            "Microsoft.Storage/storageAccounts/fileServices/shares/lease/action",
+            "Microsoft.Storage/storageAccounts/fileServices/shares/read",
+            "Microsoft.Storage/storageAccounts/fileServices/shares/write",
+            "Microsoft.Storage/storageAccounts/fileServices/write",
+            "Microsoft.Storage/storageAccounts/read"
+        ],
+        "group": "BuiltInRole"
+    },
     "Storage File Data Privileged Contributor": {
         "permissions": [],
         "group": "BuiltInRole"
@@ -12464,6 +12631,17 @@
     "Storage File Delegator": {
         "permissions": [
             "Microsoft.Storage/storageAccounts/fileServices/generateUserDelegationKey/action"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Storage File Restore Contributor": {
+        "permissions": [
+            "Microsoft.Authorization/denyAssignments/read",
+            "Microsoft.Authorization/permissions/read",
+            "Microsoft.Authorization/roleAssignments/read",
+            "Microsoft.Authorization/roleDefinitions/read",
+            "Microsoft.Storage/storageAccounts/fileServices/shares/read",
+            "Microsoft.Storage/storageAccounts/read"
         ],
         "group": "BuiltInRole"
     },
