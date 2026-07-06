@@ -888,6 +888,15 @@
     "Microsoft.App/managedenvironments/read": {
         "Container Apps Jobs Reader": 3
     },
+    "Microsoft.App/sandboxGroups/*/delete": {
+        "Container Apps SandboxGroup Contributor": 3
+    },
+    "Microsoft.App/sandboxGroups/*/read": {
+        "Container Apps SandboxGroup Contributor": 3
+    },
+    "Microsoft.App/sandboxGroups/*/write": {
+        "Container Apps SandboxGroup Contributor": 3
+    },
     "Microsoft.App/sessionPools/*/action": {
         "Container Apps SessionPools Contributor": 15
     },
@@ -1453,6 +1462,8 @@
         "Storage Actions Task Assignment Contributor": 13,
         "Storage Connector Contributor": 15,
         "Storage DataShare Contributor": 13,
+        "Storage File Backup Contributor": 10,
+        "Storage File Restore Contributor": 3,
         "Stream Analytics Contributor": 5,
         "Stream Analytics Reader": 9,
         "Supercomputer Infrastructure Contributor": 5,
@@ -1477,9 +1488,7 @@
         "Operator Nexus Compute Contributor Role (Preview)": 91
     },
     "Microsoft.Authorization/denyAssignments/read": {
-        "Operator Nexus Compute Contributor Role (Preview)": 91,
-        "Storage File Backup Contributor": 11,
-        "Storage File Restore Contributor": 6
+        "Operator Nexus Compute Contributor Role (Preview)": 91
     },
     "Microsoft.Authorization/diagnosticSettings/read": {
         "Operator Nexus Compute Contributor Role (Preview)": 91
@@ -1494,7 +1503,8 @@
         "Azure Migrate Execute Expert": 45,
         "Azure Migrate Owner": 68,
         "Locks Contributor": 3,
-        "Storage Account Backup Contributor": 18
+        "Storage Account Backup Contributor": 18,
+        "Storage File Backup Contributor": 10
     },
     "Microsoft.Authorization/locks/read": {
         "Locks Contributor": 3,
@@ -1508,15 +1518,14 @@
         "Azure Migrate Execute Expert": 45,
         "Azure Migrate Owner": 68,
         "Locks Contributor": 3,
-        "Storage Account Backup Contributor": 18
+        "Storage Account Backup Contributor": 18,
+        "Storage File Backup Contributor": 10
     },
     "Microsoft.Authorization/operations/read": {
         "Operator Nexus Compute Contributor Role (Preview)": 91
     },
     "Microsoft.Authorization/permissions/read": {
-        "Operator Nexus Compute Contributor Role (Preview)": 91,
-        "Storage File Backup Contributor": 11,
-        "Storage File Restore Contributor": 6
+        "Operator Nexus Compute Contributor Role (Preview)": 91
     },
     "Microsoft.Authorization/policyAssignments/*": {
         "Security Admin": 14
@@ -1650,9 +1659,7 @@
         "Microsoft Sentinel Business Applications Agent Operator": 7,
         "Operator Nexus Compute Contributor Role (Preview)": 91,
         "Reservation Purchaser": 11,
-        "Savings plan Purchaser": 10,
-        "Storage File Backup Contributor": 11,
-        "Storage File Restore Contributor": 6
+        "Savings plan Purchaser": 10
     },
     "Microsoft.Authorization/roleAssignments/write": {
         "Azure Container Storage Contributor": 12,
@@ -1703,9 +1710,7 @@
         "Cognitive Services Speech User": 3,
         "Elastic SAN Reader": 5,
         "Elastic SAN Volume Group Owner": 4,
-        "Operator Nexus Compute Contributor Role (Preview)": 91,
-        "Storage File Backup Contributor": 11,
-        "Storage File Restore Contributor": 6
+        "Operator Nexus Compute Contributor Role (Preview)": 91
     },
     "Microsoft.Authorization/roleEligibilityScheduleInstances/read": {
         "Operator Nexus Compute Contributor Role (Preview)": 91
@@ -15093,14 +15098,14 @@
         "Azure Center for SAP solutions service role": 55,
         "Azure File Sync Administrator": 15,
         "Azure Red Hat OpenShift File Storage Operator": 30,
-        "Storage File Backup Contributor": 11
+        "Storage File Backup Contributor": 10
     },
     "Microsoft.Storage/storageAccounts/fileServices/shares/delete": {
         "Azure Red Hat OpenShift File Storage Operator": 30,
-        "Storage File Backup Contributor": 11
+        "Storage File Backup Contributor": 10
     },
     "Microsoft.Storage/storageAccounts/fileServices/shares/lease/action": {
-        "Storage File Backup Contributor": 11
+        "Storage File Backup Contributor": 10
     },
     "Microsoft.Storage/storageAccounts/fileServices/shares/read": {
         "Azure Center for SAP solutions administrator": 57,
@@ -15112,17 +15117,17 @@
         "Defender Storage Malware Data Scanner": 2,
         "Defender Storage Malware Operator": 14,
         "Defender for Storage Data Scanner": 3,
-        "Storage File Backup Contributor": 11,
-        "Storage File Restore Contributor": 6
+        "Storage File Backup Contributor": 10,
+        "Storage File Restore Contributor": 3
     },
     "Microsoft.Storage/storageAccounts/fileServices/shares/write": {
         "Azure Center for SAP solutions service role": 55,
         "Azure Red Hat OpenShift File Storage Operator": 30,
-        "Storage File Backup Contributor": 11
+        "Storage File Backup Contributor": 10
     },
     "Microsoft.Storage/storageAccounts/fileServices/write": {
         "Azure Center for SAP solutions service role": 55,
-        "Storage File Backup Contributor": 11
+        "Storage File Backup Contributor": 10
     },
     "Microsoft.Storage/storageAccounts/fileservices/write": {
         "App Compliance Automation Administrator": 28
@@ -15215,8 +15220,8 @@
         "Storage Actions Task Assignment Contributor": 13,
         "Storage Connector Contributor": 15,
         "Storage DataShare Contributor": 13,
-        "Storage File Backup Contributor": 11,
-        "Storage File Restore Contributor": 6,
+        "Storage File Backup Contributor": 10,
+        "Storage File Restore Contributor": 3,
         "VM Restore Operator": 41,
         "Virtual Machine Contributor": 45
     },

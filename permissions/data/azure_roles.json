@@ -6217,6 +6217,14 @@
         ],
         "group": "BuiltInRole"
     },
+    "Container Apps SandboxGroup Contributor": {
+        "permissions": [
+            "Microsoft.App/sandboxGroups/*/delete",
+            "Microsoft.App/sandboxGroups/*/read",
+            "Microsoft.App/sandboxGroups/*/write"
+        ],
+        "group": "BuiltInRole"
+    },
     "Container Apps SandboxGroup Data Owner": {
         "permissions": [],
         "group": "BuiltInRole"
@@ -12582,10 +12590,9 @@
     },
     "Storage File Backup Contributor": {
         "permissions": [
-            "Microsoft.Authorization/denyAssignments/read",
-            "Microsoft.Authorization/permissions/read",
-            "Microsoft.Authorization/roleAssignments/read",
-            "Microsoft.Authorization/roleDefinitions/read",
+            "Microsoft.Authorization/*/read",
+            "Microsoft.Authorization/locks/delete",
+            "Microsoft.Authorization/locks/write",
             "Microsoft.Storage/storageAccounts/fileServices/read",
             "Microsoft.Storage/storageAccounts/fileServices/shares/delete",
             "Microsoft.Storage/storageAccounts/fileServices/shares/lease/action",
@@ -12636,10 +12643,7 @@
     },
     "Storage File Restore Contributor": {
         "permissions": [
-            "Microsoft.Authorization/denyAssignments/read",
-            "Microsoft.Authorization/permissions/read",
-            "Microsoft.Authorization/roleAssignments/read",
-            "Microsoft.Authorization/roleDefinitions/read",
+            "Microsoft.Authorization/*/read",
             "Microsoft.Storage/storageAccounts/fileServices/shares/read",
             "Microsoft.Storage/storageAccounts/read"
         ],
