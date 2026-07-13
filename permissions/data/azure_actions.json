@@ -1249,8 +1249,8 @@
         "Cognitive Services Contributor": 18,
         "Collaborative Data Contributor": 13,
         "Collaborative Runtime Operator": 8,
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Community Reader Role": 20,
         "Compute Diagnostics Role": 3,
         "Compute Fleet Contributor": 6,
@@ -1394,10 +1394,10 @@
         "Logic App Contributor": 21,
         "Logic App Operator": 17,
         "Logic Apps Hybrid Contributor": 18,
-        "Logic Apps Standard Contributor (Preview)": 13,
-        "Logic Apps Standard Developer (Preview)": 25,
+        "Logic Apps Standard Contributor": 13,
+        "Logic Apps Standard Developer": 25,
         "Logic Apps Standard Operator": 19,
-        "Logic Apps Standard Reader (Preview)": 7,
+        "Logic Apps Standard Reader": 7,
         "Managed Identity Contributor": 12,
         "Managed Identity Federated Identity Credential Contributor": 8,
         "Managed Identity Operator": 7,
@@ -4962,6 +4962,18 @@
         "Recurring Scheduled Actions Contributor": 17,
         "Scheduled Actions Contributor": 26
     },
+    "Microsoft.ConfidentialLedger/ledgers/delete": {
+        "Confidential Ledger Contributor": 4
+    },
+    "Microsoft.ConfidentialLedger/ledgers/filesExport/action": {
+        "Confidential Ledger Contributor": 4
+    },
+    "Microsoft.ConfidentialLedger/ledgers/read": {
+        "Confidential Ledger Contributor": 4
+    },
+    "Microsoft.ConfidentialLedger/ledgers/write": {
+        "Confidential Ledger Contributor": 4
+    },
     "Microsoft.Confluent/agreements/write": {
         "Microsoft Confluent Contributor role": 25
     },
@@ -7492,8 +7504,8 @@
         "Azure AI Administrator": 39,
         "Backup MUA Admin": 26,
         "Cognitive Services Contributor": 18,
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Community Reader Role": 20,
         "Defender Kubernetes API Access": 11,
         "Enclave Approver Role": 34,
@@ -7507,8 +7519,8 @@
         "Azure AI Administrator": 39,
         "Backup MUA Admin": 26,
         "Cognitive Services Contributor": 18,
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Community Reader Role": 20,
         "CrossConnectionManager": 3,
         "CrossConnectionReader": 3,
@@ -8909,10 +8921,10 @@
         "Log Analytics Contributor": 13,
         "Logic App Contributor": 21,
         "Logic Apps Hybrid Contributor": 18,
-        "Logic Apps Standard Contributor (Preview)": 13,
-        "Logic Apps Standard Developer (Preview)": 25,
+        "Logic Apps Standard Contributor": 13,
+        "Logic Apps Standard Developer": 25,
         "Logic Apps Standard Operator": 19,
-        "Logic Apps Standard Reader (Preview)": 7,
+        "Logic Apps Standard Reader": 7,
         "Managed Identity Contributor": 12,
         "Managed Identity Federated Identity Credential Contributor": 8,
         "Managed Identity Operator": 7,
@@ -8938,8 +8950,6 @@
         "SQL Managed Instance Contributor": 15,
         "SQL Security Manager": 65,
         "SQL Server Contributor": 10,
-        "SRE Agent Author": 3,
-        "SRE Agent Reader": 3,
         "Scheduled Actions Contributor": 26,
         "Scheduler Job Collections Contributor": 7,
         "Search Service Contributor": 7,
@@ -8988,8 +8998,8 @@
         "Azure Managed Redis Reader": 9,
         "Azure Monitor Pipeline Reader": 5,
         "Cognitive Services User": 13,
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Desktop Virtualization Application Group Reader": 9,
         "Desktop Virtualization Host Pool Reader": 7,
         "Desktop Virtualization Reader": 6,
@@ -9002,6 +9012,8 @@
         "GroupQuota Request Operator": 10,
         "Operator Nexus Compute Contributor Role (Preview)": 91,
         "SRE Agent Administrator": 6,
+        "SRE Agent Author": 3,
+        "SRE Agent Reader": 3,
         "SRE Agent Standard User": 3,
         "Security Reader": 14
     },
@@ -10104,23 +10116,23 @@
         "Azure Migrate Service Reader": 12
     },
     "Microsoft.Mission/Locations/OperationStatuses/read": {
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Community Reader Role": 20,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Virtual Enclave Owner Role": 10
     },
     "Microsoft.Mission/Locations/OperationStatuses/write": {
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Virtual Enclave Owner Role": 10
     },
     "Microsoft.Mission/Operations/read": {
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Community Reader Role": 20,
         "Enclave Approver Role": 34,
         "Enclave Contributor Role": 31,
@@ -10129,15 +10141,15 @@
         "Virtual Enclave Owner Role": 10
     },
     "Microsoft.Mission/approvals/delete": {
-        "Community Owner Role": 42,
+        "Community Owner Role": 43,
         "Enclave Owner Role": 38
     },
     "Microsoft.Mission/approvals/initiatorCallback/action": {
         "Enclave Approver Role": 34
     },
     "Microsoft.Mission/approvals/read": {
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Community Reader Role": 20,
         "Enclave Approver Role": 34,
         "Enclave Contributor Role": 31,
@@ -10145,8 +10157,8 @@
         "Enclave Reader Role": 20
     },
     "Microsoft.Mission/approvals/write": {
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Enclave Approver Role": 34,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38
@@ -10155,11 +10167,11 @@
         "Enclave Approver Role": 34
     },
     "Microsoft.Mission/communities/communityEndpoints/delete": {
-        "Community Owner Role": 42
+        "Community Owner Role": 43
     },
     "Microsoft.Mission/communities/communityEndpoints/read": {
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Community Reader Role": 20,
         "Enclave Approver Role": 34,
         "Enclave Contributor Role": 31,
@@ -10167,31 +10179,31 @@
         "Enclave Reader Role": 20
     },
     "Microsoft.Mission/communities/communityEndpoints/write": {
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43
     },
     "Microsoft.Mission/communities/communityendpoints/connect/action": {
-        "Community Owner Role": 42,
+        "Community Owner Role": 43,
         "Enclave Approver Role": 34
     },
     "Microsoft.Mission/communities/dedicatedHubs/connect/action": {
-        "Community Owner Role": 42
+        "Community Owner Role": 43
     },
     "Microsoft.Mission/communities/dedicatedHubs/delete": {
-        "Community Owner Role": 42
+        "Community Owner Role": 43
     },
     "Microsoft.Mission/communities/dedicatedHubs/read": {
-        "Community Owner Role": 42
+        "Community Owner Role": 43
     },
     "Microsoft.Mission/communities/dedicatedHubs/write": {
-        "Community Owner Role": 42
+        "Community Owner Role": 43
     },
     "Microsoft.Mission/communities/delete": {
-        "Community Owner Role": 42
+        "Community Owner Role": 43
     },
     "Microsoft.Mission/communities/read": {
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Community Reader Role": 20,
         "Enclave Approver Role": 34,
         "Enclave Contributor Role": 31,
@@ -10200,15 +10212,19 @@
         "Virtual Enclave Owner Role": 10
     },
     "Microsoft.Mission/communities/setMaintenanceMode/action": {
-        "Community Owner Role": 42,
+        "Community Owner Role": 43,
         "Enclave Approver Role": 34
     },
+    "Microsoft.Mission/communities/syncCommunityEndpoints/action": {
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43
+    },
     "Microsoft.Mission/communities/transitHubs/delete": {
-        "Community Owner Role": 42
+        "Community Owner Role": 43
     },
     "Microsoft.Mission/communities/transitHubs/read": {
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Community Reader Role": 20,
         "Enclave Approver Role": 34,
         "Enclave Contributor Role": 31,
@@ -10216,12 +10232,12 @@
         "Enclave Reader Role": 20
     },
     "Microsoft.Mission/communities/transitHubs/write": {
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43
     },
     "Microsoft.Mission/communities/write": {
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43
     },
     "Microsoft.Mission/enclaveConnections/approvalCallback/action": {
         "Enclave Approver Role": 34
@@ -10230,8 +10246,8 @@
         "Enclave Owner Role": 38
     },
     "Microsoft.Mission/enclaveConnections/read": {
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Community Reader Role": 20,
         "Enclave Approver Role": 34,
         "Enclave Contributor Role": 31,
@@ -10247,20 +10263,20 @@
         "Enclave Owner Role": 38
     },
     "Microsoft.Mission/register/action": {
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Enclave Contributor Role": 31
     },
     "Microsoft.Mission/unregister/action": {
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Enclave Contributor Role": 31
     },
     "Microsoft.Mission/virtualEnclaves/approvalCallback/action": {
         "Enclave Approver Role": 34
     },
     "Microsoft.Mission/virtualEnclaves/delete": {
-        "Community Owner Role": 42,
+        "Community Owner Role": 43,
         "Enclave Owner Role": 38,
         "Virtual Enclave Owner Role": 10
     },
@@ -10275,8 +10291,8 @@
         "Enclave Owner Role": 38
     },
     "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/read": {
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Community Reader Role": 20,
         "Enclave Approver Role": 34,
         "Enclave Contributor Role": 31,
@@ -10288,19 +10304,19 @@
         "Enclave Owner Role": 38
     },
     "Microsoft.Mission/virtualEnclaves/endpoints/read": {
-        "Community Contributor Role": 32,
+        "Community Contributor Role": 33,
         "Community Reader Role": 20,
         "Enclave Approver Role": 34,
         "Enclave Contributor Role": 31,
         "Enclave Reader Role": 20
     },
     "Microsoft.Mission/virtualEnclaves/endpoints/write": {
-        "Community Contributor Role": 32,
+        "Community Contributor Role": 33,
         "Enclave Contributor Role": 31
     },
     "Microsoft.Mission/virtualEnclaves/read": {
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Community Reader Role": 20,
         "Enclave Approver Role": 34,
         "Enclave Contributor Role": 31,
@@ -10321,13 +10337,13 @@
         "Enclave Owner Role": 38
     },
     "Microsoft.Mission/virtualEnclaves/workloads/delete": {
-        "Community Owner Role": 42,
+        "Community Owner Role": 43,
         "Enclave Owner Role": 38,
         "Virtual Enclave Owner Role": 10
     },
     "Microsoft.Mission/virtualEnclaves/workloads/read": {
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Community Reader Role": 20,
         "Enclave Approver Role": 34,
         "Enclave Contributor Role": 31,
@@ -10336,15 +10352,15 @@
         "Virtual Enclave Owner Role": 10
     },
     "Microsoft.Mission/virtualEnclaves/workloads/write": {
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Virtual Enclave Owner Role": 10
     },
     "Microsoft.Mission/virtualEnclaves/write": {
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Virtual Enclave Owner Role": 10
@@ -12661,8 +12677,8 @@
         "ClearDB MySQL DB Contributor": 7,
         "Cognitive Services Contributor": 18,
         "Cognitive Services User": 13,
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Community Reader Role": 20,
         "Compute Fleet Contributor": 6,
         "Cosmos DB Operator": 8,
@@ -13154,10 +13170,10 @@
         "HDInsight on AKS Cluster Operator": 28,
         "HDInsight on AKS Cluster Pool Admin": 29,
         "Logic App Operator": 17,
-        "Logic Apps Standard Contributor (Preview)": 13,
-        "Logic Apps Standard Developer (Preview)": 25,
+        "Logic Apps Standard Contributor": 13,
+        "Logic Apps Standard Developer": 25,
         "Logic Apps Standard Operator": 19,
-        "Logic Apps Standard Reader (Preview)": 7,
+        "Logic Apps Standard Reader": 7,
         "Nexus Network Fabric Service Reader": 7,
         "Operator Nexus Compute Contributor Role (Preview)": 91,
         "Windows 365 Network Interface Contributor": 15
@@ -13204,8 +13220,8 @@
         "Azure Stack HCI VM Reader": 42,
         "CDN Endpoint Reader": 9,
         "CDN Profile Reader": 11,
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Container Apps ConnectedEnvironments Reader": 6,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
         "ContainerApp Reader": 6,
@@ -13294,8 +13310,8 @@
         "Azure Monitor Dashboards with Grafana Contributor": 15,
         "Azure Stack HCI Edge Machine Contributor Role": 21,
         "Azure Stack HCI VM Contributor": 75,
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Domain Services Contributor": 69,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
@@ -13370,8 +13386,8 @@
         "Backup MUA Admin": 26,
         "Cognitive Services Contributor": 18,
         "Cognitive Services User": 13,
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Community Reader Role": 20,
         "Connector Namespace Contributor": 13,
         "Connector Namespace Developer": 10,
@@ -13392,10 +13408,10 @@
         "Kubernetes Cluster - Azure Arc Onboarding": 13,
         "Logic App Contributor": 21,
         "Logic App Operator": 17,
-        "Logic Apps Standard Contributor (Preview)": 13,
-        "Logic Apps Standard Developer (Preview)": 25,
+        "Logic Apps Standard Contributor": 13,
+        "Logic Apps Standard Developer": 25,
         "Logic Apps Standard Operator": 19,
-        "Logic Apps Standard Reader (Preview)": 7,
+        "Logic Apps Standard Reader": 7,
         "ToolchainOrchestrator Admin Role": 6,
         "ToolchainOrchestrator Viewer Role": 6,
         "Windows365SubscriptionReader": 3
@@ -13456,8 +13472,8 @@
         "CloudTest Contributor Role": 23,
         "Cognitive Services Contributor": 18,
         "Cognitive Services User": 13,
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Community Reader Role": 20,
         "Cost Management Contributor": 10,
         "Cost Management Reader": 10,
@@ -13647,8 +13663,8 @@
         "Cognitive Services User": 13,
         "Collaborative Data Contributor": 13,
         "Collaborative Runtime Operator": 8,
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Community Reader Role": 20,
         "Compute Fleet Contributor": 6,
         "Compute Gallery Artifacts Publisher": 11,
@@ -13783,10 +13799,10 @@
         "LocalRulestacksAdministrator role": 11,
         "Logic App Contributor": 21,
         "Logic App Operator": 17,
-        "Logic Apps Standard Contributor (Preview)": 13,
-        "Logic Apps Standard Developer (Preview)": 25,
+        "Logic Apps Standard Contributor": 13,
+        "Logic Apps Standard Developer": 25,
         "Logic Apps Standard Operator": 19,
-        "Logic Apps Standard Reader (Preview)": 7,
+        "Logic Apps Standard Reader": 7,
         "Managed Identity Contributor": 12,
         "Managed Identity Federated Identity Credential Contributor": 8,
         "Managed Identity Operator": 7,
@@ -13960,8 +13976,8 @@
         "Azure Stack HCI Edge Machine Contributor Role": 21,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
-        "Community Contributor Role": 32,
-        "Community Owner Role": 42,
+        "Community Contributor Role": 33,
+        "Community Owner Role": 43,
         "Community Reader Role": 20,
         "Enclave Approver Role": 34,
         "Enclave Contributor Role": 31,
@@ -15448,10 +15464,10 @@
         "Log Analytics Reader": 4,
         "Logic App Contributor": 21,
         "Logic App Operator": 17,
-        "Logic Apps Standard Contributor (Preview)": 13,
-        "Logic Apps Standard Developer (Preview)": 25,
+        "Logic Apps Standard Contributor": 13,
+        "Logic Apps Standard Developer": 25,
         "Logic Apps Standard Operator": 19,
-        "Logic Apps Standard Reader (Preview)": 7,
+        "Logic Apps Standard Reader": 7,
         "Managed Identity Contributor": 12,
         "Managed Identity Operator": 7,
         "Microsoft Discovery Platform Administrator (Preview)": 13,
@@ -15594,26 +15610,26 @@
         "Video Indexer Account Contributor": 16
     },
     "Microsoft.Web/*/read": {
-        "Logic Apps Standard Contributor (Preview)": 13,
-        "Logic Apps Standard Developer (Preview)": 25,
+        "Logic Apps Standard Contributor": 13,
+        "Logic Apps Standard Developer": 25,
         "Logic Apps Standard Operator": 19,
-        "Logic Apps Standard Reader (Preview)": 7
+        "Logic Apps Standard Reader": 7
     },
     "Microsoft.Web/certificates/*": {
-        "Logic Apps Standard Contributor (Preview)": 13,
+        "Logic Apps Standard Contributor": 13,
         "Website Contributor": 13
     },
     "Microsoft.Web/connectionGateways/*": {
         "Logic App Contributor": 21,
-        "Logic Apps Standard Contributor (Preview)": 13
+        "Logic Apps Standard Contributor": 13
     },
     "Microsoft.Web/connectionGateways/*/read": {
         "Logic App Operator": 17
     },
     "Microsoft.Web/connections/*": {
         "Logic App Contributor": 21,
-        "Logic Apps Standard Contributor (Preview)": 13,
-        "Logic Apps Standard Developer (Preview)": 25
+        "Logic Apps Standard Contributor": 13,
+        "Logic Apps Standard Developer": 25
     },
     "Microsoft.Web/connections/*/read": {
         "Logic App Operator": 17
@@ -15659,8 +15675,8 @@
     },
     "Microsoft.Web/customApis/*": {
         "Logic App Contributor": 21,
-        "Logic Apps Standard Contributor (Preview)": 13,
-        "Logic Apps Standard Developer (Preview)": 25
+        "Logic Apps Standard Contributor": 13,
+        "Logic Apps Standard Developer": 25
     },
     "Microsoft.Web/customApis/*/read": {
         "Logic App Operator": 17
@@ -15678,7 +15694,7 @@
         "Website Contributor": 13
     },
     "Microsoft.Web/serverFarms/*": {
-        "Logic Apps Standard Contributor (Preview)": 13,
+        "Logic Apps Standard Contributor": 13,
         "Web Plan Contributor": 9
     },
     "Microsoft.Web/serverFarms/join/action": {
@@ -15695,14 +15711,14 @@
         "Azure Resilience Management Drills Target Resource Contributor": 15
     },
     "Microsoft.Web/sites/*": {
-        "Logic Apps Standard Contributor (Preview)": 13,
+        "Logic Apps Standard Contributor": 13,
         "Website Contributor": 13
     },
     "Microsoft.Web/sites/applySlotConfig/Action": {
         "Logic Apps Standard Operator": 19
     },
     "Microsoft.Web/sites/config/list/Action": {
-        "Logic Apps Standard Developer (Preview)": 25
+        "Logic Apps Standard Developer": 25
     },
     "Microsoft.Web/sites/functions/listSecrets/action": {
         "Logic App Contributor": 21
@@ -15718,7 +15734,7 @@
         "Microsoft Sentinel Automation Contributor": 7
     },
     "Microsoft.Web/sites/publish/Action": {
-        "Logic Apps Standard Developer (Preview)": 25
+        "Logic Apps Standard Developer": 25
     },
     "Microsoft.Web/sites/read": {
         "Azure Resilience Management Drills Target Resource Administrator": 17,
@@ -15732,10 +15748,10 @@
         "Defender Serverless Scanner": 5
     },
     "Microsoft.Web/sites/slots/config/list/Action": {
-        "Logic Apps Standard Developer (Preview)": 25
+        "Logic Apps Standard Developer": 25
     },
     "Microsoft.Web/sites/slots/publish/Action": {
-        "Logic Apps Standard Developer (Preview)": 25
+        "Logic Apps Standard Developer": 25
     },
     "Microsoft.Web/sites/slots/restart/Action": {
         "Logic Apps Standard Operator": 19
@@ -16425,53 +16441,53 @@
         "Defender Settings Contributor": 7
     },
     "microsoft.web/sites/config/Write": {
-        "Logic Apps Standard Developer (Preview)": 25
+        "Logic Apps Standard Developer": 25
     },
     "microsoft.web/sites/config/list/action": {
         "Defender Serverless Scanner": 5
     },
     "microsoft.web/sites/config/web/appsettings/delete": {
-        "Logic Apps Standard Developer (Preview)": 25
+        "Logic Apps Standard Developer": 25
     },
     "microsoft.web/sites/config/web/appsettings/write": {
-        "Logic Apps Standard Developer (Preview)": 25
+        "Logic Apps Standard Developer": 25
     },
     "microsoft.web/sites/deployWorkflowArtifacts/action": {
-        "Logic Apps Standard Developer (Preview)": 25
+        "Logic Apps Standard Developer": 25
     },
     "microsoft.web/sites/hostruntime/*": {
-        "Logic Apps Standard Developer (Preview)": 25,
+        "Logic Apps Standard Developer": 25,
         "Logic Apps Standard Operator": 19
     },
     "microsoft.web/sites/listworkflowsconnections/action": {
-        "Logic Apps Standard Developer (Preview)": 25
+        "Logic Apps Standard Developer": 25
     },
     "microsoft.web/sites/publish/action": {
         "Defender Serverless Scanner": 5
     },
     "microsoft.web/sites/slots/config/appsettings/write": {
-        "Logic Apps Standard Developer (Preview)": 25
+        "Logic Apps Standard Developer": 25
     },
     "microsoft.web/sites/slots/config/list/action": {
         "Defender Serverless Scanner": 5
     },
     "microsoft.web/sites/slots/config/web/appsettings/delete": {
-        "Logic Apps Standard Developer (Preview)": 25
+        "Logic Apps Standard Developer": 25
     },
     "microsoft.web/sites/slots/deployWorkflowArtifacts/action": {
-        "Logic Apps Standard Developer (Preview)": 25
+        "Logic Apps Standard Developer": 25
     },
     "microsoft.web/sites/slots/listworkflowsconnections/action": {
-        "Logic Apps Standard Developer (Preview)": 25
+        "Logic Apps Standard Developer": 25
     },
     "microsoft.web/sites/slots/publish/action": {
         "Defender Serverless Scanner": 5
     },
     "microsoft.web/sites/workflows/*": {
-        "Logic Apps Standard Developer (Preview)": 25
+        "Logic Apps Standard Developer": 25
     },
     "microsoft.web/sites/workflowsconfiguration/*": {
-        "Logic Apps Standard Developer (Preview)": 25
+        "Logic Apps Standard Developer": 25
     },
     "successbricks.cleardb/databases/*": {
         "ClearDB MySQL DB Contributor": 7
