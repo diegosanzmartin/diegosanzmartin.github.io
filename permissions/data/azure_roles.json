@@ -1218,6 +1218,15 @@
         ],
         "group": "BuiltInRole"
     },
+    "Azure AI Manager and Namespace RBAC Inference Operator": {
+        "permissions": [
+            "Microsoft.Authorization/*/read",
+            "Microsoft.Resources/subscriptions/operationresults/read",
+            "Microsoft.Resources/subscriptions/read",
+            "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "group": "BuiltInRole"
+    },
     "Azure AI Safety Evaluator": {
         "permissions": [
             "Microsoft.MachineLearningServices/workspaces/evaluations/*",
@@ -5317,12 +5326,14 @@
             "Microsoft.ChangeSafety/changeRecords/stageProgressions/delete",
             "Microsoft.ChangeSafety/changeRecords/stageProgressions/read",
             "Microsoft.ChangeSafety/changeRecords/stageProgressions/write",
+            "Microsoft.ChangeSafety/changeRecords/verifyChangeValidity/action",
             "Microsoft.ChangeSafety/changeRecords/write",
             "Microsoft.ChangeSafety/changeStates/delete",
             "Microsoft.ChangeSafety/changeStates/read",
             "Microsoft.ChangeSafety/changeStates/stageProgressions/delete",
             "Microsoft.ChangeSafety/changeStates/stageProgressions/read",
             "Microsoft.ChangeSafety/changeStates/stageProgressions/write",
+            "Microsoft.ChangeSafety/changeStates/verifyChangeValidity/action",
             "Microsoft.ChangeSafety/changeStates/write",
             "Microsoft.ChangeSafety/locations/operationstatuses/read",
             "Microsoft.ChangeSafety/locations/operationstatuses/write",
@@ -11393,6 +11404,19 @@
             "Microsoft.ProviderHub/*/read",
             "Microsoft.ResourceHealth/availabilityStatuses/read",
             "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Provisioned Machine Contributor": {
+        "permissions": [
+            "Microsoft.AzureStackHCI/edgeMachines/*"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Provisioned Machine Reader": {
+        "permissions": [
+            "Microsoft.AzureStackHCI/EdgeMachines/jobs/read",
+            "Microsoft.AzureStackHCI/EdgeMachines/read"
         ],
         "group": "BuiltInRole"
     },

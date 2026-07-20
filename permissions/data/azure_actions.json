@@ -1133,6 +1133,7 @@
         "Azure AI Administrator": 39,
         "Azure AI Developer": 7,
         "Azure AI Inference Deployment Operator": 3,
+        "Azure AI Manager and Namespace RBAC Inference Operator": 4,
         "Azure AIManager Contributor": 5,
         "Azure AIManager and namespace RBAC Reader": 4,
         "Azure API Center Service Contributor": 7,
@@ -3117,6 +3118,12 @@
     "Microsoft.AzureStackHCI/EdgeMachines/Read/*": {
         "Microsoft.AzureStackHCI EdgeMachine Reader": 2
     },
+    "Microsoft.AzureStackHCI/EdgeMachines/jobs/read": {
+        "Provisioned Machine Reader": 2
+    },
+    "Microsoft.AzureStackHCI/EdgeMachines/read": {
+        "Provisioned Machine Reader": 2
+    },
     "Microsoft.AzureStackHCI/GalleryImages/Read": {
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42
@@ -3239,6 +3246,9 @@
     },
     "Microsoft.AzureStackHCI/clusters/read": {
         "Azure Kubernetes Service Arc Contributor Role": 37
+    },
+    "Microsoft.AzureStackHCI/edgeMachines/*": {
+        "Provisioned Machine Contributor": 1
     },
     "Microsoft.AzureStackHCI/locations/ValidateOwnershipVouchers/action": {
         "Azure Stack HCI Edge Machine Contributor Role": 21
@@ -3716,76 +3726,82 @@
         "Azure Front Door Secret Contributor": 5
     },
     "Microsoft.ChangeSafety/changeRecords/delete": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
     },
     "Microsoft.ChangeSafety/changeRecords/read": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
     },
     "Microsoft.ChangeSafety/changeRecords/stageProgressions/delete": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
     },
     "Microsoft.ChangeSafety/changeRecords/stageProgressions/read": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
     },
     "Microsoft.ChangeSafety/changeRecords/stageProgressions/write": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
+    },
+    "Microsoft.ChangeSafety/changeRecords/verifyChangeValidity/action": {
+        "Change Safety Contributor": 26
     },
     "Microsoft.ChangeSafety/changeRecords/write": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
     },
     "Microsoft.ChangeSafety/changeStates/delete": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
     },
     "Microsoft.ChangeSafety/changeStates/read": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
     },
     "Microsoft.ChangeSafety/changeStates/stageProgressions/delete": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
     },
     "Microsoft.ChangeSafety/changeStates/stageProgressions/read": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
     },
     "Microsoft.ChangeSafety/changeStates/stageProgressions/write": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
+    },
+    "Microsoft.ChangeSafety/changeStates/verifyChangeValidity/action": {
+        "Change Safety Contributor": 26
     },
     "Microsoft.ChangeSafety/changeStates/write": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
     },
     "Microsoft.ChangeSafety/locations/operationstatuses/read": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
     },
     "Microsoft.ChangeSafety/locations/operationstatuses/write": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
     },
     "Microsoft.ChangeSafety/safeRollouts/delete": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
     },
     "Microsoft.ChangeSafety/safeRollouts/read": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
     },
     "Microsoft.ChangeSafety/safeRollouts/steps/read": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
     },
     "Microsoft.ChangeSafety/safeRollouts/write": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
     },
     "Microsoft.ChangeSafety/stageMaps/delete": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
     },
     "Microsoft.ChangeSafety/stageMaps/read": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
     },
     "Microsoft.ChangeSafety/stageMaps/write": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
     },
     "Microsoft.ChangeSafety/validations/delete": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
     },
     "Microsoft.ChangeSafety/validations/read": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
     },
     "Microsoft.ChangeSafety/validations/write": {
-        "Change Safety Contributor": 24
+        "Change Safety Contributor": 26
     },
     "Microsoft.Chaos/*": {
         "Chaos Studio Experiment Contributor": 5
@@ -13349,6 +13365,7 @@
     },
     "Microsoft.Resources/subscriptions/operationresults/read": {
         "Azure AI Administrator": 39,
+        "Azure AI Manager and Namespace RBAC Inference Operator": 4,
         "Azure AIManager and namespace RBAC Reader": 4,
         "Azure Arc Enabled Kubernetes Cluster User Role": 9,
         "Azure Arc Kubernetes Admin": 7,
@@ -13422,6 +13439,7 @@
     "Microsoft.Resources/subscriptions/read": {
         "App Compliance Automation Administrator": 28,
         "Azure AI Administrator": 39,
+        "Azure AI Manager and Namespace RBAC Inference Operator": 4,
         "Azure AIManager and namespace RBAC Reader": 4,
         "Azure Arc Enabled Kubernetes Cluster User Role": 9,
         "Azure Arc Kubernetes Admin": 7,
@@ -13543,6 +13561,7 @@
         "Avere Contributor": 20,
         "Avere Operator": 11,
         "Azure AI Administrator": 39,
+        "Azure AI Manager and Namespace RBAC Inference Operator": 4,
         "Azure AIManager Contributor": 5,
         "Azure AIManager and namespace RBAC Reader": 4,
         "Azure API Center Service Contributor": 7,
