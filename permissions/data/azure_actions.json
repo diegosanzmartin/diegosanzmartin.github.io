@@ -728,20 +728,26 @@
     "Microsoft.ApiManagement/service/write": {
         "API Management Service Operator Role": 15
     },
+    "Microsoft.App/agents/*/action": {
+        "SRE Agent Administrator": 8
+    },
+    "Microsoft.App/agents/*/listSecrets/action": {
+        "SRE Agent Administrator": 8
+    },
     "Microsoft.App/agents/*/read": {
-        "SRE Agent Administrator": 6
+        "SRE Agent Administrator": 8
     },
     "Microsoft.App/agents/*/write": {
-        "SRE Agent Administrator": 6
+        "SRE Agent Administrator": 8
     },
     "Microsoft.App/agents/read": {
-        "SRE Agent Administrator": 6,
+        "SRE Agent Administrator": 8,
         "SRE Agent Author": 3,
         "SRE Agent Reader": 3,
         "SRE Agent Standard User": 3
     },
     "Microsoft.App/agents/write": {
-        "SRE Agent Administrator": 6
+        "SRE Agent Administrator": 8
     },
     "Microsoft.App/connectedEnvironments/*": {
         "Container Apps ConnectedEnvironments Contributor": 9
@@ -1220,7 +1226,7 @@
         "Azure Sphere Owner": 12,
         "Azure Sphere Publisher": 14,
         "Azure Sphere Reader": 12,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
         "Azure VM Managed identities restore Contributor": 1,
@@ -1330,7 +1336,7 @@
         "Elastic SAN Owner": 6,
         "Elastic SAN Snapshot Exporter": 15,
         "Elastic SAN Volume Importer": 14,
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Enclave Reader Role": 20,
@@ -1435,7 +1441,7 @@
         "SQL Managed Instance Contributor": 15,
         "SQL Security Manager": 65,
         "SQL Server Contributor": 10,
-        "SRE Agent Administrator": 6,
+        "SRE Agent Administrator": 8,
         "SRE Agent Author": 3,
         "SRE Agent Reader": 3,
         "SRE Agent Standard User": 3,
@@ -1620,7 +1626,7 @@
         "Azure Resilience Management Drills Assets Administrator": 44,
         "Azure Resilience Management Drills Target Resource Administrator": 17,
         "Azure Sphere Owner": 12,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Defender CSPM Storage Scanner Operator": 13,
         "Defender for Storage Scanner Operator": 23,
         "DevCenter Owner": 6,
@@ -1677,7 +1683,7 @@
         "Azure Resilience Management Goals Administrator": 19,
         "Azure Resilience Management Recovery Administrator": 19,
         "Azure Sphere Owner": 12,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Defender CSPM Storage Scanner Operator": 13,
         "Defender for Storage Scanner Operator": 23,
         "DevCenter Owner": 6,
@@ -3058,7 +3064,7 @@
         "Azure Stack Hub registration role": 6
     },
     "Microsoft.AzureStackHCI/*": {
-        "Azure Stack HCI Administrator": 101
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.AzureStackHCI/*/Read": {
         "Azure Local Migrate Execute Expert": 40,
@@ -3085,7 +3091,7 @@
         "Windows Admin Center Administrator Login": 41
     },
     "Microsoft.AzureStackHCI/DevicePools/*": {
-        "Azure Stack HCI Administrator": 101
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.AzureStackHCI/DevicePools/*/read": {
         "Azure Stack HCI Device Management Role": 37
@@ -3103,7 +3109,7 @@
         "Azure Stack HCI Device Management Role": 37
     },
     "Microsoft.AzureStackHCI/EdgeMachines/*": {
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Edge Machine Contributor Role": 21
     },
     "Microsoft.AzureStackHCI/EdgeMachines/*/read": {
@@ -3160,29 +3166,29 @@
         "Azure Stack HCI VM Reader": 42
     },
     "Microsoft.AzureStackHCI/NetworkSecurityGroups/Delete": {
-        "Azure Stack HCI Administrator": 101
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.AzureStackHCI/NetworkSecurityGroups/Read": {
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42
     },
     "Microsoft.AzureStackHCI/NetworkSecurityGroups/SecurityRules/Delete": {
-        "Azure Stack HCI Administrator": 101
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.AzureStackHCI/NetworkSecurityGroups/SecurityRules/Read": {
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42
     },
     "Microsoft.AzureStackHCI/NetworkSecurityGroups/SecurityRules/Write": {
-        "Azure Stack HCI Administrator": 101
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.AzureStackHCI/NetworkSecurityGroups/Write": {
-        "Azure Stack HCI Administrator": 101
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.AzureStackHCI/NetworkSecurityGroups/join/action": {
-        "Azure Stack HCI Administrator": 101
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.AzureStackHCI/Operations/Read": {
         "Windows Admin Center Administrator Login": 41
@@ -3193,21 +3199,21 @@
     },
     "Microsoft.AzureStackHCI/StorageContainers/Read": {
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42
     },
     "Microsoft.AzureStackHCI/StorageContainers/Write": {
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37
     },
     "Microsoft.AzureStackHCI/StorageContainers/deploy/action": {
         "Azure Stack HCI VM Contributor": 75
     },
     "Microsoft.AzureStackHCI/Unregister/Action": {
-        "Azure Stack HCI Administrator": 101
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.AzureStackHCI/VirtualHardDisks/*": {
         "Azure Local Migrate Execute Expert": 40,
@@ -3242,12 +3248,13 @@
         "Azure Stack HCI VM Contributor": 75
     },
     "Microsoft.AzureStackHCI/clusters/*": {
-        "Azure Stack HCI Administrator": 101
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.AzureStackHCI/clusters/read": {
         "Azure Kubernetes Service Arc Contributor Role": 37
     },
     "Microsoft.AzureStackHCI/edgeMachines/*": {
+        "Provisioned Machine Admin": 1,
         "Provisioned Machine Contributor": 1
     },
     "Microsoft.AzureStackHCI/locations/ValidateOwnershipVouchers/action": {
@@ -3258,7 +3265,7 @@
         "Desktop Virtualization Power On Off Contributor": 37
     },
     "Microsoft.AzureStackHCI/register/action": {
-        "Azure Stack HCI Administrator": 101
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.AzureStackHCI/virtualMachineInstances/*": {
         "Azure Stack HCI VM Contributor": 75
@@ -6753,10 +6760,19 @@
         "Microsoft Discovery Platform Contributor (Preview)": 22
     },
     "Microsoft.Discovery/workspaces/chatModelDeployments/read": {
+        "Microsoft Discovery Chat Model Reader - Preview": 1,
         "Microsoft Discovery Platform Contributor (Preview)": 22
     },
+    "Microsoft.Discovery/workspaces/projects/delete": {
+        "Microsoft Discovery Project Contributor - Preview": 3
+    },
     "Microsoft.Discovery/workspaces/projects/read": {
-        "Microsoft Discovery Platform Contributor (Preview)": 22
+        "Microsoft Discovery Platform Contributor (Preview)": 22,
+        "Microsoft Discovery Project Contributor - Preview": 3,
+        "Microsoft Discovery Project Reader - Preview": 1
+    },
+    "Microsoft.Discovery/workspaces/projects/write": {
+        "Microsoft Discovery Project Contributor - Preview": 3
     },
     "Microsoft.Discovery/workspaces/read": {
         "Microsoft Discovery Platform Contributor (Preview)": 22
@@ -7052,11 +7068,11 @@
     },
     "Microsoft.EdgeMarketplace/offers/read": {
         "Azure Connected Machine Resource Manager": 34,
-        "Azure Stack HCI Administrator": 101
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.EdgeMarketplace/publishers/read": {
         "Azure Connected Machine Resource Manager": 34,
-        "Azure Stack HCI Administrator": 101
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.EdgeOrder/*": {
         "Azure Edge Hardware Center Administrator": 1
@@ -7473,7 +7489,7 @@
     },
     "Microsoft.ExtendedLocation/customLocations/delete": {
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37
     },
     "Microsoft.ExtendedLocation/customLocations/deploy/action": {
@@ -7487,7 +7503,7 @@
         "Azure Kubernetes Service Arc Contributor Role": 37,
         "Azure Kubernetes Service Hybrid Contributor Role": 24,
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37,
         "Azure Stack HCI VM Contributor": 75,
         "Operator Nexus Compute Contributor Role (Preview)": 91
@@ -7503,18 +7519,18 @@
         "Azure Local Migrate Execute Expert": 40,
         "Azure Local Migrate Owner": 64,
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37,
         "Operator Nexus Compute Contributor Role (Preview)": 91
     },
     "Microsoft.ExtendedLocation/customLocations/write": {
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37
     },
     "Microsoft.ExtendedLocation/register/action": {
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.Features/features/read": {
         "Azure AI Administrator": 39,
@@ -7524,7 +7540,7 @@
         "Community Owner Role": 43,
         "Community Reader Role": 20,
         "Defender Kubernetes API Access": 11,
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Enclave Reader Role": 20,
@@ -7541,7 +7557,7 @@
         "CrossConnectionManager": 3,
         "CrossConnectionReader": 3,
         "Defender Kubernetes API Access": 11,
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Enclave Reader Role": 20,
@@ -7605,7 +7621,7 @@
         "Azure Connected Machine Onboarding": 11,
         "Azure Connected Machine Resource Manager": 34,
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37,
         "Guest Configuration Resource Contributor": 4
     },
@@ -7617,7 +7633,7 @@
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
         "Azure Migrate Owner": 68,
-        "Azure Stack HCI Administrator": 101
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.HDInsight/*/read": {
         "HDInsight Cluster Operator": 9
@@ -7900,16 +7916,16 @@
     },
     "Microsoft.HybridCompute/gateways/delete": {
         "Arc Gateway Manager": 9,
-        "Azure Stack HCI Administrator": 101
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.HybridCompute/gateways/read": {
         "Arc Gateway Manager": 9,
         "Azure Connected Machine Onboarding": 11,
-        "Azure Stack HCI Administrator": 101
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.HybridCompute/gateways/write": {
         "Arc Gateway Manager": 9,
-        "Azure Stack HCI Administrator": 101
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.HybridCompute/licenses/*": {
         "Azure Connected Machine Resource Administrator": 12
@@ -7919,7 +7935,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75
     },
     "Microsoft.HybridCompute/licenses/read": {
@@ -7927,7 +7943,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42
     },
@@ -7936,7 +7952,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75
     },
     "Microsoft.HybridCompute/locations/*": {
@@ -7947,7 +7963,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Desktop Virtualization Power On Contributor": 14,
         "Desktop Virtualization Power On Off Contributor": 37
@@ -7957,7 +7973,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Desktop Virtualization Power On Contributor": 14,
         "Desktop Virtualization Power On Off Contributor": 37
@@ -7967,7 +7983,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75
     },
     "Microsoft.HybridCompute/machines/*": {
@@ -7988,7 +8004,7 @@
         "Azure Arc VMware VM Contributor": 56,
         "Azure Connected Machine Resource Administrator": 12,
         "Azure Connected Machine Resource Manager": 34,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Connected InfraVMs": 7,
         "Azure Stack HCI VM Contributor": 75
     },
@@ -8000,7 +8016,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75
     },
     "Microsoft.HybridCompute/machines/delete": {
@@ -8012,7 +8028,7 @@
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
         "Azure Migrate Owner": 68,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Connected InfraVMs": 7,
         "Azure Stack HCI VM Contributor": 75
     },
@@ -8026,7 +8042,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Connected Machine Resource Manager": 34,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Connected InfraVMs": 7,
         "Azure Stack HCI VM Contributor": 75,
         "Defender SQL Servers On Machines": 10,
@@ -8040,7 +8056,7 @@
         "Azure Arc VMware VM Contributor": 56,
         "Azure Connected Machine Resource Manager": 34,
         "Azure Hybrid Database Administrator - Read Only Service Role": 8,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Connected InfraVMs": 7,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
@@ -8058,7 +8074,7 @@
         "Azure Arc VMware VM Contributor": 56,
         "Azure Connected Machine Resource Manager": 34,
         "Azure Extension for SQL Server Deployment": 2,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Connected InfraVMs": 7,
         "Azure Stack HCI VM Contributor": 75,
         "Defender SQL Servers On Machines": 10,
@@ -8072,7 +8088,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75
     },
     "Microsoft.HybridCompute/machines/installPatches/action": {
@@ -8080,7 +8096,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75
     },
     "Microsoft.HybridCompute/machines/licenseProfiles/*": {
@@ -8092,7 +8108,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Connected Machine Resource Manager": 34,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75
     },
     "Microsoft.HybridCompute/machines/licenseProfiles/read": {
@@ -8101,7 +8117,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Connected Machine Resource Manager": 34,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42
     },
@@ -8111,7 +8127,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Connected Machine Resource Manager": 34,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75
     },
     "Microsoft.HybridCompute/machines/listAccessDetails/action": {
@@ -8122,7 +8138,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42
     },
@@ -8131,7 +8147,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42
     },
@@ -8140,7 +8156,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42
     },
@@ -8149,7 +8165,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42
     },
@@ -8164,7 +8180,7 @@
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
         "Azure Migrate Owner": 68,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
         "Defender SQL Servers On Machines": 10,
@@ -8185,7 +8201,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75
     },
     "Microsoft.HybridCompute/machines/runcommands/read": {
@@ -8193,7 +8209,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75
     },
     "Microsoft.HybridCompute/machines/runcommands/write": {
@@ -8201,7 +8217,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75
     },
     "Microsoft.HybridCompute/machines/upgradeExtensions/action": {
@@ -8217,7 +8233,7 @@
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
         "Azure Migrate Owner": 68,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Connected InfraVMs": 7,
         "Azure Stack HCI VM Contributor": 75,
         "Hybrid Server Onboarding": 2
@@ -8227,7 +8243,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Desktop Virtualization Power On Contributor": 14,
         "Desktop Virtualization Power On Off Contributor": 37,
@@ -8238,7 +8254,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75
     },
     "Microsoft.HybridCompute/osType/agentVersions/read": {
@@ -8246,7 +8262,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75
     },
     "Microsoft.HybridCompute/privateLinkScopes/*": {
@@ -8266,7 +8282,7 @@
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
         "Azure Migrate Owner": 68,
-        "Azure Stack HCI Administrator": 101
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.HybridCompute/settings/*": {
         "Azure Connected Machine Resource Administrator": 12
@@ -8275,13 +8291,13 @@
         "Arc Gateway Manager": 9,
         "Azure Connected Machine Onboarding": 11,
         "Azure Connected Machine Resource Manager": 34,
-        "Azure Stack HCI Administrator": 101
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.HybridCompute/settings/write": {
         "Arc Gateway Manager": 9,
         "Azure Connected Machine Onboarding": 11,
         "Azure Connected Machine Resource Manager": 34,
-        "Azure Stack HCI Administrator": 101
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.HybridConnectivity/GenerateAWSTemplate/action": {
         "Hybrid Connectivity contributor role": 12
@@ -8347,7 +8363,7 @@
         "Azure Migrate Decide and Plan Expert": 51,
         "Azure Migrate Owner": 68,
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.HybridConnectivity/solutionConfigurations/delete": {
         "Hybrid Connectivity contributor role": 12
@@ -8436,7 +8452,7 @@
     },
     "Microsoft.HybridContainerService/register/action": {
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37
     },
     "Microsoft.HybridContainerService/skus/delete": {
@@ -8569,7 +8585,7 @@
         "Azure Arc VMware Private Clouds Onboarding": 44,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Managed Grafana Workspace Contributor": 35,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
@@ -8589,7 +8605,7 @@
         "Azure Arc VMware Private Clouds Onboarding": 44,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Managed Grafana Workspace Contributor": 35,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
@@ -8609,7 +8625,7 @@
         "Azure Arc VMware Private Clouds Onboarding": 44,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Managed Grafana Workspace Contributor": 35,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
@@ -8630,7 +8646,7 @@
         "Azure Arc VMware Private Clouds Onboarding": 44,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Managed Grafana Workspace Contributor": 35,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
@@ -8651,7 +8667,7 @@
         "Azure Arc VMware Private Clouds Onboarding": 44,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Managed Grafana Workspace Contributor": 35,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
@@ -8671,7 +8687,7 @@
         "Azure Arc VMware Private Clouds Onboarding": 44,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Managed Grafana Workspace Contributor": 35,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
@@ -8691,7 +8707,7 @@
         "Azure Arc VMware Private Clouds Onboarding": 44,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Managed Grafana Workspace Contributor": 35,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
@@ -8898,7 +8914,7 @@
         "Disk Pool Operator": 6,
         "DocumentDB Account Contributor": 8,
         "Dynamics 365 Customer Insights Service Role": 6,
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "EventGrid Contributor": 6,
         "EventGrid EventSubscription Contributor": 9,
         "EventGrid TopicSpaces Publisher": 5,
@@ -9027,7 +9043,7 @@
         "GroupQuota Reader": 10,
         "GroupQuota Request Operator": 10,
         "Operator Nexus Compute Contributor Role (Preview)": 91,
-        "SRE Agent Administrator": 6,
+        "SRE Agent Administrator": 8,
         "SRE Agent Author": 3,
         "SRE Agent Reader": 3,
         "SRE Agent Standard User": 3,
@@ -9085,10 +9101,12 @@
     },
     "Microsoft.Insights/dataCollectionRuleAssociations/read": {
         "Azure Batch Service Orchestration Role": 34,
-        "Azure Connected Machine Onboarding": 11
+        "Azure Connected Machine Onboarding": 11,
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.Insights/dataCollectionRuleAssociations/write": {
-        "Azure Connected Machine Onboarding": 11
+        "Azure Connected Machine Onboarding": 11,
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.Insights/dataCollectionRules/*": {
         "Monitoring Contributor": 46,
@@ -9473,7 +9491,7 @@
     },
     "Microsoft.Kubernetes/register/action": {
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Defender Kubernetes Agent Operator": 19
     },
     "Microsoft.Kubernetes/registeredSubscriptions/read": {
@@ -9492,7 +9510,7 @@
         "Azure Container Storage Contributor": 12,
         "Azure Container Storage Owner": 17,
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37,
         "Defender Kubernetes Agent Operator": 19,
         "Kubernetes Cluster - Azure Arc Onboarding": 13,
@@ -9503,7 +9521,7 @@
         "Azure Container Storage Contributor": 12,
         "Azure Container Storage Owner": 17,
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37,
         "Defender Kubernetes Agent Operator": 19,
         "Kubernetes Cluster - Azure Arc Onboarding": 13,
@@ -9518,7 +9536,7 @@
         "Azure Local Migrate Owner": 64,
         "Azure Native Dynatrace Agent Management Role": 2,
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37,
         "Azure Stack HCI VM Contributor": 75,
         "Defender Kubernetes Agent Operator": 19,
@@ -9531,7 +9549,7 @@
         "Azure Container Storage Owner": 17,
         "Azure Native Dynatrace Agent Management Role": 2,
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37,
         "Defender Kubernetes Agent Operator": 19,
         "Kubernetes Cluster - Azure Arc Onboarding": 13,
@@ -9554,19 +9572,19 @@
     },
     "Microsoft.KubernetesConfiguration/namespaces/read": {
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37,
         "Kubernetes Namespace User": 2
     },
     "Microsoft.KubernetesConfiguration/operations/read": {
         "Azure Arc VMware Private Clouds Onboarding": 44,
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37
     },
     "Microsoft.KubernetesConfiguration/register/action": {
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Defender Kubernetes Agent Operator": 19,
         "Kubernetes Extension Contributor": 9
     },
@@ -10077,7 +10095,7 @@
         "Azure Container Storage Contributor": 12,
         "Azure Container Storage Owner": 17,
         "Azure Sphere Owner": 12,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Billing Reader": 7,
         "Cost Management Contributor": 10,
         "Cost Management Reader": 10,
@@ -10150,7 +10168,7 @@
         "Community Contributor Role": 33,
         "Community Owner Role": 43,
         "Community Reader Role": 20,
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Enclave Reader Role": 20,
@@ -10161,13 +10179,16 @@
         "Enclave Owner Role": 38
     },
     "Microsoft.Mission/approvals/initiatorCallback/action": {
-        "Enclave Approver Role": 34
+        "Enclave Approver Role": 35
+    },
+    "Microsoft.Mission/approvals/notifyInitiator/action": {
+        "Enclave Approver Role": 35
     },
     "Microsoft.Mission/approvals/read": {
         "Community Contributor Role": 33,
         "Community Owner Role": 43,
         "Community Reader Role": 20,
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Enclave Reader Role": 20
@@ -10175,12 +10196,12 @@
     "Microsoft.Mission/approvals/write": {
         "Community Contributor Role": 33,
         "Community Owner Role": 43,
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38
     },
     "Microsoft.Mission/communities/communityEndpoints/approvalCallback/action": {
-        "Enclave Approver Role": 34
+        "Enclave Approver Role": 35
     },
     "Microsoft.Mission/communities/communityEndpoints/delete": {
         "Community Owner Role": 43
@@ -10189,7 +10210,7 @@
         "Community Contributor Role": 33,
         "Community Owner Role": 43,
         "Community Reader Role": 20,
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Enclave Reader Role": 20
@@ -10200,7 +10221,7 @@
     },
     "Microsoft.Mission/communities/communityendpoints/connect/action": {
         "Community Owner Role": 43,
-        "Enclave Approver Role": 34
+        "Enclave Approver Role": 35
     },
     "Microsoft.Mission/communities/dedicatedHubs/connect/action": {
         "Community Owner Role": 43
@@ -10221,7 +10242,7 @@
         "Community Contributor Role": 33,
         "Community Owner Role": 43,
         "Community Reader Role": 20,
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Enclave Reader Role": 20,
@@ -10229,7 +10250,7 @@
     },
     "Microsoft.Mission/communities/setMaintenanceMode/action": {
         "Community Owner Role": 43,
-        "Enclave Approver Role": 34
+        "Enclave Approver Role": 35
     },
     "Microsoft.Mission/communities/syncCommunityEndpoints/action": {
         "Community Contributor Role": 33,
@@ -10242,7 +10263,7 @@
         "Community Contributor Role": 33,
         "Community Owner Role": 43,
         "Community Reader Role": 20,
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Enclave Reader Role": 20
@@ -10256,7 +10277,7 @@
         "Community Owner Role": 43
     },
     "Microsoft.Mission/enclaveConnections/approvalCallback/action": {
-        "Enclave Approver Role": 34
+        "Enclave Approver Role": 35
     },
     "Microsoft.Mission/enclaveConnections/delete": {
         "Enclave Owner Role": 38
@@ -10265,13 +10286,13 @@
         "Community Contributor Role": 33,
         "Community Owner Role": 43,
         "Community Reader Role": 20,
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Enclave Reader Role": 20
     },
     "Microsoft.Mission/enclaveConnections/setSourceCidr/action": {
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Owner Role": 38
     },
     "Microsoft.Mission/enclaveConnections/write": {
@@ -10289,7 +10310,7 @@
         "Enclave Contributor Role": 31
     },
     "Microsoft.Mission/virtualEnclaves/approvalCallback/action": {
-        "Enclave Approver Role": 34
+        "Enclave Approver Role": 35
     },
     "Microsoft.Mission/virtualEnclaves/delete": {
         "Community Owner Role": 43,
@@ -10297,10 +10318,10 @@
         "Virtual Enclave Owner Role": 10
     },
     "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/approvalCallback/action": {
-        "Enclave Approver Role": 34
+        "Enclave Approver Role": 35
     },
     "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/connect/action": {
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Owner Role": 38
     },
     "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/delete": {
@@ -10310,7 +10331,7 @@
         "Community Contributor Role": 33,
         "Community Owner Role": 43,
         "Community Reader Role": 20,
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Enclave Reader Role": 20
@@ -10322,7 +10343,7 @@
     "Microsoft.Mission/virtualEnclaves/endpoints/read": {
         "Community Contributor Role": 33,
         "Community Reader Role": 20,
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
         "Enclave Reader Role": 20
     },
@@ -10334,22 +10355,22 @@
         "Community Contributor Role": 33,
         "Community Owner Role": 43,
         "Community Reader Role": 20,
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Enclave Reader Role": 20,
         "Virtual Enclave Owner Role": 10
     },
     "Microsoft.Mission/virtualEnclaves/setEnclaveRoleAssignments/action": {
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Owner Role": 38
     },
     "Microsoft.Mission/virtualEnclaves/setSubnetConfiguration/action": {
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Owner Role": 38
     },
     "Microsoft.Mission/virtualEnclaves/setWorkloadRoleAssignments/action": {
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Owner Role": 38
     },
     "Microsoft.Mission/virtualEnclaves/workloads/delete": {
@@ -10361,7 +10382,7 @@
         "Community Contributor Role": 33,
         "Community Owner Role": 43,
         "Community Reader Role": 20,
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Enclave Reader Role": 20,
@@ -10382,7 +10403,7 @@
         "Virtual Enclave Owner Role": 10
     },
     "Microsoft.Mission/virtualenclaves/setMaintenanceMode/action": {
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Owner Role": 38
     },
     "Microsoft.Monitor/accounts/*": {
@@ -12593,25 +12614,25 @@
     },
     "Microsoft.ResourceConnector/appliances/delete": {
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37
     },
     "Microsoft.ResourceConnector/appliances/listClusterUserCredential/action": {
         "Azure Arc VMware Private Clouds Onboarding": 44,
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37
     },
     "Microsoft.ResourceConnector/appliances/listKeys/action": {
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37
     },
     "Microsoft.ResourceConnector/appliances/read": {
         "Azure Local Migrate Execute Expert": 40,
         "Azure Local Migrate Owner": 64,
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37
     },
     "Microsoft.ResourceConnector/appliances/upgradeGraphs/read": {
@@ -12620,27 +12641,27 @@
     },
     "Microsoft.ResourceConnector/appliances/write": {
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37
     },
     "Microsoft.ResourceConnector/locations/operationresults/read": {
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37
     },
     "Microsoft.ResourceConnector/locations/operationsstatus/read": {
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37
     },
     "Microsoft.ResourceConnector/operations/read": {
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37
     },
     "Microsoft.ResourceConnector/register/action": {
         "Azure Resource Bridge Deployment Role": 36,
-        "Azure Stack HCI Administrator": 101
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.ResourceConnector/telemetryconfig/read": {
         "Azure Resource Bridge Deployment Role": 36,
@@ -12682,7 +12703,7 @@
         "Azure Managed Redis Reader": 9,
         "Azure Programmable Connectivity Gateway Dataplane User": 5,
         "Azure Programmable Connectivity Gateway User": 5,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
         "Backup MUA Admin": 26,
@@ -12706,7 +12727,7 @@
         "DocumentDB Account Contributor": 8,
         "Elastic SAN Owner": 6,
         "Elastic SAN Reader": 5,
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Enclave Reader Role": 20,
@@ -12900,7 +12921,7 @@
         "Azure Resilience Management Recovery Operator": 11,
         "Azure Sphere Contributor": 7,
         "Azure Sphere Owner": 12,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Backup Contributor": 84,
         "Backup MUA Admin": 26,
         "Backup Operator": 98,
@@ -12965,7 +12986,7 @@
         "DocumentDB Account Contributor": 8,
         "Dynamics 365 Customer Insights Service Role": 6,
         "Elastic SAN Owner": 6,
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Essential Machine Management Administrator": 19,
         "EventGrid Contributor": 6,
         "EventGrid EventSubscription Contributor": 9,
@@ -13397,7 +13418,7 @@
         "Azure Kubernetes Service RBAC Cluster Admin": 5,
         "Azure Kubernetes Service RBAC Reader": 4,
         "Azure Kubernetes Service RBAC Writer": 4,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
         "Backup MUA Admin": 26,
@@ -13410,7 +13431,7 @@
         "Connector Namespace Developer": 10,
         "Defender Containers Sensor": 19,
         "Defender Kubernetes Agent Operator": 19,
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Enclave Reader Role": 20,
@@ -13483,7 +13504,7 @@
         "Azure Migrate Execute Expert": 45,
         "Azure Migrate Owner": 68,
         "Azure Sphere Owner": 12,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
         "Backup MUA Admin": 26,
@@ -13500,7 +13521,7 @@
         "Defender Kubernetes Agent Operator": 19,
         "Defender for Storage Scanner Operator": 23,
         "Desktop Virtualization App Attach Contributor": 9,
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Enclave Reader Role": 20,
@@ -13534,7 +13555,7 @@
         "Azure Batch Service Orchestration Role": 34,
         "Azure Resilience Management Drills Assets Administrator": 44,
         "Azure Resilience Management Drills Assets Contributor": 42,
-        "Azure Stack HCI Administrator": 101
+        "Azure Stack HCI Administrator": 103
     },
     "Microsoft.Resources/subscriptions/resourceGroups/read": {
         "API Management Service Contributor": 7,
@@ -13655,7 +13676,7 @@
         "Azure Sphere Owner": 12,
         "Azure Sphere Publisher": 14,
         "Azure Sphere Reader": 12,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
@@ -13755,7 +13776,7 @@
         "Elastic SAN Reader": 5,
         "Elastic SAN Snapshot Exporter": 15,
         "Elastic SAN Volume Importer": 14,
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Enclave Reader Role": 20,
@@ -13932,7 +13953,7 @@
         "Azure Migrate Owner": 68,
         "Azure Resilience Management Drills Assets Administrator": 44,
         "Azure Resilience Management Drills Assets Contributor": 42,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Defender Containers Sensor": 19,
         "Defender Kubernetes Agent Operator": 19,
         "Kubernetes Agent Subscription Level Operator": 12,
@@ -13958,7 +13979,7 @@
         "Azure Arc VMware Private Cloud User": 40,
         "Azure Arc VMware Private Clouds Onboarding": 44,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Edge Machine Contributor Role": 21,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
@@ -13975,7 +13996,7 @@
         "Azure Arc VMware Private Cloud User": 40,
         "Azure Arc VMware Private Clouds Onboarding": 44,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Edge Machine Contributor Role": 21,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42
@@ -13991,14 +14012,14 @@
         "Azure Arc VMware Private Clouds Onboarding": 44,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Center for SAP solutions reader": 43,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Edge Machine Contributor Role": 21,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
         "Community Contributor Role": 33,
         "Community Owner Role": 43,
         "Community Reader Role": 20,
-        "Enclave Approver Role": 34,
+        "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Enclave Reader Role": 20,
@@ -14017,7 +14038,7 @@
         "Azure Arc VMware Private Cloud User": 40,
         "Azure Arc VMware Private Clouds Onboarding": 44,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Edge Machine Contributor Role": 21,
         "Azure Stack HCI VM Contributor": 75
     },
@@ -15411,7 +15432,7 @@
         "Azure Migrate Execute Expert": 45,
         "Azure Migrate Owner": 68,
         "Azure Sphere Owner": 12,
-        "Azure Stack HCI Administrator": 101,
+        "Azure Stack HCI Administrator": 103,
         "Backup Contributor": 84,
         "Backup Operator": 98,
         "Billing Reader": 7,

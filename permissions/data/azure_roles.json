@@ -4558,6 +4558,8 @@
             "Microsoft.Insights/AlertRules/Resolved/Action",
             "Microsoft.Insights/AlertRules/Throttled/Action",
             "Microsoft.Insights/AlertRules/Write",
+            "Microsoft.Insights/dataCollectionRuleAssociations/read",
+            "Microsoft.Insights/dataCollectionRuleAssociations/write",
             "Microsoft.Kubernetes/register/action",
             "Microsoft.KubernetesConfiguration/extensions/delete",
             "Microsoft.KubernetesConfiguration/extensions/operations/read",
@@ -8118,6 +8120,7 @@
             "Microsoft.Insights/alertRules/*",
             "Microsoft.Mission/Operations/read",
             "Microsoft.Mission/approvals/initiatorCallback/action",
+            "Microsoft.Mission/approvals/notifyInitiator/action",
             "Microsoft.Mission/approvals/read",
             "Microsoft.Mission/approvals/write",
             "Microsoft.Mission/communities/communityEndpoints/approvalCallback/action",
@@ -10181,6 +10184,12 @@
         "permissions": [],
         "group": "BuiltInRole"
     },
+    "Microsoft Discovery Chat Model Reader - Preview": {
+        "permissions": [
+            "Microsoft.Discovery/workspaces/chatModelDeployments/read"
+        ],
+        "group": "BuiltInRole"
+    },
     "Microsoft Discovery Platform Administrator (Preview)": {
         "permissions": [
             "Microsoft.Authorization/*/read",
@@ -10231,6 +10240,20 @@
             "Microsoft.Discovery/*/read",
             "Microsoft.Resources/deployments/read",
             "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Microsoft Discovery Project Contributor - Preview": {
+        "permissions": [
+            "Microsoft.Discovery/workspaces/projects/delete",
+            "Microsoft.Discovery/workspaces/projects/read",
+            "Microsoft.Discovery/workspaces/projects/write"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Microsoft Discovery Project Reader - Preview": {
+        "permissions": [
+            "Microsoft.Discovery/workspaces/projects/read"
         ],
         "group": "BuiltInRole"
     },
@@ -11407,6 +11430,12 @@
         ],
         "group": "BuiltInRole"
     },
+    "Provisioned Machine Admin": {
+        "permissions": [
+            "Microsoft.AzureStackHCI/edgeMachines/*"
+        ],
+        "group": "BuiltInRole"
+    },
     "Provisioned Machine Contributor": {
         "permissions": [
             "Microsoft.AzureStackHCI/edgeMachines/*"
@@ -11713,6 +11742,8 @@
     },
     "SRE Agent Administrator": {
         "permissions": [
+            "Microsoft.App/agents/*/action",
+            "Microsoft.App/agents/*/listSecrets/action",
             "Microsoft.App/agents/*/read",
             "Microsoft.App/agents/*/write",
             "Microsoft.App/agents/read",
