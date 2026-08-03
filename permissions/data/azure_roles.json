@@ -2943,6 +2943,18 @@
         ],
         "group": "BuiltInRole"
     },
+    "Azure Kubernetes Service Prepared Image Specification Contributor": {
+        "permissions": [
+            "Microsoft.ContainerService/preparedImageSpecifications/*"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Azure Kubernetes Service Prepared Image Specification Reader": {
+        "permissions": [
+            "Microsoft.ContainerService/preparedImageSpecifications/read"
+        ],
+        "group": "BuiltInRole"
+    },
     "Azure Kubernetes Service RBAC Admin": {
         "permissions": [
             "Microsoft.Authorization/*/read",
@@ -3522,6 +3534,7 @@
             "Microsoft.Compute/virtualMachines/read",
             "Microsoft.Network/applicationSecurityGroups/joinNetworkSecurityRule/action",
             "Microsoft.Network/loadBalancers/backendAddressPools/join/action",
+            "Microsoft.Network/loadBalancers/delete",
             "Microsoft.Network/loadBalancers/inboundNatRules/join/action",
             "Microsoft.Network/loadBalancers/loadBalancingRules/read",
             "Microsoft.Network/loadBalancers/read",
@@ -3535,6 +3548,7 @@
             "Microsoft.Network/networkSecurityGroups/read",
             "Microsoft.Network/networkSecurityGroups/write",
             "Microsoft.Network/privatelinkservices/delete",
+            "Microsoft.Network/privatelinkservices/privateEndpointConnections/delete",
             "Microsoft.Network/privatelinkservices/read",
             "Microsoft.Network/privatelinkservices/write",
             "Microsoft.Network/publicIPAddresses/delete",
@@ -6013,9 +6027,19 @@
     },
     "Compute Limit Operator": {
         "permissions": [
+            "Microsoft.ComputeLimit/locations/features/disable/action",
+            "Microsoft.ComputeLimit/locations/features/enable/action",
+            "Microsoft.ComputeLimit/locations/features/read",
             "Microsoft.ComputeLimit/locations/guestSubscriptions/delete",
             "Microsoft.ComputeLimit/locations/guestSubscriptions/read",
             "Microsoft.ComputeLimit/locations/guestSubscriptions/write",
+            "Microsoft.ComputeLimit/locations/operationResults/read",
+            "Microsoft.ComputeLimit/locations/sharedLimitCaps/delete",
+            "Microsoft.ComputeLimit/locations/sharedLimitCaps/memberCapOverrides/delete",
+            "Microsoft.ComputeLimit/locations/sharedLimitCaps/memberCapOverrides/read",
+            "Microsoft.ComputeLimit/locations/sharedLimitCaps/memberCapOverrides/write",
+            "Microsoft.ComputeLimit/locations/sharedLimitCaps/read",
+            "Microsoft.ComputeLimit/locations/sharedLimitCaps/write",
             "Microsoft.ComputeLimit/locations/sharedLimits/delete",
             "Microsoft.ComputeLimit/locations/sharedLimits/read",
             "Microsoft.ComputeLimit/locations/sharedLimits/write",
@@ -6572,14 +6596,18 @@
             "Microsoft.DocumentDB/databaseAccounts/disableLongTermProtection/action",
             "Microsoft.DocumentDB/databaseAccounts/enableLongTermProtection/action",
             "Microsoft.DocumentDB/databaseAccounts/preBackup/action",
-            "Microsoft.DocumentDB/databaseAccounts/validateForLongTermProtection/action"
+            "Microsoft.DocumentDB/databaseAccounts/read",
+            "Microsoft.DocumentDB/databaseAccounts/validateForLongTermProtection/action",
+            "Microsoft.DocumentDB/locations/operationsStatus/read"
         ],
         "group": "BuiltInRole"
     },
     "Cosmos DB Long Term Retention Restore Role": {
         "permissions": [
             "Microsoft.DocumentDB/databaseAccounts/preRestore/action",
-            "Microsoft.DocumentDB/databaseAccounts/restore/action"
+            "Microsoft.DocumentDB/databaseAccounts/read",
+            "Microsoft.DocumentDB/databaseAccounts/restore/action",
+            "Microsoft.DocumentDB/locations/operationsStatus/read"
         ],
         "group": "BuiltInRole"
     },
@@ -7146,6 +7174,7 @@
     },
     "Defender Settings Contributor": {
         "permissions": [
+            "microsoft.security/pricings/action",
             "microsoft.security/pricings/read",
             "microsoft.security/pricings/securityoperators/read",
             "microsoft.security/pricings/write",
@@ -9066,7 +9095,9 @@
     "Inference Account Operator": {
         "permissions": [
             "Microsoft.InferenceService/inferenceAccounts/delete",
+            "Microsoft.InferenceService/inferenceAccounts/listKeys/action",
             "Microsoft.InferenceService/inferenceAccounts/read",
+            "Microsoft.InferenceService/inferenceAccounts/regenerateKeys/action",
             "Microsoft.InferenceService/inferenceAccounts/write"
         ],
         "group": "BuiltInRole"
@@ -9074,7 +9105,9 @@
     "Inference Account Owner": {
         "permissions": [
             "Microsoft.InferenceService/inferenceAccounts/delete",
+            "Microsoft.InferenceService/inferenceAccounts/listKeys/action",
             "Microsoft.InferenceService/inferenceAccounts/read",
+            "Microsoft.InferenceService/inferenceAccounts/regenerateKeys/action",
             "Microsoft.InferenceService/inferenceAccounts/write"
         ],
         "group": "BuiltInRole"
@@ -10254,6 +10287,12 @@
     "Microsoft Discovery Project Reader - Preview": {
         "permissions": [
             "Microsoft.Discovery/workspaces/projects/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Microsoft Discovery Tools Reader - Preview": {
+        "permissions": [
+            "Microsoft.Discovery/tools/read"
         ],
         "group": "BuiltInRole"
     },
@@ -11486,6 +11525,17 @@
             "Microsoft.Quantum/Workspaces/read",
             "Microsoft.Quantum/locations/offerings/read",
             "Microsoft.Resources/deployments/*",
+            "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Quantum Workspace Data Reader": {
+        "permissions": [
+            "Microsoft.Authorization/*/read",
+            "Microsoft.Insights/alertRules/read",
+            "Microsoft.Quantum/Workspaces/read",
+            "Microsoft.Quantum/locations/offerings/read",
+            "Microsoft.Resources/deployments/read",
             "Microsoft.Resources/subscriptions/resourceGroups/read"
         ],
         "group": "BuiltInRole"

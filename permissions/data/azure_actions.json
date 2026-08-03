@@ -1434,6 +1434,7 @@
         "ProviderHub Contributor": 6,
         "ProviderHub Reader": 4,
         "Quantum Workspace Data Contributor": 6,
+        "Quantum Workspace Data Reader": 6,
         "Quota Request Operator": 14,
         "Recurring Scheduled Actions Contributor": 17,
         "Redis Cache Contributor": 8,
@@ -4771,7 +4772,7 @@
         "Azure Container Storage Operator": 18,
         "Azure Migrate Execute Expert": 45,
         "Azure Migrate Owner": 68,
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28,
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
         "Azure Red Hat OpenShift Machine API Operator": 35,
@@ -4829,26 +4830,56 @@
     "Microsoft.Compute/virtualmachinescalesets/disks/beginGetAccess/action": {
         "Compute Diagnostics Role": 3
     },
+    "Microsoft.ComputeLimit/locations/features/disable/action": {
+        "Compute Limit Operator": 20
+    },
+    "Microsoft.ComputeLimit/locations/features/enable/action": {
+        "Compute Limit Operator": 20
+    },
+    "Microsoft.ComputeLimit/locations/features/read": {
+        "Compute Limit Operator": 20
+    },
     "Microsoft.ComputeLimit/locations/guestSubscriptions/delete": {
-        "Compute Limit Operator": 10
+        "Compute Limit Operator": 20
     },
     "Microsoft.ComputeLimit/locations/guestSubscriptions/read": {
-        "Compute Limit Operator": 10
+        "Compute Limit Operator": 20
     },
     "Microsoft.ComputeLimit/locations/guestSubscriptions/write": {
-        "Compute Limit Operator": 10
+        "Compute Limit Operator": 20
+    },
+    "Microsoft.ComputeLimit/locations/operationResults/read": {
+        "Compute Limit Operator": 20
+    },
+    "Microsoft.ComputeLimit/locations/sharedLimitCaps/delete": {
+        "Compute Limit Operator": 20
+    },
+    "Microsoft.ComputeLimit/locations/sharedLimitCaps/memberCapOverrides/delete": {
+        "Compute Limit Operator": 20
+    },
+    "Microsoft.ComputeLimit/locations/sharedLimitCaps/memberCapOverrides/read": {
+        "Compute Limit Operator": 20
+    },
+    "Microsoft.ComputeLimit/locations/sharedLimitCaps/memberCapOverrides/write": {
+        "Compute Limit Operator": 20
+    },
+    "Microsoft.ComputeLimit/locations/sharedLimitCaps/read": {
+        "Compute Limit Operator": 20
+    },
+    "Microsoft.ComputeLimit/locations/sharedLimitCaps/write": {
+        "Compute Limit Operator": 20
     },
     "Microsoft.ComputeLimit/locations/sharedLimits/delete": {
-        "Compute Limit Operator": 10
+        "Compute Limit Operator": 20
     },
     "Microsoft.ComputeLimit/locations/sharedLimits/read": {
-        "Compute Limit Operator": 10
+        "Compute Limit Operator": 20
     },
     "Microsoft.ComputeLimit/locations/sharedLimits/write": {
-        "Compute Limit Operator": 10
+        "Compute Limit Operator": 20
     },
     "Microsoft.ComputeLimit/register/action": {
-        "Compute Limit Operator": 10
+        "Compute Limit Operator": 20
     },
     "Microsoft.ComputeSchedule/autoActions/attachResources/action": {
         "Auto Actions Contributor": 18
@@ -5608,6 +5639,12 @@
     },
     "Microsoft.ContainerService/managedclustersnapshots/*": {
         "Azure Kubernetes Service Contributor Role": 9
+    },
+    "Microsoft.ContainerService/preparedImageSpecifications/*": {
+        "Azure Kubernetes Service Prepared Image Specification Contributor": 1
+    },
+    "Microsoft.ContainerService/preparedImageSpecifications/read": {
+        "Azure Kubernetes Service Prepared Image Specification Reader": 1
     },
     "Microsoft.ContainerService/snapshots/*": {
         "Azure Kubernetes Service Contributor Role": 9
@@ -6756,6 +6793,9 @@
     "Microsoft.Discovery/tools/*": {
         "Microsoft Discovery Platform Contributor (Preview)": 22
     },
+    "Microsoft.Discovery/tools/read": {
+        "Microsoft Discovery Tools Reader - Preview": 1
+    },
     "Microsoft.Discovery/workflows/*": {
         "Microsoft Discovery Platform Contributor (Preview)": 22
     },
@@ -6781,14 +6821,14 @@
         "Cosmos DB Account Reader Role": 7
     },
     "Microsoft.DocumentDB/databaseAccounts/backup/action": {
-        "Cosmos DB Long Term Retention Backup Role": 5,
+        "Cosmos DB Long Term Retention Backup Role": 7,
         "CosmosBackupOperator": 2
     },
     "Microsoft.DocumentDB/databaseAccounts/disableLongTermProtection/action": {
-        "Cosmos DB Long Term Retention Backup Role": 5
+        "Cosmos DB Long Term Retention Backup Role": 7
     },
     "Microsoft.DocumentDB/databaseAccounts/enableLongTermProtection/action": {
-        "Cosmos DB Long Term Retention Backup Role": 5
+        "Cosmos DB Long Term Retention Backup Role": 7
     },
     "Microsoft.DocumentDB/databaseAccounts/listConnectionStrings/action": {
         "Defender Cloud Secrets Posture": 4
@@ -6797,10 +6837,10 @@
         "Defender Cloud Secrets Posture": 4
     },
     "Microsoft.DocumentDB/databaseAccounts/preBackup/action": {
-        "Cosmos DB Long Term Retention Backup Role": 5
+        "Cosmos DB Long Term Retention Backup Role": 7
     },
     "Microsoft.DocumentDB/databaseAccounts/preRestore/action": {
-        "Cosmos DB Long Term Retention Restore Role": 2
+        "Cosmos DB Long Term Retention Restore Role": 4
     },
     "Microsoft.DocumentDB/databaseAccounts/privateEndpointConnections/operationResults/read": {
         "Azure AI Enterprise Network Connection Approver": 90
@@ -6819,20 +6859,26 @@
     },
     "Microsoft.DocumentDB/databaseAccounts/read": {
         "Azure AI Enterprise Network Connection Approver": 90,
+        "Cosmos DB Long Term Retention Backup Role": 7,
+        "Cosmos DB Long Term Retention Restore Role": 4,
         "Defender Azure Cosmos DB": 3
     },
     "Microsoft.DocumentDB/databaseAccounts/readonlykeys/action": {
         "Cosmos DB Account Reader Role": 7
     },
     "Microsoft.DocumentDB/databaseAccounts/restore/action": {
-        "Cosmos DB Long Term Retention Restore Role": 2,
+        "Cosmos DB Long Term Retention Restore Role": 4,
         "CosmosBackupOperator": 2
     },
     "Microsoft.DocumentDB/databaseAccounts/validateForLongTermProtection/action": {
-        "Cosmos DB Long Term Retention Backup Role": 5
+        "Cosmos DB Long Term Retention Backup Role": 7
     },
     "Microsoft.DocumentDB/fleets/*": {
         "CosmosDB Fleet Operator Role": 1
+    },
+    "Microsoft.DocumentDB/locations/operationsStatus/read": {
+        "Cosmos DB Long Term Retention Backup Role": 7,
+        "Cosmos DB Long Term Retention Restore Role": 4
     },
     "Microsoft.DocumentDB/locations/restorableDatabaseAccounts/*/read": {
         "CosmosRestoreOperator": 3
@@ -8551,17 +8597,25 @@
         "Collaborative Runtime Operator": 8
     },
     "Microsoft.InferenceService/inferenceAccounts/delete": {
-        "Inference Account Operator": 3,
-        "Inference Account Owner": 3
+        "Inference Account Operator": 5,
+        "Inference Account Owner": 5
+    },
+    "Microsoft.InferenceService/inferenceAccounts/listKeys/action": {
+        "Inference Account Operator": 5,
+        "Inference Account Owner": 5
     },
     "Microsoft.InferenceService/inferenceAccounts/read": {
-        "Inference Account Operator": 3,
-        "Inference Account Owner": 3,
+        "Inference Account Operator": 5,
+        "Inference Account Owner": 5,
         "Semantic Reranker User": 1
     },
+    "Microsoft.InferenceService/inferenceAccounts/regenerateKeys/action": {
+        "Inference Account Operator": 5,
+        "Inference Account Owner": 5
+    },
     "Microsoft.InferenceService/inferenceAccounts/write": {
-        "Inference Account Operator": 3,
-        "Inference Account Owner": 3
+        "Inference Account Operator": 5,
+        "Inference Account Owner": 5
     },
     "Microsoft.Insights/ActionGroups/*": {
         "Automation Contributor": 11
@@ -8869,7 +8923,7 @@
         "Community Reader Role": 20,
         "Compute Fleet Contributor": 6,
         "Compute Gallery Artifacts Publisher": 11,
-        "Compute Limit Operator": 10,
+        "Compute Limit Operator": 20,
         "Connector Namespace Contributor": 13,
         "Connector Namespace Developer": 10,
         "Connector Writer": 4,
@@ -9043,6 +9097,7 @@
         "GroupQuota Reader": 10,
         "GroupQuota Request Operator": 10,
         "Operator Nexus Compute Contributor Role (Preview)": 91,
+        "Quantum Workspace Data Reader": 6,
         "SRE Agent Administrator": 8,
         "SRE Agent Author": 3,
         "SRE Agent Reader": 3,
@@ -10505,7 +10560,7 @@
         "Azure AI Enterprise Network Connection Approver": 90
     },
     "Microsoft.Network/applicationSecurityGroups/joinNetworkSecurityRule/action": {
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28,
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Machine API Operator": 35
     },
     "Microsoft.Network/applicationSecurityGroups/read": {
@@ -10614,7 +10669,7 @@
     },
     "Microsoft.Network/loadBalancers/backendAddressPools/join/action": {
         "Azure Center for SAP solutions service role": 55,
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28,
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
         "Azure Red Hat OpenShift Machine API Operator": 35,
         "Azure Red Hat OpenShift Network Operator": 7,
@@ -10634,6 +10689,7 @@
         "Azure Red Hat OpenShift Hosted Control Planes Service Managed Identity": 18
     },
     "Microsoft.Network/loadBalancers/delete": {
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Domain Services Contributor": 69
     },
     "Microsoft.Network/loadBalancers/frontendIPConfigurations/join/action": {
@@ -10652,7 +10708,7 @@
         "Virtual Machine Contributor": 45
     },
     "Microsoft.Network/loadBalancers/inboundNatRules/join/action": {
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28,
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "DevTest Labs User": 32,
         "Domain Services Contributor": 69,
         "Virtual Machine Contributor": 45
@@ -10666,7 +10722,7 @@
         "Azure Center for SAP solutions administrator": 57,
         "Azure Center for SAP solutions reader": 43,
         "Azure Center for SAP solutions service role": 55,
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30
     },
     "Microsoft.Network/loadBalancers/networkInterfaces/read": {
         "Azure Center for SAP solutions administrator": 57,
@@ -10695,7 +10751,7 @@
         "Azure Center for SAP solutions administrator": 57,
         "Azure Center for SAP solutions reader": 43,
         "Azure Center for SAP solutions service role": 55,
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28,
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Hosted Control Planes Service Managed Identity": 18,
         "Azure Red Hat OpenShift Machine API Operator": 35,
         "Defender Servers P2": 19,
@@ -10714,7 +10770,7 @@
     },
     "Microsoft.Network/loadBalancers/write": {
         "Azure Center for SAP solutions service role": 55,
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28,
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Hosted Control Planes Service Managed Identity": 18,
         "Azure Red Hat OpenShift Machine API Operator": 35
     },
@@ -10751,7 +10807,7 @@
     },
     "Microsoft.Network/natGateways/join/action": {
         "AVS on Fleet VIS Role": 21,
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28,
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift First Party Network": 11,
         "Azure Red Hat OpenShift Hosted Control Planes Service Managed Identity": 18,
@@ -10768,7 +10824,7 @@
     },
     "Microsoft.Network/networkIntentPolicies/join/action": {
         "AVS on Fleet VIS Role": 21,
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28,
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift First Party Network": 11,
         "Azure Red Hat OpenShift Service Operator": 10
@@ -10842,7 +10898,7 @@
         "Azure Center for SAP solutions service role": 55,
         "Azure Migrate Execute Expert": 45,
         "Azure Migrate Owner": 68,
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28,
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
         "Azure Red Hat OpenShift Image Registry Operator": 25,
         "Azure Red Hat OpenShift Machine API Operator": 35,
@@ -10866,7 +10922,7 @@
         "Azure Center for SAP solutions service role": 55,
         "Azure Migrate Execute Expert": 45,
         "Azure Migrate Owner": 68,
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28,
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
         "Azure Red Hat OpenShift Machine API Operator": 35,
         "Azure Red Hat OpenShift Network Operator": 7,
@@ -10887,7 +10943,7 @@
     },
     "Microsoft.Network/networkManagers/ipamPools/associateResourcesToPool/action": {
         "AVS on Fleet VIS Role": 21,
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28,
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift Service Operator": 10
     },
@@ -10912,7 +10968,7 @@
         "Azure Container Storage Operator": 18,
         "Azure Migrate Decide and Plan Expert": 51,
         "Azure Migrate Owner": 68,
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28,
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift First Party Network": 11,
         "Azure Red Hat OpenShift Hosted Control Planes Service Managed Identity": 18,
@@ -10925,7 +10981,7 @@
     },
     "Microsoft.Network/networkSecurityGroups/read": {
         "AVS Orchestrator Role": 56,
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28,
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift First Party Network": 11,
         "Azure Red Hat OpenShift Hosted Control Planes Control Plane Operator": 3,
         "Azure Red Hat OpenShift Hosted Control Planes Service Managed Identity": 18,
@@ -10959,7 +11015,7 @@
     },
     "Microsoft.Network/networkSecurityGroups/write": {
         "AVS Orchestrator Role": 56,
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28,
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Machine API Operator": 35,
         "Defender Servers P2": 19,
         "Domain Services Contributor": 69
@@ -11087,26 +11143,29 @@
         "Azure AI Enterprise Network Connection Approver": 90
     },
     "Microsoft.Network/privatelinkservices/delete": {
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30
+    },
+    "Microsoft.Network/privatelinkservices/privateEndpointConnections/delete": {
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30
     },
     "Microsoft.Network/privatelinkservices/read": {
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30
     },
     "Microsoft.Network/privatelinkservices/write": {
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30
     },
     "Microsoft.Network/publicIPAddresses/*/read": {
         "DevTest Labs User": 32
     },
     "Microsoft.Network/publicIPAddresses/delete": {
         "AVS Orchestrator Role": 56,
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28,
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Machine API Operator": 35,
         "VM Restore Operator": 41
     },
     "Microsoft.Network/publicIPAddresses/join/action": {
         "Azure Kubernetes Service Policy Add-on Deployment": 6,
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28,
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Machine API Operator": 35,
         "DevTest Labs User": 32,
         "LocalNGFirewallAdministrator role": 35,
@@ -11116,7 +11175,7 @@
     "Microsoft.Network/publicIPAddresses/read": {
         "AVS Orchestrator Role": 56,
         "Azure Kubernetes Fleet Manager Hub Agent Role": 7,
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28,
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Machine API Operator": 35,
         "Defender Servers P2": 19,
         "DevTest Labs User": 32,
@@ -11130,14 +11189,14 @@
     },
     "Microsoft.Network/publicIPAddresses/write": {
         "AVS Orchestrator Role": 56,
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28,
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Machine API Operator": 35,
         "LocalNGFirewallAdministrator role": 35,
         "VM Restore Operator": 41
     },
     "Microsoft.Network/publicIPPrefixes/join/action": {
         "Azure Kubernetes Service Policy Add-on Deployment": 6,
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30
     },
     "Microsoft.Network/register/action": {
         "Azure Local Migrate Owner": 64,
@@ -11157,7 +11216,7 @@
         "AVS on Fleet VIS Role": 21,
         "Azure Center for SAP solutions administrator": 57,
         "Azure Container Storage Operator": 18,
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28,
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift First Party Network": 11,
         "Azure Red Hat OpenShift Hosted Control Planes Service Managed Identity": 18,
@@ -11193,7 +11252,7 @@
     },
     "Microsoft.Network/serviceEndpointPolicies/join/action": {
         "AVS on Fleet VIS Role": 21,
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28,
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift First Party Network": 11,
         "Azure Red Hat OpenShift Service Operator": 10,
@@ -11353,7 +11412,7 @@
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
         "Azure Migrate Owner": 68,
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28,
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Cluster Ingress Operator": 6,
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift First Party Network": 11,
@@ -11401,7 +11460,7 @@
         "Azure Migrate Decide and Plan Expert": 51,
         "Azure Migrate Execute Expert": 45,
         "Azure Migrate Owner": 68,
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28,
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Cluster Ingress Operator": 6,
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift First Party Network": 11,
@@ -11451,7 +11510,7 @@
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
         "Azure Migrate Owner": 68,
-        "Azure Red Hat OpenShift Cloud Controller Manager": 28,
+        "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift First Party Network": 11,
         "Azure Red Hat OpenShift Hosted Control Planes Service Managed Identity": 18,
@@ -11956,10 +12015,12 @@
         "Purview role 3 (Deprecated)": 1
     },
     "Microsoft.Quantum/Workspaces/read": {
-        "Quantum Workspace Data Contributor": 6
+        "Quantum Workspace Data Contributor": 6,
+        "Quantum Workspace Data Reader": 6
     },
     "Microsoft.Quantum/locations/offerings/read": {
-        "Quantum Workspace Data Contributor": 6
+        "Quantum Workspace Data Contributor": 6,
+        "Quantum Workspace Data Reader": 6
     },
     "Microsoft.Quota/GROUPQUOTAS/*/DELETE": {
         "GroupQuota Request Operator": 10
@@ -12945,7 +13006,7 @@
         "Collaborative Runtime Operator": 8,
         "Compute Fleet Contributor": 6,
         "Compute Gallery Artifacts Publisher": 11,
-        "Compute Limit Operator": 10,
+        "Compute Limit Operator": 20,
         "Container Apps ConnectedEnvironments Contributor": 9,
         "Container Apps Jobs Contributor": 16,
         "Container Apps ManagedEnvironments Contributor": 7,
@@ -13284,6 +13345,7 @@
         "Microsoft Discovery Platform Reader (Preview)": 3,
         "Nexus Network Fabric Service Reader": 7,
         "Operator Nexus Compute Contributor Role (Preview)": 91,
+        "Quantum Workspace Data Reader": 6,
         "Windows 365 Network Interface Contributor": 15
     },
     "Microsoft.Resources/deployments/validate/action": {
@@ -13708,7 +13770,7 @@
         "Community Reader Role": 20,
         "Compute Fleet Contributor": 6,
         "Compute Gallery Artifacts Publisher": 11,
-        "Compute Limit Operator": 10,
+        "Compute Limit Operator": 20,
         "Connector Namespace Contributor": 13,
         "Connector Namespace Developer": 10,
         "Connector Writer": 4,
@@ -13884,6 +13946,7 @@
         "ProviderHub Contributor": 6,
         "ProviderHub Reader": 4,
         "Quantum Workspace Data Contributor": 6,
+        "Quantum Workspace Data Reader": 6,
         "Quota Request Operator": 14,
         "Recurring Scheduled Actions Contributor": 17,
         "Redis Cache Contributor": 8,
@@ -16459,26 +16522,29 @@
     "microsoft.scvmm/vmmservers/Write": {
         "Azure Arc ScVmm Private Clouds Onboarding": 30
     },
+    "microsoft.security/pricings/action": {
+        "Defender Settings Contributor": 8
+    },
     "microsoft.security/pricings/read": {
-        "Defender Settings Contributor": 7
+        "Defender Settings Contributor": 8
     },
     "microsoft.security/pricings/securityoperators/read": {
-        "Defender Settings Contributor": 7
+        "Defender Settings Contributor": 8
     },
     "microsoft.security/pricings/write": {
-        "Defender Settings Contributor": 7
+        "Defender Settings Contributor": 8
     },
     "microsoft.security/register/action": {
-        "Defender Settings Contributor": 7
+        "Defender Settings Contributor": 8
     },
     "microsoft.security/securityoperators/read": {
-        "Defender Settings Contributor": 7
+        "Defender Settings Contributor": 8
     },
     "microsoft.security/settings/read": {
-        "Defender Settings Contributor": 7
+        "Defender Settings Contributor": 8
     },
     "microsoft.security/settings/write": {
-        "Defender Settings Contributor": 7
+        "Defender Settings Contributor": 8
     },
     "microsoft.web/sites/config/Write": {
         "Logic Apps Standard Developer": 25
