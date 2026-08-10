@@ -1256,8 +1256,8 @@
         "Cognitive Services Contributor": 18,
         "Collaborative Data Contributor": 13,
         "Collaborative Runtime Operator": 8,
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Community Reader Role": 20,
         "Compute Diagnostics Role": 3,
         "Compute Fleet Contributor": 6,
@@ -1277,7 +1277,7 @@
         "Container Apps Operator": 12,
         "Container Apps SessionPools Contributor": 15,
         "Container Apps SessionPools Reader": 3,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58,
+        "Container Registry Contributor and Data Access Configuration Administrator": 59,
         "ContainerApp Reader": 6,
         "Context Cache Administrator": 5,
         "Context Cache Container Contributor": 7,
@@ -2638,6 +2638,9 @@
     },
     "Microsoft.AwsConnector/wafv2WebACLAssociations/write": {
         "Aws Connector contributor role": 269
+    },
+    "Microsoft.AzureActiveDirectory/associatedBillingAccounts/read": {
+        "Associated Billing Accounts Reader": 1
     },
     "Microsoft.AzureActiveDirectory/directories/read": {
         "Tenant Contributor": 8
@@ -4831,55 +4834,64 @@
         "Compute Diagnostics Role": 3
     },
     "Microsoft.ComputeLimit/locations/features/disable/action": {
-        "Compute Limit Operator": 20
+        "Compute Limit Operator": 23
     },
     "Microsoft.ComputeLimit/locations/features/enable/action": {
-        "Compute Limit Operator": 20
+        "Compute Limit Operator": 23
     },
     "Microsoft.ComputeLimit/locations/features/read": {
-        "Compute Limit Operator": 20
+        "Compute Limit Operator": 23
     },
     "Microsoft.ComputeLimit/locations/guestSubscriptions/delete": {
-        "Compute Limit Operator": 20
+        "Compute Limit Operator": 23
     },
     "Microsoft.ComputeLimit/locations/guestSubscriptions/read": {
-        "Compute Limit Operator": 20
+        "Compute Limit Operator": 23
     },
     "Microsoft.ComputeLimit/locations/guestSubscriptions/write": {
-        "Compute Limit Operator": 20
+        "Compute Limit Operator": 23
     },
     "Microsoft.ComputeLimit/locations/operationResults/read": {
-        "Compute Limit Operator": 20
+        "Compute Limit Operator": 23
     },
     "Microsoft.ComputeLimit/locations/sharedLimitCaps/delete": {
-        "Compute Limit Operator": 20
+        "Compute Limit Operator": 23
     },
     "Microsoft.ComputeLimit/locations/sharedLimitCaps/memberCapOverrides/delete": {
-        "Compute Limit Operator": 20
+        "Compute Limit Operator": 23
     },
     "Microsoft.ComputeLimit/locations/sharedLimitCaps/memberCapOverrides/read": {
-        "Compute Limit Operator": 20
+        "Compute Limit Operator": 23
     },
     "Microsoft.ComputeLimit/locations/sharedLimitCaps/memberCapOverrides/write": {
-        "Compute Limit Operator": 20
+        "Compute Limit Operator": 23
     },
     "Microsoft.ComputeLimit/locations/sharedLimitCaps/read": {
-        "Compute Limit Operator": 20
+        "Compute Limit Operator": 23
     },
     "Microsoft.ComputeLimit/locations/sharedLimitCaps/write": {
-        "Compute Limit Operator": 20
+        "Compute Limit Operator": 23
     },
     "Microsoft.ComputeLimit/locations/sharedLimits/delete": {
-        "Compute Limit Operator": 20
+        "Compute Limit Operator": 23
     },
     "Microsoft.ComputeLimit/locations/sharedLimits/read": {
-        "Compute Limit Operator": 20
+        "Compute Limit Operator": 23
     },
     "Microsoft.ComputeLimit/locations/sharedLimits/write": {
-        "Compute Limit Operator": 20
+        "Compute Limit Operator": 23
+    },
+    "Microsoft.ComputeLimit/locations/trustedHostSubscriptions/delete": {
+        "Compute Limit Operator": 23
+    },
+    "Microsoft.ComputeLimit/locations/trustedHostSubscriptions/read": {
+        "Compute Limit Operator": 23
+    },
+    "Microsoft.ComputeLimit/locations/trustedHostSubscriptions/write": {
+        "Compute Limit Operator": 23
     },
     "Microsoft.ComputeLimit/register/action": {
-        "Compute Limit Operator": 20
+        "Compute Limit Operator": 23
     },
     "Microsoft.ComputeSchedule/autoActions/attachResources/action": {
         "Auto Actions Contributor": 18
@@ -5192,7 +5204,7 @@
         "Azure Container Instances Contributor Role": 5
     },
     "Microsoft.ContainerRegistry/locations/operationResults/read": {
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/*": {
         "Azure AI Administrator": 39
@@ -5234,24 +5246,25 @@
     },
     "Microsoft.ContainerRegistry/registries/connectedRegistries/deactivate/action": {
         "Container Registry Connected Registry Administrator": 15,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/connectedRegistries/delete": {
         "Container Registry Connected Registry Administrator": 15,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/connectedRegistries/read": {
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
         "Container Registry Connected Registry Administrator": 15,
         "Container Registry Connected Registry Reader": 6,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/connectedRegistries/resync/action": {
-        "Container Registry Connected Registry Administrator": 15
+        "Container Registry Connected Registry Administrator": 15,
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/connectedRegistries/write": {
         "Container Registry Connected Registry Administrator": 15,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/credentialSets/delete": {
         "Container Registry Credential Set Administrator": 4
@@ -5267,7 +5280,7 @@
         "Container Registry Credential Set Administrator": 4
     },
     "Microsoft.ContainerRegistry/registries/delete": {
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/exportPipelines/delete": {
         "Container Registry Transfer Pipeline Contributor": 10
@@ -5280,7 +5293,7 @@
     },
     "Microsoft.ContainerRegistry/registries/generateCredentials/action": {
         "Container Registry Connected Registry Administrator": 15,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/importImage/action": {
         "Container Registry Data Importer and Data Reader": 3
@@ -5299,14 +5312,14 @@
     },
     "Microsoft.ContainerRegistry/registries/listCredentials/action": {
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/metadata/read": {
         "Defender For Container Registries Operator": 3
     },
     "Microsoft.ContainerRegistry/registries/operationStatuses/read": {
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/pipelineRuns/delete": {
         "Container Registry Transfer Pipeline Contributor": 10
@@ -5321,40 +5334,40 @@
         "Container Registry Transfer Pipeline Contributor": 10
     },
     "Microsoft.ContainerRegistry/registries/privateEndpointConnections/delete": {
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/privateEndpointConnections/operationStatuses/read": {
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/privateEndpointConnections/read": {
         "Azure AI Enterprise Network Connection Approver": 90,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/privateEndpointConnections/write": {
         "Azure AI Enterprise Network Connection Approver": 90,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/privateEndpointConnectionsApproval/action": {
         "Azure AI Enterprise Network Connection Approver": 90,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/providers/Microsoft.Insights/diagnosticSettings/read": {
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/providers/Microsoft.Insights/diagnosticSettings/write": {
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/providers/Microsoft.Insights/logDefinitions/read": {
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/providers/Microsoft.Insights/metricDefinitions/read": {
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/pull/read": {
         "AcrPull": 1,
@@ -5378,27 +5391,27 @@
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
         "Container Registry Connected Registry Administrator": 15,
         "Container Registry Connected Registry Reader": 6,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58,
+        "Container Registry Contributor and Data Access Configuration Administrator": 59,
         "Container Registry Data Importer and Data Reader": 3,
         "Container Registry Tasks Contributor": 24,
         "Defender For Container Registries Operator": 3
     },
     "Microsoft.ContainerRegistry/registries/regenerateCredential/action": {
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/replications/delete": {
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/replications/operationStatuses/read": {
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/replications/read": {
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/replications/write": {
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/runs/cancel/action": {
         "Container Registry Tasks Contributor": 24
@@ -5417,23 +5430,23 @@
     },
     "Microsoft.ContainerRegistry/registries/scopeMaps/delete": {
         "Container Registry Connected Registry Administrator": 15,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/scopeMaps/operationStatuses/read": {
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
         "Container Registry Connected Registry Administrator": 15,
         "Container Registry Connected Registry Reader": 6,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/scopeMaps/read": {
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
         "Container Registry Connected Registry Administrator": 15,
         "Container Registry Connected Registry Reader": 6,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/scopeMaps/write": {
         "Container Registry Connected Registry Administrator": 15,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/sign/write": {
         "AcrImageSigner": 1
@@ -5467,51 +5480,51 @@
     },
     "Microsoft.ContainerRegistry/registries/tokens/delete": {
         "Container Registry Connected Registry Administrator": 15,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/tokens/operationStatuses/read": {
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
         "Container Registry Connected Registry Administrator": 15,
         "Container Registry Connected Registry Reader": 6,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/tokens/read": {
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
         "Container Registry Connected Registry Administrator": 15,
         "Container Registry Connected Registry Reader": 6,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/tokens/write": {
         "Container Registry Connected Registry Administrator": 15,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/webhooks/delete": {
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/webhooks/getCallbackConfig/action": {
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/webhooks/listEvents/action": {
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/webhooks/operationStatuses/read": {
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/webhooks/ping/action": {
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/webhooks/read": {
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/webhooks/write": {
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerRegistry/registries/write": {
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.ContainerService/aiManagers/*": {
         "Azure AIManager Contributor": 5
@@ -7582,8 +7595,8 @@
         "Azure AI Administrator": 39,
         "Backup MUA Admin": 26,
         "Cognitive Services Contributor": 18,
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Community Reader Role": 20,
         "Defender Kubernetes API Access": 11,
         "Enclave Approver Role": 35,
@@ -7597,8 +7610,8 @@
         "Azure AI Administrator": 39,
         "Backup MUA Admin": 26,
         "Cognitive Services Contributor": 18,
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Community Reader Role": 20,
         "CrossConnectionManager": 3,
         "CrossConnectionReader": 3,
@@ -8643,7 +8656,7 @@
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58,
+        "Container Registry Contributor and Data Access Configuration Administrator": 59,
         "Domain Services Contributor": 69,
         "HDInsight on AKS Cluster Admin": 35,
         "HDInsight on AKS Cluster Operator": 28,
@@ -8663,7 +8676,7 @@
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58,
+        "Container Registry Contributor and Data Access Configuration Administrator": 59,
         "Domain Services Contributor": 69,
         "HDInsight on AKS Cluster Admin": 35,
         "HDInsight on AKS Cluster Operator": 28,
@@ -8683,7 +8696,7 @@
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58,
+        "Container Registry Contributor and Data Access Configuration Administrator": 59,
         "Domain Services Contributor": 69,
         "Domain Services Reader": 28,
         "HDInsight on AKS Cluster Admin": 35,
@@ -8704,7 +8717,7 @@
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58,
+        "Container Registry Contributor and Data Access Configuration Administrator": 59,
         "Domain Services Contributor": 69,
         "Domain Services Reader": 28,
         "HDInsight on AKS Cluster Admin": 35,
@@ -8725,7 +8738,7 @@
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58,
+        "Container Registry Contributor and Data Access Configuration Administrator": 59,
         "Domain Services Contributor": 69,
         "HDInsight on AKS Cluster Admin": 35,
         "HDInsight on AKS Cluster Operator": 28,
@@ -8745,7 +8758,7 @@
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58,
+        "Container Registry Contributor and Data Access Configuration Administrator": 59,
         "Domain Services Contributor": 69,
         "HDInsight on AKS Cluster Admin": 35,
         "HDInsight on AKS Cluster Operator": 28,
@@ -8765,7 +8778,7 @@
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58,
+        "Container Registry Contributor and Data Access Configuration Administrator": 59,
         "Domain Services Contributor": 69,
         "HDInsight on AKS Cluster Admin": 35,
         "HDInsight on AKS Cluster Operator": 28,
@@ -8923,7 +8936,7 @@
         "Community Reader Role": 20,
         "Compute Fleet Contributor": 6,
         "Compute Gallery Artifacts Publisher": 11,
-        "Compute Limit Operator": 20,
+        "Compute Limit Operator": 23,
         "Connector Namespace Contributor": 13,
         "Connector Namespace Developer": 10,
         "Connector Writer": 4,
@@ -9084,8 +9097,8 @@
         "Azure Managed Redis Reader": 9,
         "Azure Monitor Pipeline Reader": 5,
         "Cognitive Services User": 13,
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Desktop Virtualization Application Group Reader": 9,
         "Desktop Virtualization Host Pool Reader": 7,
         "Desktop Virtualization Reader": 6,
@@ -10205,23 +10218,23 @@
         "Azure Migrate Service Reader": 12
     },
     "Microsoft.Mission/Locations/OperationStatuses/read": {
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Community Reader Role": 20,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Virtual Enclave Owner Role": 10
     },
     "Microsoft.Mission/Locations/OperationStatuses/write": {
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Virtual Enclave Owner Role": 10
     },
     "Microsoft.Mission/Operations/read": {
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Community Reader Role": 20,
         "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
@@ -10230,7 +10243,7 @@
         "Virtual Enclave Owner Role": 10
     },
     "Microsoft.Mission/approvals/delete": {
-        "Community Owner Role": 43,
+        "Community Owner Role": 46,
         "Enclave Owner Role": 38
     },
     "Microsoft.Mission/approvals/initiatorCallback/action": {
@@ -10240,8 +10253,8 @@
         "Enclave Approver Role": 35
     },
     "Microsoft.Mission/approvals/read": {
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Community Reader Role": 20,
         "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
@@ -10249,8 +10262,8 @@
         "Enclave Reader Role": 20
     },
     "Microsoft.Mission/approvals/write": {
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38
@@ -10259,11 +10272,11 @@
         "Enclave Approver Role": 35
     },
     "Microsoft.Mission/communities/communityEndpoints/delete": {
-        "Community Owner Role": 43
+        "Community Owner Role": 46
     },
     "Microsoft.Mission/communities/communityEndpoints/read": {
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Community Reader Role": 20,
         "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
@@ -10271,31 +10284,31 @@
         "Enclave Reader Role": 20
     },
     "Microsoft.Mission/communities/communityEndpoints/write": {
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46
     },
     "Microsoft.Mission/communities/communityendpoints/connect/action": {
-        "Community Owner Role": 43,
+        "Community Owner Role": 46,
         "Enclave Approver Role": 35
     },
     "Microsoft.Mission/communities/dedicatedHubs/connect/action": {
-        "Community Owner Role": 43
+        "Community Owner Role": 46
     },
     "Microsoft.Mission/communities/dedicatedHubs/delete": {
-        "Community Owner Role": 43
+        "Community Owner Role": 46
     },
     "Microsoft.Mission/communities/dedicatedHubs/read": {
-        "Community Owner Role": 43
+        "Community Owner Role": 46
     },
     "Microsoft.Mission/communities/dedicatedHubs/write": {
-        "Community Owner Role": 43
+        "Community Owner Role": 46
     },
     "Microsoft.Mission/communities/delete": {
-        "Community Owner Role": 43
+        "Community Owner Role": 46
     },
     "Microsoft.Mission/communities/read": {
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Community Reader Role": 20,
         "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
@@ -10304,19 +10317,19 @@
         "Virtual Enclave Owner Role": 10
     },
     "Microsoft.Mission/communities/setMaintenanceMode/action": {
-        "Community Owner Role": 43,
+        "Community Owner Role": 46,
         "Enclave Approver Role": 35
     },
     "Microsoft.Mission/communities/syncCommunityEndpoints/action": {
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46
     },
     "Microsoft.Mission/communities/transitHubs/delete": {
-        "Community Owner Role": 43
+        "Community Owner Role": 46
     },
     "Microsoft.Mission/communities/transitHubs/read": {
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Community Reader Role": 20,
         "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
@@ -10324,12 +10337,12 @@
         "Enclave Reader Role": 20
     },
     "Microsoft.Mission/communities/transitHubs/write": {
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46
     },
     "Microsoft.Mission/communities/write": {
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46
     },
     "Microsoft.Mission/enclaveConnections/approvalCallback/action": {
         "Enclave Approver Role": 35
@@ -10338,8 +10351,8 @@
         "Enclave Owner Role": 38
     },
     "Microsoft.Mission/enclaveConnections/read": {
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Community Reader Role": 20,
         "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
@@ -10355,20 +10368,20 @@
         "Enclave Owner Role": 38
     },
     "Microsoft.Mission/register/action": {
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Enclave Contributor Role": 31
     },
     "Microsoft.Mission/unregister/action": {
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Enclave Contributor Role": 31
     },
     "Microsoft.Mission/virtualEnclaves/approvalCallback/action": {
         "Enclave Approver Role": 35
     },
     "Microsoft.Mission/virtualEnclaves/delete": {
-        "Community Owner Role": 43,
+        "Community Owner Role": 46,
         "Enclave Owner Role": 38,
         "Virtual Enclave Owner Role": 10
     },
@@ -10383,8 +10396,8 @@
         "Enclave Owner Role": 38
     },
     "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/read": {
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Community Reader Role": 20,
         "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
@@ -10396,19 +10409,19 @@
         "Enclave Owner Role": 38
     },
     "Microsoft.Mission/virtualEnclaves/endpoints/read": {
-        "Community Contributor Role": 33,
+        "Community Contributor Role": 35,
         "Community Reader Role": 20,
         "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
         "Enclave Reader Role": 20
     },
     "Microsoft.Mission/virtualEnclaves/endpoints/write": {
-        "Community Contributor Role": 33,
+        "Community Contributor Role": 35,
         "Enclave Contributor Role": 31
     },
     "Microsoft.Mission/virtualEnclaves/read": {
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Community Reader Role": 20,
         "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
@@ -10417,25 +10430,32 @@
         "Virtual Enclave Owner Role": 10
     },
     "Microsoft.Mission/virtualEnclaves/setEnclaveRoleAssignments/action": {
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Enclave Approver Role": 35,
         "Enclave Owner Role": 38
+    },
+    "Microsoft.Mission/virtualEnclaves/setMaintenanceMode/action": {
+        "Community Owner Role": 46
     },
     "Microsoft.Mission/virtualEnclaves/setSubnetConfiguration/action": {
         "Enclave Approver Role": 35,
         "Enclave Owner Role": 38
     },
     "Microsoft.Mission/virtualEnclaves/setWorkloadRoleAssignments/action": {
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Enclave Approver Role": 35,
         "Enclave Owner Role": 38
     },
     "Microsoft.Mission/virtualEnclaves/workloads/delete": {
-        "Community Owner Role": 43,
+        "Community Owner Role": 46,
         "Enclave Owner Role": 38,
         "Virtual Enclave Owner Role": 10
     },
     "Microsoft.Mission/virtualEnclaves/workloads/read": {
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Community Reader Role": 20,
         "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
@@ -10444,15 +10464,15 @@
         "Virtual Enclave Owner Role": 10
     },
     "Microsoft.Mission/virtualEnclaves/workloads/write": {
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Virtual Enclave Owner Role": 10
     },
     "Microsoft.Mission/virtualEnclaves/write": {
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Virtual Enclave Owner Role": 10
@@ -11103,14 +11123,14 @@
         "Azure Red Hat OpenShift Image Registry Operator": 25
     },
     "Microsoft.Network/privateEndpoints/privateLinkServiceProxies/delete": {
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.Network/privateEndpoints/privateLinkServiceProxies/read": {
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.Network/privateEndpoints/privateLinkServiceProxies/write": {
-        "Container Registry Contributor and Data Access Configuration Administrator": 58
+        "Container Registry Contributor and Data Access Configuration Administrator": 59
     },
     "Microsoft.Network/privateEndpoints/read": {
         "Azure Center for SAP solutions administrator": 57,
@@ -11365,7 +11385,7 @@
         "Backup Contributor": 84,
         "Backup Operator": 98,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58,
+        "Container Registry Contributor and Data Access Configuration Administrator": 59,
         "DNS Resolver Contributor": 39,
         "Defender Servers P2": 19,
         "Desktop Virtualization Virtual Machine Contributor": 58,
@@ -11438,7 +11458,7 @@
     "Microsoft.Network/virtualNetworks/subnets/joinViaServiceEndpoint/action": {
         "Avere Contributor": 20,
         "Azure AI Administrator": 39,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58,
+        "Container Registry Contributor and Data Access Configuration Administrator": 59,
         "Cosmos DB Operator": 8,
         "DocumentDB Account Contributor": 8,
         "SQL Security Manager": 65,
@@ -11469,7 +11489,7 @@
         "Azure Red Hat OpenShift Machine API Operator": 35,
         "Azure Red Hat OpenShift Service Operator": 10,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58,
+        "Container Registry Contributor and Data Access Configuration Administrator": 59,
         "DNS Resolver Contributor": 39,
         "Desktop Virtualization Virtual Machine Contributor": 58,
         "Domain Services Contributor": 69,
@@ -11515,7 +11535,7 @@
         "Azure Red Hat OpenShift First Party Network": 11,
         "Azure Red Hat OpenShift Hosted Control Planes Service Managed Identity": 18,
         "Azure Red Hat OpenShift Service Operator": 10,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58,
+        "Container Registry Contributor and Data Access Configuration Administrator": 59,
         "DNS Resolver Contributor": 39,
         "Domain Services Contributor": 69,
         "Oracle Database DbSystems Administrator": 16,
@@ -12775,8 +12795,8 @@
         "ClearDB MySQL DB Contributor": 7,
         "Cognitive Services Contributor": 18,
         "Cognitive Services User": 13,
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Community Reader Role": 20,
         "Compute Fleet Contributor": 6,
         "Cosmos DB Operator": 8,
@@ -13006,12 +13026,12 @@
         "Collaborative Runtime Operator": 8,
         "Compute Fleet Contributor": 6,
         "Compute Gallery Artifacts Publisher": 11,
-        "Compute Limit Operator": 20,
+        "Compute Limit Operator": 23,
         "Container Apps ConnectedEnvironments Contributor": 9,
         "Container Apps Jobs Contributor": 16,
         "Container Apps ManagedEnvironments Contributor": 7,
         "Container Apps SessionPools Contributor": 15,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58,
+        "Container Registry Contributor and Data Access Configuration Administrator": 59,
         "Container Registry Tasks Contributor": 24,
         "Context Cache Administrator": 5,
         "Context Cache Container Contributor": 7,
@@ -13318,8 +13338,8 @@
         "Azure Stack HCI VM Reader": 42,
         "CDN Endpoint Reader": 9,
         "CDN Profile Reader": 11,
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Container Apps ConnectedEnvironments Reader": 6,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
         "ContainerApp Reader": 6,
@@ -13409,8 +13429,8 @@
         "Azure Monitor Dashboards with Grafana Contributor": 15,
         "Azure Stack HCI Edge Machine Contributor Role": 21,
         "Azure Stack HCI VM Contributor": 75,
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Domain Services Contributor": 69,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
@@ -13486,8 +13506,8 @@
         "Backup MUA Admin": 26,
         "Cognitive Services Contributor": 18,
         "Cognitive Services User": 13,
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Community Reader Role": 20,
         "Connector Namespace Contributor": 13,
         "Connector Namespace Developer": 10,
@@ -13573,8 +13593,8 @@
         "CloudTest Contributor Role": 23,
         "Cognitive Services Contributor": 18,
         "Cognitive Services User": 13,
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Community Reader Role": 20,
         "Cost Management Contributor": 10,
         "Cost Management Reader": 10,
@@ -13765,18 +13785,18 @@
         "Cognitive Services User": 13,
         "Collaborative Data Contributor": 13,
         "Collaborative Runtime Operator": 8,
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Community Reader Role": 20,
         "Compute Fleet Contributor": 6,
         "Compute Gallery Artifacts Publisher": 11,
-        "Compute Limit Operator": 20,
+        "Compute Limit Operator": 23,
         "Connector Namespace Contributor": 13,
         "Connector Namespace Developer": 10,
         "Connector Writer": 4,
         "Container Apps ConnectedEnvironments Reader": 6,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58,
+        "Container Registry Contributor and Data Access Configuration Administrator": 59,
         "Container Registry Tasks Contributor": 24,
         "ContainerApp Reader": 6,
         "Context Cache Administrator": 5,
@@ -14079,8 +14099,8 @@
         "Azure Stack HCI Edge Machine Contributor Role": 21,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
-        "Community Contributor Role": 33,
-        "Community Owner Role": 43,
+        "Community Contributor Role": 35,
+        "Community Owner Role": 46,
         "Community Reader Role": 20,
         "Enclave Approver Role": 35,
         "Enclave Contributor Role": 31,
@@ -15514,7 +15534,7 @@
         "Cognitive Services User": 13,
         "Collaborative Data Contributor": 13,
         "Collaborative Runtime Operator": 8,
-        "Container Registry Contributor and Data Access Configuration Administrator": 58,
+        "Container Registry Contributor and Data Access Configuration Administrator": 59,
         "Cosmos DB Account Reader Role": 7,
         "Cosmos DB Operator": 8,
         "Cost Management Contributor": 10,

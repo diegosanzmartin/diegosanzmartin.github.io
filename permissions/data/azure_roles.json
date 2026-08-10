@@ -589,6 +589,12 @@
         ],
         "group": "BuiltInRole"
     },
+    "Associated Billing Accounts Reader": {
+        "permissions": [
+            "Microsoft.AzureActiveDirectory/associatedBillingAccounts/read"
+        ],
+        "group": "BuiltInRole"
+    },
     "Astronomer Astro Contributor": {
         "permissions": [
             "Astronomer.Astro/operations/read",
@@ -5891,6 +5897,8 @@
             "Microsoft.Mission/virtualEnclaves/endpoints/read",
             "Microsoft.Mission/virtualEnclaves/endpoints/write",
             "Microsoft.Mission/virtualEnclaves/read",
+            "Microsoft.Mission/virtualEnclaves/setEnclaveRoleAssignments/action",
+            "Microsoft.Mission/virtualEnclaves/setWorkloadRoleAssignments/action",
             "Microsoft.Mission/virtualEnclaves/workloads/read",
             "Microsoft.Mission/virtualEnclaves/workloads/write",
             "Microsoft.Mission/virtualEnclaves/write",
@@ -5938,6 +5946,9 @@
             "Microsoft.Mission/virtualEnclaves/delete",
             "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/read",
             "Microsoft.Mission/virtualEnclaves/read",
+            "Microsoft.Mission/virtualEnclaves/setEnclaveRoleAssignments/action",
+            "Microsoft.Mission/virtualEnclaves/setMaintenanceMode/action",
+            "Microsoft.Mission/virtualEnclaves/setWorkloadRoleAssignments/action",
             "Microsoft.Mission/virtualEnclaves/workloads/delete",
             "Microsoft.Mission/virtualEnclaves/workloads/read",
             "Microsoft.Mission/virtualEnclaves/workloads/write",
@@ -6043,6 +6054,9 @@
             "Microsoft.ComputeLimit/locations/sharedLimits/delete",
             "Microsoft.ComputeLimit/locations/sharedLimits/read",
             "Microsoft.ComputeLimit/locations/sharedLimits/write",
+            "Microsoft.ComputeLimit/locations/trustedHostSubscriptions/delete",
+            "Microsoft.ComputeLimit/locations/trustedHostSubscriptions/read",
+            "Microsoft.ComputeLimit/locations/trustedHostSubscriptions/write",
             "Microsoft.ComputeLimit/register/action",
             "Microsoft.Insights/alertRules/*",
             "Microsoft.Resources/deployments/*",
@@ -6396,6 +6410,7 @@
             "Microsoft.ContainerRegistry/registries/connectedRegistries/deactivate/action",
             "Microsoft.ContainerRegistry/registries/connectedRegistries/delete",
             "Microsoft.ContainerRegistry/registries/connectedRegistries/read",
+            "Microsoft.ContainerRegistry/registries/connectedRegistries/resync/action",
             "Microsoft.ContainerRegistry/registries/connectedRegistries/write",
             "Microsoft.ContainerRegistry/registries/delete",
             "Microsoft.ContainerRegistry/registries/generateCredentials/action",
