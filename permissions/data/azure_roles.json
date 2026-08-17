@@ -2187,6 +2187,7 @@
             "Microsoft.EdgeMarketplace/publishers/read",
             "Microsoft.ExtendedLocation/customLocations/read",
             "Microsoft.GuestConfiguration/guestConfigurationAssignments/*/read",
+            "Microsoft.GuestConfiguration/guestConfigurationAssignments/delete",
             "Microsoft.GuestConfiguration/guestConfigurationAssignments/read",
             "Microsoft.GuestConfiguration/guestConfigurationAssignments/write",
             "Microsoft.HybridCompute/*/read",
@@ -2711,8 +2712,12 @@
     },
     "Azure Kubernetes Fleet Manager RBAC Cluster Reader": {
         "permissions": [
+            "Microsoft.Authorization/*/read",
             "Microsoft.ContainerService/fleets/listCredentials/action",
-            "Microsoft.ContainerService/fleets/read"
+            "Microsoft.ContainerService/fleets/read",
+            "Microsoft.Resources/subscriptions/operationresults/read",
+            "Microsoft.Resources/subscriptions/read",
+            "Microsoft.Resources/subscriptions/resourceGroups/read"
         ],
         "group": "BuiltInRole"
     },
@@ -2957,7 +2962,8 @@
     },
     "Azure Kubernetes Service Prepared Image Specification Reader": {
         "permissions": [
-            "Microsoft.ContainerService/preparedImageSpecifications/read"
+            "Microsoft.ContainerService/preparedImageSpecifications/read",
+            "Microsoft.ContainerService/preparedImageSpecifications/versions/read"
         ],
         "group": "BuiltInRole"
     },
@@ -3009,6 +3015,54 @@
             "Microsoft.Edge/winfields/*/delete",
             "Microsoft.Edge/winfields/*/read",
             "Microsoft.Edge/winfields/*/write"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Azure Local Infrastructure Contributor": {
+        "permissions": [
+            "Microsoft.AzureStackHCI/clusters/arcSettings/read",
+            "Microsoft.AzureStackHCI/clusters/jobs/delete",
+            "Microsoft.AzureStackHCI/clusters/jobs/read",
+            "Microsoft.AzureStackHCI/clusters/jobs/write",
+            "Microsoft.AzureStackHCI/clusters/networkProfiles/read",
+            "Microsoft.AzureStackHCI/clusters/read",
+            "Microsoft.AzureStackHCI/clusters/updateSummaries/read",
+            "Microsoft.AzureStackHCI/edgeMachines/disks/jobs/delete",
+            "Microsoft.AzureStackHCI/edgeMachines/disks/jobs/read",
+            "Microsoft.AzureStackHCI/edgeMachines/disks/jobs/write",
+            "Microsoft.AzureStackHCI/edgeMachines/disks/read",
+            "Microsoft.AzureStackHCI/edgeMachines/gpus/jobs/delete",
+            "Microsoft.AzureStackHCI/edgeMachines/gpus/jobs/read",
+            "Microsoft.AzureStackHCI/edgeMachines/gpus/jobs/write",
+            "Microsoft.AzureStackHCI/edgeMachines/gpus/read",
+            "Microsoft.AzureStackHCI/edgeMachines/networkAdapters/jobs/delete",
+            "Microsoft.AzureStackHCI/edgeMachines/networkAdapters/jobs/read",
+            "Microsoft.AzureStackHCI/edgeMachines/networkAdapters/jobs/write",
+            "Microsoft.AzureStackHCI/edgeMachines/networkAdapters/read",
+            "Microsoft.AzureStackHCI/edgeMachines/read",
+            "Microsoft.AzureStackHCI/edgeMachines/volumes/read",
+            "Microsoft.Resources/subscriptions/read",
+            "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Azure Local Infrastructure Reader": {
+        "permissions": [
+            "Microsoft.AzureStackHCI/clusters/arcSettings/read",
+            "Microsoft.AzureStackHCI/clusters/jobs/read",
+            "Microsoft.AzureStackHCI/clusters/networkProfiles/read",
+            "Microsoft.AzureStackHCI/clusters/read",
+            "Microsoft.AzureStackHCI/clusters/updateSummaries/read",
+            "Microsoft.AzureStackHCI/edgeMachines/disks/jobs/read",
+            "Microsoft.AzureStackHCI/edgeMachines/disks/read",
+            "Microsoft.AzureStackHCI/edgeMachines/gpus/jobs/read",
+            "Microsoft.AzureStackHCI/edgeMachines/gpus/read",
+            "Microsoft.AzureStackHCI/edgeMachines/networkAdapters/jobs/read",
+            "Microsoft.AzureStackHCI/edgeMachines/networkAdapters/read",
+            "Microsoft.AzureStackHCI/edgeMachines/read",
+            "Microsoft.AzureStackHCI/edgeMachines/volumes/read",
+            "Microsoft.Resources/subscriptions/read",
+            "Microsoft.Resources/subscriptions/resourceGroups/read"
         ],
         "group": "BuiltInRole"
     },
@@ -5988,6 +6042,12 @@
         ],
         "group": "BuiltInRole"
     },
+    "Commvault Contributor": {
+        "permissions": [
+            "Commvault.ContentStore/*"
+        ],
+        "group": "BuiltInRole"
+    },
     "Compute Diagnostics Role": {
         "permissions": [
             "Microsoft.Authorization/*/read",
@@ -6607,21 +6667,21 @@
     },
     "Cosmos DB Long Term Retention Backup Role": {
         "permissions": [
-            "Microsoft.DocumentDB/databaseAccounts/backup/action",
-            "Microsoft.DocumentDB/databaseAccounts/disableLongTermProtection/action",
-            "Microsoft.DocumentDB/databaseAccounts/enableLongTermProtection/action",
-            "Microsoft.DocumentDB/databaseAccounts/preBackup/action",
+            "Microsoft.DocumentDB/databaseAccounts/backup/*",
+            "Microsoft.DocumentDB/databaseAccounts/disableLongTermProtection/*",
+            "Microsoft.DocumentDB/databaseAccounts/enableLongTermProtection/*",
+            "Microsoft.DocumentDB/databaseAccounts/preBackup/*",
             "Microsoft.DocumentDB/databaseAccounts/read",
-            "Microsoft.DocumentDB/databaseAccounts/validateForLongTermProtection/action",
+            "Microsoft.DocumentDB/databaseAccounts/validateForLongTermProtection/*",
             "Microsoft.DocumentDB/locations/operationsStatus/read"
         ],
         "group": "BuiltInRole"
     },
     "Cosmos DB Long Term Retention Restore Role": {
         "permissions": [
-            "Microsoft.DocumentDB/databaseAccounts/preRestore/action",
+            "Microsoft.DocumentDB/databaseAccounts/preRestore/*",
             "Microsoft.DocumentDB/databaseAccounts/read",
-            "Microsoft.DocumentDB/databaseAccounts/restore/action",
+            "Microsoft.DocumentDB/databaseAccounts/restore/*",
             "Microsoft.DocumentDB/locations/operationsStatus/read"
         ],
         "group": "BuiltInRole"
@@ -10302,6 +10362,23 @@
     "Microsoft Discovery Project Reader - Preview": {
         "permissions": [
             "Microsoft.Discovery/workspaces/projects/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Microsoft Discovery Storage Container Contributor - Preview": {
+        "permissions": [
+            "Microsoft.Discovery/locations/operationStatuses/read",
+            "Microsoft.Discovery/storageContainers/read",
+            "Microsoft.Discovery/storageContainers/storageAssets/delete",
+            "Microsoft.Discovery/storageContainers/storageAssets/read",
+            "Microsoft.Discovery/storageContainers/storageAssets/write"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Microsoft Discovery Storage Container Reader - Preview": {
+        "permissions": [
+            "Microsoft.Discovery/storageContainers/read",
+            "Microsoft.Discovery/storageContainers/storageAssets/read"
         ],
         "group": "BuiltInRole"
     },

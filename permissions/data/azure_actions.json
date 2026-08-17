@@ -82,6 +82,9 @@
     "Astronomer.Astro/unregister/action": {
         "Astronomer Astro Contributor": 6
     },
+    "Commvault.ContentStore/*": {
+        "Commvault Contributor": 1
+    },
     "Dell.Storage/*": {
         "Liftr Dell Owner role": 4
     },
@@ -1081,26 +1084,26 @@
     },
     "Microsoft.Attestation/attestationProviders/attestation/delete": {
         "Attestation Contributor": 3,
-        "Azure Connected Machine Resource Manager": 34
+        "Azure Connected Machine Resource Manager": 35
     },
     "Microsoft.Attestation/attestationProviders/attestation/read": {
         "Attestation Contributor": 3,
         "Attestation Reader": 2,
-        "Azure Connected Machine Resource Manager": 34
+        "Azure Connected Machine Resource Manager": 35
     },
     "Microsoft.Attestation/attestationProviders/attestation/write": {
         "Attestation Contributor": 3,
-        "Azure Connected Machine Resource Manager": 34
+        "Azure Connected Machine Resource Manager": 35
     },
     "Microsoft.Attestation/attestationProviders/delete": {
-        "Azure Connected Machine Resource Manager": 34
+        "Azure Connected Machine Resource Manager": 35
     },
     "Microsoft.Attestation/attestationProviders/read": {
         "Attestation Reader": 2,
-        "Azure Connected Machine Resource Manager": 34
+        "Azure Connected Machine Resource Manager": 35
     },
     "Microsoft.Attestation/attestationProviders/write": {
-        "Azure Connected Machine Resource Manager": 34
+        "Azure Connected Machine Resource Manager": 35
     },
     "Microsoft.Authorization/*": {
         "User Access Administrator": 3
@@ -1163,7 +1166,7 @@
         "Azure Bot Service Contributor Role": 37,
         "Azure Center for SAP solutions administrator": 57,
         "Azure Center for SAP solutions reader": 43,
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Azure Container Instances Contributor Role": 5,
         "Azure Container Storage Contributor": 12,
         "Azure Container Storage Owner": 17,
@@ -1180,6 +1183,7 @@
         "Azure Kubernetes Fleet Manager RBAC Admin for Member Clusters": 4,
         "Azure Kubernetes Fleet Manager RBAC Cluster Admin": 6,
         "Azure Kubernetes Fleet Manager RBAC Cluster Admin for Member Clusters": 4,
+        "Azure Kubernetes Fleet Manager RBAC Cluster Reader": 6,
         "Azure Kubernetes Fleet Manager RBAC Reader": 6,
         "Azure Kubernetes Fleet Manager RBAC Reader for Member Clusters": 4,
         "Azure Kubernetes Fleet Manager RBAC Writer": 6,
@@ -3254,12 +3258,86 @@
     "Microsoft.AzureStackHCI/clusters/*": {
         "Azure Stack HCI Administrator": 103
     },
+    "Microsoft.AzureStackHCI/clusters/arcSettings/read": {
+        "Azure Local Infrastructure Contributor": 23,
+        "Azure Local Infrastructure Reader": 15
+    },
+    "Microsoft.AzureStackHCI/clusters/jobs/delete": {
+        "Azure Local Infrastructure Contributor": 23
+    },
+    "Microsoft.AzureStackHCI/clusters/jobs/read": {
+        "Azure Local Infrastructure Contributor": 23,
+        "Azure Local Infrastructure Reader": 15
+    },
+    "Microsoft.AzureStackHCI/clusters/jobs/write": {
+        "Azure Local Infrastructure Contributor": 23
+    },
+    "Microsoft.AzureStackHCI/clusters/networkProfiles/read": {
+        "Azure Local Infrastructure Contributor": 23,
+        "Azure Local Infrastructure Reader": 15
+    },
     "Microsoft.AzureStackHCI/clusters/read": {
-        "Azure Kubernetes Service Arc Contributor Role": 37
+        "Azure Kubernetes Service Arc Contributor Role": 37,
+        "Azure Local Infrastructure Contributor": 23,
+        "Azure Local Infrastructure Reader": 15
+    },
+    "Microsoft.AzureStackHCI/clusters/updateSummaries/read": {
+        "Azure Local Infrastructure Contributor": 23,
+        "Azure Local Infrastructure Reader": 15
     },
     "Microsoft.AzureStackHCI/edgeMachines/*": {
         "Provisioned Machine Admin": 1,
         "Provisioned Machine Contributor": 1
+    },
+    "Microsoft.AzureStackHCI/edgeMachines/disks/jobs/delete": {
+        "Azure Local Infrastructure Contributor": 23
+    },
+    "Microsoft.AzureStackHCI/edgeMachines/disks/jobs/read": {
+        "Azure Local Infrastructure Contributor": 23,
+        "Azure Local Infrastructure Reader": 15
+    },
+    "Microsoft.AzureStackHCI/edgeMachines/disks/jobs/write": {
+        "Azure Local Infrastructure Contributor": 23
+    },
+    "Microsoft.AzureStackHCI/edgeMachines/disks/read": {
+        "Azure Local Infrastructure Contributor": 23,
+        "Azure Local Infrastructure Reader": 15
+    },
+    "Microsoft.AzureStackHCI/edgeMachines/gpus/jobs/delete": {
+        "Azure Local Infrastructure Contributor": 23
+    },
+    "Microsoft.AzureStackHCI/edgeMachines/gpus/jobs/read": {
+        "Azure Local Infrastructure Contributor": 23,
+        "Azure Local Infrastructure Reader": 15
+    },
+    "Microsoft.AzureStackHCI/edgeMachines/gpus/jobs/write": {
+        "Azure Local Infrastructure Contributor": 23
+    },
+    "Microsoft.AzureStackHCI/edgeMachines/gpus/read": {
+        "Azure Local Infrastructure Contributor": 23,
+        "Azure Local Infrastructure Reader": 15
+    },
+    "Microsoft.AzureStackHCI/edgeMachines/networkAdapters/jobs/delete": {
+        "Azure Local Infrastructure Contributor": 23
+    },
+    "Microsoft.AzureStackHCI/edgeMachines/networkAdapters/jobs/read": {
+        "Azure Local Infrastructure Contributor": 23,
+        "Azure Local Infrastructure Reader": 15
+    },
+    "Microsoft.AzureStackHCI/edgeMachines/networkAdapters/jobs/write": {
+        "Azure Local Infrastructure Contributor": 23
+    },
+    "Microsoft.AzureStackHCI/edgeMachines/networkAdapters/read": {
+        "Azure Local Infrastructure Contributor": 23,
+        "Azure Local Infrastructure Reader": 15
+    },
+    "Microsoft.AzureStackHCI/edgeMachines/read": {
+        "Azure Local Infrastructure Contributor": 23,
+        "Azure Local Infrastructure Reader": 15
+    },
+    "Microsoft.AzureStackHCI/edgeMachines/volumes/read": {
+        "Azure Local Infrastructure Contributor": 23,
+        "Azure Local Infrastructure Reader": 15
     },
     "Microsoft.AzureStackHCI/locations/ValidateOwnershipVouchers/action": {
         "Azure Stack HCI Edge Machine Contributor Role": 21
@@ -5556,7 +5634,7 @@
         "Azure Kubernetes Fleet Manager Hub Cluster User Role": 2,
         "Azure Kubernetes Fleet Manager RBAC Admin": 6,
         "Azure Kubernetes Fleet Manager RBAC Cluster Admin": 6,
-        "Azure Kubernetes Fleet Manager RBAC Cluster Reader": 2,
+        "Azure Kubernetes Fleet Manager RBAC Cluster Reader": 6,
         "Azure Kubernetes Fleet Manager RBAC Cluster Writer": 2,
         "Azure Kubernetes Fleet Manager RBAC Reader": 6,
         "Azure Kubernetes Fleet Manager RBAC Writer": 6
@@ -5567,7 +5645,7 @@
         "Azure Kubernetes Fleet Manager Hub Cluster User Role": 2,
         "Azure Kubernetes Fleet Manager RBAC Admin": 6,
         "Azure Kubernetes Fleet Manager RBAC Cluster Admin": 6,
-        "Azure Kubernetes Fleet Manager RBAC Cluster Reader": 2,
+        "Azure Kubernetes Fleet Manager RBAC Cluster Reader": 6,
         "Azure Kubernetes Fleet Manager RBAC Cluster Writer": 2,
         "Azure Kubernetes Fleet Manager RBAC Reader": 6,
         "Azure Kubernetes Fleet Manager RBAC Writer": 6
@@ -5657,7 +5735,10 @@
         "Azure Kubernetes Service Prepared Image Specification Contributor": 1
     },
     "Microsoft.ContainerService/preparedImageSpecifications/read": {
-        "Azure Kubernetes Service Prepared Image Specification Reader": 1
+        "Azure Kubernetes Service Prepared Image Specification Reader": 2
+    },
+    "Microsoft.ContainerService/preparedImageSpecifications/versions/read": {
+        "Azure Kubernetes Service Prepared Image Specification Reader": 2
     },
     "Microsoft.ContainerService/snapshots/*": {
         "Azure Kubernetes Service Contributor Role": 9
@@ -6780,7 +6861,8 @@
     },
     "Microsoft.Discovery/locations/operationStatuses/read": {
         "Microsoft Discovery Platform Administrator (Preview)": 13,
-        "Microsoft Discovery Platform Contributor (Preview)": 22
+        "Microsoft Discovery Platform Contributor (Preview)": 22,
+        "Microsoft Discovery Storage Container Contributor - Preview": 5
     },
     "Microsoft.Discovery/models/*": {
         "Microsoft Discovery Platform Contributor (Preview)": 22
@@ -6791,8 +6873,22 @@
     "Microsoft.Discovery/storageContainers/*": {
         "Microsoft Discovery Platform Contributor (Preview)": 22
     },
+    "Microsoft.Discovery/storageContainers/read": {
+        "Microsoft Discovery Storage Container Contributor - Preview": 5,
+        "Microsoft Discovery Storage Container Reader - Preview": 2
+    },
     "Microsoft.Discovery/storageContainers/storageAssets/*": {
         "Microsoft Discovery Platform Contributor (Preview)": 22
+    },
+    "Microsoft.Discovery/storageContainers/storageAssets/delete": {
+        "Microsoft Discovery Storage Container Contributor - Preview": 5
+    },
+    "Microsoft.Discovery/storageContainers/storageAssets/read": {
+        "Microsoft Discovery Storage Container Contributor - Preview": 5,
+        "Microsoft Discovery Storage Container Reader - Preview": 2
+    },
+    "Microsoft.Discovery/storageContainers/storageAssets/write": {
+        "Microsoft Discovery Storage Container Contributor - Preview": 5
     },
     "Microsoft.Discovery/storages/read": {
         "Microsoft Discovery Platform Contributor (Preview)": 22
@@ -6833,14 +6929,16 @@
     "Microsoft.DocumentDB/*/read": {
         "Cosmos DB Account Reader Role": 7
     },
-    "Microsoft.DocumentDB/databaseAccounts/backup/action": {
-        "Cosmos DB Long Term Retention Backup Role": 7,
-        "CosmosBackupOperator": 2
-    },
-    "Microsoft.DocumentDB/databaseAccounts/disableLongTermProtection/action": {
+    "Microsoft.DocumentDB/databaseAccounts/backup/*": {
         "Cosmos DB Long Term Retention Backup Role": 7
     },
-    "Microsoft.DocumentDB/databaseAccounts/enableLongTermProtection/action": {
+    "Microsoft.DocumentDB/databaseAccounts/backup/action": {
+        "CosmosBackupOperator": 2
+    },
+    "Microsoft.DocumentDB/databaseAccounts/disableLongTermProtection/*": {
+        "Cosmos DB Long Term Retention Backup Role": 7
+    },
+    "Microsoft.DocumentDB/databaseAccounts/enableLongTermProtection/*": {
         "Cosmos DB Long Term Retention Backup Role": 7
     },
     "Microsoft.DocumentDB/databaseAccounts/listConnectionStrings/action": {
@@ -6849,10 +6947,10 @@
     "Microsoft.DocumentDB/databaseAccounts/listKeys/action": {
         "Defender Cloud Secrets Posture": 4
     },
-    "Microsoft.DocumentDB/databaseAccounts/preBackup/action": {
+    "Microsoft.DocumentDB/databaseAccounts/preBackup/*": {
         "Cosmos DB Long Term Retention Backup Role": 7
     },
-    "Microsoft.DocumentDB/databaseAccounts/preRestore/action": {
+    "Microsoft.DocumentDB/databaseAccounts/preRestore/*": {
         "Cosmos DB Long Term Retention Restore Role": 4
     },
     "Microsoft.DocumentDB/databaseAccounts/privateEndpointConnections/operationResults/read": {
@@ -6879,11 +6977,13 @@
     "Microsoft.DocumentDB/databaseAccounts/readonlykeys/action": {
         "Cosmos DB Account Reader Role": 7
     },
+    "Microsoft.DocumentDB/databaseAccounts/restore/*": {
+        "Cosmos DB Long Term Retention Restore Role": 4
+    },
     "Microsoft.DocumentDB/databaseAccounts/restore/action": {
-        "Cosmos DB Long Term Retention Restore Role": 4,
         "CosmosBackupOperator": 2
     },
-    "Microsoft.DocumentDB/databaseAccounts/validateForLongTermProtection/action": {
+    "Microsoft.DocumentDB/databaseAccounts/validateForLongTermProtection/*": {
         "Cosmos DB Long Term Retention Backup Role": 7
     },
     "Microsoft.DocumentDB/fleets/*": {
@@ -7113,24 +7213,24 @@
         "Edge Management Copilot User": 2
     },
     "Microsoft.EdgeMarketPlace/offers/generateAccessToken/action": {
-        "Azure Connected Machine Resource Manager": 34
+        "Azure Connected Machine Resource Manager": 35
     },
     "Microsoft.EdgeMarketPlace/offers/getAccessToken/action": {
-        "Azure Connected Machine Resource Manager": 34
+        "Azure Connected Machine Resource Manager": 35
     },
     "Microsoft.EdgeMarketplace/locations/operationStatuses/read": {
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "EdgeMarketPlace role": 2
     },
     "Microsoft.EdgeMarketplace/locations/operationStatuses/write": {
         "EdgeMarketPlace role": 2
     },
     "Microsoft.EdgeMarketplace/offers/read": {
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Azure Stack HCI Administrator": 103
     },
     "Microsoft.EdgeMarketplace/publishers/read": {
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Azure Stack HCI Administrator": 103
     },
     "Microsoft.EdgeOrder/*": {
@@ -7572,7 +7672,7 @@
     },
     "Microsoft.ExtendedLocation/customLocations/read": {
         "Azure Arc VMware Administrator role ": 58,
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Azure Kubernetes Service Arc Contributor Role": 37,
         "Azure Kubernetes Service Hybrid Contributor Role": 24,
         "Azure Local Migrate Execute Expert": 40,
@@ -7673,19 +7773,22 @@
         "Genome SuperAdmin": 1
     },
     "Microsoft.GuestConfiguration/guestConfigurationAssignments/*/read": {
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Guest Configuration Resource Contributor": 4
+    },
+    "Microsoft.GuestConfiguration/guestConfigurationAssignments/delete": {
+        "Azure Connected Machine Resource Manager": 35
     },
     "Microsoft.GuestConfiguration/guestConfigurationAssignments/read": {
         "Azure Connected Machine Onboarding": 11,
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Azure Resource Bridge Deployment Role": 36,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37,
         "Guest Configuration Resource Contributor": 4
     },
     "Microsoft.GuestConfiguration/guestConfigurationAssignments/write": {
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Guest Configuration Resource Contributor": 4
     },
     "Microsoft.GuestConfiguration/register/action": {
@@ -7966,7 +8069,7 @@
     },
     "Microsoft.HybridCompute/*/read": {
         "Azure Connected Machine Resource Administrator": 12,
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Azure Stack HCI Connected InfraVMs": 7,
         "Hybrid Server Resource Administrator": 2
     },
@@ -8062,7 +8165,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Connected Machine Resource Administrator": 12,
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Connected InfraVMs": 7,
         "Azure Stack HCI VM Contributor": 75
@@ -8083,7 +8186,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
         "Azure Migrate Owner": 68,
@@ -8100,7 +8203,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Connected InfraVMs": 7,
         "Azure Stack HCI VM Contributor": 75,
@@ -8113,7 +8216,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Azure Hybrid Database Administrator - Read Only Service Role": 8,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Connected InfraVMs": 7,
@@ -8131,7 +8234,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Azure Extension for SQL Server Deployment": 2,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Connected InfraVMs": 7,
@@ -8166,7 +8269,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75
     },
@@ -8175,7 +8278,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42
@@ -8185,7 +8288,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 75
     },
@@ -8234,7 +8337,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Connected Machine Onboarding": 11,
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Azure Hybrid Database Administrator - Read Only Service Role": 8,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
@@ -8288,7 +8391,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Connected Machine Onboarding": 11,
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
         "Azure Migrate Owner": 68,
@@ -8349,13 +8452,13 @@
     "Microsoft.HybridCompute/settings/read": {
         "Arc Gateway Manager": 9,
         "Azure Connected Machine Onboarding": 11,
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Azure Stack HCI Administrator": 103
     },
     "Microsoft.HybridCompute/settings/write": {
         "Arc Gateway Manager": 9,
         "Azure Connected Machine Onboarding": 11,
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Azure Stack HCI Administrator": 103
     },
     "Microsoft.HybridConnectivity/GenerateAWSTemplate/action": {
@@ -8383,7 +8486,7 @@
         "Windows Admin Center Administrator Login": 41
     },
     "Microsoft.HybridConnectivity/endpoints/read": {
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Microsoft.AzureStackHCI Device Pool Machine Manager": 10,
         "Windows Admin Center Administrator Login": 41
     },
@@ -8391,17 +8494,17 @@
         "Microsoft.AzureStackHCI Device Pool Machine Manager": 10
     },
     "Microsoft.HybridConnectivity/endpoints/serviceConfigurations/read": {
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Microsoft.AzureStackHCI Device Pool Machine Manager": 10,
         "Windows Admin Center Administrator Login": 41
     },
     "Microsoft.HybridConnectivity/endpoints/serviceConfigurations/write": {
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Microsoft.AzureStackHCI Device Pool Machine Manager": 10,
         "Windows Admin Center Administrator Login": 41
     },
     "Microsoft.HybridConnectivity/endpoints/write": {
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Microsoft.AzureStackHCI Device Pool Machine Manager": 10,
         "Windows Admin Center Administrator Login": 41
     },
@@ -13492,6 +13595,7 @@
         "Azure Kubernetes Fleet Manager RBAC Admin for Member Clusters": 4,
         "Azure Kubernetes Fleet Manager RBAC Cluster Admin": 6,
         "Azure Kubernetes Fleet Manager RBAC Cluster Admin for Member Clusters": 4,
+        "Azure Kubernetes Fleet Manager RBAC Cluster Reader": 6,
         "Azure Kubernetes Fleet Manager RBAC Reader": 6,
         "Azure Kubernetes Fleet Manager RBAC Reader for Member Clusters": 4,
         "Azure Kubernetes Fleet Manager RBAC Writer": 6,
@@ -13572,6 +13676,7 @@
         "Azure Kubernetes Fleet Manager RBAC Admin for Member Clusters": 4,
         "Azure Kubernetes Fleet Manager RBAC Cluster Admin": 6,
         "Azure Kubernetes Fleet Manager RBAC Cluster Admin for Member Clusters": 4,
+        "Azure Kubernetes Fleet Manager RBAC Cluster Reader": 6,
         "Azure Kubernetes Fleet Manager RBAC Reader": 6,
         "Azure Kubernetes Fleet Manager RBAC Reader for Member Clusters": 4,
         "Azure Kubernetes Fleet Manager RBAC Writer": 6,
@@ -13580,6 +13685,8 @@
         "Azure Kubernetes Service RBAC Cluster Admin": 5,
         "Azure Kubernetes Service RBAC Reader": 4,
         "Azure Kubernetes Service RBAC Writer": 4,
+        "Azure Local Infrastructure Contributor": 23,
+        "Azure Local Infrastructure Reader": 15,
         "Azure Local Migrate Execute Expert": 40,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
@@ -13691,7 +13798,7 @@
         "Azure Center for SAP solutions administrator": 57,
         "Azure Center for SAP solutions reader": 43,
         "Azure Center for SAP solutions service role": 55,
-        "Azure Connected Machine Resource Manager": 34,
+        "Azure Connected Machine Resource Manager": 35,
         "Azure Container Instances Contributor Role": 5,
         "Azure Container Storage Contributor": 12,
         "Azure Container Storage Operator": 18,
@@ -13717,6 +13824,7 @@
         "Azure Kubernetes Fleet Manager RBAC Admin for Member Clusters": 4,
         "Azure Kubernetes Fleet Manager RBAC Cluster Admin": 6,
         "Azure Kubernetes Fleet Manager RBAC Cluster Admin for Member Clusters": 4,
+        "Azure Kubernetes Fleet Manager RBAC Cluster Reader": 6,
         "Azure Kubernetes Fleet Manager RBAC Reader": 6,
         "Azure Kubernetes Fleet Manager RBAC Reader for Member Clusters": 4,
         "Azure Kubernetes Fleet Manager RBAC Writer": 6,
@@ -13727,6 +13835,8 @@
         "Azure Kubernetes Service RBAC Cluster Admin": 5,
         "Azure Kubernetes Service RBAC Reader": 4,
         "Azure Kubernetes Service RBAC Writer": 4,
+        "Azure Local Infrastructure Contributor": 23,
+        "Azure Local Infrastructure Reader": 15,
         "Azure Local Migrate Execute Expert": 40,
         "Azure Local Migrate Owner": 64,
         "Azure Managed Grafana Workspace Contributor": 35,
