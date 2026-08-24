@@ -3090,6 +3090,7 @@
             "Microsoft.Insights/alertRules/*",
             "Microsoft.KubernetesConfiguration/extensions/read",
             "Microsoft.Migrate/*/read",
+            "Microsoft.Migrate/migrateProjects/taskSummary/action",
             "Microsoft.MySQLDiscovery/*/read",
             "Microsoft.OffAzure/*/read",
             "Microsoft.ResourceConnector/appliances/read",
@@ -3371,6 +3372,7 @@
             "Microsoft.DependencyMap/maps/*/action",
             "Microsoft.Insights/alertRules/*",
             "Microsoft.Migrate/*/read",
+            "Microsoft.Migrate/migrateProjects/taskSummary/action",
             "Microsoft.MySQLDiscovery/*/read",
             "Microsoft.Network/networkInterfaces/delete",
             "Microsoft.Network/networkInterfaces/read",
@@ -5954,7 +5956,6 @@
             "Microsoft.Mission/virtualEnclaves/setEnclaveRoleAssignments/action",
             "Microsoft.Mission/virtualEnclaves/setWorkloadRoleAssignments/action",
             "Microsoft.Mission/virtualEnclaves/workloads/read",
-            "Microsoft.Mission/virtualEnclaves/workloads/write",
             "Microsoft.Mission/virtualEnclaves/write",
             "Microsoft.ResourceHealth/availabilityStatuses/read",
             "Microsoft.Resources/deployments/read",
@@ -6003,9 +6004,7 @@
             "Microsoft.Mission/virtualEnclaves/setEnclaveRoleAssignments/action",
             "Microsoft.Mission/virtualEnclaves/setMaintenanceMode/action",
             "Microsoft.Mission/virtualEnclaves/setWorkloadRoleAssignments/action",
-            "Microsoft.Mission/virtualEnclaves/workloads/delete",
             "Microsoft.Mission/virtualEnclaves/workloads/read",
-            "Microsoft.Mission/virtualEnclaves/workloads/write",
             "Microsoft.Mission/virtualEnclaves/write",
             "Microsoft.ResourceHealth/availabilityStatuses/read",
             "Microsoft.Resources/deployments/read",
@@ -7444,6 +7443,7 @@
             "Microsoft.Security/advancedThreatProtectionSettings/write",
             "Microsoft.Security/defenderForStorageSettings/read",
             "Microsoft.Security/defenderForStorageSettings/write",
+            "Microsoft.Security/securityOperators/read",
             "Microsoft.Storage/storageAccounts/read"
         ],
         "group": "BuiltInRole"
@@ -10258,6 +10258,17 @@
         ],
         "group": "BuiltInRole"
     },
+    "Microsoft Cloud Security Arc Machine Operator": {
+        "permissions": [
+            "Microsoft.HybridCompute/machines/delete",
+            "Microsoft.HybridCompute/machines/extensions/delete",
+            "Microsoft.HybridCompute/machines/extensions/read",
+            "Microsoft.HybridCompute/machines/extensions/write",
+            "Microsoft.HybridCompute/machines/read",
+            "Microsoft.HybridCompute/machines/write"
+        ],
+        "group": "BuiltInRole"
+    },
     "Microsoft Confluent Contributor role": {
         "permissions": [
             "Microsoft.Confluent/agreements/write",
@@ -10289,7 +10300,9 @@
         "group": "BuiltInRole"
     },
     "Microsoft Discovery Bookshelf Index Data Reader - Preview": {
-        "permissions": [],
+        "permissions": [
+            "Microsoft.Discovery/bookshelves/read"
+        ],
         "group": "BuiltInRole"
     },
     "Microsoft Discovery Chat Model Reader - Preview": {
@@ -11481,10 +11494,17 @@
             "Microsoft.ProgramEnrollment/eduEnrollments/read",
             "Microsoft.ProgramEnrollment/eduEnrollments/write",
             "Microsoft.ProgramEnrollment/register/action",
+            "Microsoft.Resources/deployments/delete",
+            "Microsoft.Resources/deployments/operations/read",
+            "Microsoft.Resources/deployments/operationstatuses/read",
+            "Microsoft.Resources/deployments/read",
+            "Microsoft.Resources/deployments/validate/action",
+            "Microsoft.Resources/deployments/write",
             "Microsoft.Resources/subscriptions/resourceGroups/read",
             "Microsoft.Resources/subscriptions/resourceGroups/write",
             "Microsoft.SaaS/register/action",
             "Microsoft.SaaS/resources/delete",
+            "Microsoft.SaaS/resources/listAccessToken/action",
             "Microsoft.SaaS/resources/read",
             "Microsoft.SaaS/resources/write",
             "Microsoft.SaaSHub/cloudServices/delete",
