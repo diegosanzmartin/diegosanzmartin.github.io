@@ -1,4 +1,8 @@
 {
+    "AI Gateway User": {
+        "permissions": [],
+        "group": "BuiltInRole"
+    },
     "AI Model Scanner Operator": {
         "permissions": [
             "Microsoft.MachineLearningServices/registries/assets/read",
@@ -294,6 +298,22 @@
         "permissions": [
             "Microsoft.ContainerRegistry/registries/quarantine/read",
             "Microsoft.ContainerRegistry/registries/quarantine/write"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Advisor Discoverable Workload Reader": {
+        "permissions": [
+            "Microsoft.Advisor/discoverableWorkloads/read",
+            "Microsoft.Advisor/workloadResourceMappings/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Advisor Discoverable Workloads Contributor": {
+        "permissions": [
+            "Microsoft.Advisor/discoverableWorkloads/conversionStatus/read",
+            "Microsoft.Advisor/discoverableWorkloads/convert/action",
+            "Microsoft.Advisor/discoverableWorkloads/read",
+            "Microsoft.Advisor/workloadResourceMappings/read"
         ],
         "group": "BuiltInRole"
     },
@@ -5550,6 +5570,10 @@
         "permissions": [],
         "group": "BuiltInRole"
     },
+    "Cloud Device Platform Sandbox Partner Data Contributor": {
+        "permissions": [],
+        "group": "BuiltInRole"
+    },
     "CloudTest Contributor Role": {
         "permissions": [
             "Microsoft.Authorization/*/read",
@@ -6208,6 +6232,10 @@
             "Microsoft.Insights/alertRules/*",
             "Microsoft.Resources/subscriptions/resourceGroups/read"
         ],
+        "group": "BuiltInRole"
+    },
+    "Container Apps Artifact Data Pull": {
+        "permissions": [],
         "group": "BuiltInRole"
     },
     "Container Apps ConnectedEnvironments Contributor": {
@@ -7823,6 +7851,8 @@
             "Microsoft.Authorization/*/read",
             "Microsoft.DeviceUpdate/accounts/instances/read",
             "Microsoft.DeviceUpdate/accounts/read",
+            "Microsoft.DeviceUpdate/linkedAccounts/read",
+            "Microsoft.DeviceUpdate/updateInstances/read",
             "Microsoft.Insights/alertRules/*",
             "Microsoft.Resources/subscriptions/resourceGroups/read",
             "Microsoft.Support/*"
@@ -7863,6 +7893,13 @@
             "Microsoft.DeviceUpdate/accounts/privateEndpointConnections/write",
             "Microsoft.DeviceUpdate/accounts/read",
             "Microsoft.DeviceUpdate/accounts/write",
+            "Microsoft.DeviceUpdate/updateInstances/delete",
+            "Microsoft.DeviceUpdate/updateInstances/linkInitiate/action",
+            "Microsoft.DeviceUpdate/updateInstances/linkNotify/action",
+            "Microsoft.DeviceUpdate/updateInstances/linkPreflight/action",
+            "Microsoft.DeviceUpdate/updateInstances/linkUpdate/action",
+            "Microsoft.DeviceUpdate/updateInstances/read",
+            "Microsoft.DeviceUpdate/updateInstances/write",
             "Microsoft.Insights/alertRules/*",
             "Microsoft.Resources/deployments/*",
             "Microsoft.Resources/subscriptions/resourceGroups/read"
@@ -8539,6 +8576,14 @@
         "group": "BuiltInRole"
     },
     "FHIR SMART User": {
+        "permissions": [],
+        "group": "BuiltInRole"
+    },
+    "File Share Data Privileged Contributor": {
+        "permissions": [],
+        "group": "BuiltInRole"
+    },
+    "File Share Data Privileged Reader": {
         "permissions": [],
         "group": "BuiltInRole"
     },
@@ -13168,7 +13213,8 @@
     "Video Indexer Restricted Viewer": {
         "permissions": [
             "Microsoft.VideoIndexer/*/read",
-            "Microsoft.VideoIndexer/accounts/*/action"
+            "Microsoft.VideoIndexer/accounts/generateExtensionRestrictedViewerAccessToken/action",
+            "Microsoft.VideoIndexer/accounts/generateRestrictedViewerAccessToken/action"
         ],
         "group": "BuiltInRole"
     },

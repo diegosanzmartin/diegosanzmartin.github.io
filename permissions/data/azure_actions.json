@@ -402,6 +402,16 @@
     "Microsoft.Advisor/conversations/*": {
         "Advisor Recommendations Contributor (Assessments and Reviews)": 4
     },
+    "Microsoft.Advisor/discoverableWorkloads/conversionStatus/read": {
+        "Advisor Discoverable Workloads Contributor": 4
+    },
+    "Microsoft.Advisor/discoverableWorkloads/convert/action": {
+        "Advisor Discoverable Workloads Contributor": 4
+    },
+    "Microsoft.Advisor/discoverableWorkloads/read": {
+        "Advisor Discoverable Workload Reader": 2,
+        "Advisor Discoverable Workloads Contributor": 4
+    },
     "Microsoft.Advisor/recommendations/available/action": {
         "Advisor Recommendations Contributor": 3,
         "Advisor Recommendations Contributor (Assessments and Reviews)": 4
@@ -450,6 +460,10 @@
     "Microsoft.Advisor/triageResources/read": {
         "Advisor Reviews Contributor": 10,
         "Advisor Reviews Reader": 3
+    },
+    "Microsoft.Advisor/workloadResourceMappings/read": {
+        "Advisor Discoverable Workload Reader": 2,
+        "Advisor Discoverable Workloads Contributor": 4
     },
     "Microsoft.AlertsManagement/Issues/*": {
         "Issue Contributor": 7
@@ -1322,10 +1336,10 @@
         "DevCenter Project Admin": 4,
         "DevOps Infrastructure Contributor": 10,
         "DevTest Labs User": 32,
-        "Device Update Administrator": 6,
+        "Device Update Administrator": 8,
         "Device Update Content Administrator": 6,
         "Device Update Content Reader": 6,
-        "Device Update Contributor": 13,
+        "Device Update Contributor": 20,
         "Device Update Deployments Administrator": 6,
         "Device Update Deployments Reader": 6,
         "Device Update Reader": 6,
@@ -6794,43 +6808,68 @@
         "Azure IoT Operations Onboarding": 10
     },
     "Microsoft.DeviceUpdate/accounts/delete": {
-        "Device Update Contributor": 13
+        "Device Update Contributor": 20
     },
     "Microsoft.DeviceUpdate/accounts/instances/delete": {
-        "Device Update Contributor": 13
+        "Device Update Contributor": 20
     },
     "Microsoft.DeviceUpdate/accounts/instances/read": {
-        "Device Update Administrator": 6,
+        "Device Update Administrator": 8,
         "Device Update Content Administrator": 6,
         "Device Update Content Reader": 6,
-        "Device Update Contributor": 13,
+        "Device Update Contributor": 20,
         "Device Update Deployments Administrator": 6,
         "Device Update Deployments Reader": 6,
         "Device Update Reader": 6
     },
     "Microsoft.DeviceUpdate/accounts/instances/write": {
-        "Device Update Contributor": 13
+        "Device Update Contributor": 20
     },
     "Microsoft.DeviceUpdate/accounts/privateEndpointConnections/delete": {
-        "Device Update Contributor": 13
+        "Device Update Contributor": 20
     },
     "Microsoft.DeviceUpdate/accounts/privateEndpointConnections/read": {
-        "Device Update Contributor": 13
+        "Device Update Contributor": 20
     },
     "Microsoft.DeviceUpdate/accounts/privateEndpointConnections/write": {
-        "Device Update Contributor": 13
+        "Device Update Contributor": 20
     },
     "Microsoft.DeviceUpdate/accounts/read": {
-        "Device Update Administrator": 6,
+        "Device Update Administrator": 8,
         "Device Update Content Administrator": 6,
         "Device Update Content Reader": 6,
-        "Device Update Contributor": 13,
+        "Device Update Contributor": 20,
         "Device Update Deployments Administrator": 6,
         "Device Update Deployments Reader": 6,
         "Device Update Reader": 6
     },
     "Microsoft.DeviceUpdate/accounts/write": {
-        "Device Update Contributor": 13
+        "Device Update Contributor": 20
+    },
+    "Microsoft.DeviceUpdate/linkedAccounts/read": {
+        "Device Update Administrator": 8
+    },
+    "Microsoft.DeviceUpdate/updateInstances/delete": {
+        "Device Update Contributor": 20
+    },
+    "Microsoft.DeviceUpdate/updateInstances/linkInitiate/action": {
+        "Device Update Contributor": 20
+    },
+    "Microsoft.DeviceUpdate/updateInstances/linkNotify/action": {
+        "Device Update Contributor": 20
+    },
+    "Microsoft.DeviceUpdate/updateInstances/linkPreflight/action": {
+        "Device Update Contributor": 20
+    },
+    "Microsoft.DeviceUpdate/updateInstances/linkUpdate/action": {
+        "Device Update Contributor": 20
+    },
+    "Microsoft.DeviceUpdate/updateInstances/read": {
+        "Device Update Administrator": 8,
+        "Device Update Contributor": 20
+    },
+    "Microsoft.DeviceUpdate/updateInstances/write": {
+        "Device Update Contributor": 20
     },
     "Microsoft.Devices/iothubs/*": {
         "Azure Device Registry Onboarding": 8
@@ -9081,10 +9120,10 @@
         "Desktop Virtualization Virtual Machine Contributor": 58,
         "Desktop Virtualization Workspace Contributor": 7,
         "DevOps Infrastructure Contributor": 10,
-        "Device Update Administrator": 6,
+        "Device Update Administrator": 8,
         "Device Update Content Administrator": 6,
         "Device Update Content Reader": 6,
-        "Device Update Contributor": 13,
+        "Device Update Contributor": 20,
         "Device Update Deployments Administrator": 6,
         "Device Update Deployments Reader": 6,
         "Device Update Reader": 6,
@@ -13173,7 +13212,7 @@
         "DevCenter Owner": 6,
         "DevCenter Project Admin": 4,
         "DevOps Infrastructure Contributor": 10,
-        "Device Update Contributor": 13,
+        "Device Update Contributor": 20,
         "Disk Pool Operator": 6,
         "DocumentDB Account Contributor": 8,
         "Dynamics 365 Customer Insights Service Role": 6,
@@ -13964,10 +14003,10 @@
         "DevCenter Project Admin": 4,
         "DevOps Infrastructure Contributor": 10,
         "DevTest Labs User": 32,
-        "Device Update Administrator": 6,
+        "Device Update Administrator": 8,
         "Device Update Content Administrator": 6,
         "Device Update Content Reader": 6,
-        "Device Update Contributor": 13,
+        "Device Update Contributor": 20,
         "Device Update Deployments Administrator": 6,
         "Device Update Deployments Reader": 6,
         "Device Update Reader": 6,
@@ -15684,7 +15723,7 @@
         "Desktop Virtualization User Session Operator": 8,
         "Desktop Virtualization Workspace Contributor": 7,
         "Desktop Virtualization Workspace Reader": 7,
-        "Device Update Administrator": 6,
+        "Device Update Administrator": 8,
         "Device Update Content Administrator": 6,
         "Device Update Content Reader": 6,
         "Device Update Deployments Administrator": 6,
@@ -15807,10 +15846,7 @@
         "Usage Billing Contributor": 5
     },
     "Microsoft.VideoIndexer/*/read": {
-        "Video Indexer Restricted Viewer": 2
-    },
-    "Microsoft.VideoIndexer/accounts/*/action": {
-        "Video Indexer Restricted Viewer": 2
+        "Video Indexer Restricted Viewer": 3
     },
     "Microsoft.VideoIndexer/accounts/PrivateEndpointConnectionsApproval/action": {
         "Video Indexer Account Contributor": 16
@@ -15825,10 +15861,12 @@
         "Video Indexer Account Contributor": 16
     },
     "Microsoft.VideoIndexer/accounts/generateExtensionRestrictedViewerAccessToken/action": {
-        "Video Indexer Account Contributor": 16
+        "Video Indexer Account Contributor": 16,
+        "Video Indexer Restricted Viewer": 3
     },
     "Microsoft.VideoIndexer/accounts/generateRestrictedViewerAccessToken/action": {
-        "Video Indexer Account Contributor": 16
+        "Video Indexer Account Contributor": 16,
+        "Video Indexer Restricted Viewer": 3
     },
     "Microsoft.VideoIndexer/accounts/privateEndpointConnections/delete": {
         "Video Indexer Account Contributor": 16
