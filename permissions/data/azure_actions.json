@@ -556,7 +556,11 @@
         "Defender API Security": 22
     },
     "Microsoft.ApiManagement/service/apis/read": {
+        "A365 Gateway Policy Operator": 5,
         "Defender API Security": 22
+    },
+    "Microsoft.ApiManagement/service/apis/write": {
+        "A365 Gateway Policy Operator": 5
     },
     "Microsoft.ApiManagement/service/authorizationServers/read": {
         "API Management Service Workspace API Developer": 9,
@@ -622,6 +626,7 @@
         "API Management Service Workspace API Product Manager": 12
     },
     "Microsoft.ApiManagement/service/read": {
+        "A365 Gateway Policy Operator": 5,
         "API Management Service Operator Role": 15,
         "API Management Service Reader Role": 8,
         "API Management Service Workspace API Developer": 9,
@@ -741,6 +746,12 @@
     "Microsoft.ApiManagement/service/workspaces/tags/*": {
         "API Management Workspace API Developer": 17,
         "API Management Workspace API Product Manager": 10
+    },
+    "Microsoft.ApiManagement/service/workspaces/toolServers/read": {
+        "A365 Gateway Policy Operator": 5
+    },
+    "Microsoft.ApiManagement/service/workspaces/toolServers/write": {
+        "A365 Gateway Policy Operator": 5
     },
     "Microsoft.ApiManagement/service/write": {
         "API Management Service Operator Role": 15
@@ -1156,8 +1167,8 @@
         "Azure AI Administrator": 39,
         "Azure AI Developer": 7,
         "Azure AI Inference Deployment Operator": 3,
-        "Azure AI Manager and Namespace RBAC Inference Operator": 4,
         "Azure AIManager Contributor": 5,
+        "Azure AIManager and Namespace RBAC Inference Operator": 4,
         "Azure AIManager and namespace RBAC Reader": 4,
         "Azure API Center Service Contributor": 7,
         "Azure API Center Service Reader": 7,
@@ -1182,8 +1193,8 @@
         "Azure Center for SAP solutions reader": 43,
         "Azure Connected Machine Resource Manager": 35,
         "Azure Container Instances Contributor Role": 5,
-        "Azure Container Storage Contributor": 12,
-        "Azure Container Storage Owner": 17,
+        "Azure Container Storage Contributor": 10,
+        "Azure Container Storage Owner": 15,
         "Azure ContainerApps Session Executor": 6,
         "Azure Customer Lockbox Approver for Subscription": 6,
         "Azure Data Transfer Owner": 5,
@@ -1248,7 +1259,7 @@
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
         "Azure VM Managed identities restore Contributor": 1,
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup MUA Admin": 26,
         "Backup MUA Operator": 3,
         "Backup Operator": 98,
@@ -1428,8 +1439,8 @@
         "Managed Identity Operator": 7,
         "Management Group Contributor": 7,
         "Management Group Reader": 3,
-        "Microsoft Discovery Platform Administrator (Preview)": 13,
-        "Microsoft Discovery Platform Contributor (Preview)": 22,
+        "Microsoft Discovery Platform Administrator": 13,
+        "Microsoft Discovery Platform Contributor": 22,
         "Microsoft Sentinel Automation Contributor": 7,
         "Microsoft Sentinel Contributor": 16,
         "Microsoft Sentinel Reader": 21,
@@ -1635,8 +1646,6 @@
         "AVS Orchestrator Role": 56,
         "AVS on Fleet VIS Role": 21,
         "Access Review Operator Service Role": 3,
-        "Azure Container Storage Contributor": 12,
-        "Azure Container Storage Owner": 17,
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Execute Expert": 46,
@@ -1653,7 +1662,7 @@
         "Foundry Owner": 20,
         "Foundry Project Manager": 9,
         "Key Vault Data Access Administrator": 9,
-        "Microsoft Discovery Platform Administrator (Preview)": 13,
+        "Microsoft Discovery Platform Administrator": 13,
         "Role Based Access Control Administrator": 4,
         "Storage Actions Task Assignment Contributor": 13,
         "Virtual Machine Data Access Administrator (preview)": 14
@@ -1688,8 +1697,6 @@
         "Savings plan Purchaser": 10
     },
     "Microsoft.Authorization/roleAssignments/write": {
-        "Azure Container Storage Contributor": 12,
-        "Azure Container Storage Owner": 17,
         "Azure File Sync Administrator": 15,
         "Azure IoT Operations Onboarding": 10,
         "Azure Local Migrate Execute Expert": 41,
@@ -1710,7 +1717,7 @@
         "Foundry Owner": 20,
         "Foundry Project Manager": 9,
         "Key Vault Data Access Administrator": 9,
-        "Microsoft Discovery Platform Administrator (Preview)": 13,
+        "Microsoft Discovery Platform Administrator": 13,
         "Role Based Access Control Administrator": 4,
         "Storage Actions Task Assignment Contributor": 13,
         "Virtual Machine Data Access Administrator (preview)": 14
@@ -3450,99 +3457,115 @@
         "Savings plan Purchaser": 10
     },
     "Microsoft.BillingBenefits/conditionalCredits/cancel/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BillingBenefits/conditionalCredits/contributors/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BillingBenefits/conditionalCredits/delete": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BillingBenefits/conditionalCredits/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BillingBenefits/conditionalCredits/write": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BillingBenefits/credits/cancel/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BillingBenefits/credits/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BillingBenefits/credits/sources/delete": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BillingBenefits/credits/sources/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BillingBenefits/credits/sources/write": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BillingBenefits/credits/write": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BillingBenefits/discounts/cancel/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BillingBenefits/discounts/delete": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BillingBenefits/discounts/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BillingBenefits/discounts/write": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BillingBenefits/maccs/cancel/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BillingBenefits/maccs/chargeShortfall/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BillingBenefits/maccs/contributors/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BillingBenefits/maccs/delete": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BillingBenefits/maccs/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BillingBenefits/maccs/write": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BillingBenefits/maccs/writeOff/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BillingBenefits/register/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BillingBenefits/savingsPlanOrders/write": {
         "Savings plan Purchaser": 10
+    },
+    "Microsoft.BillingBenefits/spendPlans/cancel/action": {
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
+    },
+    "Microsoft.BillingBenefits/spendPlans/read": {
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
+    },
+    "Microsoft.BillingBenefits/spendPlans/terms/read": {
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
+    },
+    "Microsoft.BillingBenefits/spendPlans/write": {
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.BizTalkServices/BizTalk/*": {
         "BizTalk Contributor": 7
@@ -4725,7 +4748,6 @@
         "Defender Agentless VM Scan": 10
     },
     "Microsoft.Compute/virtualMachineScaleSets/read": {
-        "Azure Container Storage Operator": 18,
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
         "Defender Agentless VM Scan": 10
     },
@@ -4755,20 +4777,17 @@
     },
     "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/read": {
         "Azure Batch Service Orchestration Role": 34,
-        "Azure Container Storage Operator": 18,
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
         "Defender Agentless VM Scan": 10
     },
     "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/write": {
-        "Azure Container Storage Operator": 18,
         "Azure Red Hat OpenShift Disk Storage Operator": 16
     },
     "Microsoft.Compute/virtualMachineScaleSets/virtualmachines/restart/action": {
         "Azure Batch Service Orchestration Role": 34
     },
     "Microsoft.Compute/virtualMachineScaleSets/write": {
-        "Azure Batch Service Orchestration Role": 34,
-        "Azure Container Storage Operator": 18
+        "Azure Batch Service Orchestration Role": 34
     },
     "Microsoft.Compute/virtualMachines/*": {
         "Avere Contributor": 20,
@@ -4864,7 +4883,6 @@
         "Azure Center for SAP solutions administrator": 57,
         "Azure Center for SAP solutions reader": 43,
         "Azure Center for SAP solutions service role": 55,
-        "Azure Container Storage Operator": 18,
         "Azure Migrate Execute Expert": 46,
         "Azure Migrate Owner": 68,
         "Azure Red Hat OpenShift Cloud Controller Manager": 30,
@@ -4911,7 +4929,6 @@
     "Microsoft.Compute/virtualMachines/write": {
         "Azure Backup Snapshot Contributor": 11,
         "Azure Center for SAP solutions service role": 55,
-        "Azure Container Storage Operator": 18,
         "Azure Migrate Execute Expert": 46,
         "Azure Migrate Owner": 68,
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
@@ -6194,143 +6211,143 @@
         "Backup MUA Admin": 26
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/SuspendBackups/action": {
-        "Backup Contributor": 84
+        "Backup Contributor": 85
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/backup/action": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/delete": {
-        "Backup Contributor": 84
+        "Backup Contributor": 85
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/findRestorableTimeRanges/action": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/operationResults/read": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/read": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/recoveryPoints/read": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/restore/action": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/resumeProtection/action": {
-        "Backup Contributor": 84
+        "Backup Contributor": 85
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/validateForModifyBackup/action": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/validateRestore/action": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/write": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98
     },
     "Microsoft.DataProtection/backupVaults/backupPolicies/delete": {
-        "Backup Contributor": 84
+        "Backup Contributor": 85
     },
     "Microsoft.DataProtection/backupVaults/backupPolicies/read": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.DataProtection/backupVaults/backupPolicies/write": {
-        "Backup Contributor": 84
+        "Backup Contributor": 85
     },
     "Microsoft.DataProtection/backupVaults/backupResourceGuardProxies/delete": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup MUA Admin": 26,
         "Backup Operator": 98
     },
     "Microsoft.DataProtection/backupVaults/backupResourceGuardProxies/read": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup MUA Admin": 26,
         "Backup Operator": 98
     },
     "Microsoft.DataProtection/backupVaults/backupResourceGuardProxies/unlockDelete/action": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup MUA Admin": 26,
         "Backup Operator": 98
     },
     "Microsoft.DataProtection/backupVaults/backupResourceGuardProxies/write": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup MUA Admin": 26,
         "Backup Operator": 98
     },
     "Microsoft.DataProtection/backupVaults/deletedBackupInstances/read": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.DataProtection/backupVaults/deletedBackupInstances/undelete/action": {
-        "Backup Contributor": 84
+        "Backup Contributor": 85
     },
     "Microsoft.DataProtection/backupVaults/operationResults/read": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.DataProtection/backupVaults/operationStatus/read": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.DataProtection/backupVaults/read": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.DataProtection/backupVaults/validateForBackup/action": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98
     },
     "Microsoft.DataProtection/backupVaults/write": {
-        "Backup Contributor": 84
+        "Backup Contributor": 85
     },
     "Microsoft.DataProtection/locations/checkFeatureSupport/action": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup MUA Admin": 26,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.DataProtection/locations/checkNameAvailability/action": {
-        "Backup Contributor": 84
+        "Backup Contributor": 85
     },
     "Microsoft.DataProtection/locations/getBackupStatus/action": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup MUA Admin": 26,
         "Backup Reader": 60
     },
     "Microsoft.DataProtection/locations/operationResults/read": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup MUA Admin": 26,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.DataProtection/locations/operationStatus/read": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup MUA Admin": 26,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.DataProtection/operations/read": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
@@ -6338,21 +6355,21 @@
         "Backup MUA Admin": 26
     },
     "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/crossRegionRestore/action": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98
     },
     "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/fetchCrossRegionRestoreJob/action": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/fetchCrossRegionRestoreJobs/action": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/fetchSecondaryRecoveryPoints/action": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
@@ -6360,7 +6377,7 @@
         "Backup MUA Admin": 26
     },
     "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/validateCrossRegionRestore/action": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98
     },
     "Microsoft.DataProtection/subscriptions/resourceGroups/providers/resourceGuards/delete": {
@@ -6878,47 +6895,47 @@
         "Azure Device Registry Onboarding": 8
     },
     "Microsoft.Discovery/*": {
-        "Microsoft Discovery Platform Administrator (Preview)": 13
+        "Microsoft Discovery Platform Administrator": 13
     },
     "Microsoft.Discovery/*/read": {
-        "Microsoft Discovery Platform Reader (Preview)": 3
+        "Microsoft Discovery Platform Reader": 3
     },
     "Microsoft.Discovery/agents/*": {
-        "Microsoft Discovery Platform Contributor (Preview)": 22
+        "Microsoft Discovery Platform Contributor": 22
     },
     "Microsoft.Discovery/bookshelves/read": {
-        "Microsoft Discovery Bookshelf Index Data Reader - Preview": 1,
-        "Microsoft Discovery Platform Contributor (Preview)": 22
+        "Microsoft Discovery Bookshelf Index Data Reader": 1,
+        "Microsoft Discovery Platform Contributor": 22
     },
     "Microsoft.Discovery/checkNameAvailability/action": {
-        "Microsoft Discovery Platform Administrator (Preview)": 13
+        "Microsoft Discovery Platform Administrator": 13
     },
     "Microsoft.Discovery/dataContainers/*": {
-        "Microsoft Discovery Platform Contributor (Preview)": 22
+        "Microsoft Discovery Platform Contributor": 22
     },
     "Microsoft.Discovery/dataContainers/dataAssets/*": {
-        "Microsoft Discovery Platform Contributor (Preview)": 22
+        "Microsoft Discovery Platform Contributor": 22
     },
     "Microsoft.Discovery/locations/operationStatuses/read": {
-        "Microsoft Discovery Platform Administrator (Preview)": 13,
-        "Microsoft Discovery Platform Contributor (Preview)": 22,
+        "Microsoft Discovery Platform Administrator": 13,
+        "Microsoft Discovery Platform Contributor": 22,
         "Microsoft Discovery Storage Container Contributor - Preview": 5
     },
     "Microsoft.Discovery/models/*": {
-        "Microsoft Discovery Platform Contributor (Preview)": 22
+        "Microsoft Discovery Platform Contributor": 22
     },
     "Microsoft.Discovery/operations/read": {
-        "Microsoft Discovery Platform Contributor (Preview)": 22
+        "Microsoft Discovery Platform Contributor": 22
     },
     "Microsoft.Discovery/storageContainers/*": {
-        "Microsoft Discovery Platform Contributor (Preview)": 22
+        "Microsoft Discovery Platform Contributor": 22
     },
     "Microsoft.Discovery/storageContainers/read": {
         "Microsoft Discovery Storage Container Contributor - Preview": 5,
         "Microsoft Discovery Storage Container Reader - Preview": 2
     },
     "Microsoft.Discovery/storageContainers/storageAssets/*": {
-        "Microsoft Discovery Platform Contributor (Preview)": 22
+        "Microsoft Discovery Platform Contributor": 22
     },
     "Microsoft.Discovery/storageContainers/storageAssets/delete": {
         "Microsoft Discovery Storage Container Contributor - Preview": 5
@@ -6931,32 +6948,32 @@
         "Microsoft Discovery Storage Container Contributor - Preview": 5
     },
     "Microsoft.Discovery/storages/read": {
-        "Microsoft Discovery Platform Contributor (Preview)": 22
+        "Microsoft Discovery Platform Contributor": 22
     },
     "Microsoft.Discovery/supercomputers/nodePools/read": {
-        "Microsoft Discovery Platform Contributor (Preview)": 22
+        "Microsoft Discovery Platform Contributor": 22
     },
     "Microsoft.Discovery/supercomputers/read": {
-        "Microsoft Discovery Platform Contributor (Preview)": 22
+        "Microsoft Discovery Platform Contributor": 22
     },
     "Microsoft.Discovery/tools/*": {
-        "Microsoft Discovery Platform Contributor (Preview)": 22
+        "Microsoft Discovery Platform Contributor": 22
     },
     "Microsoft.Discovery/tools/read": {
         "Microsoft Discovery Tools Reader - Preview": 1
     },
     "Microsoft.Discovery/workflows/*": {
-        "Microsoft Discovery Platform Contributor (Preview)": 22
+        "Microsoft Discovery Platform Contributor": 22
     },
     "Microsoft.Discovery/workspaces/chatModelDeployments/read": {
         "Microsoft Discovery Chat Model Reader - Preview": 1,
-        "Microsoft Discovery Platform Contributor (Preview)": 22
+        "Microsoft Discovery Platform Contributor": 22
     },
     "Microsoft.Discovery/workspaces/projects/delete": {
         "Microsoft Discovery Project Contributor - Preview": 3
     },
     "Microsoft.Discovery/workspaces/projects/read": {
-        "Microsoft Discovery Platform Contributor (Preview)": 22,
+        "Microsoft Discovery Platform Contributor": 22,
         "Microsoft Discovery Project Contributor - Preview": 3,
         "Microsoft Discovery Project Reader - Preview": 1
     },
@@ -6964,7 +6981,7 @@
         "Microsoft Discovery Project Contributor - Preview": 3
     },
     "Microsoft.Discovery/workspaces/read": {
-        "Microsoft Discovery Platform Contributor (Preview)": 22
+        "Microsoft Discovery Platform Contributor": 22
     },
     "Microsoft.DocumentDB/*/read": {
         "Cosmos DB Account Reader Role": 7
@@ -7403,8 +7420,8 @@
         "Liftr Elastic Contributor": 38
     },
     "Microsoft.ElasticSan/elasticSans/*": {
-        "Azure Container Storage Operator": 18,
-        "Azure Container Storage Owner": 17,
+        "Azure Container Storage Operator": 12,
+        "Azure Container Storage Owner": 15,
         "Elastic SAN Owner": 6
     },
     "Microsoft.ElasticSan/elasticSans/*/read": {
@@ -7422,7 +7439,7 @@
         "Elastic SAN Network Admin": 5
     },
     "Microsoft.ElasticSan/elasticSans/volumeGroups/*": {
-        "Azure Container Storage Owner": 17,
+        "Azure Container Storage Owner": 15,
         "Elastic SAN Volume Group Owner": 4
     },
     "Microsoft.ElasticSan/elasticSans/volumeGroups/*/read": {
@@ -7444,7 +7461,7 @@
         "Elastic SAN Snapshot Exporter": 15
     },
     "Microsoft.ElasticSan/elasticSans/volumeGroups/volumes/*": {
-        "Azure Container Storage Owner": 17
+        "Azure Container Storage Owner": 15
     },
     "Microsoft.ElasticSan/elasticSans/volumeGroups/volumes/delete": {
         "Elastic SAN Volume Importer": 14
@@ -7459,14 +7476,14 @@
         "Elastic SAN Volume Data Contributor": 2
     },
     "Microsoft.ElasticSan/locations/*": {
-        "Azure Container Storage Owner": 17,
+        "Azure Container Storage Owner": 15,
         "Elastic SAN Owner": 6,
         "Elastic SAN Snapshot Exporter": 15,
         "Elastic SAN Volume Importer": 14
     },
     "Microsoft.ElasticSan/locations/asyncoperations/read": {
-        "Azure Container Storage Operator": 18,
-        "Azure Container Storage Owner": 17,
+        "Azure Container Storage Operator": 12,
+        "Azure Container Storage Owner": 15,
         "Elastic SAN Network Admin": 5,
         "Elastic SAN Volume Group Owner": 4
     },
@@ -7514,24 +7531,24 @@
         "Graph Owner": 14
     },
     "Microsoft.EnterpriseSupport/enterpriseSupports/delete": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.EnterpriseSupport/enterpriseSupports/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.EnterpriseSupport/enterpriseSupports/write": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.EnterpriseSupport/operationStatuses/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.EnterpriseSupport/register/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.EnterpriseSupport/services/delete": {
         "SupportPlan Contributor": 5
@@ -7540,20 +7557,20 @@
         "SupportPlan Contributor": 5
     },
     "Microsoft.EnterpriseSupport/supportPlans/cancel/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.EnterpriseSupport/supportPlans/delete": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.EnterpriseSupport/supportPlans/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.EnterpriseSupport/supportPlans/write": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.EventGrid/*": {
         "EventGrid Contributor": 6
@@ -7922,40 +7939,40 @@
         "HDInsight Cluster Operator": 9
     },
     "Microsoft.Hardware/orderPreview/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.Hardware/orders/delete": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.Hardware/orders/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.Hardware/orders/write": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.Hardware/register/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.Hardware/returnPreview/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.Hardware/returns/delete": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.Hardware/returns/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.Hardware/returns/write": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.Hdinsight/clusterpools/clusters/read": {
         "HDInsight on AKS Cluster Operator": 28
@@ -8787,7 +8804,7 @@
     },
     "Microsoft.Insights/AlertRules/*": {
         "Azure File Sync Administrator": 15,
-        "Microsoft Discovery Platform Contributor (Preview)": 22,
+        "Microsoft Discovery Platform Contributor": 22,
         "Monitoring Contributor": 46,
         "Monitoring Policy Contributor": 47
     },
@@ -9176,7 +9193,7 @@
         "Managed Identity Contributor": 12,
         "Managed Identity Federated Identity Credential Contributor": 8,
         "Managed Identity Operator": 7,
-        "Microsoft Discovery Platform Administrator (Preview)": 13,
+        "Microsoft Discovery Platform Administrator": 13,
         "Microsoft Sentinel Contributor": 16,
         "Microsoft Sentinel Reader": 21,
         "Microsoft Sentinel Responder": 27,
@@ -9724,8 +9741,8 @@
         "Azure Arc VMware Private Clouds Onboarding": 44
     },
     "Microsoft.KubernetesConfiguration/extensions/delete": {
-        "Azure Container Storage Contributor": 12,
-        "Azure Container Storage Owner": 17,
+        "Azure Container Storage Contributor": 10,
+        "Azure Container Storage Owner": 15,
         "Azure Resource Bridge Deployment Role": 36,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37,
@@ -9735,8 +9752,8 @@
     },
     "Microsoft.KubernetesConfiguration/extensions/operations/read": {
         "Azure Arc VMware Private Clouds Onboarding": 44,
-        "Azure Container Storage Contributor": 12,
-        "Azure Container Storage Owner": 17,
+        "Azure Container Storage Contributor": 10,
+        "Azure Container Storage Owner": 15,
         "Azure Resource Bridge Deployment Role": 36,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37,
@@ -9747,8 +9764,8 @@
     "Microsoft.KubernetesConfiguration/extensions/read": {
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware Private Cloud User": 40,
-        "Azure Container Storage Contributor": 12,
-        "Azure Container Storage Owner": 17,
+        "Azure Container Storage Contributor": 10,
+        "Azure Container Storage Owner": 15,
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
         "Azure Native Dynatrace Agent Management Role": 2,
@@ -9762,8 +9779,8 @@
         "Operator Nexus Compute Contributor Role (Preview)": 91
     },
     "Microsoft.KubernetesConfiguration/extensions/write": {
-        "Azure Container Storage Contributor": 12,
-        "Azure Container Storage Owner": 17,
+        "Azure Container Storage Contributor": 10,
+        "Azure Container Storage Owner": 15,
         "Azure Native Dynatrace Agent Management Role": 2,
         "Azure Resource Bridge Deployment Role": 36,
         "Azure Stack HCI Administrator": 103,
@@ -10309,8 +10326,8 @@
         "Management Group Contributor": 7
     },
     "Microsoft.Management/managementGroups/read": {
-        "Azure Container Storage Contributor": 12,
-        "Azure Container Storage Owner": 17,
+        "Azure Container Storage Contributor": 10,
+        "Azure Container Storage Owner": 15,
         "Azure Sphere Owner": 12,
         "Azure Stack HCI Administrator": 103,
         "Billing Reader": 7,
@@ -11135,7 +11152,7 @@
         "Avere Contributor": 20,
         "Avere Operator": 11,
         "Azure Center for SAP solutions administrator": 57,
-        "Azure Container Storage Operator": 18,
+        "Azure Container Storage Operator": 12,
         "Azure Migrate Decide and Plan Expert": 51,
         "Azure Migrate Owner": 68,
         "Azure Red Hat OpenShift Cloud Controller Manager": 30,
@@ -11385,7 +11402,7 @@
         "AVS Orchestrator Role": 56,
         "AVS on Fleet VIS Role": 21,
         "Azure Center for SAP solutions administrator": 57,
-        "Azure Container Storage Operator": 18,
+        "Azure Container Storage Operator": 12,
         "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift First Party Network": 11,
@@ -11481,12 +11498,12 @@
     },
     "Microsoft.Network/virtualNetworks/delete": {
         "Azure Batch Service Orchestration Role": 34,
-        "Azure Container Storage Operator": 18,
+        "Azure Container Storage Operator": 12,
         "Domain Services Contributor": 69
     },
     "Microsoft.Network/virtualNetworks/join/action": {
         "AVS Orchestrator Role": 56,
-        "Azure Container Storage Operator": 18,
+        "Azure Container Storage Operator": 12,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
         "Azure Migrate Owner": 68,
@@ -11524,7 +11541,7 @@
         "Azure Center for SAP solutions administrator": 57,
         "Azure Center for SAP solutions reader": 43,
         "Azure Center for SAP solutions service role": 55,
-        "Azure Container Storage Operator": 18,
+        "Azure Container Storage Operator": 12,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Execute Expert": 46,
         "Azure Migrate Owner": 68,
@@ -11532,7 +11549,7 @@
         "Azure Red Hat OpenShift Hosted Control Planes Control Plane Operator": 3,
         "Azure Red Hat OpenShift Hosted Control Planes Service Managed Identity": 18,
         "Azure Red Hat OpenShift Network Operator": 7,
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
         "Container Registry Contributor and Data Access Configuration Administrator": 59,
@@ -11542,7 +11559,7 @@
         "Domain Services Contributor": 69,
         "Domain Services Reader": 28,
         "LocalNGFirewallAdministrator role": 35,
-        "Microsoft Discovery Platform Administrator (Preview)": 13,
+        "Microsoft Discovery Platform Administrator": 13,
         "Oracle Database DbSystems Administrator": 16,
         "Oracle.Database Autonomous Database Administrator": 17,
         "Oracle.Database Exadata Infrastructure Administrator Built-in Role": 23,
@@ -11596,7 +11613,7 @@
         "DevTest Labs User": 32,
         "Domain Services Contributor": 69,
         "LocalNGFirewallAdministrator role": 35,
-        "Microsoft Discovery Platform Administrator (Preview)": 13,
+        "Microsoft Discovery Platform Administrator": 13,
         "VM Restore Operator": 41,
         "Virtual Machine Contributor": 45,
         "Windows 365 Network User": 4
@@ -11625,7 +11642,7 @@
         "Azure Center for SAP solutions administrator": 57,
         "Azure Center for SAP solutions reader": 43,
         "Azure Center for SAP solutions service role": 55,
-        "Azure Container Storage Operator": 18,
+        "Azure Container Storage Operator": 12,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
         "Azure Migrate Execute Expert": 46,
@@ -11644,7 +11661,7 @@
         "Desktop Virtualization Virtual Machine Contributor": 58,
         "Domain Services Contributor": 69,
         "Domain Services Reader": 28,
-        "Microsoft Discovery Platform Administrator (Preview)": 13,
+        "Microsoft Discovery Platform Administrator": 13,
         "Oracle Database DbSystems Administrator": 16,
         "Oracle.Database Autonomous Database Administrator": 17,
         "Oracle.Database Exadata Infrastructure Administrator Built-in Role": 23,
@@ -11676,7 +11693,7 @@
         "AVS Orchestrator Role": 56,
         "AVS on Fleet VIS Role": 21,
         "Azure Center for SAP solutions administrator": 57,
-        "Azure Container Storage Operator": 18,
+        "Azure Container Storage Operator": 12,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
         "Azure Migrate Owner": 68,
@@ -11721,7 +11738,7 @@
         "AVS Orchestrator Role": 56,
         "AVS on Fleet VIS Role": 21,
         "Azure Batch Service Orchestration Role": 34,
-        "Azure Container Storage Operator": 18,
+        "Azure Container Storage Operator": 12,
         "Domain Services Contributor": 69
     },
     "Microsoft.Network/virtualWans/read": {
@@ -12137,36 +12154,36 @@
         "Power Platform Enterprise Policy Contributor": 5
     },
     "Microsoft.ProfessionalService/register/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.ProfessionalService/resources/delete": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.ProfessionalService/resources/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.ProfessionalService/resources/write": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.ProgramEnrollment/eduEnrollments/delete": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.ProgramEnrollment/eduEnrollments/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.ProgramEnrollment/eduEnrollments/write": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.ProgramEnrollment/register/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.ProjectBabylon/accounts/read": {
         "Project Babylon Data Curator": 1,
@@ -12228,13 +12245,16 @@
     "Microsoft.Quota/usages/read": {
         "Quota Request Operator": 14
     },
+    "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappingStatus/action": {
+        "Backup Contributor": 85
+    },
     "Microsoft.RecoveryServices/Vaults/backupEngines/read": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/backupProtectionIntent/*": {
-        "Backup Contributor": 84
+        "Backup Contributor": 85
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/backupProtectionIntent/read": {
         "Backup Operator": 98,
@@ -12245,7 +12265,7 @@
         "Virtual Machine Contributor": 45
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/operationResults/*": {
-        "Backup Contributor": 84
+        "Backup Contributor": 85
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/operationResults/read": {
         "Backup Operator": 98,
@@ -12255,11 +12275,11 @@
         "Backup Reader": 60
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectableContainers/read": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/*": {
-        "Backup Contributor": 84
+        "Backup Contributor": 85
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/inquire/action": {
         "Backup Operator": 98
@@ -12316,11 +12336,11 @@
         "Backup Operator": 98
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/refreshContainers/action": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98
     },
     "Microsoft.RecoveryServices/Vaults/backupJobs/*": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98
     },
     "Microsoft.RecoveryServices/Vaults/backupJobs/operationResults/read": {
@@ -12330,24 +12350,24 @@
         "Backup Reader": 60
     },
     "Microsoft.RecoveryServices/Vaults/backupJobsExport/action": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.RecoveryServices/Vaults/backupOperationResults/*": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98
     },
     "Microsoft.RecoveryServices/Vaults/backupOperationResults/read": {
         "Backup Reader": 60
     },
     "Microsoft.RecoveryServices/Vaults/backupOperations/read": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.RecoveryServices/Vaults/backupPolicies/*": {
-        "Backup Contributor": 84
+        "Backup Contributor": 85
     },
     "Microsoft.RecoveryServices/Vaults/backupPolicies/operationResults/read": {
         "Backup Operator": 98,
@@ -12366,57 +12386,57 @@
         "Virtual Machine Contributor": 45
     },
     "Microsoft.RecoveryServices/Vaults/backupProtectableItems/*": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98
     },
     "Microsoft.RecoveryServices/Vaults/backupProtectedItems/*": {
-        "Backup Contributor": 84
+        "Backup Contributor": 85
     },
     "Microsoft.RecoveryServices/Vaults/backupProtectedItems/read": {
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.RecoveryServices/Vaults/backupProtectionContainers/*": {
-        "Backup Contributor": 84
+        "Backup Contributor": 85
     },
     "Microsoft.RecoveryServices/Vaults/backupProtectionContainers/read": {
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.RecoveryServices/Vaults/backupProtectionIntents/read": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.RecoveryServices/Vaults/backupResourceGuardProxies/delete": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98
     },
     "Microsoft.RecoveryServices/Vaults/backupResourceGuardProxies/read": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98
     },
     "Microsoft.RecoveryServices/Vaults/backupResourceGuardProxies/unlockDelete/action": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98
     },
     "Microsoft.RecoveryServices/Vaults/backupResourceGuardProxies/write": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98
     },
     "Microsoft.RecoveryServices/Vaults/backupSecurityPIN/*": {
-        "Backup Contributor": 84
+        "Backup Contributor": 85
     },
     "Microsoft.RecoveryServices/Vaults/backupTriggerValidateOperation/action": {
         "Backup Operator": 98
     },
     "Microsoft.RecoveryServices/Vaults/backupUsageSummaries/read": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.RecoveryServices/Vaults/backupValidateOperation/action": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98
     },
     "Microsoft.RecoveryServices/Vaults/backupValidateOperationResults/read": {
@@ -12426,27 +12446,27 @@
         "Backup Operator": 98
     },
     "Microsoft.RecoveryServices/Vaults/backupconfig/*": {
-        "Backup Contributor": 84
+        "Backup Contributor": 85
     },
     "Microsoft.RecoveryServices/Vaults/backupconfig/read": {
         "Backup Reader": 60
     },
     "Microsoft.RecoveryServices/Vaults/backupstorageconfig/*": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98
     },
     "Microsoft.RecoveryServices/Vaults/backupstorageconfig/read": {
         "Backup Reader": 60
     },
     "Microsoft.RecoveryServices/Vaults/certificates/*": {
-        "Backup Contributor": 84
+        "Backup Contributor": 85
     },
     "Microsoft.RecoveryServices/Vaults/certificates/write": {
         "Backup Operator": 98,
         "Site Recovery Contributor": 29
     },
     "Microsoft.RecoveryServices/Vaults/extendedInformation/*": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Site Recovery Contributor": 29
     },
     "Microsoft.RecoveryServices/Vaults/extendedInformation/read": {
@@ -12463,18 +12483,18 @@
         "Site Recovery Operator": 59
     },
     "Microsoft.RecoveryServices/Vaults/monitoringAlerts/read": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60,
         "Site Recovery Reader": 32
     },
     "Microsoft.RecoveryServices/Vaults/monitoringAlerts/write": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.RecoveryServices/Vaults/monitoringConfigurations/*": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
@@ -12484,7 +12504,7 @@
         "Site Recovery Reader": 32
     },
     "Microsoft.RecoveryServices/Vaults/read": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60,
         "Site Recovery Contributor": 29,
@@ -12498,7 +12518,7 @@
         "Site Recovery Reader": 32
     },
     "Microsoft.RecoveryServices/Vaults/registeredIdentities/*": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Site Recovery Contributor": 29
     },
     "Microsoft.RecoveryServices/Vaults/registeredIdentities/operationResults/read": {
@@ -12529,7 +12549,7 @@
         "Site Recovery Reader": 32
     },
     "Microsoft.RecoveryServices/Vaults/usages/*": {
-        "Backup Contributor": 84
+        "Backup Contributor": 85
     },
     "Microsoft.RecoveryServices/Vaults/usages/read": {
         "Backup Operator": 98,
@@ -12545,11 +12565,11 @@
         "Site Recovery Reader": 32
     },
     "Microsoft.RecoveryServices/Vaults/write": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Virtual Machine Contributor": 45
     },
     "Microsoft.RecoveryServices/locations/*": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Virtual Machine Contributor": 45
     },
     "Microsoft.RecoveryServices/locations/allocateStamp/action": {
@@ -12585,21 +12605,21 @@
         "Backup Reader": 60
     },
     "Microsoft.RecoveryServices/locations/backupPreValidateProtection/action": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98
     },
     "Microsoft.RecoveryServices/locations/backupStatus/action": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.RecoveryServices/locations/backupValidateFeatures/action": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
     "Microsoft.RecoveryServices/locations/operationStatus/read": {
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
@@ -12607,7 +12627,7 @@
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Execute Expert": 46,
         "Azure Migrate Owner": 68,
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Backup Reader": 60
     },
@@ -12627,10 +12647,10 @@
         "Backup Operator": 98
     },
     "Microsoft.RecoveryServices/vaults/operationResults/read": {
-        "Backup Contributor": 84
+        "Backup Contributor": 85
     },
     "Microsoft.RecoveryServices/vaults/operationStatus/read": {
-        "Backup Contributor": 84
+        "Backup Contributor": 85
     },
     "Microsoft.RecoveryServices/vaults/replicationAlertSettings/*": {
         "Site Recovery Contributor": 29
@@ -13122,8 +13142,8 @@
         "Azure Center for SAP solutions service role": 55,
         "Azure Connected Machine Resource Administrator": 12,
         "Azure Container Instances Contributor Role": 5,
-        "Azure Container Storage Contributor": 12,
-        "Azure Container Storage Owner": 17,
+        "Azure Container Storage Contributor": 10,
+        "Azure Container Storage Owner": 15,
         "Azure Data Transfer Owner": 5,
         "Azure Deployment Stack Contributor": 9,
         "Azure Deployment Stack Owner": 6,
@@ -13153,7 +13173,7 @@
         "Azure Sphere Contributor": 7,
         "Azure Sphere Owner": 12,
         "Azure Stack HCI Administrator": 103,
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup MUA Admin": 26,
         "Backup Operator": 98,
         "BizTalk Contributor": 7,
@@ -13266,8 +13286,8 @@
         "Managed Identity Contributor": 12,
         "Managed Identity Federated Identity Credential Contributor": 8,
         "Managed Identity Operator": 7,
-        "Microsoft Discovery Platform Administrator (Preview)": 13,
-        "Microsoft Discovery Platform Contributor (Preview)": 22,
+        "Microsoft Discovery Platform Administrator": 13,
+        "Microsoft Discovery Platform Contributor": 22,
         "Microsoft Sentinel Contributor": 16,
         "Microsoft Sentinel Reader": 21,
         "Microsoft Sentinel Responder": 27,
@@ -13380,7 +13400,7 @@
         "Azure Stack HCI VM Contributor": 75,
         "Domain Services Contributor": 69,
         "Operator Nexus Compute Contributor Role (Preview)": 91,
-        "Procurement Contributor with Resource Group Permissions": 95,
+        "Procurement Contributor with Resource Group Permissions": 99,
         "Windows 365 Network Interface Contributor": 15
     },
     "Microsoft.Resources/deployments/exportTemplate/action": {
@@ -13445,7 +13465,7 @@
         "Logic Apps Standard Reader": 7,
         "Nexus Network Fabric Service Reader": 7,
         "Operator Nexus Compute Contributor Role (Preview)": 91,
-        "Procurement Contributor with Resource Group Permissions": 95,
+        "Procurement Contributor with Resource Group Permissions": 99,
         "Windows 365 Network Interface Contributor": 15
     },
     "Microsoft.Resources/deployments/operationstatuses/read": {
@@ -13465,7 +13485,7 @@
         "Domain Services Contributor": 69,
         "Domain Services Reader": 28,
         "Operator Nexus Compute Contributor Role (Preview)": 91,
-        "Procurement Contributor with Resource Group Permissions": 95,
+        "Procurement Contributor with Resource Group Permissions": 99,
         "Windows 365 Network Interface Contributor": 15
     },
     "Microsoft.Resources/deployments/read": {
@@ -13515,10 +13535,10 @@
         "HDInsight on AKS Cluster Admin": 35,
         "HDInsight on AKS Cluster Operator": 28,
         "HDInsight on AKS Cluster Pool Admin": 29,
-        "Microsoft Discovery Platform Reader (Preview)": 3,
+        "Microsoft Discovery Platform Reader": 3,
         "Nexus Network Fabric Service Reader": 7,
         "Operator Nexus Compute Contributor Role (Preview)": 91,
-        "Procurement Contributor with Resource Group Permissions": 95,
+        "Procurement Contributor with Resource Group Permissions": 99,
         "Quantum Workspace Data Reader": 6,
         "Windows 365 Network Interface Contributor": 15
     },
@@ -13543,7 +13563,7 @@
         "HDInsight on AKS Cluster Admin": 35,
         "HDInsight on AKS Cluster Pool Admin": 29,
         "Operator Nexus Compute Contributor Role (Preview)": 91,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.Resources/deployments/whatIf/action": {
         "Azure Arc ScVmm Administrator role": 57,
@@ -13593,7 +13613,7 @@
         "HDInsight on AKS Cluster Pool Admin": 29,
         "Kubernetes Cluster - Azure Arc Onboarding": 13,
         "Operator Nexus Compute Contributor Role (Preview)": 91,
-        "Procurement Contributor with Resource Group Permissions": 95,
+        "Procurement Contributor with Resource Group Permissions": 99,
         "ToolchainOrchestrator Admin Role": 6,
         "ToolchainOrchestrator Viewer Role": 6,
         "Windows 365 Network Interface Contributor": 15
@@ -13624,7 +13644,7 @@
     },
     "Microsoft.Resources/subscriptions/operationresults/read": {
         "Azure AI Administrator": 39,
-        "Azure AI Manager and Namespace RBAC Inference Operator": 4,
+        "Azure AIManager and Namespace RBAC Inference Operator": 4,
         "Azure AIManager and namespace RBAC Reader": 4,
         "Azure Arc Enabled Kubernetes Cluster User Role": 9,
         "Azure Arc Kubernetes Admin": 7,
@@ -13694,12 +13714,12 @@
         "Windows365SubscriptionReader": 3
     },
     "Microsoft.Resources/subscriptions/providers/read": {
-        "Azure Container Storage Operator": 18
+        "Azure Container Storage Operator": 12
     },
     "Microsoft.Resources/subscriptions/read": {
         "App Compliance Automation Administrator": 28,
         "Azure AI Administrator": 39,
-        "Azure AI Manager and Namespace RBAC Inference Operator": 4,
+        "Azure AIManager and Namespace RBAC Inference Operator": 4,
         "Azure AIManager and namespace RBAC Reader": 4,
         "Azure Arc Enabled Kubernetes Cluster User Role": 9,
         "Azure Arc Kubernetes Admin": 7,
@@ -13718,8 +13738,8 @@
         "Azure Center for SAP solutions administrator": 57,
         "Azure Center for SAP solutions reader": 43,
         "Azure Center for SAP solutions service role": 55,
-        "Azure Container Storage Contributor": 12,
-        "Azure Container Storage Owner": 17,
+        "Azure Container Storage Contributor": 10,
+        "Azure Container Storage Owner": 15,
         "Azure Customer Lockbox Approver for Subscription": 6,
         "Azure Kubernetes Fleet Manager ABAC Custom Resources Reader": 5,
         "Azure Kubernetes Fleet Manager ABAC Custom Resources Reader for Member Clusters": 3,
@@ -13824,8 +13844,8 @@
         "Avere Contributor": 20,
         "Avere Operator": 11,
         "Azure AI Administrator": 39,
-        "Azure AI Manager and Namespace RBAC Inference Operator": 4,
         "Azure AIManager Contributor": 5,
+        "Azure AIManager and Namespace RBAC Inference Operator": 4,
         "Azure AIManager and namespace RBAC Reader": 4,
         "Azure API Center Service Contributor": 7,
         "Azure API Center Service Reader": 7,
@@ -13853,9 +13873,9 @@
         "Azure Center for SAP solutions service role": 55,
         "Azure Connected Machine Resource Manager": 35,
         "Azure Container Instances Contributor Role": 5,
-        "Azure Container Storage Contributor": 12,
-        "Azure Container Storage Operator": 18,
-        "Azure Container Storage Owner": 17,
+        "Azure Container Storage Contributor": 10,
+        "Azure Container Storage Operator": 12,
+        "Azure Container Storage Owner": 15,
         "Azure Customer Lockbox Approver for Subscription": 6,
         "Azure Data Transfer Owner": 5,
         "Azure Deployment Stack Contributor": 9,
@@ -13925,7 +13945,7 @@
         "Azure Stack HCI Device Management Role": 37,
         "Azure Stack HCI VM Contributor": 75,
         "Azure Stack HCI VM Reader": 42,
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup MUA Admin": 26,
         "Backup Operator": 98,
         "BizTalk Contributor": 7,
@@ -14091,9 +14111,9 @@
         "Managed Identity Contributor": 12,
         "Managed Identity Federated Identity Credential Contributor": 8,
         "Managed Identity Operator": 7,
-        "Microsoft Discovery Platform Administrator (Preview)": 13,
-        "Microsoft Discovery Platform Contributor (Preview)": 22,
-        "Microsoft Discovery Platform Reader (Preview)": 3,
+        "Microsoft Discovery Platform Administrator": 13,
+        "Microsoft Discovery Platform Contributor": 22,
+        "Microsoft Discovery Platform Reader": 3,
         "Microsoft Sentinel Contributor": 16,
         "Microsoft Sentinel Reader": 21,
         "Microsoft Sentinel Responder": 27,
@@ -14124,8 +14144,8 @@
         "Power Platform Account Contributor": 5,
         "Power Platform Enterprise Policy Contributor": 5,
         "Private DNS Zone Contributor": 10,
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95,
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99,
         "ProviderHub Contributor": 6,
         "ProviderHub Reader": 4,
         "Quantum Workspace Data Contributor": 6,
@@ -14203,7 +14223,7 @@
         "Defender Containers Sensor": 19,
         "Defender Kubernetes Agent Operator": 19,
         "Kubernetes Agent Subscription Level Operator": 12,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.Resources/subscriptions/resourcegroups/deployments/*": {
         "Azure AI Administrator": 39,
@@ -14317,48 +14337,48 @@
         "Reservation Purchaser": 11
     },
     "Microsoft.SaaS/register/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SaaS/resources/delete": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SaaS/resources/listAccessToken/action": {
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SaaS/resources/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SaaS/resources/write": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SaaSHub/cloudServices/delete": {
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SaaSHub/cloudServices/read": {
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SaaSHub/cloudServices/write": {
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SaaSHub/cloudservices/delete": {
-        "Procurement Contributor": 87,
+        "Procurement Contributor": 91,
         "SaaS Hub Contributor": 4
     },
     "Microsoft.SaaSHub/cloudservices/read": {
-        "Procurement Contributor": 87,
+        "Procurement Contributor": 91,
         "SaaS Hub Contributor": 4
     },
     "Microsoft.SaaSHub/cloudservices/write": {
-        "Procurement Contributor": 87,
+        "Procurement Contributor": 91,
         "SaaS Hub Contributor": 4
     },
     "Microsoft.SaaSHub/register/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.ScVmm/*": {
         "Azure Arc ScVmm Administrator role": 57
@@ -14798,120 +14818,120 @@
         "SignalR AccessKey Reader": 5
     },
     "Microsoft.SoftwarePlan/register/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwareBenefits/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwareLicenses/productDownloadOptions/generateDownloadLinks/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwareLicenses/productDownloadOptions/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwareLicenses/productKeys/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwareLicenses/productKeys/showFullKey/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwareLicenses/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwareLicenses/write": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwarePerpetualProducts/cancel/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwarePerpetualProducts/delete": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwarePerpetualProducts/productDownloadOptions/generateDownloadLinks/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwarePerpetualProducts/productDownloadOptions/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwarePerpetualProducts/productKeys/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwarePerpetualProducts/productKeys/showFullKey/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwarePerpetualProducts/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwarePerpetualProducts/write": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwareSubscriptions/cancel/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwareSubscriptions/delete": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwareSubscriptions/listKeys/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwareSubscriptions/productDownloadOptions/generateDownloadLinks/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwareSubscriptions/productDownloadOptions/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwareSubscriptions/productKeys/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwareSubscriptions/productKeys/showFullKey/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwareSubscriptions/read": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwareSubscriptions/refreshFulfillment/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/softwareSubscriptions/write": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/validateSoftwareLicenseCreate/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/validateSoftwarePerpetualProductCreate/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.SoftwarePlan/validateSoftwareSubscriptionCreate/action": {
-        "Procurement Contributor": 87,
-        "Procurement Contributor with Resource Group Permissions": 95
+        "Procurement Contributor": 91,
+        "Procurement Contributor with Resource Group Permissions": 99
     },
     "Microsoft.Solutions/*/action": {
         "Managed Application Operator Role": 3
@@ -15507,7 +15527,7 @@
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift Image Registry Operator": 25,
         "Azure Red Hat OpenShift Service Operator": 10,
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Defender CSPM Storage Scanner Operator": 13,
         "Defender Sensitive Data Discovery": 9,
@@ -15673,8 +15693,8 @@
         "Azure Arc Kubernetes Cluster Admin": 7,
         "Azure Arc Kubernetes Viewer": 7,
         "Azure Arc Kubernetes Writer": 7,
-        "Azure Container Storage Contributor": 12,
-        "Azure Container Storage Owner": 17,
+        "Azure Container Storage Contributor": 10,
+        "Azure Container Storage Owner": 15,
         "Azure File Sync Administrator": 15,
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
@@ -15683,7 +15703,7 @@
         "Azure Migrate Owner": 68,
         "Azure Sphere Owner": 12,
         "Azure Stack HCI Administrator": 103,
-        "Backup Contributor": 84,
+        "Backup Contributor": 85,
         "Backup Operator": 98,
         "Billing Reader": 7,
         "BizTalk Contributor": 7,
@@ -15760,8 +15780,8 @@
         "Logic Apps Standard Reader": 7,
         "Managed Identity Contributor": 12,
         "Managed Identity Operator": 7,
-        "Microsoft Discovery Platform Administrator (Preview)": 13,
-        "Microsoft Discovery Platform Contributor (Preview)": 22,
+        "Microsoft Discovery Platform Administrator": 13,
+        "Microsoft Discovery Platform Contributor": 22,
         "Microsoft Sentinel Contributor": 16,
         "Microsoft Sentinel Reader": 21,
         "Microsoft Sentinel Responder": 27,

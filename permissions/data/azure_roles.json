@@ -1,4 +1,22 @@
 {
+    "A365 Gateway Policy Operator": {
+        "permissions": [
+            "Microsoft.ApiManagement/service/apis/read",
+            "Microsoft.ApiManagement/service/apis/write",
+            "Microsoft.ApiManagement/service/read",
+            "Microsoft.ApiManagement/service/workspaces/toolServers/read",
+            "Microsoft.ApiManagement/service/workspaces/toolServers/write"
+        ],
+        "group": "BuiltInRole"
+    },
+    "AI Gateway Models User": {
+        "permissions": [],
+        "group": "BuiltInRole"
+    },
+    "AI Gateway Tools User": {
+        "permissions": [],
+        "group": "BuiltInRole"
+    },
     "AI Gateway User": {
         "permissions": [],
         "group": "BuiltInRole"
@@ -1244,15 +1262,6 @@
         ],
         "group": "BuiltInRole"
     },
-    "Azure AI Manager and Namespace RBAC Inference Operator": {
-        "permissions": [
-            "Microsoft.Authorization/*/read",
-            "Microsoft.Resources/subscriptions/operationresults/read",
-            "Microsoft.Resources/subscriptions/read",
-            "Microsoft.Resources/subscriptions/resourceGroups/read"
-        ],
-        "group": "BuiltInRole"
-    },
     "Azure AI Safety Evaluator": {
         "permissions": [
             "Microsoft.MachineLearningServices/workspaces/evaluations/*",
@@ -1276,6 +1285,15 @@
             "Microsoft.ContainerService/aiManagers/listCredential/action",
             "Microsoft.ContainerService/aiManagers/namespaces/listCredential/action",
             "Microsoft.ContainerService/aiManagers/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Azure AIManager and Namespace RBAC Inference Operator": {
+        "permissions": [
+            "Microsoft.Authorization/*/read",
+            "Microsoft.Resources/subscriptions/operationresults/read",
+            "Microsoft.Resources/subscriptions/read",
+            "Microsoft.Resources/subscriptions/resourceGroups/read"
         ],
         "group": "BuiltInRole"
     },
@@ -2251,8 +2269,6 @@
     "Azure Container Storage Contributor": {
         "permissions": [
             "Microsoft.Authorization/*/read",
-            "Microsoft.Authorization/roleAssignments/delete",
-            "Microsoft.Authorization/roleAssignments/write",
             "Microsoft.KubernetesConfiguration/extensions/delete",
             "Microsoft.KubernetesConfiguration/extensions/operations/read",
             "Microsoft.KubernetesConfiguration/extensions/read",
@@ -2267,12 +2283,6 @@
     },
     "Azure Container Storage Operator": {
         "permissions": [
-            "Microsoft.Compute/virtualMachineScaleSets/read",
-            "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/read",
-            "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/write",
-            "Microsoft.Compute/virtualMachineScaleSets/write",
-            "Microsoft.Compute/virtualMachines/read",
-            "Microsoft.Compute/virtualMachines/write",
             "Microsoft.ElasticSan/elasticSans/*",
             "Microsoft.ElasticSan/locations/asyncoperations/read",
             "Microsoft.Network/networkSecurityGroups/join/action",
@@ -2291,8 +2301,6 @@
     "Azure Container Storage Owner": {
         "permissions": [
             "Microsoft.Authorization/*/read",
-            "Microsoft.Authorization/roleAssignments/delete",
-            "Microsoft.Authorization/roleAssignments/write",
             "Microsoft.ElasticSan/elasticSans/*",
             "Microsoft.ElasticSan/elasticSans/volumeGroups/*",
             "Microsoft.ElasticSan/elasticSans/volumeGroups/volumes/*",
@@ -5021,6 +5029,7 @@
             "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/fetchSecondaryRecoveryPoints/action",
             "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/validateCrossRegionRestore/action",
             "Microsoft.Network/virtualNetworks/read",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappingStatus/action",
             "Microsoft.RecoveryServices/Vaults/backupEngines/read",
             "Microsoft.RecoveryServices/Vaults/backupFabrics/backupProtectionIntent/*",
             "Microsoft.RecoveryServices/Vaults/backupFabrics/operationResults/*",
@@ -7950,6 +7959,10 @@
         ],
         "group": "BuiltInRole"
     },
+    "Discovery Log Analytics Cluster Linker - Preview": {
+        "permissions": [],
+        "group": "BuiltInRole"
+    },
     "Disk Backup Reader": {
         "permissions": [
             "Microsoft.Authorization/*/read",
@@ -10159,6 +10172,10 @@
         ],
         "group": "BuiltInRole"
     },
+    "MEAT Criteria Data User": {
+        "permissions": [],
+        "group": "BuiltInRole"
+    },
     "Managed Application Contributor Role": {
         "permissions": [
             "*/read",
@@ -10344,7 +10361,7 @@
         ],
         "group": "BuiltInRole"
     },
-    "Microsoft Discovery Bookshelf Index Data Reader - Preview": {
+    "Microsoft Discovery Bookshelf Index Data Reader": {
         "permissions": [
             "Microsoft.Discovery/bookshelves/read"
         ],
@@ -10356,7 +10373,7 @@
         ],
         "group": "BuiltInRole"
     },
-    "Microsoft Discovery Platform Administrator (Preview)": {
+    "Microsoft Discovery Platform Administrator": {
         "permissions": [
             "Microsoft.Authorization/*/read",
             "Microsoft.Authorization/roleAssignments/delete",
@@ -10374,7 +10391,7 @@
         ],
         "group": "BuiltInRole"
     },
-    "Microsoft Discovery Platform Contributor (Preview)": {
+    "Microsoft Discovery Platform Contributor": {
         "permissions": [
             "Microsoft.Authorization/*/read",
             "Microsoft.Discovery/agents/*",
@@ -10401,7 +10418,7 @@
         ],
         "group": "BuiltInRole"
     },
-    "Microsoft Discovery Platform Reader (Preview)": {
+    "Microsoft Discovery Platform Reader": {
         "permissions": [
             "Microsoft.Discovery/*/read",
             "Microsoft.Resources/deployments/read",
@@ -11421,6 +11438,10 @@
             "Microsoft.BillingBenefits/maccs/write",
             "Microsoft.BillingBenefits/maccs/writeOff/action",
             "Microsoft.BillingBenefits/register/action",
+            "Microsoft.BillingBenefits/spendPlans/cancel/action",
+            "Microsoft.BillingBenefits/spendPlans/read",
+            "Microsoft.BillingBenefits/spendPlans/terms/read",
+            "Microsoft.BillingBenefits/spendPlans/write",
             "Microsoft.EnterpriseSupport/enterpriseSupports/delete",
             "Microsoft.EnterpriseSupport/enterpriseSupports/read",
             "Microsoft.EnterpriseSupport/enterpriseSupports/write",
@@ -11513,6 +11534,10 @@
             "Microsoft.BillingBenefits/maccs/write",
             "Microsoft.BillingBenefits/maccs/writeOff/action",
             "Microsoft.BillingBenefits/register/action",
+            "Microsoft.BillingBenefits/spendPlans/cancel/action",
+            "Microsoft.BillingBenefits/spendPlans/read",
+            "Microsoft.BillingBenefits/spendPlans/terms/read",
+            "Microsoft.BillingBenefits/spendPlans/write",
             "Microsoft.EnterpriseSupport/enterpriseSupports/delete",
             "Microsoft.EnterpriseSupport/enterpriseSupports/read",
             "Microsoft.EnterpriseSupport/enterpriseSupports/write",
