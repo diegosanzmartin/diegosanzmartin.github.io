@@ -1297,6 +1297,15 @@
         ],
         "group": "BuiltInRole"
     },
+    "Azure AIManager and namespace RBAC Admin": {
+        "permissions": [
+            "Microsoft.Authorization/*/read",
+            "Microsoft.Resources/subscriptions/operationresults/read",
+            "Microsoft.Resources/subscriptions/read",
+            "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "group": "BuiltInRole"
+    },
     "Azure AIManager and namespace RBAC Reader": {
         "permissions": [
             "Microsoft.Authorization/*/read",
@@ -2515,6 +2524,12 @@
     "Azure File Sync Reader": {
         "permissions": [
             "Microsoft.StorageSync/*/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Azure Firewall for Containers Configuration Manager": {
+        "permissions": [
+            "Microsoft.Network/azureFirewalls/read"
         ],
         "group": "BuiltInRole"
     },

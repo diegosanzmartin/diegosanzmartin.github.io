@@ -1169,6 +1169,7 @@
         "Azure AI Inference Deployment Operator": 3,
         "Azure AIManager Contributor": 5,
         "Azure AIManager and Namespace RBAC Inference Operator": 4,
+        "Azure AIManager and namespace RBAC Admin": 4,
         "Azure AIManager and namespace RBAC Reader": 4,
         "Azure API Center Service Contributor": 7,
         "Azure API Center Service Reader": 7,
@@ -10754,6 +10755,7 @@
         "Azure Red Hat OpenShift Machine API Operator": 35
     },
     "Microsoft.Network/azureFirewalls/read": {
+        "Azure Firewall for Containers Configuration Manager": 1,
         "Defender Servers P2": 19,
         "Domain Services Contributor": 69,
         "Domain Services Reader": 28
@@ -13645,6 +13647,7 @@
     "Microsoft.Resources/subscriptions/operationresults/read": {
         "Azure AI Administrator": 39,
         "Azure AIManager and Namespace RBAC Inference Operator": 4,
+        "Azure AIManager and namespace RBAC Admin": 4,
         "Azure AIManager and namespace RBAC Reader": 4,
         "Azure Arc Enabled Kubernetes Cluster User Role": 9,
         "Azure Arc Kubernetes Admin": 7,
@@ -13720,6 +13723,7 @@
         "App Compliance Automation Administrator": 28,
         "Azure AI Administrator": 39,
         "Azure AIManager and Namespace RBAC Inference Operator": 4,
+        "Azure AIManager and namespace RBAC Admin": 4,
         "Azure AIManager and namespace RBAC Reader": 4,
         "Azure Arc Enabled Kubernetes Cluster User Role": 9,
         "Azure Arc Kubernetes Admin": 7,
@@ -13846,6 +13850,7 @@
         "Azure AI Administrator": 39,
         "Azure AIManager Contributor": 5,
         "Azure AIManager and Namespace RBAC Inference Operator": 4,
+        "Azure AIManager and namespace RBAC Admin": 4,
         "Azure AIManager and namespace RBAC Reader": 4,
         "Azure API Center Service Contributor": 7,
         "Azure API Center Service Reader": 7,
