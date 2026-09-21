@@ -1279,39 +1279,39 @@
         ],
         "group": "BuiltInRole"
     },
+    "Azure AIManager Inference User": {
+        "permissions": [
+            "Microsoft.Authorization/*/read",
+            "Microsoft.Resources/subscriptions/operationresults/read",
+            "Microsoft.Resources/subscriptions/read",
+            "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Azure AIManager RBAC Admin": {
+        "permissions": [
+            "Microsoft.Authorization/*/read",
+            "Microsoft.Resources/subscriptions/operationresults/read",
+            "Microsoft.Resources/subscriptions/read",
+            "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Azure AIManager RBAC Reader": {
+        "permissions": [
+            "Microsoft.Authorization/*/read",
+            "Microsoft.Resources/subscriptions/operationresults/read",
+            "Microsoft.Resources/subscriptions/read",
+            "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "group": "BuiltInRole"
+    },
     "Azure AIManager User": {
         "permissions": [
             "Microsoft.ContainerService/aiManagers/*/read",
             "Microsoft.ContainerService/aiManagers/listCredential/action",
             "Microsoft.ContainerService/aiManagers/namespaces/listCredential/action",
             "Microsoft.ContainerService/aiManagers/read"
-        ],
-        "group": "BuiltInRole"
-    },
-    "Azure AIManager and Namespace RBAC Inference Operator": {
-        "permissions": [
-            "Microsoft.Authorization/*/read",
-            "Microsoft.Resources/subscriptions/operationresults/read",
-            "Microsoft.Resources/subscriptions/read",
-            "Microsoft.Resources/subscriptions/resourceGroups/read"
-        ],
-        "group": "BuiltInRole"
-    },
-    "Azure AIManager and namespace RBAC Admin": {
-        "permissions": [
-            "Microsoft.Authorization/*/read",
-            "Microsoft.Resources/subscriptions/operationresults/read",
-            "Microsoft.Resources/subscriptions/read",
-            "Microsoft.Resources/subscriptions/resourceGroups/read"
-        ],
-        "group": "BuiltInRole"
-    },
-    "Azure AIManager and namespace RBAC Reader": {
-        "permissions": [
-            "Microsoft.Authorization/*/read",
-            "Microsoft.Resources/subscriptions/operationresults/read",
-            "Microsoft.Resources/subscriptions/read",
-            "Microsoft.Resources/subscriptions/resourceGroups/read"
         ],
         "group": "BuiltInRole"
     },
@@ -2916,6 +2916,14 @@
         ],
         "group": "BuiltInRole"
     },
+    "Azure Kubernetes Service Flex Node Agent Role": {
+        "permissions": [
+            "Microsoft.ContainerService/managedClusters/agentPools/listBootstrapData/action",
+            "Microsoft.ContainerService/managedClusters/agentPools/machines/read",
+            "Microsoft.ContainerService/managedClusters/agentPools/machines/write"
+        ],
+        "group": "BuiltInRole"
+    },
     "Azure Kubernetes Service Hybrid Cluster Admin Role": {
         "permissions": [
             "Microsoft.HybridContainerService/provisionedClusterInstances/listAdminKubeconfig/action",
@@ -3084,6 +3092,7 @@
             "Microsoft.AzureStackHCI/edgeMachines/networkAdapters/read",
             "Microsoft.AzureStackHCI/edgeMachines/read",
             "Microsoft.AzureStackHCI/edgeMachines/volumes/read",
+            "Microsoft.HybridCompute/machines/read",
             "Microsoft.Resources/subscriptions/read",
             "Microsoft.Resources/subscriptions/resourceGroups/read"
         ],
@@ -3104,6 +3113,7 @@
             "Microsoft.AzureStackHCI/edgeMachines/networkAdapters/read",
             "Microsoft.AzureStackHCI/edgeMachines/read",
             "Microsoft.AzureStackHCI/edgeMachines/volumes/read",
+            "Microsoft.HybridCompute/machines/read",
             "Microsoft.Resources/subscriptions/read",
             "Microsoft.Resources/subscriptions/resourceGroups/read"
         ],
@@ -5434,6 +5444,41 @@
         ],
         "group": "BuiltInRole"
     },
+    "CTR Contributor": {
+        "permissions": [
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/getRecoveryPoints/action",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/operationsStatus/read",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/preCheckRestore/action",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/protectionContainers/protectedItems/operationResults/read",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/protectionContainers/protectedItems/operationsStatus/read",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/protectionContainers/protectedItems/read",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/protectionContainers/protectedItems/recoveryPoints/read",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/protectionContainers/protectedItems/recoveryPoints/restore/action",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/recoveryPointOperationResults/read",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/restore/action",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/validateBulkRestoreOperationsStatus/read",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupJobs/backupChildJobs/read",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupJobs/read",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupProtectedItems/read",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupTriggerValidateOperation/action",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupValidateOperation/action",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupValidateOperationResults/read",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupValidateOperationsStatuses/read",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/read",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/remove/action",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/vaultCredentials/generate/action",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/vaultCredentials/operationResults/read",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/vaultCredentials/operationStatus/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "CTR Creator": {
+        "permissions": [
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/write",
+            "Microsoft.RecoveryServices/Vaults/read"
+        ],
+        "group": "BuiltInRole"
+    },
     "Carbon Optimization Reader": {
         "permissions": [
             "Microsoft.Carbon/carbonEmissionReports/action",
@@ -5885,6 +5930,7 @@
         "permissions": [
             "Microsoft.CognitiveServices/*/read",
             "Microsoft.CognitiveServices/accounts/listkeys/action",
+            "Microsoft.CognitiveServices/accounts/projects/connections/listsecrets/action",
             "Microsoft.Insights/alertRules/read",
             "Microsoft.Insights/diagnosticSettings/read",
             "Microsoft.Insights/logDefinitions/read",
@@ -6139,7 +6185,16 @@
     },
     "Compute Gallery Sharing Admin": {
         "permissions": [
-            "Microsoft.Compute/galleries/share/action"
+            "Microsoft.Compute/galleries/share/action",
+            "Microsoft.Compute/locations/sharedGallerySubscriptions/sharedGalleries/accept/action",
+            "Microsoft.Compute/locations/sharedGallerySubscriptions/sharedGalleries/reject/action"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Compute Gallery Tenant Level Sharing Admin": {
+        "permissions": [
+            "Microsoft.Compute/locations/tenantLevelSharedGallerySubscriptions/sharedGalleries/accept/action",
+            "Microsoft.Compute/locations/tenantLevelSharedGallerySubscriptions/sharedGalleries/reject/action"
         ],
         "group": "BuiltInRole"
     },
@@ -7975,7 +8030,10 @@
         "group": "BuiltInRole"
     },
     "Discovery Log Analytics Cluster Linker - Preview": {
-        "permissions": [],
+        "permissions": [
+            "Microsoft.OperationalInsights/clusters/read",
+            "Microsoft.OperationalInsights/clusters/write"
+        ],
         "group": "BuiltInRole"
     },
     "Disk Backup Reader": {
@@ -8283,41 +8341,18 @@
     },
     "Enclave Approver Role": {
         "permissions": [
-            "Microsoft.Authorization/*/read",
-            "Microsoft.Features/features/read",
-            "Microsoft.Features/providers/features/read",
-            "Microsoft.Insights/alertRules/*",
+            "Microsoft.Mission/Locations/OperationStatuses/read",
             "Microsoft.Mission/Operations/read",
-            "Microsoft.Mission/approvals/initiatorCallback/action",
             "Microsoft.Mission/approvals/notifyInitiator/action",
             "Microsoft.Mission/approvals/read",
-            "Microsoft.Mission/approvals/write",
-            "Microsoft.Mission/communities/communityEndpoints/approvalCallback/action",
             "Microsoft.Mission/communities/communityEndpoints/read",
-            "Microsoft.Mission/communities/communityendpoints/connect/action",
+            "Microsoft.Mission/communities/dedicatedHubs/read",
             "Microsoft.Mission/communities/read",
-            "Microsoft.Mission/communities/setMaintenanceMode/action",
             "Microsoft.Mission/communities/transitHubs/read",
-            "Microsoft.Mission/enclaveConnections/approvalCallback/action",
             "Microsoft.Mission/enclaveConnections/read",
-            "Microsoft.Mission/enclaveConnections/setSourceCidr/action",
-            "Microsoft.Mission/virtualEnclaves/approvalCallback/action",
-            "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/approvalCallback/action",
-            "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/connect/action",
             "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/read",
-            "Microsoft.Mission/virtualEnclaves/endpoints/read",
             "Microsoft.Mission/virtualEnclaves/read",
-            "Microsoft.Mission/virtualEnclaves/setEnclaveRoleAssignments/action",
-            "Microsoft.Mission/virtualEnclaves/setSubnetConfiguration/action",
-            "Microsoft.Mission/virtualEnclaves/setWorkloadRoleAssignments/action",
-            "Microsoft.Mission/virtualEnclaves/workloads/read",
-            "Microsoft.Mission/virtualenclaves/setMaintenanceMode/action",
-            "Microsoft.ResourceHealth/availabilityStatuses/read",
-            "Microsoft.Resources/deployments/*",
-            "Microsoft.Resources/subscriptions/operationresults/read",
-            "Microsoft.Resources/subscriptions/read",
-            "Microsoft.Resources/subscriptions/resourceGroups/read",
-            "Microsoft.Resources/subscriptions/resourcegroups/deployments/read"
+            "Microsoft.Mission/virtualEnclaves/workloads/read"
         ],
         "group": "BuiltInRole"
     },
@@ -8733,6 +8768,7 @@
             "Microsoft.Authorization/*/read",
             "Microsoft.CognitiveServices/*/read",
             "Microsoft.CognitiveServices/accounts/listkeys/action",
+            "Microsoft.CognitiveServices/accounts/projects/connections/listsecrets/action",
             "Microsoft.Insights/alertRules/read",
             "Microsoft.Insights/diagnosticSettings/read",
             "Microsoft.Insights/logDefinitions/read",
@@ -8793,6 +8829,10 @@
         "permissions": [
             "Microsoft.Genome/*"
         ],
+        "group": "BuiltInRole"
+    },
+    "Genome Data Reader": {
+        "permissions": [],
         "group": "BuiltInRole"
     },
     "Genome EndUser": {
@@ -9243,9 +9283,7 @@
     "Inference Account Operator": {
         "permissions": [
             "Microsoft.InferenceService/inferenceAccounts/delete",
-            "Microsoft.InferenceService/inferenceAccounts/listKeys/action",
             "Microsoft.InferenceService/inferenceAccounts/read",
-            "Microsoft.InferenceService/inferenceAccounts/regenerateKeys/action",
             "Microsoft.InferenceService/inferenceAccounts/write"
         ],
         "group": "BuiltInRole"
@@ -11526,6 +11564,7 @@
     },
     "Procurement Contributor with Resource Group Permissions": {
         "permissions": [
+            "Microsoft.Billing/billingProperty/read",
             "Microsoft.BillingBenefits/conditionalCredits/cancel/action",
             "Microsoft.BillingBenefits/conditionalCredits/contributors/read",
             "Microsoft.BillingBenefits/conditionalCredits/delete",
@@ -11789,6 +11828,113 @@
             "Microsoft.Insights/alertRules/*",
             "Microsoft.Resources/deployments/*",
             "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Red Team Administrator": {
+        "permissions": [
+            "Microsoft.Authorization/roleAssignments/delete",
+            "Microsoft.Authorization/roleAssignments/read",
+            "Microsoft.Authorization/roleAssignments/write",
+            "Microsoft.Automation/automationAccounts/read",
+            "Microsoft.Compute/virtualMachines/extensions/read",
+            "Microsoft.Compute/virtualMachines/read",
+            "Microsoft.ContainerRegistry/registries/read",
+            "Microsoft.ContainerService/managedClusters/read",
+            "Microsoft.DocumentDB/databaseAccounts/read",
+            "Microsoft.KeyVault/vaults/read",
+            "Microsoft.ManagedIdentity/userAssignedIdentities/federatedIdentityCredentials/read",
+            "Microsoft.Network/dnsZones/CNAME/read",
+            "Microsoft.Network/dnsZones/read",
+            "Microsoft.Network/networkInterfaces/read",
+            "Microsoft.Network/networkSecurityGroups/read",
+            "Microsoft.Network/publicIPAddresses/read",
+            "Microsoft.OperationalInsights/workspaces/query/read",
+            "Microsoft.OperationalInsights/workspaces/read",
+            "Microsoft.OperationalInsights/workspaces/search/action",
+            "Microsoft.ResourceGraph/resources/read",
+            "Microsoft.Resources/subscriptions/read",
+            "Microsoft.Resources/subscriptions/resourceGroups/read",
+            "Microsoft.Security/alerts/read",
+            "Microsoft.Security/assessments/read",
+            "Microsoft.Security/assessments/subAssessments/read",
+            "Microsoft.Security/automations/read",
+            "Microsoft.Security/complianceResults/read",
+            "Microsoft.Security/locations/alerts/read",
+            "Microsoft.Security/locations/tasks/read",
+            "Microsoft.Security/secureScoreControls/read",
+            "Microsoft.Security/secureScores/read",
+            "Microsoft.Security/secureScores/secureScoreControls/read",
+            "Microsoft.Security/tasks/read",
+            "Microsoft.Sql/servers/firewallRules/read",
+            "Microsoft.Sql/servers/read",
+            "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+            "Microsoft.Storage/storageAccounts/read",
+            "Microsoft.Web/sites/config/list/action",
+            "Microsoft.Web/sites/config/read",
+            "Microsoft.Web/sites/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Red Team Recon Agent - Azure": {
+        "permissions": [
+            "Microsoft.Authorization/roleAssignments/read",
+            "Microsoft.Automation/automationAccounts/read",
+            "Microsoft.Compute/virtualMachines/extensions/read",
+            "Microsoft.Compute/virtualMachines/read",
+            "Microsoft.ContainerRegistry/registries/read",
+            "Microsoft.ContainerService/managedClusters/read",
+            "Microsoft.DocumentDB/databaseAccounts/read",
+            "Microsoft.KeyVault/vaults/read",
+            "Microsoft.ManagedIdentity/userAssignedIdentities/federatedIdentityCredentials/read",
+            "Microsoft.Network/dnsZones/CNAME/read",
+            "Microsoft.Network/dnsZones/read",
+            "Microsoft.Network/networkInterfaces/read",
+            "Microsoft.Network/networkSecurityGroups/read",
+            "Microsoft.Network/publicIPAddresses/read",
+            "Microsoft.OperationalInsights/workspaces/query/read",
+            "Microsoft.OperationalInsights/workspaces/read",
+            "Microsoft.OperationalInsights/workspaces/search/action",
+            "Microsoft.ResourceGraph/resources/read",
+            "Microsoft.Resources/subscriptions/read",
+            "Microsoft.Resources/subscriptions/resourceGroups/read",
+            "Microsoft.Security/alerts/read",
+            "Microsoft.Security/assessments/read",
+            "Microsoft.Security/assessments/subAssessments/read",
+            "Microsoft.Security/automations/read",
+            "Microsoft.Security/complianceResults/read",
+            "Microsoft.Security/locations/alerts/read",
+            "Microsoft.Security/locations/tasks/read",
+            "Microsoft.Security/secureScoreControls/read",
+            "Microsoft.Security/secureScores/read",
+            "Microsoft.Security/secureScores/secureScoreControls/read",
+            "Microsoft.Security/tasks/read",
+            "Microsoft.Sql/servers/firewallRules/read",
+            "Microsoft.Sql/servers/read",
+            "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+            "Microsoft.Storage/storageAccounts/read",
+            "Microsoft.Web/sites/config/list/action",
+            "Microsoft.Web/sites/config/read",
+            "Microsoft.Web/sites/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Red Team Web App Agent": {
+        "permissions": [
+            "Microsoft.ContainerRegistry/registries/read",
+            "Microsoft.ManagedIdentity/userAssignedIdentities/federatedIdentityCredentials/read",
+            "Microsoft.Network/dnsZones/CNAME/read",
+            "Microsoft.Network/dnsZones/read",
+            "Microsoft.Network/networkInterfaces/read",
+            "Microsoft.Network/networkSecurityGroups/read",
+            "Microsoft.Network/publicIPAddresses/read",
+            "Microsoft.ResourceGraph/resources/read",
+            "Microsoft.Resources/subscriptions/read",
+            "Microsoft.Resources/subscriptions/resourceGroups/read",
+            "Microsoft.Storage/storageAccounts/read",
+            "Microsoft.Web/sites/config/list/action",
+            "Microsoft.Web/sites/config/read",
+            "Microsoft.Web/sites/read"
         ],
         "group": "BuiltInRole"
     },
@@ -12262,6 +12408,13 @@
             "Microsoft.Security/iotSensors/downloadResetPassword/action",
             "Microsoft.Support/*/read",
             "Microsoft.operationalInsights/workspaces/*/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Security Service Entitlements Contributor": {
+        "permissions": [
+            "Microsoft.Security/serviceEntitlements/read",
+            "Microsoft.Security/serviceEntitlements/write"
         ],
         "group": "BuiltInRole"
     },
