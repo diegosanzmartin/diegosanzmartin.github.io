@@ -1176,6 +1176,7 @@
         "Azure Arc Enabled Kubernetes Cluster User Role": 9,
         "Azure Arc Kubernetes Admin": 7,
         "Azure Arc Kubernetes Cluster Admin": 7,
+        "Azure Arc Kubernetes Reader": 6,
         "Azure Arc Kubernetes Viewer": 7,
         "Azure Arc Kubernetes Writer": 7,
         "Azure Arc ScVmm Administrator role": 57,
@@ -1235,8 +1236,8 @@
         "Azure Programmable Connectivity Gateway Dataplane User": 5,
         "Azure Programmable Connectivity Gateway User": 5,
         "Azure Resilience Management Drills Administrator": 17,
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42,
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47,
         "Azure Resilience Management Drills Contributor": 15,
         "Azure Resilience Management Drills Operator": 15,
         "Azure Resilience Management Drills Reader": 11,
@@ -1362,6 +1363,7 @@
         "DocumentDB Account Contributor": 8,
         "Domain Services Contributor": 69,
         "Domain Services Reader": 28,
+        "Durable Task Contributor": 5,
         "Dynamics 365 Customer Insights Service Role": 6,
         "Elastic SAN Owner": 6,
         "Elastic SAN Snapshot Exporter": 15,
@@ -1651,7 +1653,7 @@
         "Azure Migrate Execute Expert": 46,
         "Azure Migrate Owner": 68,
         "Azure Resilience Management Drills Administrator": 17,
-        "Azure Resilience Management Drills Assets Administrator": 44,
+        "Azure Resilience Management Drills Assets Administrator": 49,
         "Azure Resilience Management Drills Target Resource Administrator": 17,
         "Azure Sphere Owner": 12,
         "Azure Stack HCI Administrator": 103,
@@ -1663,7 +1665,7 @@
         "Foundry Project Manager": 9,
         "Key Vault Data Access Administrator": 9,
         "Microsoft Discovery Platform Administrator": 13,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
         "Role Based Access Control Administrator": 4,
         "Storage Actions Task Assignment Contributor": 13,
         "Virtual Machine Data Access Administrator (preview)": 14
@@ -1694,7 +1696,9 @@
         "Elastic SAN Volume Group Owner": 4,
         "Microsoft Sentinel Business Applications Agent Operator": 7,
         "Operator Nexus Compute Contributor Role (Preview)": 91,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38,
         "Reservation Purchaser": 11,
         "Savings plan Purchaser": 10
@@ -1707,7 +1711,7 @@
         "Azure Migrate Execute Expert": 46,
         "Azure Migrate Owner": 68,
         "Azure Resilience Management Drills Administrator": 17,
-        "Azure Resilience Management Drills Assets Administrator": 44,
+        "Azure Resilience Management Drills Assets Administrator": 49,
         "Azure Resilience Management Drills Target Resource Administrator": 17,
         "Azure Resilience Management Goals Administrator": 19,
         "Azure Resilience Management Recovery Administrator": 19,
@@ -1721,7 +1725,7 @@
         "Foundry Project Manager": 9,
         "Key Vault Data Access Administrator": 9,
         "Microsoft Discovery Platform Administrator": 13,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
         "Role Based Access Control Administrator": 4,
         "Storage Actions Task Assignment Contributor": 13,
         "Virtual Machine Data Access Administrator (preview)": 14
@@ -1775,8 +1779,8 @@
         "Automation Contributor": 11
     },
     "Microsoft.Automation/automationAccounts/delete": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Automation/automationAccounts/hybridRunbookWorkerGroups/read": {
         "Automation Job Operator": 13,
@@ -1821,28 +1825,30 @@
     },
     "Microsoft.Automation/automationAccounts/read": {
         "Automation Operator": 21,
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42,
-        "Red Team Administrator": 40,
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38
     },
     "Microsoft.Automation/automationAccounts/runbooks/delete": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Automation/automationAccounts/runbooks/read": {
         "Automation Operator": 21,
         "Automation Runbook Operator": 6,
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42,
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47,
         "Azure Resilience Management Recovery Administrator": 19,
         "Azure Resilience Management Recovery Contributor": 38,
         "Azure Resilience Management Recovery Operator": 11,
         "Azure Resilience Management Recovery Reader": 10
     },
     "Microsoft.Automation/automationAccounts/runbooks/write": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Automation/automationAccounts/schedules/read": {
         "Automation Operator": 21
@@ -1851,12 +1857,12 @@
         "Automation Operator": 21
     },
     "Microsoft.Automation/automationAccounts/write": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Automation/register/action": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.AutonomousDevelopmentPlatform/*/read": {
         "Autonomous Development Platform Data Contributor (Preview)": 3,
@@ -3947,32 +3953,32 @@
         "Chaos Studio Operator": 10
     },
     "Microsoft.Chaos/experiments/delete": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Chaos/experiments/executions/getExecutionDetails/action": {
         "Chaos Studio Operator": 10,
         "Chaos Studio Reader": 6
     },
     "Microsoft.Chaos/experiments/read": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Chaos/experiments/start/action": {
         "Chaos Studio Operator": 10
     },
     "Microsoft.Chaos/experiments/write": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Chaos/locations/operationResults/read": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42,
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47,
         "Chaos Studio Operator": 10
     },
     "Microsoft.Chaos/locations/operationStatuses/read": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42,
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47,
         "Chaos Studio Operator": 10
     },
     "Microsoft.Chaos/locations/targetTypes/capabilityTypes/read": {
@@ -3986,8 +3992,8 @@
         "Chaos Studio Target Contributor": 12
     },
     "Microsoft.Chaos/register/action": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Chaos/targets/capabilities/delete": {
         "Azure Resilience Management Drills Target Resource Administrator": 17,
@@ -4020,64 +4026,84 @@
         "Chaos Studio Target Contributor": 12
     },
     "Microsoft.Chaos/workspaces/delete": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
+    },
+    "Microsoft.Chaos/workspaces/discover/action": {
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Chaos/workspaces/discoveredResources/read": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
+    },
+    "Microsoft.Chaos/workspaces/discoveries/read": {
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
+    },
+    "Microsoft.Chaos/workspaces/evaluate/action": {
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
+    },
+    "Microsoft.Chaos/workspaces/evaluations/read": {
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
+    },
+    "Microsoft.Chaos/workspaces/operationResults/read": {
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Chaos/workspaces/read": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Chaos/workspaces/refreshRecommendations/action": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Chaos/workspaces/scenarios/configurations/cancel/action": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Chaos/workspaces/scenarios/configurations/delete": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Chaos/workspaces/scenarios/configurations/execute/action": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Chaos/workspaces/scenarios/configurations/read": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Chaos/workspaces/scenarios/configurations/validate/action": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Chaos/workspaces/scenarios/configurations/write": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Chaos/workspaces/scenarios/delete": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Chaos/workspaces/scenarios/read": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Chaos/workspaces/scenarios/runs/read": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Chaos/workspaces/scenarios/write": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Chaos/workspaces/write": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.ClassicCompute/*/read": {
         "Security Manager (Legacy)": 10
@@ -4864,7 +4890,9 @@
         "Defender Servers P1": 10,
         "Defender Servers P2": 19,
         "Desktop Virtualization Virtual Machine Contributor": 58,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38,
         "VM Restore Operator": 41,
         "Windows Admin Center Administrator Login": 41
@@ -4923,7 +4951,9 @@
         "Desktop Virtualization Power On Off Contributor": 37,
         "Desktop Virtualization Virtual Machine Contributor": 58,
         "DevTest Labs User": 32,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38,
         "VM Restore Operator": 41,
         "Windows Admin Center Administrator Login": 41
@@ -5531,9 +5561,11 @@
         "Container Registry Data Importer and Data Reader": 3,
         "Container Registry Tasks Contributor": 24,
         "Defender For Container Registries Operator": 3,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38,
-        "Red Team Web App Agent": 14
+        "Red Team Web App Agent": 15
     },
     "Microsoft.ContainerRegistry/registries/regenerateCredential/action": {
         "Container Registry Contributor and Data Access Configuration Administrator": 59
@@ -5669,16 +5701,19 @@
         "Azure AIManager Contributor": 5
     },
     "Microsoft.ContainerService/aiManagers/*/read": {
-        "Azure AIManager User": 4
+        "Azure AIManager User": 5
     },
     "Microsoft.ContainerService/aiManagers/listCredential/action": {
-        "Azure AIManager User": 4
+        "Azure AIManager User": 5
+    },
+    "Microsoft.ContainerService/aiManagers/namespaces/*/read": {
+        "Azure AIManager User": 5
     },
     "Microsoft.ContainerService/aiManagers/namespaces/listCredential/action": {
-        "Azure AIManager User": 4
+        "Azure AIManager User": 5
     },
     "Microsoft.ContainerService/aiManagers/read": {
-        "Azure AIManager User": 4
+        "Azure AIManager User": 5
     },
     "Microsoft.ContainerService/deploymentSafeguards/*": {
         "Azure Kubernetes Service Contributor Role": 9
@@ -5775,7 +5810,9 @@
         "Azure Kubernetes Service Cluster User Role": 2,
         "Defender Containers Sensor": 19,
         "Defender Kubernetes API Access": 11,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38
     },
     "Microsoft.ContainerService/managedClusters/runcommand/action": {
@@ -7067,7 +7104,9 @@
         "Cosmos DB Long Term Retention Backup Role": 7,
         "Cosmos DB Long Term Retention Restore Role": 4,
         "Defender Azure Cosmos DB": 3,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38
     },
     "Microsoft.DocumentDB/databaseAccounts/readonlykeys/action": {
@@ -7102,6 +7141,18 @@
         "Azure AI Administrator": 39,
         "Cosmos DB Operator": 8,
         "DocumentDB Account Contributor": 8
+    },
+    "Microsoft.DurableTask/schedulers/*/action": {
+        "Durable Task Contributor": 5
+    },
+    "Microsoft.DurableTask/schedulers/*/delete": {
+        "Durable Task Contributor": 5
+    },
+    "Microsoft.DurableTask/schedulers/*/read": {
+        "Durable Task Contributor": 5
+    },
+    "Microsoft.DurableTask/schedulers/*/write": {
+        "Durable Task Contributor": 5
     },
     "Microsoft.Edge/Configurations/*/read": {
         "Azure Stack HCI Edge Machine Contributor Role": 21
@@ -9295,6 +9346,7 @@
     },
     "Microsoft.Insights/alertRules/read": {
         "App Configuration Reader": 5,
+        "Azure Arc Kubernetes Reader": 6,
         "Azure Center for SAP solutions reader": 43,
         "Azure Managed Redis Reader": 9,
         "Azure Monitor Pipeline Reader": 5,
@@ -9355,12 +9407,12 @@
         "Monitoring Policy Contributor": 47
     },
     "Microsoft.Insights/dataCollectionEndpoints/read": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Insights/dataCollectionEndpoints/write": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Insights/dataCollectionRuleAssociations/*": {
         "Monitoring Contributor": 46,
@@ -9383,13 +9435,13 @@
         "Monitoring Policy Contributor": 47
     },
     "Microsoft.Insights/dataCollectionRules/read": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42,
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47,
         "Essential Machine Management Administrator": 19
     },
     "Microsoft.Insights/dataCollectionRules/write": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42,
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47,
         "Essential Machine Management Administrator": 19
     },
     "Microsoft.Insights/diagnosticSettings/*": {
@@ -9533,7 +9585,7 @@
         "Azure AI Enterprise Network Connection Approver": 90
     },
     "Microsoft.Insights/register/action": {
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.Insights/scheduledqueryrules/*": {
         "Application Insights Component Contributor": 13,
@@ -9720,7 +9772,9 @@
     "Microsoft.KeyVault/vaults/read": {
         "Azure AI Enterprise Network Connection Approver": 90,
         "Operator Nexus Key Vault Writer Service Role (Preview)": 1,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38
     },
     "Microsoft.Kubernetes/connectedClusters/Delete": {
@@ -10289,9 +10343,11 @@
         "Azure Red Hat OpenShift Federated Credential": 4,
         "Managed Identity Contributor": 12,
         "Managed Identity Federated Identity Credential Contributor": 8,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38,
-        "Red Team Web App Agent": 14
+        "Red Team Web App Agent": 15
     },
     "Microsoft.ManagedIdentity/userAssignedIdentities/federatedIdentityCredentials/write": {
         "Azure Red Hat OpenShift Federated Credential": 4,
@@ -10864,14 +10920,18 @@
         "Azure Red Hat OpenShift Cluster Ingress Operator": 6
     },
     "Microsoft.Network/dnsZones/CNAME/read": {
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38,
-        "Red Team Web App Agent": 14
+        "Red Team Web App Agent": 15
     },
     "Microsoft.Network/dnsZones/read": {
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38,
-        "Red Team Web App Agent": 14
+        "Red Team Web App Agent": 15
     },
     "Microsoft.Network/expressRouteCrossConnections/*": {
         "CrossConnectionManager": 3
@@ -11124,9 +11184,11 @@
         "DevTest Labs User": 32,
         "Domain Services Contributor": 69,
         "Domain Services Reader": 28,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38,
-        "Red Team Web App Agent": 14,
+        "Red Team Web App Agent": 15,
         "VM Restore Operator": 41,
         "Virtual Machine Administrator Login": 7,
         "Virtual Machine Data Access Administrator (preview)": 14,
@@ -11212,9 +11274,11 @@
         "Domain Services Contributor": 69,
         "Domain Services Reader": 28,
         "LocalNGFirewallAdministrator role": 35,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38,
-        "Red Team Web App Agent": 14,
+        "Red Team Web App Agent": 15,
         "VM Restore Operator": 41,
         "Virtual Machine Contributor": 45,
         "Windows Admin Center Administrator Login": 41
@@ -11402,9 +11466,11 @@
         "Defender Servers P2": 19,
         "DevTest Labs User": 32,
         "LocalNGFirewallAdministrator role": 35,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38,
-        "Red Team Web App Agent": 14,
+        "Red Team Web App Agent": 15,
         "VM Restore Operator": 41,
         "Virtual Machine Administrator Login": 7,
         "Virtual Machine Contributor": 45,
@@ -11970,7 +12036,7 @@
         "Microsoft Sentinel Responder": 27
     },
     "Microsoft.OperationalInsights/register/action": {
-        "Azure Resilience Management Drills Assets Administrator": 44
+        "Azure Resilience Management Drills Assets Administrator": 49
     },
     "Microsoft.OperationalInsights/workspaces/*/read": {
         "Data Purger": 4,
@@ -12037,12 +12103,14 @@
         "Microsoft Sentinel Reader": 21,
         "Microsoft Sentinel Responder": 27,
         "Privileged Monitoring Data Reader": 3,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38
     },
     "Microsoft.OperationalInsights/workspaces/read": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42,
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47,
         "Defender Containers Sensor": 19,
         "Defender Kubernetes Agent Operator": 19,
         "Defender Servers P1": 10,
@@ -12054,7 +12122,9 @@
         "LocalNGFirewallAdministrator role": 35,
         "Log Analytics Data Reader": 2,
         "Privileged Monitoring Data Reader": 3,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38
     },
     "Microsoft.OperationalInsights/workspaces/savedSearches/*": {
@@ -12075,13 +12145,15 @@
         "Monitoring Contributor": 46,
         "Monitoring Policy Contributor": 47,
         "Monitoring Reader": 3,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38
     },
     "Microsoft.OperationalInsights/workspaces/sharedKeys/action": {
         "Automation Contributor": 11,
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42,
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47,
         "Monitoring Contributor": 46,
         "Monitoring Policy Contributor": 47
     },
@@ -12106,16 +12178,16 @@
         "Monitoring Policy Contributor": 47
     },
     "Microsoft.OperationalInsights/workspaces/tables/read": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.OperationalInsights/workspaces/tables/write": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47
     },
     "Microsoft.OperationalInsights/workspaces/write": {
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42,
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47,
         "Defender Containers Sensor": 19,
         "Defender Kubernetes Agent Operator": 19,
         "Kubernetes Agent Subscription Level Operator": 12,
@@ -13042,9 +13114,11 @@
         "Azure Stack HCI Device Management Role": 37
     },
     "Microsoft.ResourceGraph/resources/read": {
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38,
-        "Red Team Web App Agent": 14
+        "Red Team Web App Agent": 15
     },
     "Microsoft.ResourceHealth/AvailabilityStatuses/current/read": {
         "Service Health Billing Reader": 10,
@@ -13666,6 +13740,8 @@
         "Operator Nexus Compute Contributor Role (Preview)": 91,
         "Procurement Contributor with Resource Group Permissions": 100,
         "Quantum Workspace Data Reader": 6,
+        "Red Team Administrator": 38,
+        "Red Team Reader": 36,
         "Windows 365 Network Interface Contributor": 15
     },
     "Microsoft.Resources/deployments/validate/action": {
@@ -13776,6 +13852,7 @@
         "Azure Arc Enabled Kubernetes Cluster User Role": 9,
         "Azure Arc Kubernetes Admin": 7,
         "Azure Arc Kubernetes Cluster Admin": 7,
+        "Azure Arc Kubernetes Reader": 6,
         "Azure Arc Kubernetes Viewer": 7,
         "Azure Arc Kubernetes Writer": 7,
         "Azure Arc ScVmm Administrator role": 57,
@@ -13840,7 +13917,10 @@
         "Windows365SubscriptionReader": 3
     },
     "Microsoft.Resources/subscriptions/providers/read": {
-        "Azure Container Storage Operator": 12
+        "Azure Container Storage Operator": 12,
+        "Red Team Administrator": 38,
+        "Red Team Reader": 36,
+        "Red Team Web App Agent": 15
     },
     "Microsoft.Resources/subscriptions/read": {
         "App Compliance Automation Administrator": 28,
@@ -13851,6 +13931,7 @@
         "Azure Arc Enabled Kubernetes Cluster User Role": 9,
         "Azure Arc Kubernetes Admin": 7,
         "Azure Arc Kubernetes Cluster Admin": 7,
+        "Azure Arc Kubernetes Reader": 6,
         "Azure Arc Kubernetes Viewer": 7,
         "Azure Arc Kubernetes Writer": 7,
         "Azure Arc ScVmm Administrator role": 57,
@@ -13924,9 +14005,11 @@
         "Microsoft.Edge Winfields federated subscription read access role": 1,
         "MySQL Backup And Export Operator": 6,
         "PostgreSQL Flexible Server Long Term Retention Backup Role": 14,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38,
-        "Red Team Web App Agent": 14,
+        "Red Team Web App Agent": 15,
         "Reservation Purchaser": 11,
         "Savings plan Purchaser": 10,
         "Services Hub Operator": 12,
@@ -13944,8 +14027,8 @@
     "Microsoft.Resources/subscriptions/resourceGroups/delete": {
         "App Compliance Automation Administrator": 28,
         "Azure Batch Service Orchestration Role": 34,
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42,
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47,
         "Azure Stack HCI Administrator": 103
     },
     "Microsoft.Resources/subscriptions/resourceGroups/read": {
@@ -13982,6 +14065,7 @@
         "Azure Arc Enabled Kubernetes Cluster User Role": 9,
         "Azure Arc Kubernetes Admin": 7,
         "Azure Arc Kubernetes Cluster Admin": 7,
+        "Azure Arc Kubernetes Reader": 6,
         "Azure Arc Kubernetes Viewer": 7,
         "Azure Arc Kubernetes Writer": 7,
         "Azure Arc ScVmm Administrator role": 57,
@@ -14058,8 +14142,8 @@
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
         "Azure Red Hat OpenShift Hosted Control Planes Control Plane Operator": 3,
         "Azure Red Hat OpenShift Machine API Operator": 35,
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42,
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47,
         "Azure Resilience Management Drills Operator": 15,
         "Azure Resilience Management Drills Reader": 11,
         "Azure Resilience Management Recovery Administrator": 19,
@@ -14281,9 +14365,11 @@
         "Quantum Workspace Data Reader": 6,
         "Quota Request Operator": 14,
         "Recurring Scheduled Actions Contributor": 17,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38,
-        "Red Team Web App Agent": 14,
+        "Red Team Web App Agent": 15,
         "Redis Cache Contributor": 8,
         "Reservation Purchaser": 11,
         "SQL DB Contributor": 11,
@@ -14349,8 +14435,8 @@
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Execute Expert": 46,
         "Azure Migrate Owner": 68,
-        "Azure Resilience Management Drills Assets Administrator": 44,
-        "Azure Resilience Management Drills Assets Contributor": 42,
+        "Azure Resilience Management Drills Assets Administrator": 49,
+        "Azure Resilience Management Drills Assets Contributor": 47,
         "Azure Stack HCI Administrator": 103,
         "Defender Containers Sensor": 19,
         "Defender Kubernetes Agent Operator": 19,
@@ -14615,19 +14701,27 @@
         "Defender for Storage Threat Protection": 6
     },
     "Microsoft.Security/alerts/read": {
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38
     },
     "Microsoft.Security/apiCollections/read": {
         "Defender API Security": 22
     },
+    "Microsoft.Security/assessmentMetadata/read": {
+        "Red Team Administrator": 38,
+        "Red Team Reader": 36
+    },
     "Microsoft.Security/assessments/read": {
         "Azure Batch Service Orchestration Role": 34,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38
     },
     "Microsoft.Security/assessments/subAssessments/read": {
-        "Red Team Administrator": 40,
+        "Red Team Operator": 38,
         "Red Team Recon Agent - Azure": 38
     },
     "Microsoft.Security/assessments/write": {
@@ -14638,14 +14732,16 @@
     },
     "Microsoft.Security/automations/read": {
         "App Compliance Automation Administrator": 28,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38
     },
     "Microsoft.Security/automations/write": {
         "App Compliance Automation Administrator": 28
     },
     "Microsoft.Security/complianceResults/read": {
-        "Red Team Administrator": 40,
+        "Red Team Operator": 38,
         "Red Team Recon Agent - Azure": 38
     },
     "Microsoft.Security/dataScanners/delete": {
@@ -14686,11 +14782,11 @@
         "Security Reader": 14
     },
     "Microsoft.Security/locations/alerts/read": {
-        "Red Team Administrator": 40,
+        "Red Team Operator": 38,
         "Red Team Recon Agent - Azure": 38
     },
     "Microsoft.Security/locations/tasks/read": {
-        "Red Team Administrator": 40,
+        "Red Team Operator": 38,
         "Red Team Recon Agent - Azure": 38
     },
     "Microsoft.Security/pricings/read": {
@@ -14708,15 +14804,19 @@
         "App Compliance Automation Administrator": 28
     },
     "Microsoft.Security/secureScoreControls/read": {
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38
     },
     "Microsoft.Security/secureScores/read": {
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38
     },
     "Microsoft.Security/secureScores/secureScoreControls/read": {
-        "Red Team Administrator": 40,
+        "Red Team Operator": 38,
         "Red Team Recon Agent - Azure": 38
     },
     "Microsoft.Security/securityOperators/read": {
@@ -14736,7 +14836,9 @@
         "SQL Security Manager": 65
     },
     "Microsoft.Security/tasks/read": {
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38
     },
     "Microsoft.Security/unregister/action": {
@@ -15368,7 +15470,9 @@
         "SQL Security Manager": 65
     },
     "Microsoft.Sql/servers/firewallRules/read": {
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38
     },
     "Microsoft.Sql/servers/privateEndpointConnections/read": {
@@ -15386,7 +15490,9 @@
     "Microsoft.Sql/servers/read": {
         "Azure AI Enterprise Network Connection Approver": 90,
         "Defender Azure SQL Databases": 23,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38,
         "SQL DB Contributor": 11,
         "SQL Security Manager": 65,
@@ -15513,7 +15619,9 @@
         "Defender Storage Malware Data Scanner": 2,
         "Defender Storage Malware Operator": 14,
         "Defender for Storage Data Scanner": 3,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38,
         "SqlMI Migration Role": 31,
         "SqlVM Migration Role": 27,
@@ -15723,9 +15831,11 @@
         "Disk Snapshot Contributor": 12,
         "Logic App Contributor": 21,
         "Reader and Data Access": 3,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38,
-        "Red Team Web App Agent": 14,
+        "Red Team Web App Agent": 15,
         "Site Recovery Contributor": 29,
         "Site Recovery Operator": 59,
         "SqlMI Migration Role": 31,
@@ -15879,6 +15989,7 @@
         "Azure Arc Enabled Kubernetes Cluster User Role": 9,
         "Azure Arc Kubernetes Admin": 7,
         "Azure Arc Kubernetes Cluster Admin": 7,
+        "Azure Arc Kubernetes Reader": 6,
         "Azure Arc Kubernetes Viewer": 7,
         "Azure Arc Kubernetes Writer": 7,
         "Azure Container Storage Contributor": 10,
@@ -16218,14 +16329,18 @@
         "Logic Apps Standard Developer": 25
     },
     "Microsoft.Web/sites/config/list/action": {
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38,
-        "Red Team Web App Agent": 14
+        "Red Team Web App Agent": 15
     },
     "Microsoft.Web/sites/config/read": {
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38,
-        "Red Team Web App Agent": 14
+        "Red Team Web App Agent": 15
     },
     "Microsoft.Web/sites/functions/listSecrets/action": {
         "Logic App Contributor": 21
@@ -16247,9 +16362,11 @@
         "Azure Resilience Management Drills Target Resource Administrator": 17,
         "Azure Resilience Management Drills Target Resource Contributor": 15,
         "Microsoft Sentinel Playbook Operator": 4,
-        "Red Team Administrator": 40,
+        "Red Team Administrator": 38,
+        "Red Team Operator": 38,
+        "Red Team Reader": 36,
         "Red Team Recon Agent - Azure": 38,
-        "Red Team Web App Agent": 14
+        "Red Team Web App Agent": 15
     },
     "Microsoft.Web/sites/restart/Action": {
         "Logic Apps Standard Operator": 19
