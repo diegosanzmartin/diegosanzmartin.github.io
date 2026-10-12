@@ -1283,7 +1283,7 @@
         "Classic Virtual Machine Contributor": 17,
         "ClearDB MySQL DB Contributor": 7,
         "CloudTest Contributor Role": 23,
-        "CloudTest Leased VM Reader": 10,
+        "CloudTest Leased VM Reader": 9,
         "Cognitive Services Contributor": 18,
         "Collaborative Data Contributor": 13,
         "Collaborative Runtime Operator": 8,
@@ -4281,15 +4281,15 @@
     },
     "Microsoft.CloudTest/hostedpools/leases/action": {
         "CloudTest Contributor Role": 23,
-        "CloudTest Leased VM Reader": 10
+        "CloudTest Leased VM Reader": 9
     },
     "Microsoft.CloudTest/hostedpools/leases/complete/action": {
         "CloudTest Contributor Role": 23,
-        "CloudTest Leased VM Reader": 10
+        "CloudTest Leased VM Reader": 9
     },
     "Microsoft.CloudTest/hostedpools/leases/extend/action": {
         "CloudTest Contributor Role": 23,
-        "CloudTest Leased VM Reader": 10
+        "CloudTest Leased VM Reader": 9
     },
     "Microsoft.CloudTest/hostedpools/write": {
         "CloudTest Contributor Role": 23
@@ -4311,15 +4311,15 @@
     },
     "Microsoft.CloudTest/pools/leases/action": {
         "CloudTest Contributor Role": 23,
-        "CloudTest Leased VM Reader": 10
+        "CloudTest Leased VM Reader": 9
     },
     "Microsoft.CloudTest/pools/leases/complete/action": {
         "CloudTest Contributor Role": 23,
-        "CloudTest Leased VM Reader": 10
+        "CloudTest Leased VM Reader": 9
     },
     "Microsoft.CloudTest/pools/leases/extend/action": {
         "CloudTest Contributor Role": 23,
-        "CloudTest Leased VM Reader": 10
+        "CloudTest Leased VM Reader": 9
     },
     "Microsoft.CloudTest/pools/write": {
         "CloudTest Contributor Role": 23
@@ -9196,7 +9196,7 @@
         "Azure Resilience Management Recovery Contributor": 38,
         "Azure Resilience Management Recovery Operator": 11,
         "Azure Resilience Management Recovery Reader": 10,
-        "CloudTest Leased VM Reader": 10
+        "CloudTest Leased VM Reader": 9
     },
     "Microsoft.Insights/alertRules/*": {
         "API Management Service Contributor": 7,
@@ -10839,37 +10839,359 @@
     },
     "Microsoft.NetApp/*/read": {
         "Azure NetApp Files Administrator": 4,
-        "Azure NetApp Files Reader": 10
+        "Azure NetApp Files Backup Manager": 21,
+        "Azure NetApp Files Backup Operator": 14,
+        "Azure NetApp Files Cost Manager": 14,
+        "Azure NetApp Files Policy And Compliance Manager": 15,
+        "Azure NetApp Files Reader": 10,
+        "Azure NetApp Files Replication Manager": 22,
+        "Azure NetApp Files Replication Operator": 21,
+        "Azure NetApp Files Security And Identity Manager": 18,
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
     },
     "Microsoft.NetApp/*/write": {
         "Azure NetApp Files Administrator": 4
     },
     "Microsoft.NetApp/locations/checkfilepathavailability/action": {
-        "Azure NetApp Files Reader": 10
+        "Azure NetApp Files Backup Manager": 21,
+        "Azure NetApp Files Backup Operator": 14,
+        "Azure NetApp Files Cost Manager": 14,
+        "Azure NetApp Files Policy And Compliance Manager": 15,
+        "Azure NetApp Files Reader": 10,
+        "Azure NetApp Files Replication Manager": 22,
+        "Azure NetApp Files Replication Operator": 21,
+        "Azure NetApp Files Security And Identity Manager": 18,
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
     },
     "Microsoft.NetApp/locations/checknameavailability/action": {
-        "Azure NetApp Files Reader": 10
+        "Azure NetApp Files Backup Manager": 21,
+        "Azure NetApp Files Backup Operator": 14,
+        "Azure NetApp Files Cost Manager": 14,
+        "Azure NetApp Files Policy And Compliance Manager": 15,
+        "Azure NetApp Files Reader": 10,
+        "Azure NetApp Files Replication Manager": 22,
+        "Azure NetApp Files Replication Operator": 21,
+        "Azure NetApp Files Security And Identity Manager": 18,
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
     },
     "Microsoft.NetApp/locations/checkquotaavailability/action": {
-        "Azure NetApp Files Reader": 10
+        "Azure NetApp Files Cost Manager": 14,
+        "Azure NetApp Files Policy And Compliance Manager": 15,
+        "Azure NetApp Files Reader": 10,
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
     },
     "Microsoft.NetApp/locations/queryNetworkSiblingSet/action": {
-        "Azure NetApp Files Reader": 10
+        "Azure NetApp Files Reader": 10,
+        "Azure NetApp Files Storage Manager": 36
+    },
+    "Microsoft.NetApp/locations/updateNetworkSiblingSet/action": {
+        "Azure NetApp Files Storage Manager": 36
+    },
+    "Microsoft.NetApp/netAppAccounts/accountBackups/delete": {
+        "Azure NetApp Files Backup Manager": 21
+    },
+    "Microsoft.NetApp/netAppAccounts/accountBackups/write": {
+        "Azure NetApp Files Backup Manager": 21,
+        "Azure NetApp Files Backup Operator": 14
+    },
+    "Microsoft.NetApp/netAppAccounts/backupPolicies/delete": {
+        "Azure NetApp Files Backup Manager": 21,
+        "Azure NetApp Files Policy And Compliance Manager": 15
+    },
+    "Microsoft.NetApp/netAppAccounts/backupPolicies/write": {
+        "Azure NetApp Files Backup Manager": 21,
+        "Azure NetApp Files Backup Operator": 14,
+        "Azure NetApp Files Policy And Compliance Manager": 15
+    },
+    "Microsoft.NetApp/netAppAccounts/backupVaults/backups/delete": {
+        "Azure NetApp Files Backup Manager": 21
+    },
+    "Microsoft.NetApp/netAppAccounts/backupVaults/backups/restoreFiles/action": {
+        "Azure NetApp Files Backup Manager": 21,
+        "Azure NetApp Files Backup Operator": 14
+    },
+    "Microsoft.NetApp/netAppAccounts/backupVaults/backups/write": {
+        "Azure NetApp Files Backup Manager": 21,
+        "Azure NetApp Files Backup Operator": 14
+    },
+    "Microsoft.NetApp/netAppAccounts/backupVaults/delete": {
+        "Azure NetApp Files Backup Manager": 21
+    },
+    "Microsoft.NetApp/netAppAccounts/backupVaults/write": {
+        "Azure NetApp Files Backup Manager": 21,
+        "Azure NetApp Files Backup Operator": 14
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/caches/delete": {
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/caches/listPeeringPassphrases/action": {
+        "Azure NetApp Files Replication Manager": 22,
+        "Azure NetApp Files Replication Operator": 21
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/caches/poolChange/action": {
+        "Azure NetApp Files Cost Manager": 14,
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/caches/resetSmbPassword/action": {
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/caches/write": {
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/changeZone/action": {
+        "Azure NetApp Files Cost Manager": 14,
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/delete": {
+        "Azure NetApp Files Cost Manager": 14,
+        "Azure NetApp Files Storage Manager": 36
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/providers/Microsoft.Insights/diagnosticSettings/write": {
+        "Azure NetApp Files Policy And Compliance Manager": 15,
+        "Azure NetApp Files Security And Identity Manager": 18
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/authorizeExternalReplication/action": {
+        "Azure NetApp Files Replication Manager": 22,
+        "Azure NetApp Files Replication Operator": 21
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/authorizeReplication/action": {
+        "Azure NetApp Files Replication Manager": 22,
+        "Azure NetApp Files Replication Operator": 21
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/backups/delete": {
+        "Azure NetApp Files Backup Manager": 21
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/backups/write": {
+        "Azure NetApp Files Backup Manager": 21,
+        "Azure NetApp Files Backup Operator": 14
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/breakFileLocks/action": {
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/breakReplication/action": {
+        "Azure NetApp Files Replication Manager": 22,
+        "Azure NetApp Files Replication Operator": 21
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/buckets/delete": {
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/buckets/generateAkvCredentials/action": {
+        "Azure NetApp Files Security And Identity Manager": 18
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/buckets/generateCredentials/action": {
+        "Azure NetApp Files Security And Identity Manager": 18
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/buckets/refreshCertificate/action": {
+        "Azure NetApp Files Security And Identity Manager": 18
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/buckets/write": {
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/createOnPremMigrationReplication/action": {
+        "Azure NetApp Files Replication Manager": 22,
+        "Azure NetApp Files Replication Operator": 21
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/delete": {
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/deleteReplication/action": {
+        "Azure NetApp Files Replication Manager": 22,
+        "Azure NetApp Files Replication Operator": 21
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/finalizeExternalReplication/action": {
+        "Azure NetApp Files Replication Manager": 22,
+        "Azure NetApp Files Replication Operator": 21
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/finalizeOnPremMigration/action": {
+        "Azure NetApp Files Replication Manager": 22,
+        "Azure NetApp Files Replication Operator": 21
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/finalizeRelocation/action": {
+        "Azure NetApp Files Replication Manager": 22,
+        "Azure NetApp Files Replication Operator": 21,
+        "Azure NetApp Files Storage Manager": 36
     },
     "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/getGroupIdListForLdapUser/action": {
-        "Azure NetApp Files Reader": 10
+        "Azure NetApp Files Reader": 10,
+        "Azure NetApp Files Security And Identity Manager": 18
     },
     "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/listQuotaReport/action": {
-        "Azure NetApp Files Reader": 10
+        "Azure NetApp Files Cost Manager": 14,
+        "Azure NetApp Files Policy And Compliance Manager": 15,
+        "Azure NetApp Files Reader": 10,
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
     },
     "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/listReplications/action": {
-        "Azure NetApp Files Reader": 10
+        "Azure NetApp Files Cost Manager": 14,
+        "Azure NetApp Files Policy And Compliance Manager": 15,
+        "Azure NetApp Files Reader": 10,
+        "Azure NetApp Files Replication Manager": 22,
+        "Azure NetApp Files Replication Operator": 21
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/migrateBackups/action": {
+        "Azure NetApp Files Backup Manager": 21,
+        "Azure NetApp Files Backup Operator": 14
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/peerClusterForOnPremMigration/action": {
+        "Azure NetApp Files Replication Manager": 22,
+        "Azure NetApp Files Replication Operator": 21
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/peerExternalCluster/action": {
+        "Azure NetApp Files Replication Manager": 22,
+        "Azure NetApp Files Replication Operator": 21
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/performReplicationTransfer/action": {
+        "Azure NetApp Files Replication Manager": 22,
+        "Azure NetApp Files Replication Operator": 21
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/poolChange/action": {
+        "Azure NetApp Files Cost Manager": 14,
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/ransomwareReports/clearsuspects/action": {
+        "Azure NetApp Files Security And Identity Manager": 18
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/reInitializeReplication/action": {
+        "Azure NetApp Files Replication Manager": 22,
+        "Azure NetApp Files Replication Operator": 21
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/reestablishReplication/action": {
+        "Azure NetApp Files Replication Manager": 22,
+        "Azure NetApp Files Replication Operator": 21
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/relocate/action": {
+        "Azure NetApp Files Replication Manager": 22,
+        "Azure NetApp Files Storage Manager": 36
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/resetCifsPassword/action": {
+        "Azure NetApp Files Security And Identity Manager": 18,
+        "Azure NetApp Files Storage Manager": 36
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/resyncReplication/action": {
+        "Azure NetApp Files Replication Manager": 22,
+        "Azure NetApp Files Replication Operator": 21
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/revert/action": {
+        "Azure NetApp Files Backup Manager": 21,
+        "Azure NetApp Files Storage Manager": 36
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/revertRelocation/action": {
+        "Azure NetApp Files Replication Manager": 22,
+        "Azure NetApp Files Replication Operator": 21,
+        "Azure NetApp Files Storage Manager": 36
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/snapshots/delete": {
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/snapshots/restoreFiles/action": {
+        "Azure NetApp Files Backup Manager": 21,
+        "Azure NetApp Files Backup Operator": 14,
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/snapshots/write": {
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/subvolumes/delete": {
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
     },
     "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/subvolumes/getMetadata/action": {
-        "Azure NetApp Files Reader": 10
+        "Azure NetApp Files Cost Manager": 14,
+        "Azure NetApp Files Policy And Compliance Manager": 15,
+        "Azure NetApp Files Reader": 10,
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/subvolumes/write": {
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/updateAVSDataStoreInfo/action": {
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/volumeQuotaRules/delete": {
+        "Azure NetApp Files Cost Manager": 14,
+        "Azure NetApp Files Policy And Compliance Manager": 15
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/volumeQuotaRules/write": {
+        "Azure NetApp Files Cost Manager": 14,
+        "Azure NetApp Files Policy And Compliance Manager": 15
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/write": {
+        "Azure NetApp Files Backup Manager": 21,
+        "Azure NetApp Files Backup Operator": 14,
+        "Azure NetApp Files Replication Manager": 22,
+        "Azure NetApp Files Replication Operator": 21,
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
+    },
+    "Microsoft.NetApp/netAppAccounts/capacityPools/write": {
+        "Azure NetApp Files Cost Manager": 14,
+        "Azure NetApp Files Storage Manager": 36
+    },
+    "Microsoft.NetApp/netAppAccounts/changeKeyVault/action": {
+        "Azure NetApp Files Security And Identity Manager": 18
     },
     "Microsoft.NetApp/netAppAccounts/getKeyVaultStatus/action": {
-        "Azure NetApp Files Reader": 10
+        "Azure NetApp Files Reader": 10,
+        "Azure NetApp Files Security And Identity Manager": 18
+    },
+    "Microsoft.NetApp/netAppAccounts/migrateBackups/action": {
+        "Azure NetApp Files Backup Manager": 21,
+        "Azure NetApp Files Backup Operator": 14
+    },
+    "Microsoft.NetApp/netAppAccounts/migrateEncryption/action": {
+        "Azure NetApp Files Security And Identity Manager": 18
+    },
+    "Microsoft.NetApp/netAppAccounts/providers/Microsoft.Insights/diagnosticSettings/write": {
+        "Azure NetApp Files Policy And Compliance Manager": 15,
+        "Azure NetApp Files Security And Identity Manager": 18
+    },
+    "Microsoft.NetApp/netAppAccounts/renewCredentials/action": {
+        "Azure NetApp Files Security And Identity Manager": 18
+    },
+    "Microsoft.NetApp/netAppAccounts/snapshotPolicies/delete": {
+        "Azure NetApp Files Backup Manager": 21,
+        "Azure NetApp Files Policy And Compliance Manager": 15,
+        "Azure NetApp Files Security And Identity Manager": 18,
+        "Azure NetApp Files Storage Manager": 36
+    },
+    "Microsoft.NetApp/netAppAccounts/snapshotPolicies/write": {
+        "Azure NetApp Files Backup Manager": 21,
+        "Azure NetApp Files Backup Operator": 14,
+        "Azure NetApp Files Policy And Compliance Manager": 15,
+        "Azure NetApp Files Security And Identity Manager": 18,
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
+    },
+    "Microsoft.NetApp/netAppAccounts/transitionToCmk/action": {
+        "Azure NetApp Files Security And Identity Manager": 18
+    },
+    "Microsoft.NetApp/netAppAccounts/volumeGroups/delete": {
+        "Azure NetApp Files Storage Manager": 36
+    },
+    "Microsoft.NetApp/netAppAccounts/volumeGroups/write": {
+        "Azure NetApp Files Storage Manager": 36,
+        "Azure NetApp Files Storage Operator": 25
     },
     "Microsoft.Network/*": {
         "Network Contributor": 7
@@ -13415,7 +13737,6 @@
         "Classic Virtual Machine Contributor": 17,
         "ClearDB MySQL DB Contributor": 7,
         "CloudTest Contributor Role": 23,
-        "CloudTest Leased VM Reader": 10,
         "Cognitive Services Contributor": 18,
         "Collaborative Data Contributor": 13,
         "Collaborative Runtime Operator": 8,
@@ -14191,7 +14512,7 @@
         "Classic Storage Account Contributor": 7,
         "Classic Virtual Machine Contributor": 17,
         "ClearDB MySQL DB Contributor": 7,
-        "CloudTest Leased VM Reader": 10,
+        "CloudTest Leased VM Reader": 9,
         "Cognitive Services Contributor": 18,
         "Cognitive Services User": 14,
         "Collaborative Data Contributor": 13,
@@ -14785,11 +15106,20 @@
         "Defender Storage Malware Operator": 14,
         "Defender for Storage Threat Protection": 6
     },
+    "Microsoft.Security/serviceEntitlementSettings/delete": {
+        "Security Service Entitlements Contributor": 5
+    },
+    "Microsoft.Security/serviceEntitlementSettings/read": {
+        "Security Service Entitlements Contributor": 5
+    },
+    "Microsoft.Security/serviceEntitlementSettings/write": {
+        "Security Service Entitlements Contributor": 5
+    },
     "Microsoft.Security/serviceEntitlements/read": {
-        "Security Service Entitlements Contributor": 2
+        "Security Service Entitlements Contributor": 5
     },
     "Microsoft.Security/serviceEntitlements/write": {
-        "Security Service Entitlements Contributor": 2
+        "Security Service Entitlements Contributor": 5
     },
     "Microsoft.Security/sqlVulnerabilityAssessments/*": {
         "SQL Security Manager": 65
