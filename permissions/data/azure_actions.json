@@ -1235,10 +1235,10 @@
         "Azure Monitor Pipeline Reader": 5,
         "Azure Programmable Connectivity Gateway Dataplane User": 5,
         "Azure Programmable Connectivity Gateway User": 5,
-        "Azure Resilience Management Drills Administrator": 17,
+        "Azure Resilience Management Drills Administrator": 18,
         "Azure Resilience Management Drills Assets Administrator": 49,
         "Azure Resilience Management Drills Assets Contributor": 47,
-        "Azure Resilience Management Drills Contributor": 15,
+        "Azure Resilience Management Drills Contributor": 16,
         "Azure Resilience Management Drills Operator": 15,
         "Azure Resilience Management Drills Reader": 11,
         "Azure Resilience Management Drills Target Resource Administrator": 17,
@@ -1246,8 +1246,8 @@
         "Azure Resilience Management Goals Administrator": 21,
         "Azure Resilience Management Goals Contributor": 20,
         "Azure Resilience Management Goals Reader": 10,
-        "Azure Resilience Management Recovery Administrator": 19,
-        "Azure Resilience Management Recovery Contributor": 38,
+        "Azure Resilience Management Recovery Administrator": 20,
+        "Azure Resilience Management Recovery Contributor": 39,
         "Azure Resilience Management Recovery Operator": 11,
         "Azure Resilience Management Recovery Reader": 10,
         "Azure Resilience Management Usage Administrator": 7,
@@ -1258,14 +1258,14 @@
         "Azure Sphere Publisher": 14,
         "Azure Sphere Reader": 12,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42,
         "Azure VM Managed identities restore Contributor": 1,
-        "Backup Contributor": 85,
+        "Backup Contributor": 87,
         "Backup MUA Admin": 26,
         "Backup MUA Operator": 3,
-        "Backup Operator": 98,
-        "Backup Reader": 60,
+        "Backup Operator": 100,
+        "Backup Reader": 62,
         "Billing Reader": 7,
         "BizTalk Contributor": 7,
         "Blueprint Contributor": 5,
@@ -1359,7 +1359,7 @@
         "Disk Backup Reader": 3,
         "Disk Pool Operator": 6,
         "Disk Restore Operator": 6,
-        "Disk Snapshot Contributor": 12,
+        "Disk Snapshot Contributor": 8,
         "DocumentDB Account Contributor": 8,
         "Domain Services Contributor": 69,
         "Domain Services Reader": 28,
@@ -1652,7 +1652,7 @@
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Execute Expert": 46,
         "Azure Migrate Owner": 68,
-        "Azure Resilience Management Drills Administrator": 17,
+        "Azure Resilience Management Drills Administrator": 18,
         "Azure Resilience Management Drills Assets Administrator": 49,
         "Azure Resilience Management Drills Target Resource Administrator": 17,
         "Azure Sphere Owner": 12,
@@ -1705,11 +1705,11 @@
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Execute Expert": 46,
         "Azure Migrate Owner": 68,
-        "Azure Resilience Management Drills Administrator": 17,
+        "Azure Resilience Management Drills Administrator": 18,
         "Azure Resilience Management Drills Assets Administrator": 49,
         "Azure Resilience Management Drills Target Resource Administrator": 17,
         "Azure Resilience Management Goals Administrator": 21,
-        "Azure Resilience Management Recovery Administrator": 19,
+        "Azure Resilience Management Recovery Administrator": 20,
         "Azure Sphere Owner": 12,
         "Azure Stack HCI Administrator": 103,
         "Defender CSPM Storage Scanner Operator": 13,
@@ -1831,8 +1831,8 @@
         "Automation Runbook Operator": 6,
         "Azure Resilience Management Drills Assets Administrator": 49,
         "Azure Resilience Management Drills Assets Contributor": 47,
-        "Azure Resilience Management Recovery Administrator": 19,
-        "Azure Resilience Management Recovery Contributor": 38,
+        "Azure Resilience Management Recovery Administrator": 20,
+        "Azure Resilience Management Recovery Contributor": 39,
         "Azure Resilience Management Recovery Operator": 11,
         "Azure Resilience Management Recovery Reader": 10
     },
@@ -2756,22 +2756,22 @@
         "Azure Batch Service Orchestration Role": 34
     },
     "Microsoft.AzureResilienceManagement/drills/*/action": {
-        "Azure Resilience Management Drills Administrator": 17,
-        "Azure Resilience Management Drills Contributor": 15,
+        "Azure Resilience Management Drills Administrator": 18,
+        "Azure Resilience Management Drills Contributor": 16,
         "Azure Resilience Management Drills Operator": 15
     },
     "Microsoft.AzureResilienceManagement/drills/*/delete": {
-        "Azure Resilience Management Drills Administrator": 17,
-        "Azure Resilience Management Drills Contributor": 15
+        "Azure Resilience Management Drills Administrator": 18,
+        "Azure Resilience Management Drills Contributor": 16
     },
     "Microsoft.AzureResilienceManagement/drills/*/read": {
-        "Azure Resilience Management Drills Administrator": 17,
-        "Azure Resilience Management Drills Contributor": 15,
+        "Azure Resilience Management Drills Administrator": 18,
+        "Azure Resilience Management Drills Contributor": 16,
         "Azure Resilience Management Drills Operator": 15
     },
     "Microsoft.AzureResilienceManagement/drills/*/write": {
-        "Azure Resilience Management Drills Administrator": 17,
-        "Azure Resilience Management Drills Contributor": 15,
+        "Azure Resilience Management Drills Administrator": 18,
+        "Azure Resilience Management Drills Contributor": 16,
         "Azure Resilience Management Drills Operator": 15
     },
     "Microsoft.AzureResilienceManagement/drills/drillResources/read": {
@@ -2801,9 +2801,13 @@
         "Azure Resilience Management Goals Reader": 10
     },
     "Microsoft.AzureResilienceManagement/goalAssignments/read": {
+        "Azure Resilience Management Drills Administrator": 18,
+        "Azure Resilience Management Drills Contributor": 16,
         "Azure Resilience Management Goals Administrator": 21,
         "Azure Resilience Management Goals Contributor": 20,
-        "Azure Resilience Management Goals Reader": 10
+        "Azure Resilience Management Goals Reader": 10,
+        "Azure Resilience Management Recovery Administrator": 20,
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/goalAssignments/write": {
         "Azure Resilience Management Goals Administrator": 21,
@@ -2823,7 +2827,7 @@
         "Azure Resilience Management Goals Contributor": 20
     },
     "Microsoft.AzureResilienceManagement/locations/OperationStatuses/read": {
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/locations/operationStatuses/read": {
         "Azure Resilience Management Goals Administrator": 21,
@@ -2836,131 +2840,131 @@
         "Azure Resilience Management Goals Reader": 10
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/*/action": {
-        "Azure Resilience Management Drills Administrator": 17,
-        "Azure Resilience Management Drills Contributor": 15,
+        "Azure Resilience Management Drills Administrator": 18,
+        "Azure Resilience Management Drills Contributor": 16,
         "Azure Resilience Management Drills Operator": 15,
-        "Azure Resilience Management Recovery Administrator": 19,
+        "Azure Resilience Management Recovery Administrator": 20,
         "Azure Resilience Management Recovery Operator": 11
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/*/delete": {
-        "Azure Resilience Management Drills Administrator": 17,
-        "Azure Resilience Management Drills Contributor": 15,
-        "Azure Resilience Management Recovery Administrator": 19
+        "Azure Resilience Management Drills Administrator": 18,
+        "Azure Resilience Management Drills Contributor": 16,
+        "Azure Resilience Management Recovery Administrator": 20
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/*/read": {
-        "Azure Resilience Management Drills Administrator": 17,
-        "Azure Resilience Management Drills Contributor": 15,
+        "Azure Resilience Management Drills Administrator": 18,
+        "Azure Resilience Management Drills Contributor": 16,
         "Azure Resilience Management Drills Operator": 15,
-        "Azure Resilience Management Recovery Administrator": 19,
+        "Azure Resilience Management Recovery Administrator": 20,
         "Azure Resilience Management Recovery Operator": 11,
         "Azure Resilience Management Recovery Reader": 10
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/*/write": {
-        "Azure Resilience Management Drills Administrator": 17,
-        "Azure Resilience Management Drills Contributor": 15,
-        "Azure Resilience Management Recovery Administrator": 19
+        "Azure Resilience Management Drills Administrator": 18,
+        "Azure Resilience Management Drills Contributor": 16,
+        "Azure Resilience Management Recovery Administrator": 20
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/checkReadiness/action": {
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/delete": {
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/failover/action": {
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/failoverCommit/action": {
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/finalize/action": {
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/read": {
         "Azure Resilience Management Goals Administrator": 21,
         "Azure Resilience Management Goals Contributor": 20,
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/recoveryJobs/cancel/action": {
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/recoveryJobs/read": {
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/recoveryJobs/recoveryJobResources/read": {
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/recoveryJobs/resume/action": {
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/recoveryJobs/retry/action": {
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/recoveryResources/read": {
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/reprotect/action": {
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/testFailover/action": {
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/testFailoverCleanup/action": {
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/updateResources/action": {
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/validateForFailover/action": {
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/validateForFailoverCommit/action": {
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/validateForOperation/action": {
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/validateForReprotect/action": {
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/validateForTestFailover/action": {
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/validateForTestFailoverCleanup/action": {
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/recoveryPlans/write": {
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.AzureResilienceManagement/usagePlans/delete": {
-        "Azure Resilience Management Drills Administrator": 17,
-        "Azure Resilience Management Drills Contributor": 15,
+        "Azure Resilience Management Drills Administrator": 18,
+        "Azure Resilience Management Drills Contributor": 16,
         "Azure Resilience Management Goals Administrator": 21,
         "Azure Resilience Management Goals Contributor": 20,
-        "Azure Resilience Management Recovery Administrator": 19,
-        "Azure Resilience Management Recovery Contributor": 38,
+        "Azure Resilience Management Recovery Administrator": 20,
+        "Azure Resilience Management Recovery Contributor": 39,
         "Azure Resilience Management Usage Administrator": 7,
         "Azure Resilience Management Usage Contributor": 7
     },
     "Microsoft.AzureResilienceManagement/usagePlans/enrollments/delete": {
-        "Azure Resilience Management Drills Administrator": 17,
-        "Azure Resilience Management Drills Contributor": 15,
+        "Azure Resilience Management Drills Administrator": 18,
+        "Azure Resilience Management Drills Contributor": 16,
         "Azure Resilience Management Goals Administrator": 21,
         "Azure Resilience Management Goals Contributor": 20,
-        "Azure Resilience Management Recovery Administrator": 19,
-        "Azure Resilience Management Recovery Contributor": 38,
+        "Azure Resilience Management Recovery Administrator": 20,
+        "Azure Resilience Management Recovery Contributor": 39,
         "Azure Resilience Management Usage Administrator": 7,
         "Azure Resilience Management Usage Contributor": 7
     },
     "Microsoft.AzureResilienceManagement/usagePlans/enrollments/read": {
-        "Azure Resilience Management Drills Administrator": 17,
-        "Azure Resilience Management Drills Contributor": 15,
+        "Azure Resilience Management Drills Administrator": 18,
+        "Azure Resilience Management Drills Contributor": 16,
         "Azure Resilience Management Drills Operator": 15,
         "Azure Resilience Management Drills Reader": 11,
         "Azure Resilience Management Goals Administrator": 21,
         "Azure Resilience Management Goals Contributor": 20,
         "Azure Resilience Management Goals Reader": 10,
-        "Azure Resilience Management Recovery Administrator": 19,
-        "Azure Resilience Management Recovery Contributor": 38,
+        "Azure Resilience Management Recovery Administrator": 20,
+        "Azure Resilience Management Recovery Contributor": 39,
         "Azure Resilience Management Recovery Operator": 11,
         "Azure Resilience Management Recovery Reader": 10,
         "Azure Resilience Management Usage Administrator": 7,
@@ -2968,26 +2972,26 @@
         "Azure Resilience Management Usage Reader": 3
     },
     "Microsoft.AzureResilienceManagement/usagePlans/enrollments/write": {
-        "Azure Resilience Management Drills Administrator": 17,
-        "Azure Resilience Management Drills Contributor": 15,
+        "Azure Resilience Management Drills Administrator": 18,
+        "Azure Resilience Management Drills Contributor": 16,
         "Azure Resilience Management Drills Operator": 15,
         "Azure Resilience Management Goals Administrator": 21,
         "Azure Resilience Management Goals Contributor": 20,
-        "Azure Resilience Management Recovery Administrator": 19,
-        "Azure Resilience Management Recovery Contributor": 38,
+        "Azure Resilience Management Recovery Administrator": 20,
+        "Azure Resilience Management Recovery Contributor": 39,
         "Azure Resilience Management Usage Administrator": 7,
         "Azure Resilience Management Usage Contributor": 7
     },
     "Microsoft.AzureResilienceManagement/usagePlans/read": {
-        "Azure Resilience Management Drills Administrator": 17,
-        "Azure Resilience Management Drills Contributor": 15,
+        "Azure Resilience Management Drills Administrator": 18,
+        "Azure Resilience Management Drills Contributor": 16,
         "Azure Resilience Management Drills Operator": 15,
         "Azure Resilience Management Drills Reader": 11,
         "Azure Resilience Management Goals Administrator": 21,
         "Azure Resilience Management Goals Contributor": 20,
         "Azure Resilience Management Goals Reader": 10,
-        "Azure Resilience Management Recovery Administrator": 19,
-        "Azure Resilience Management Recovery Contributor": 38,
+        "Azure Resilience Management Recovery Administrator": 20,
+        "Azure Resilience Management Recovery Contributor": 39,
         "Azure Resilience Management Recovery Operator": 11,
         "Azure Resilience Management Recovery Reader": 10,
         "Azure Resilience Management Usage Administrator": 7,
@@ -2995,13 +2999,13 @@
         "Azure Resilience Management Usage Reader": 3
     },
     "Microsoft.AzureResilienceManagement/usagePlans/write": {
-        "Azure Resilience Management Drills Administrator": 17,
-        "Azure Resilience Management Drills Contributor": 15,
+        "Azure Resilience Management Drills Administrator": 18,
+        "Azure Resilience Management Drills Contributor": 16,
         "Azure Resilience Management Drills Operator": 15,
         "Azure Resilience Management Goals Administrator": 21,
         "Azure Resilience Management Goals Contributor": 20,
-        "Azure Resilience Management Recovery Administrator": 19,
-        "Azure Resilience Management Recovery Contributor": 38,
+        "Azure Resilience Management Recovery Administrator": 20,
+        "Azure Resilience Management Recovery Contributor": 39,
         "Azure Resilience Management Usage Administrator": 7,
         "Azure Resilience Management Usage Contributor": 7
     },
@@ -3118,11 +3122,11 @@
         "Windows Admin Center Administrator Login": 41
     },
     "Microsoft.AzureStackHCI/Clusters/ArcSettings/Read": {
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Windows Admin Center Administrator Login": 41
     },
     "Microsoft.AzureStackHCI/Clusters/Read": {
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Windows Admin Center Administrator Login": 41
     },
     "Microsoft.AzureStackHCI/DevicePools/*": {
@@ -3166,15 +3170,15 @@
         "Provisioned Machine Reader": 2
     },
     "Microsoft.AzureStackHCI/GalleryImages/Read": {
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42
     },
     "Microsoft.AzureStackHCI/GalleryImages/deploy/action": {
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.AzureStackHCI/LogicalNetworks/Read": {
         "Azure Stack HCI Device Management Role": 37,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42
     },
     "Microsoft.AzureStackHCI/LogicalNetworks/Write": {
@@ -3183,19 +3187,19 @@
     "Microsoft.AzureStackHCI/LogicalNetworks/join/action": {
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.AzureStackHCI/MarketPlaceGalleryImages/deploy/action": {
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.AzureStackHCI/MarketplaceGalleryImages/Read": {
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42
     },
     "Microsoft.AzureStackHCI/NetworkInterfaces/*": {
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.AzureStackHCI/NetworkInterfaces/Read": {
         "Azure Stack HCI VM Reader": 42
@@ -3205,7 +3209,7 @@
     },
     "Microsoft.AzureStackHCI/NetworkSecurityGroups/Read": {
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42
     },
     "Microsoft.AzureStackHCI/NetworkSecurityGroups/SecurityRules/Delete": {
@@ -3213,7 +3217,7 @@
     },
     "Microsoft.AzureStackHCI/NetworkSecurityGroups/SecurityRules/Read": {
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42
     },
     "Microsoft.AzureStackHCI/NetworkSecurityGroups/SecurityRules/Write": {
@@ -3236,7 +3240,7 @@
         "Azure Resource Bridge Deployment Role": 36,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42
     },
     "Microsoft.AzureStackHCI/StorageContainers/Write": {
@@ -3245,7 +3249,7 @@
         "Azure Stack HCI Device Management Role": 37
     },
     "Microsoft.AzureStackHCI/StorageContainers/deploy/action": {
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.AzureStackHCI/Unregister/Action": {
         "Azure Stack HCI Administrator": 103
@@ -3253,7 +3257,7 @@
     "Microsoft.AzureStackHCI/VirtualHardDisks/*": {
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.AzureStackHCI/VirtualHardDisks/Read": {
         "Azure Stack HCI VM Reader": 42
@@ -3263,7 +3267,7 @@
         "Azure Local Migrate Owner": 64
     },
     "Microsoft.AzureStackHCI/VirtualMachines/*": {
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.AzureStackHCI/VirtualMachines/Extensions/Read": {
         "Azure Stack HCI VM Reader": 42
@@ -3276,11 +3280,11 @@
         "Azure Local Migrate Owner": 64
     },
     "Microsoft.AzureStackHCI/VirtualNetworks/Read": {
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42
     },
     "Microsoft.AzureStackHCI/VirtualNetworks/join/action": {
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.AzureStackHCI/clusters/*": {
         "Azure Stack HCI Administrator": 103
@@ -3311,6 +3315,9 @@
     "Microsoft.AzureStackHCI/clusters/updateSummaries/read": {
         "Azure Local Infrastructure Contributor": 24,
         "Azure Local Infrastructure Reader": 16
+    },
+    "Microsoft.AzureStackHCI/clusters/volumes/deploy/action": {
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.AzureStackHCI/edgeMachines/*": {
         "Provisioned Machine Admin": 1,
@@ -3377,7 +3384,7 @@
         "Azure Stack HCI Administrator": 103
     },
     "Microsoft.AzureStackHCI/virtualMachineInstances/*": {
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.AzureStackHCI/virtualMachineInstances/Read": {
         "Azure Stack HCI VM Reader": 42
@@ -4607,11 +4614,12 @@
     "Microsoft.Compute/disks/beginGetAccess/action": {
         "Azure Backup Snapshot Contributor": 11,
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
+        "Azure Stack HCI VM Contributor": 80,
         "Compute Diagnostics Role": 3,
         "Defender Agentless VM Scan": 10,
         "Disk Backup Reader": 3,
         "Disk Restore Operator": 6,
-        "Disk Snapshot Contributor": 12,
+        "Disk Snapshot Contributor": 8,
         "Elastic SAN Volume Importer": 14,
         "VM Restore Operator": 41
     },
@@ -4622,6 +4630,7 @@
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
         "Azure Red Hat OpenShift Machine API Operator": 35,
+        "Azure Stack HCI VM Contributor": 80,
         "Desktop Virtualization Virtual Machine Contributor": 58,
         "Elastic SAN Snapshot Exporter": 15,
         "VM Restore Operator": 41,
@@ -4641,6 +4650,7 @@
         "Azure Migrate Owner": 68,
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
+        "Azure Stack HCI VM Contributor": 80,
         "Defender Agentless VM Scan": 10,
         "Desktop Virtualization Virtual Machine Contributor": 58,
         "Disk Backup Reader": 3,
@@ -4658,6 +4668,7 @@
         "Azure Migrate Owner": 68,
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
+        "Azure Stack HCI VM Contributor": 80,
         "Compute Gallery Artifacts Publisher": 11,
         "Desktop Virtualization Virtual Machine Contributor": 58,
         "Disk Pool Operator": 6,
@@ -4802,27 +4813,27 @@
         "Desktop Virtualization Virtual Machine Contributor": 58
     },
     "Microsoft.Compute/snapshots/beginGetAccess/action": {
-        "Disk Snapshot Contributor": 12,
+        "Disk Snapshot Contributor": 8,
         "Elastic SAN Volume Importer": 14
     },
     "Microsoft.Compute/snapshots/delete": {
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
-        "Disk Snapshot Contributor": 12,
+        "Disk Snapshot Contributor": 8,
         "Elastic SAN Snapshot Exporter": 15
     },
     "Microsoft.Compute/snapshots/endGetAccess/action": {
-        "Disk Snapshot Contributor": 12,
+        "Disk Snapshot Contributor": 8,
         "Elastic SAN Volume Importer": 14
     },
     "Microsoft.Compute/snapshots/read": {
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
-        "Disk Snapshot Contributor": 12,
+        "Disk Snapshot Contributor": 8,
         "Elastic SAN Snapshot Exporter": 15,
         "Elastic SAN Volume Importer": 14
     },
     "Microsoft.Compute/snapshots/write": {
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
-        "Disk Snapshot Contributor": 12,
+        "Disk Snapshot Contributor": 8,
         "Elastic SAN Snapshot Exporter": 15
     },
     "Microsoft.Compute/sshPublicKeys/*/generateKeyPair/action": {
@@ -5778,23 +5789,30 @@
         "Azure AIManager Contributor": 5
     },
     "Microsoft.ContainerService/aiManagers/*/read": {
-        "Azure AIManager User": 8
+        "Azure AIManager User": 9
+    },
+    "Microsoft.ContainerService/aiManagers/customAIModels/calculateCost/action": {
+        "Azure AIManager Model User": 4,
+        "Azure AIManager User": 9
+    },
+    "Microsoft.ContainerService/aiManagers/customAIModels/read": {
+        "Azure AIManager Model User": 4
     },
     "Microsoft.ContainerService/aiManagers/listCredential/action": {
-        "Azure AIManager User": 8
+        "Azure AIManager User": 9
     },
     "Microsoft.ContainerService/aiManagers/namespaces/*/read": {
-        "Azure AIManager User": 8
+        "Azure AIManager User": 9
     },
     "Microsoft.ContainerService/aiManagers/namespaces/listAccessKeys/action": {
         "Azure AIManager Inference User": 5,
-        "Azure AIManager User": 8
+        "Azure AIManager User": 9
     },
     "Microsoft.ContainerService/aiManagers/namespaces/listCredential/action": {
-        "Azure AIManager User": 8
+        "Azure AIManager User": 9
     },
     "Microsoft.ContainerService/aiManagers/read": {
-        "Azure AIManager User": 8
+        "Azure AIManager User": 9
     },
     "Microsoft.ContainerService/deploymentSafeguards/*": {
         "Azure Kubernetes Service Contributor Role": 9
@@ -5831,12 +5849,12 @@
         "Azure Kubernetes Service Contributor Role": 9
     },
     "Microsoft.ContainerService/locations/aiModels/calculateCost/action": {
-        "Azure AIManager Model User": 2,
-        "Azure AIManager User": 8
+        "Azure AIManager Model User": 4,
+        "Azure AIManager User": 9
     },
     "Microsoft.ContainerService/locations/aiModels/read": {
-        "Azure AIManager Model User": 2,
-        "Azure AIManager User": 8
+        "Azure AIManager Model User": 4,
+        "Azure AIManager User": 9
     },
     "Microsoft.ContainerService/managedClusters/*": {
         "Azure Kubernetes Service Contributor Role": 9
@@ -6370,174 +6388,211 @@
         "Backup MUA Admin": 26
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/SuspendBackups/action": {
-        "Backup Contributor": 85
+        "Backup Contributor": 87
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/backup/action": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98
+        "Backup Contributor": 87,
+        "Backup Operator": 100
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/delete": {
-        "Backup Contributor": 85
+        "Backup Contributor": 87
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/findRestorableTimeRanges/action": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/operationResults/read": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/read": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/recoveryPoints/read": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/restore/action": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98
+        "Backup Contributor": 87,
+        "Backup Operator": 100
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/resumeProtection/action": {
-        "Backup Contributor": 85
+        "Backup Contributor": 87
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/validateForModifyBackup/action": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98
+        "Backup Contributor": 87,
+        "Backup Operator": 100
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/validateRestore/action": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98
+        "Backup Contributor": 87,
+        "Backup Operator": 100
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/write": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98
+        "Backup Contributor": 87,
+        "Backup Operator": 100
     },
     "Microsoft.DataProtection/backupVaults/backupPolicies/delete": {
-        "Backup Contributor": 85
+        "Backup Contributor": 87
     },
     "Microsoft.DataProtection/backupVaults/backupPolicies/read": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.DataProtection/backupVaults/backupPolicies/write": {
-        "Backup Contributor": 85
+        "Backup Contributor": 87
     },
     "Microsoft.DataProtection/backupVaults/backupResourceGuardProxies/delete": {
-        "Backup Contributor": 85,
+        "Backup Contributor": 87,
         "Backup MUA Admin": 26,
-        "Backup Operator": 98
+        "Backup Operator": 100
     },
     "Microsoft.DataProtection/backupVaults/backupResourceGuardProxies/read": {
-        "Backup Contributor": 85,
+        "Backup Contributor": 87,
         "Backup MUA Admin": 26,
-        "Backup Operator": 98
+        "Backup Operator": 100
     },
     "Microsoft.DataProtection/backupVaults/backupResourceGuardProxies/unlockDelete/action": {
-        "Backup Contributor": 85,
+        "Backup Contributor": 87,
         "Backup MUA Admin": 26,
-        "Backup Operator": 98
+        "Backup Operator": 100
     },
     "Microsoft.DataProtection/backupVaults/backupResourceGuardProxies/write": {
-        "Backup Contributor": 85,
+        "Backup Contributor": 87,
         "Backup MUA Admin": 26,
-        "Backup Operator": 98
+        "Backup Operator": 100
+    },
+    "Microsoft.DataProtection/backupVaults/crossTenantVaultMappingStatus/action": {
+        "Backup Reader": 62
+    },
+    "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/findRestorableTimeRanges/action": {
+        "CTR Contributor": 33
+    },
+    "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/operationResults/read": {
+        "CTR Contributor": 33
+    },
+    "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/operationStatus/read": {
+        "CTR Contributor": 33
+    },
+    "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/read": {
+        "CTR Contributor": 33
+    },
+    "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/recoveryPoints/read": {
+        "CTR Contributor": 33
+    },
+    "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/restore/action": {
+        "CTR Contributor": 33
+    },
+    "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/validateRestore/action": {
+        "CTR Contributor": 33
+    },
+    "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupJobs/read": {
+        "CTR Contributor": 33
+    },
+    "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/read": {
+        "CTR Contributor": 33
+    },
+    "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/remove/action": {
+        "CTR Contributor": 33
+    },
+    "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/write": {
+        "CTR Creator": 4
     },
     "Microsoft.DataProtection/backupVaults/deletedBackupInstances/read": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.DataProtection/backupVaults/deletedBackupInstances/undelete/action": {
-        "Backup Contributor": 85
+        "Backup Contributor": 87
     },
     "Microsoft.DataProtection/backupVaults/operationResults/read": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.DataProtection/backupVaults/operationStatus/read": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.DataProtection/backupVaults/read": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62,
+        "CTR Creator": 4
     },
     "Microsoft.DataProtection/backupVaults/validateForBackup/action": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98
+        "Backup Contributor": 87,
+        "Backup Operator": 100
     },
     "Microsoft.DataProtection/backupVaults/write": {
-        "Backup Contributor": 85
+        "Backup Contributor": 87
     },
     "Microsoft.DataProtection/locations/checkFeatureSupport/action": {
-        "Backup Contributor": 85,
+        "Backup Contributor": 87,
         "Backup MUA Admin": 26,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.DataProtection/locations/checkNameAvailability/action": {
-        "Backup Contributor": 85
+        "Backup Contributor": 87
     },
     "Microsoft.DataProtection/locations/getBackupStatus/action": {
-        "Backup Contributor": 85,
+        "Backup Contributor": 87,
         "Backup MUA Admin": 26,
-        "Backup Reader": 60
+        "Backup Reader": 62
     },
     "Microsoft.DataProtection/locations/operationResults/read": {
-        "Backup Contributor": 85,
+        "Backup Contributor": 87,
         "Backup MUA Admin": 26,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.DataProtection/locations/operationStatus/read": {
-        "Backup Contributor": 85,
+        "Backup Contributor": 87,
         "Backup MUA Admin": 26,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.DataProtection/operations/read": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.DataProtection/subscriptions/providers/resourceGuards/read": {
         "Backup MUA Admin": 26
     },
     "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/crossRegionRestore/action": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98
+        "Backup Contributor": 87,
+        "Backup Operator": 100
     },
     "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/fetchCrossRegionRestoreJob/action": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/fetchCrossRegionRestoreJobs/action": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/fetchSecondaryRecoveryPoints/action": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/operationStatus/read": {
         "Backup MUA Admin": 26
     },
     "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/validateCrossRegionRestore/action": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98
+        "Backup Contributor": 87,
+        "Backup Operator": 100
     },
     "Microsoft.DataProtection/subscriptions/resourceGroups/providers/resourceGuards/delete": {
         "Backup MUA Admin": 26
@@ -7869,7 +7924,7 @@
         "Azure Arc ScVmm VM Contributor": 58,
         "Azure Arc VMware Private Cloud User": 40,
         "Azure Arc VMware Private Clouds Onboarding": 44,
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.ExtendedLocation/customLocations/Write": {
         "Azure Arc VMware Private Clouds Onboarding": 44
@@ -7892,7 +7947,7 @@
         "Azure Resource Bridge Deployment Role": 36,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Operator Nexus Compute Contributor Role (Preview)": 91
     },
     "Microsoft.ExtendedLocation/customLocations/enabledresourcetypes/read": {
@@ -8324,7 +8379,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.HybridCompute/licenses/read": {
         "Azure Arc ScVmm Administrator role": 57,
@@ -8332,7 +8387,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42
     },
     "Microsoft.HybridCompute/licenses/write": {
@@ -8341,7 +8396,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.HybridCompute/locations/*": {
         "Azure Connected Machine Resource Administrator": 12
@@ -8352,7 +8407,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Desktop Virtualization Power On Contributor": 14,
         "Desktop Virtualization Power On Off Contributor": 37
     },
@@ -8362,7 +8417,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Desktop Virtualization Power On Contributor": 14,
         "Desktop Virtualization Power On Off Contributor": 37
     },
@@ -8372,7 +8427,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.HybridCompute/machines/*": {
         "Azure Connected Machine Resource Administrator": 12,
@@ -8394,7 +8449,7 @@
         "Azure Connected Machine Resource Manager": 35,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Connected InfraVMs": 7,
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.HybridCompute/machines/addExtensions/action": {
         "Azure Connected Machine Onboarding": 11
@@ -8405,7 +8460,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.HybridCompute/machines/delete": {
         "Azure Arc ScVmm Administrator role": 57,
@@ -8418,7 +8473,7 @@
         "Azure Migrate Owner": 68,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Connected InfraVMs": 7,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Microsoft Cloud Security Arc Machine Operator": 6
     },
     "Microsoft.HybridCompute/machines/extensions/*": {
@@ -8433,7 +8488,7 @@
         "Azure Connected Machine Resource Manager": 35,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Connected InfraVMs": 7,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Defender SQL Servers On Machines": 10,
         "Defender Servers P1": 10,
         "Defender Servers P2": 19,
@@ -8448,7 +8503,7 @@
         "Azure Hybrid Database Administrator - Read Only Service Role": 8,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Connected InfraVMs": 7,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42,
         "Defender SQL Servers On Machines": 10,
         "Defender Servers P1": 10,
@@ -8467,7 +8522,7 @@
         "Azure Extension for SQL Server Deployment": 2,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Connected InfraVMs": 7,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Defender SQL Servers On Machines": 10,
         "Defender Servers P1": 10,
         "Defender Servers P2": 19,
@@ -8481,7 +8536,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.HybridCompute/machines/installPatches/action": {
         "Azure Arc ScVmm Administrator role": 57,
@@ -8489,7 +8544,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.HybridCompute/machines/licenseProfiles/*": {
         "Azure Connected Machine Resource Administrator": 12
@@ -8501,7 +8556,7 @@
         "Azure Arc VMware VM Contributor": 56,
         "Azure Connected Machine Resource Manager": 35,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.HybridCompute/machines/licenseProfiles/read": {
         "Azure Arc ScVmm Administrator role": 57,
@@ -8510,7 +8565,7 @@
         "Azure Arc VMware VM Contributor": 56,
         "Azure Connected Machine Resource Manager": 35,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42
     },
     "Microsoft.HybridCompute/machines/licenseProfiles/write": {
@@ -8520,7 +8575,7 @@
         "Azure Arc VMware VM Contributor": 56,
         "Azure Connected Machine Resource Manager": 35,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.HybridCompute/machines/listAccessDetails/action": {
         "HybridCompute Machine ListAccessDetails Action In-Built Role": 1
@@ -8531,7 +8586,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42
     },
     "Microsoft.HybridCompute/machines/patchAssessmentResults/softwarePatches/read": {
@@ -8540,7 +8595,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42
     },
     "Microsoft.HybridCompute/machines/patchInstallationResults/read": {
@@ -8549,7 +8604,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42
     },
     "Microsoft.HybridCompute/machines/patchInstallationResults/softwarePatches/read": {
@@ -8558,7 +8613,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42
     },
     "Microsoft.HybridCompute/machines/read": {
@@ -8575,7 +8630,7 @@
         "Azure Migrate Decide and Plan Expert": 51,
         "Azure Migrate Owner": 68,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42,
         "Defender SQL Servers On Machines": 10,
         "Defender Servers P1": 10,
@@ -8597,7 +8652,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.HybridCompute/machines/runcommands/read": {
         "Azure Arc ScVmm Administrator role": 57,
@@ -8605,7 +8660,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.HybridCompute/machines/runcommands/write": {
         "Azure Arc ScVmm Administrator role": 57,
@@ -8613,7 +8668,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.HybridCompute/machines/upgradeExtensions/action": {
         "Windows Admin Center Administrator Login": 41
@@ -8630,7 +8685,7 @@
         "Azure Migrate Owner": 68,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Connected InfraVMs": 7,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Hybrid Server Onboarding": 2,
         "Microsoft Cloud Security Arc Machine Operator": 6
     },
@@ -8640,7 +8695,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Desktop Virtualization Power On Contributor": 14,
         "Desktop Virtualization Power On Off Contributor": 37,
         "Windows Admin Center Administrator Login": 41
@@ -8651,7 +8706,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.HybridCompute/osType/agentVersions/read": {
         "Azure Arc ScVmm Administrator role": 57,
@@ -8659,7 +8714,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.HybridCompute/privateLinkScopes/*": {
         "Azure Connected Machine Resource Administrator": 12
@@ -8954,6 +9009,7 @@
         "Inference Account Owner": 5
     },
     "Microsoft.InferenceService/inferenceAccounts/read": {
+        "Embedding User": 1,
         "Inference Account Operator": 3,
         "Inference Account Owner": 5,
         "Semantic Reranker User": 1
@@ -8988,7 +9044,7 @@
         "Azure Arc VMware VM Contributor": 56,
         "Azure Managed Grafana Workspace Contributor": 35,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
         "Container Registry Contributor and Data Access Configuration Administrator": 59,
@@ -9008,7 +9064,7 @@
         "Azure Arc VMware VM Contributor": 56,
         "Azure Managed Grafana Workspace Contributor": 35,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
         "Container Registry Contributor and Data Access Configuration Administrator": 59,
@@ -9028,7 +9084,7 @@
         "Azure Arc VMware VM Contributor": 56,
         "Azure Managed Grafana Workspace Contributor": 35,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
         "Container Registry Contributor and Data Access Configuration Administrator": 59,
@@ -9049,7 +9105,7 @@
         "Azure Arc VMware VM Contributor": 56,
         "Azure Managed Grafana Workspace Contributor": 35,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
         "Container Registry Contributor and Data Access Configuration Administrator": 59,
@@ -9070,7 +9126,7 @@
         "Azure Arc VMware VM Contributor": 56,
         "Azure Managed Grafana Workspace Contributor": 35,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
         "Container Registry Contributor and Data Access Configuration Administrator": 59,
@@ -9090,7 +9146,7 @@
         "Azure Arc VMware VM Contributor": 56,
         "Azure Managed Grafana Workspace Contributor": 35,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
         "Container Registry Contributor and Data Access Configuration Administrator": 59,
@@ -9110,7 +9166,7 @@
         "Azure Arc VMware VM Contributor": 56,
         "Azure Managed Grafana Workspace Contributor": 35,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
         "Container Registry Contributor and Data Access Configuration Administrator": 59,
@@ -9192,8 +9248,8 @@
     "Microsoft.Insights/alertRules/": {
         "Azure Resilience Management Drills Operator": 15,
         "Azure Resilience Management Drills Reader": 11,
-        "Azure Resilience Management Recovery Administrator": 19,
-        "Azure Resilience Management Recovery Contributor": 38,
+        "Azure Resilience Management Recovery Administrator": 20,
+        "Azure Resilience Management Recovery Contributor": 39,
         "Azure Resilience Management Recovery Operator": 11,
         "Azure Resilience Management Recovery Reader": 10,
         "CloudTest Leased VM Reader": 9
@@ -9941,7 +9997,7 @@
         "Azure Resource Bridge Deployment Role": 36,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Defender Kubernetes Agent Operator": 19,
         "Kubernetes Cluster - Azure Arc Onboarding": 13,
         "Kubernetes Extension Contributor": 9,
@@ -10483,8 +10539,8 @@
         "Azure Resilience Management Goals Administrator": 21,
         "Azure Resilience Management Goals Contributor": 20,
         "Azure Resilience Management Goals Reader": 10,
-        "Azure Resilience Management Recovery Administrator": 19,
-        "Azure Resilience Management Recovery Contributor": 38,
+        "Azure Resilience Management Recovery Administrator": 20,
+        "Azure Resilience Management Recovery Contributor": 39,
         "Azure Resilience Management Recovery Operator": 11,
         "Azure Resilience Management Recovery Reader": 10
     },
@@ -12018,8 +12074,8 @@
         "Azure Red Hat OpenShift Hosted Control Planes Control Plane Operator": 3,
         "Azure Red Hat OpenShift Hosted Control Planes Service Managed Identity": 18,
         "Azure Red Hat OpenShift Network Operator": 7,
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
         "Container Registry Contributor and Data Access Configuration Administrator": 59,
         "DNS Resolver Contributor": 39,
@@ -12721,329 +12777,338 @@
         "Quota Request Operator": 14
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappingStatus/action": {
-        "Backup Contributor": 85
+        "Backup Contributor": 87,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/getRecoveryPoints/action": {
-        "CTR Contributor": 23
+        "CTR Contributor": 33
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/operationsStatus/read": {
-        "CTR Contributor": 23
+        "CTR Contributor": 33
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/preCheckRestore/action": {
-        "CTR Contributor": 23
+        "CTR Contributor": 33
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/protectionContainers/protectedItems/operationResults/read": {
-        "CTR Contributor": 23
+        "CTR Contributor": 33
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/protectionContainers/protectedItems/operationsStatus/read": {
-        "CTR Contributor": 23
+        "CTR Contributor": 33
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/protectionContainers/protectedItems/read": {
-        "CTR Contributor": 23
+        "CTR Contributor": 33
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/protectionContainers/protectedItems/recoveryPoints/read": {
-        "CTR Contributor": 23
+        "CTR Contributor": 33
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/protectionContainers/protectedItems/recoveryPoints/restore/action": {
-        "CTR Contributor": 23
+        "CTR Contributor": 33
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/recoveryPointOperationResults/read": {
-        "CTR Contributor": 23
+        "CTR Contributor": 33
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/restore/action": {
-        "CTR Contributor": 23
+        "CTR Contributor": 33
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/validateBulkRestoreOperationsStatus/read": {
-        "CTR Contributor": 23
+        "CTR Contributor": 33
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupJobs/backupChildJobs/read": {
-        "CTR Contributor": 23
+        "CTR Contributor": 33
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupJobs/read": {
-        "CTR Contributor": 23
+        "CTR Contributor": 33
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupProtectedItems/read": {
-        "CTR Contributor": 23
+        "CTR Contributor": 33
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupTriggerValidateOperation/action": {
-        "CTR Contributor": 23
+        "CTR Contributor": 33
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupValidateOperation/action": {
-        "CTR Contributor": 23
+        "CTR Contributor": 33
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupValidateOperationResults/read": {
-        "CTR Contributor": 23
+        "CTR Contributor": 33
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupValidateOperationsStatuses/read": {
-        "CTR Contributor": 23
+        "CTR Contributor": 33
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/read": {
-        "CTR Contributor": 23
+        "CTR Contributor": 33
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/remove/action": {
-        "CTR Contributor": 23
+        "CTR Contributor": 33
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/vaultCredentials/generate/action": {
-        "CTR Contributor": 23
+        "CTR Contributor": 33
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/vaultCredentials/operationResults/read": {
-        "CTR Contributor": 23
+        "CTR Contributor": 33
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/vaultCredentials/operationStatus/read": {
-        "CTR Contributor": 23
+        "CTR Contributor": 33
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/write": {
-        "CTR Creator": 2
+        "CTR Creator": 4
     },
     "Microsoft.RecoveryServices/Vaults/backupEngines/read": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/backupProtectionIntent/*": {
-        "Backup Contributor": 85
+        "Backup Contributor": 87
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/backupProtectionIntent/read": {
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/backupProtectionIntent/write": {
-        "Backup Operator": 98,
+        "Backup Operator": 100,
         "Virtual Machine Contributor": 45
     },
+    "Microsoft.RecoveryServices/Vaults/backupFabrics/getRPExtendedInfo/action": {
+        "Backup Contributor": 87,
+        "Backup Operator": 100
+    },
+    "Microsoft.RecoveryServices/Vaults/backupFabrics/getRPExtendedInfoOperationResult/read": {
+        "Backup Contributor": 87,
+        "Backup Operator": 100
+    },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/operationResults/*": {
-        "Backup Contributor": 85
+        "Backup Contributor": 87
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/operationResults/read": {
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/operationsStatus/read": {
-        "Backup Reader": 60
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectableContainers/read": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98
+        "Backup Contributor": 87,
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/*": {
-        "Backup Contributor": 85
+        "Backup Contributor": 87
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/inquire/action": {
-        "Backup Operator": 98
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/items/read": {
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/operationResults/read": {
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/*/read": {
         "Virtual Machine Contributor": 45
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/backup/action": {
-        "Backup Operator": 98
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/operationResults/read": {
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/operationsStatus/read": {
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/read": {
-        "Backup Operator": 98,
-        "Backup Reader": 60,
+        "Backup Operator": 100,
+        "Backup Reader": 62,
         "Virtual Machine Contributor": 45
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints/provisionInstantItemRecovery/action": {
-        "Backup Operator": 98
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints/read": {
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints/restore/action": {
-        "Backup Operator": 98
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints/revokeInstantItemRecovery/action": {
-        "Backup Operator": 98
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/write": {
-        "Backup Operator": 98,
+        "Backup Operator": 100,
         "Virtual Machine Contributor": 45
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/read": {
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/write": {
-        "Backup Operator": 98
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/refreshContainers/action": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98
+        "Backup Contributor": 87,
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/Vaults/backupJobs/*": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98
+        "Backup Contributor": 87,
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/Vaults/backupJobs/operationResults/read": {
-        "Backup Reader": 60
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/backupJobs/read": {
-        "Backup Reader": 60
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/backupJobsExport/action": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/backupOperationResults/*": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98
+        "Backup Contributor": 87,
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/Vaults/backupOperationResults/read": {
-        "Backup Reader": 60
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/backupOperations/read": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/backupPolicies/*": {
-        "Backup Contributor": 85
+        "Backup Contributor": 87
     },
     "Microsoft.RecoveryServices/Vaults/backupPolicies/operationResults/read": {
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/backupPolicies/operations/read": {
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/backupPolicies/read": {
-        "Backup Operator": 98,
-        "Backup Reader": 60,
+        "Backup Operator": 100,
+        "Backup Reader": 62,
         "Virtual Machine Contributor": 45
     },
     "Microsoft.RecoveryServices/Vaults/backupPolicies/write": {
         "Virtual Machine Contributor": 45
     },
     "Microsoft.RecoveryServices/Vaults/backupProtectableItems/*": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98
+        "Backup Contributor": 87,
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/Vaults/backupProtectedItems/*": {
-        "Backup Contributor": 85
+        "Backup Contributor": 87
     },
     "Microsoft.RecoveryServices/Vaults/backupProtectedItems/read": {
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/backupProtectionContainers/*": {
-        "Backup Contributor": 85
+        "Backup Contributor": 87
     },
     "Microsoft.RecoveryServices/Vaults/backupProtectionContainers/read": {
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/backupProtectionIntents/read": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/backupResourceGuardProxies/delete": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98
+        "Backup Contributor": 87,
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/Vaults/backupResourceGuardProxies/read": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98
+        "Backup Contributor": 87,
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/Vaults/backupResourceGuardProxies/unlockDelete/action": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98
+        "Backup Contributor": 87,
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/Vaults/backupResourceGuardProxies/write": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98
+        "Backup Contributor": 87,
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/Vaults/backupSecurityPIN/*": {
-        "Backup Contributor": 85
+        "Backup Contributor": 87
     },
     "Microsoft.RecoveryServices/Vaults/backupTriggerValidateOperation/action": {
-        "Backup Operator": 98
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/Vaults/backupUsageSummaries/read": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/backupValidateOperation/action": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98
+        "Backup Contributor": 87,
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/Vaults/backupValidateOperationResults/read": {
-        "Backup Operator": 98
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/Vaults/backupValidateOperationsStatuses/read": {
-        "Backup Operator": 98
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/Vaults/backupconfig/*": {
-        "Backup Contributor": 85
+        "Backup Contributor": 87
     },
     "Microsoft.RecoveryServices/Vaults/backupconfig/read": {
-        "Backup Reader": 60
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/backupstorageconfig/*": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98
+        "Backup Contributor": 87,
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/Vaults/backupstorageconfig/read": {
-        "Backup Reader": 60
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/certificates/*": {
-        "Backup Contributor": 85
+        "Backup Contributor": 87
     },
     "Microsoft.RecoveryServices/Vaults/certificates/write": {
-        "Backup Operator": 98,
+        "Backup Operator": 100,
         "Site Recovery Contributor": 29
     },
     "Microsoft.RecoveryServices/Vaults/extendedInformation/*": {
-        "Backup Contributor": 85,
+        "Backup Contributor": 87,
         "Site Recovery Contributor": 29
     },
     "Microsoft.RecoveryServices/Vaults/extendedInformation/read": {
-        "Backup Operator": 98,
-        "Backup Reader": 60,
+        "Backup Operator": 100,
+        "Backup Reader": 62,
         "Site Recovery Operator": 59,
         "Site Recovery Reader": 32
     },
     "Microsoft.RecoveryServices/Vaults/extendedInformation/write": {
-        "Backup Operator": 98
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/Vaults/monitoringAlerts/*": {
         "Site Recovery Contributor": 29,
         "Site Recovery Operator": 59
     },
     "Microsoft.RecoveryServices/Vaults/monitoringAlerts/read": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60,
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62,
         "Site Recovery Reader": 32
     },
     "Microsoft.RecoveryServices/Vaults/monitoringAlerts/write": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/monitoringConfigurations/*": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/Vaults/monitoringConfigurations/notificationConfiguration/read": {
         "Site Recovery Contributor": 29,
@@ -13051,10 +13116,10 @@
         "Site Recovery Reader": 32
     },
     "Microsoft.RecoveryServices/Vaults/read": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60,
-        "CTR Creator": 2,
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62,
+        "CTR Creator": 4,
         "Site Recovery Contributor": 29,
         "Site Recovery Operator": 59,
         "Site Recovery Reader": 32,
@@ -13066,23 +13131,23 @@
         "Site Recovery Reader": 32
     },
     "Microsoft.RecoveryServices/Vaults/registeredIdentities/*": {
-        "Backup Contributor": 85,
+        "Backup Contributor": 87,
         "Site Recovery Contributor": 29
     },
     "Microsoft.RecoveryServices/Vaults/registeredIdentities/operationResults/read": {
-        "Backup Operator": 98,
-        "Backup Reader": 60,
+        "Backup Operator": 100,
+        "Backup Reader": 62,
         "Site Recovery Operator": 59,
         "Site Recovery Reader": 32
     },
     "Microsoft.RecoveryServices/Vaults/registeredIdentities/read": {
-        "Backup Operator": 98,
-        "Backup Reader": 60,
+        "Backup Operator": 100,
+        "Backup Reader": 62,
         "Site Recovery Operator": 59,
         "Site Recovery Reader": 32
     },
     "Microsoft.RecoveryServices/Vaults/registeredIdentities/write": {
-        "Backup Operator": 98
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/Vaults/storageConfig/*": {
         "Site Recovery Contributor": 29
@@ -13097,11 +13162,11 @@
         "Site Recovery Reader": 32
     },
     "Microsoft.RecoveryServices/Vaults/usages/*": {
-        "Backup Contributor": 85
+        "Backup Contributor": 87
     },
     "Microsoft.RecoveryServices/Vaults/usages/read": {
-        "Backup Operator": 98,
-        "Backup Reader": 60,
+        "Backup Operator": 100,
+        "Backup Reader": 62,
         "Site Recovery Contributor": 29,
         "Site Recovery Operator": 59,
         "Site Recovery Reader": 32,
@@ -13113,11 +13178,11 @@
         "Site Recovery Reader": 32
     },
     "Microsoft.RecoveryServices/Vaults/write": {
-        "Backup Contributor": 85,
+        "Backup Contributor": 87,
         "Virtual Machine Contributor": 45
     },
     "Microsoft.RecoveryServices/locations/*": {
-        "Backup Contributor": 85,
+        "Backup Contributor": 87,
         "Virtual Machine Contributor": 45
     },
     "Microsoft.RecoveryServices/locations/allocateStamp/action": {
@@ -13125,59 +13190,59 @@
         "Site Recovery Operator": 59
     },
     "Microsoft.RecoveryServices/locations/allocatedStamp/read": {
-        "Backup Reader": 60,
+        "Backup Reader": 62,
         "Site Recovery Contributor": 29,
         "Site Recovery Operator": 59,
         "Site Recovery Reader": 32
     },
     "Microsoft.RecoveryServices/locations/backupAadProperties/read": {
-        "Backup Operator": 98
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/locations/backupCrossRegionRestore/action": {
-        "Backup Operator": 98
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/locations/backupCrrJob/action": {
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/locations/backupCrrJobs/action": {
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/locations/backupCrrOperationResults/read": {
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/locations/backupCrrOperationsStatus/read": {
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/locations/backupPreValidateProtection/action": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98
+        "Backup Contributor": 87,
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/locations/backupStatus/action": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/locations/backupValidateFeatures/action": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/locations/operationStatus/read": {
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/operations/read": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Execute Expert": 46,
         "Azure Migrate Owner": 68,
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
-        "Backup Reader": 60
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
+        "Backup Reader": 62
     },
     "Microsoft.RecoveryServices/register/action": {
         "Azure Local Migrate Owner": 64,
@@ -13192,13 +13257,13 @@
         "Azure Migrate Owner": 68
     },
     "Microsoft.RecoveryServices/vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints/accessToken/action": {
-        "Backup Operator": 98
+        "Backup Operator": 100
     },
     "Microsoft.RecoveryServices/vaults/operationResults/read": {
-        "Backup Contributor": 85
+        "Backup Contributor": 87
     },
     "Microsoft.RecoveryServices/vaults/operationStatus/read": {
-        "Backup Contributor": 85
+        "Backup Contributor": 87
     },
     "Microsoft.RecoveryServices/vaults/replicationAlertSettings/*": {
         "Site Recovery Contributor": 29
@@ -13373,14 +13438,14 @@
         "Azure Resilience Management Goals Administrator": 21,
         "Azure Resilience Management Goals Contributor": 20,
         "Azure Resilience Management Goals Reader": 10,
-        "Azure Resilience Management Recovery Administrator": 19,
-        "Azure Resilience Management Recovery Contributor": 38,
+        "Azure Resilience Management Recovery Administrator": 20,
+        "Azure Resilience Management Recovery Contributor": 39,
         "Azure Resilience Management Recovery Operator": 11,
         "Azure Resilience Management Recovery Reader": 10
     },
     "Microsoft.Relationships/ServiceGroupMember/write": {
-        "Azure Resilience Management Recovery Administrator": 19,
-        "Azure Resilience Management Recovery Contributor": 38
+        "Azure Resilience Management Recovery Administrator": 20,
+        "Azure Resilience Management Recovery Contributor": 39
     },
     "Microsoft.Relationships/serviceGroupMember/delete": {
         "Service Group Member Relationship Contributor": 3
@@ -13503,7 +13568,7 @@
         "Azure Programmable Connectivity Gateway Dataplane User": 5,
         "Azure Programmable Connectivity Gateway User": 5,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42,
         "Backup MUA Admin": 26,
         "BizTalk Contributor": 7,
@@ -13695,7 +13760,6 @@
         "Azure Deployment Stack Contributor": 9,
         "Azure Deployment Stack Owner": 6,
         "Azure File Sync Administrator": 15,
-        "Azure Front Door Profile Reader": 17,
         "Azure IoT Operations Administrator": 13,
         "Azure IoT Operations Onboarding": 10,
         "Azure Kubernetes Fleet Manager Contributor Role": 3,
@@ -13714,15 +13778,15 @@
         "Azure Programmable Connectivity Gateway Dataplane User": 5,
         "Azure Programmable Connectivity Gateway User": 5,
         "Azure Resilience Management Drills Operator": 15,
-        "Azure Resilience Management Recovery Administrator": 19,
-        "Azure Resilience Management Recovery Contributor": 38,
+        "Azure Resilience Management Recovery Administrator": 20,
+        "Azure Resilience Management Recovery Contributor": 39,
         "Azure Resilience Management Recovery Operator": 11,
         "Azure Sphere Contributor": 7,
         "Azure Sphere Owner": 12,
         "Azure Stack HCI Administrator": 103,
-        "Backup Contributor": 85,
+        "Backup Contributor": 87,
         "Backup MUA Admin": 26,
-        "Backup Operator": 98,
+        "Backup Operator": 100,
         "BizTalk Contributor": 7,
         "Blueprint Contributor": 5,
         "Blueprint Operator": 5,
@@ -13924,7 +13988,7 @@
         "Azure Managed Grafana Workspace Contributor": 35,
         "Azure Monitor Dashboards with Grafana Contributor": 15,
         "Azure Stack HCI Edge Machine Contributor Role": 21,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Domain Services Contributor": 69,
         "Operator Nexus Compute Contributor Role (Preview)": 91
     },
@@ -13942,7 +14006,7 @@
         "Azure Managed Grafana Workspace Contributor": 35,
         "Azure Monitor Dashboards with Grafana Contributor": 15,
         "Azure Stack HCI Edge Machine Contributor Role": 21,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Domain Services Contributor": 69,
         "Operator Nexus Compute Contributor Role (Preview)": 91,
         "Procurement Contributor with Resource Group Permissions": 100,
@@ -13961,7 +14025,7 @@
         "Azure Managed Grafana Workspace Contributor": 35,
         "Azure Monitor Dashboards with Grafana Contributor": 15,
         "Azure Stack HCI Edge Machine Contributor Role": 21,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42,
         "Domain Services Contributor": 69,
         "HDInsight on AKS Cluster Admin": 35,
@@ -13986,7 +14050,7 @@
         "Azure Kubernetes Service Arc Contributor Role": 37,
         "Azure Managed Grafana Workspace Contributor": 35,
         "Azure Stack HCI Edge Machine Contributor Role": 21,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42,
         "Backup MUA Admin": 26,
         "Cognitive Services Contributor": 18,
@@ -14025,7 +14089,7 @@
         "Azure Kubernetes Service Arc Contributor Role": 37,
         "Azure Managed Grafana Workspace Contributor": 35,
         "Azure Stack HCI Edge Machine Contributor Role": 21,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42,
         "Domain Services Contributor": 69,
         "Domain Services Reader": 28,
@@ -14046,13 +14110,14 @@
         "Azure Arc VMware Private Clouds Onboarding": 44,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Center for SAP solutions reader": 43,
+        "Azure Front Door Profile Reader": 17,
         "Azure Kubernetes Service Arc Contributor Role": 37,
         "Azure Managed Grafana Workspace Contributor": 35,
         "Azure Managed Redis Reader": 9,
         "Azure Monitor Dashboards with Grafana Contributor": 15,
         "Azure Monitor Pipeline Reader": 5,
         "Azure Stack HCI Edge Machine Contributor Role": 21,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42,
         "CDN Endpoint Reader": 9,
         "CDN Profile Reader": 11,
@@ -14103,7 +14168,7 @@
         "Azure Managed Grafana Workspace Contributor": 35,
         "Azure Monitor Dashboards with Grafana Contributor": 15,
         "Azure Stack HCI Edge Machine Contributor Role": 21,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Domain Services Contributor": 69,
         "HDInsight on AKS Cluster Admin": 35,
         "HDInsight on AKS Cluster Pool Admin": 29,
@@ -14123,7 +14188,7 @@
         "Azure Managed Grafana Workspace Contributor": 35,
         "Azure Monitor Dashboards with Grafana Contributor": 15,
         "Azure Stack HCI Edge Machine Contributor Role": 21,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Domain Services Contributor": 69,
         "Operator Nexus Compute Contributor Role (Preview)": 91
     },
@@ -14148,7 +14213,7 @@
         "Azure Managed Grafana Workspace Contributor": 35,
         "Azure Monitor Dashboards with Grafana Contributor": 15,
         "Azure Stack HCI Edge Machine Contributor Role": 21,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Community Contributor Role": 34,
         "Community Owner Role": 44,
         "Domain Services Contributor": 69,
@@ -14225,7 +14290,7 @@
         "Azure Kubernetes Service RBAC Reader": 4,
         "Azure Kubernetes Service RBAC Writer": 4,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42,
         "Backup MUA Admin": 26,
         "Cognitive Services Contributor": 18,
@@ -14315,7 +14380,7 @@
         "Azure Migrate Owner": 68,
         "Azure Sphere Owner": 12,
         "Azure Stack HCI Administrator": 103,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42,
         "Backup MUA Admin": 26,
         "CloudTest Contributor Role": 23,
@@ -14481,8 +14546,8 @@
         "Azure Resilience Management Drills Assets Contributor": 47,
         "Azure Resilience Management Drills Operator": 15,
         "Azure Resilience Management Drills Reader": 11,
-        "Azure Resilience Management Recovery Administrator": 19,
-        "Azure Resilience Management Recovery Contributor": 38,
+        "Azure Resilience Management Recovery Administrator": 20,
+        "Azure Resilience Management Recovery Contributor": 39,
         "Azure Resilience Management Recovery Operator": 11,
         "Azure Resilience Management Recovery Reader": 10,
         "Azure Resource Bridge Deployment Role": 36,
@@ -14492,11 +14557,11 @@
         "Azure Sphere Reader": 12,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42,
-        "Backup Contributor": 85,
+        "Backup Contributor": 87,
         "Backup MUA Admin": 26,
-        "Backup Operator": 98,
+        "Backup Operator": 100,
         "BizTalk Contributor": 7,
         "Blueprint Contributor": 5,
         "Blueprint Operator": 5,
@@ -14581,7 +14646,7 @@
         "Device Update Reader": 6,
         "Disk Pool Operator": 6,
         "Disk Restore Operator": 6,
-        "Disk Snapshot Contributor": 12,
+        "Disk Snapshot Contributor": 8,
         "DocumentDB Account Contributor": 8,
         "Domain Services Contributor": 69,
         "Domain Services Reader": 28,
@@ -14795,7 +14860,7 @@
         "Azure Arc VMware VM Contributor": 56,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Edge Machine Contributor Role": 21,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42,
         "HDInsight on AKS Cluster Admin": 35,
         "HDInsight on AKS Cluster Pool Admin": 29
@@ -14812,7 +14877,7 @@
         "Azure Arc VMware VM Contributor": 56,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Edge Machine Contributor Role": 21,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42
     },
     "Microsoft.Resources/subscriptions/resourcegroups/deployments/read": {
@@ -14828,7 +14893,7 @@
         "Azure Center for SAP solutions reader": 43,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Edge Machine Contributor Role": 21,
-        "Azure Stack HCI VM Contributor": 75,
+        "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42,
         "Community Contributor Role": 34,
         "Community Owner Role": 44,
@@ -14853,7 +14918,7 @@
         "Azure Arc VMware VM Contributor": 56,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Edge Machine Contributor Role": 21,
-        "Azure Stack HCI VM Contributor": 75
+        "Azure Stack HCI VM Contributor": 80
     },
     "Microsoft.Resources/subscriptions/resourcegroups/read": {
         "AVS Orchestrator Role": 56,
@@ -15968,8 +16033,7 @@
     },
     "Microsoft.Storage/storageAccounts/delete": {
         "Azure Red Hat OpenShift File Storage Operator": 30,
-        "Azure Red Hat OpenShift Image Registry Operator": 25,
-        "Disk Snapshot Contributor": 12
+        "Azure Red Hat OpenShift Image Registry Operator": 25
     },
     "Microsoft.Storage/storageAccounts/encryptionScopes/read": {
         "Storage Account Encryption Scope Contributor Role": 2
@@ -16039,7 +16103,6 @@
         "Storage DataShare Contributor": 13
     },
     "Microsoft.Storage/storageAccounts/listkeys/action": {
-        "Disk Snapshot Contributor": 12,
         "Logic App Contributor": 21,
         "SqlMI Migration Role": 31,
         "SqlVM Migration Role": 27,
@@ -16089,15 +16152,14 @@
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift Image Registry Operator": 25,
         "Azure Red Hat OpenShift Service Operator": 10,
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
         "Defender CSPM Storage Scanner Operator": 13,
         "Defender Sensitive Data Discovery": 9,
         "Defender Storage Malware Operator": 14,
         "Defender for Storage Scanner Operator": 23,
         "Defender for Storage Threat Protection": 6,
         "Desktop Virtualization Virtual Machine Contributor": 58,
-        "Disk Snapshot Contributor": 12,
         "Logic App Contributor": 21,
         "Reader and Data Access": 3,
         "Site Recovery Contributor": 29,
@@ -16156,7 +16218,6 @@
         "Defender Sensitive Data Discovery": 9,
         "Defender Storage Malware Operator": 14,
         "Defender for Storage Scanner Operator": 23,
-        "Disk Snapshot Contributor": 12,
         "VM Restore Operator": 41
     },
     "Microsoft.StorageActions/locations/previewActions/action": {
@@ -16266,8 +16327,8 @@
         "Azure Migrate Owner": 68,
         "Azure Sphere Owner": 12,
         "Azure Stack HCI Administrator": 103,
-        "Backup Contributor": 85,
-        "Backup Operator": 98,
+        "Backup Contributor": 87,
+        "Backup Operator": 100,
         "Billing Reader": 7,
         "BizTalk Contributor": 7,
         "Blueprint Contributor": 5,
@@ -16684,6 +16745,12 @@
     },
     "Microsoft.Windows365/*": {
         "Microsoft.Windows365.CloudPcDelegatedMsis Writer User": 1
+    },
+    "Microsoft.Windows365/serviceConnectors/read": {
+        "Windows 365 Service Connector Administrator": 2
+    },
+    "Microsoft.Windows365/serviceConnectors/write": {
+        "Windows 365 Service Connector Administrator": 2
     },
     "Microsoft.WorkloadBuilder/migrationAgents/Read": {
         "WorkloadBuilder Migration Agent Role": 2

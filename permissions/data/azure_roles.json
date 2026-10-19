@@ -1291,6 +1291,8 @@
     },
     "Azure AIManager Model User": {
         "permissions": [
+            "Microsoft.ContainerService/aiManagers/customAIModels/calculateCost/action",
+            "Microsoft.ContainerService/aiManagers/customAIModels/read",
             "Microsoft.ContainerService/locations/aiModels/calculateCost/action",
             "Microsoft.ContainerService/locations/aiModels/read"
         ],
@@ -1317,6 +1319,7 @@
     "Azure AIManager User": {
         "permissions": [
             "Microsoft.ContainerService/aiManagers/*/read",
+            "Microsoft.ContainerService/aiManagers/customAIModels/calculateCost/action",
             "Microsoft.ContainerService/aiManagers/listCredential/action",
             "Microsoft.ContainerService/aiManagers/namespaces/*/read",
             "Microsoft.ContainerService/aiManagers/namespaces/listAccessKeys/action",
@@ -2591,7 +2594,7 @@
             "Microsoft.Cdn/profiles/querywafloganalyticsrankings/action",
             "Microsoft.Cdn/profiles/rulesets/Usages/action",
             "Microsoft.Insights/alertRules/*",
-            "Microsoft.Resources/deployments/*",
+            "Microsoft.Resources/deployments/read",
             "Microsoft.Resources/subscriptions/resourceGroups/read"
         ],
         "group": "BuiltInRole"
@@ -4203,6 +4206,7 @@
             "Microsoft.AzureResilienceManagement/drills/*/delete",
             "Microsoft.AzureResilienceManagement/drills/*/read",
             "Microsoft.AzureResilienceManagement/drills/*/write",
+            "Microsoft.AzureResilienceManagement/goalAssignments/read",
             "Microsoft.AzureResilienceManagement/recoveryPlans/*/action",
             "Microsoft.AzureResilienceManagement/recoveryPlans/*/delete",
             "Microsoft.AzureResilienceManagement/recoveryPlans/*/read",
@@ -4329,6 +4333,7 @@
             "Microsoft.AzureResilienceManagement/drills/*/delete",
             "Microsoft.AzureResilienceManagement/drills/*/read",
             "Microsoft.AzureResilienceManagement/drills/*/write",
+            "Microsoft.AzureResilienceManagement/goalAssignments/read",
             "Microsoft.AzureResilienceManagement/recoveryPlans/*/action",
             "Microsoft.AzureResilienceManagement/recoveryPlans/*/delete",
             "Microsoft.AzureResilienceManagement/recoveryPlans/*/read",
@@ -4491,6 +4496,7 @@
             "Microsoft.Authorization/*/read",
             "Microsoft.Authorization/roleAssignments/write",
             "Microsoft.Automation/automationAccounts/runbooks/read",
+            "Microsoft.AzureResilienceManagement/goalAssignments/read",
             "Microsoft.AzureResilienceManagement/recoveryPlans/*/action",
             "Microsoft.AzureResilienceManagement/recoveryPlans/*/delete",
             "Microsoft.AzureResilienceManagement/recoveryPlans/*/read",
@@ -4514,6 +4520,7 @@
         "permissions": [
             "Microsoft.Authorization/*/read",
             "Microsoft.Automation/automationAccounts/runbooks/read",
+            "Microsoft.AzureResilienceManagement/goalAssignments/read",
             "Microsoft.AzureResilienceManagement/locations/OperationStatuses/read",
             "Microsoft.AzureResilienceManagement/recoveryPlans/checkReadiness/action",
             "Microsoft.AzureResilienceManagement/recoveryPlans/delete",
@@ -5090,7 +5097,12 @@
             "Microsoft.AzureStackHCI/VirtualMachines/*",
             "Microsoft.AzureStackHCI/VirtualNetworks/Read",
             "Microsoft.AzureStackHCI/VirtualNetworks/join/action",
+            "Microsoft.AzureStackHCI/clusters/volumes/deploy/action",
             "Microsoft.AzureStackHCI/virtualMachineInstances/*",
+            "Microsoft.Compute/disks/beginGetAccess/action",
+            "Microsoft.Compute/disks/delete",
+            "Microsoft.Compute/disks/read",
+            "Microsoft.Compute/disks/write",
             "Microsoft.ExtendedLocation/customLocations/Read",
             "Microsoft.ExtendedLocation/customLocations/deploy/action",
             "Microsoft.HybridCompute/licenses/delete",
@@ -5325,6 +5337,8 @@
             "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappingStatus/action",
             "Microsoft.RecoveryServices/Vaults/backupEngines/read",
             "Microsoft.RecoveryServices/Vaults/backupFabrics/backupProtectionIntent/*",
+            "Microsoft.RecoveryServices/Vaults/backupFabrics/getRPExtendedInfo/action",
+            "Microsoft.RecoveryServices/Vaults/backupFabrics/getRPExtendedInfoOperationResult/read",
             "Microsoft.RecoveryServices/Vaults/backupFabrics/operationResults/*",
             "Microsoft.RecoveryServices/Vaults/backupFabrics/protectableContainers/read",
             "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/*",
@@ -5445,6 +5459,8 @@
             "Microsoft.RecoveryServices/Vaults/backupEngines/read",
             "Microsoft.RecoveryServices/Vaults/backupFabrics/backupProtectionIntent/read",
             "Microsoft.RecoveryServices/Vaults/backupFabrics/backupProtectionIntent/write",
+            "Microsoft.RecoveryServices/Vaults/backupFabrics/getRPExtendedInfo/action",
+            "Microsoft.RecoveryServices/Vaults/backupFabrics/getRPExtendedInfoOperationResult/read",
             "Microsoft.RecoveryServices/Vaults/backupFabrics/operationResults/read",
             "Microsoft.RecoveryServices/Vaults/backupFabrics/protectableContainers/read",
             "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/inquire/action",
@@ -5521,6 +5537,7 @@
             "Microsoft.DataProtection/backupVaults/backupInstances/read",
             "Microsoft.DataProtection/backupVaults/backupInstances/recoveryPoints/read",
             "Microsoft.DataProtection/backupVaults/backupPolicies/read",
+            "Microsoft.DataProtection/backupVaults/crossTenantVaultMappingStatus/action",
             "Microsoft.DataProtection/backupVaults/deletedBackupInstances/read",
             "Microsoft.DataProtection/backupVaults/operationResults/read",
             "Microsoft.DataProtection/backupVaults/operationStatus/read",
@@ -5533,6 +5550,7 @@
             "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/fetchCrossRegionRestoreJob/action",
             "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/fetchCrossRegionRestoreJobs/action",
             "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/fetchSecondaryRecoveryPoints/action",
+            "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappingStatus/action",
             "Microsoft.RecoveryServices/Vaults/backupEngines/read",
             "Microsoft.RecoveryServices/Vaults/backupFabrics/backupProtectionIntent/read",
             "Microsoft.RecoveryServices/Vaults/backupFabrics/operationResults/read",
@@ -5714,6 +5732,16 @@
     },
     "CTR Contributor": {
         "permissions": [
+            "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/findRestorableTimeRanges/action",
+            "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/operationResults/read",
+            "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/operationStatus/read",
+            "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/read",
+            "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/recoveryPoints/read",
+            "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/restore/action",
+            "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/validateRestore/action",
+            "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupJobs/read",
+            "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/read",
+            "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/remove/action",
             "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/getRecoveryPoints/action",
             "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/operationsStatus/read",
             "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/preCheckRestore/action",
@@ -5742,6 +5770,8 @@
     },
     "CTR Creator": {
         "permissions": [
+            "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/write",
+            "Microsoft.DataProtection/backupVaults/read",
             "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/write",
             "Microsoft.RecoveryServices/Vaults/read"
         ],
@@ -5783,6 +5813,10 @@
             "Microsoft.ChangeSafety/validations/read",
             "Microsoft.ChangeSafety/validations/write"
         ],
+        "group": "BuiltInRole"
+    },
+    "Chaos Kubernetes Extension Operator": {
+        "permissions": [],
         "group": "BuiltInRole"
     },
     "Chaos Permissions Admin": {
@@ -8445,11 +8479,7 @@
             "Microsoft.Compute/snapshots/endGetAccess/action",
             "Microsoft.Compute/snapshots/read",
             "Microsoft.Compute/snapshots/write",
-            "Microsoft.Resources/subscriptions/resourceGroups/read",
-            "Microsoft.Storage/storageAccounts/delete",
-            "Microsoft.Storage/storageAccounts/listkeys/action",
-            "Microsoft.Storage/storageAccounts/read",
-            "Microsoft.Storage/storageAccounts/write"
+            "Microsoft.Resources/subscriptions/resourceGroups/read"
         ],
         "group": "BuiltInRole"
     },
@@ -8710,6 +8740,12 @@
             "Microsoft.ElasticSan/elasticSans/volumeGroups/volumes/write",
             "Microsoft.ElasticSan/locations/*",
             "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Embedding User": {
+        "permissions": [
+            "Microsoft.InferenceService/inferenceAccounts/read"
         ],
         "group": "BuiltInRole"
     },
@@ -13862,6 +13898,13 @@
             "Microsoft.Network/virtualNetworks/subnets/join/action",
             "Microsoft.Network/virtualNetworks/subnets/read",
             "Microsoft.Network/virtualNetworks/usages/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Windows 365 Service Connector Administrator": {
+        "permissions": [
+            "Microsoft.Windows365/serviceConnectors/read",
+            "Microsoft.Windows365/serviceConnectors/write"
         ],
         "group": "BuiltInRole"
     },
