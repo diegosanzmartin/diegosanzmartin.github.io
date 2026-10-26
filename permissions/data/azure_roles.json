@@ -2620,6 +2620,8 @@
     "Azure Hybrid Database Administrator - Read Only Service Role": {
         "permissions": [
             "Microsoft.AzureArcData/*/read",
+            "Microsoft.AzureArcData/SqlServerInstances/getMigrationReadinessReport/action",
+            "Microsoft.AzureArcData/SqlServerInstances/getTargetRecommendationReports/action",
             "Microsoft.AzureArcData/sqlServerInstances/availabilityGroups/getDetailView/action",
             "Microsoft.AzureArcData/sqlServerInstances/getBestPracticesAssessment/action",
             "Microsoft.AzureArcData/sqlServerInstances/getJobsStatus/action",
@@ -3564,6 +3566,7 @@
             "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems/read",
             "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectableItems/read",
             "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/read",
+            "Microsoft.RecoveryServices/vaults/replicationJobs/read",
             "Microsoft.Resources/deployments/*",
             "Microsoft.Resources/subscriptions/resourceGroups/read"
         ],
@@ -5315,6 +5318,7 @@
             "Microsoft.DataProtection/backupVaults/backupResourceGuardProxies/read",
             "Microsoft.DataProtection/backupVaults/backupResourceGuardProxies/unlockDelete/action",
             "Microsoft.DataProtection/backupVaults/backupResourceGuardProxies/write",
+            "Microsoft.DataProtection/backupVaults/crossTenantVaultMappingStatus/action",
             "Microsoft.DataProtection/backupVaults/deletedBackupInstances/read",
             "Microsoft.DataProtection/backupVaults/deletedBackupInstances/undelete/action",
             "Microsoft.DataProtection/backupVaults/operationResults/read",
@@ -7611,6 +7615,17 @@
             "Microsoft.ContainerRegistry/registries/metadata/read",
             "Microsoft.ContainerRegistry/registries/pull/read",
             "Microsoft.ContainerRegistry/registries/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Defender Foundational CSPM": {
+        "permissions": [
+            "Microsoft.Authorization/policyAssignments/read",
+            "Microsoft.Authorization/policyExemptions/read",
+            "Microsoft.Authorization/policySetDefinitions/read",
+            "Microsoft.Management/managementGroups/descendants/read",
+            "Microsoft.Resources/subscriptions/resources/read",
+            "Microsoft.Security/assessmentMetadata/read"
         ],
         "group": "BuiltInRole"
     },
@@ -13905,6 +13920,12 @@
         "permissions": [
             "Microsoft.Windows365/serviceConnectors/read",
             "Microsoft.Windows365/serviceConnectors/write"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Windows 365 Service Connector User": {
+        "permissions": [
+            "Microsoft.Windows365/serviceConnectors/read"
         ],
         "group": "BuiltInRole"
     },
