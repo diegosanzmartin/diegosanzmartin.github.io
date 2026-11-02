@@ -1,11 +1,33 @@
 {
     "A365 Gateway Policy Operator": {
         "permissions": [
+            "Microsoft.ApiManagement/aigateways/read",
+            "Microsoft.ApiManagement/aigateways/workspaces/toolServers/read",
+            "Microsoft.ApiManagement/aigateways/workspaces/toolServers/write",
             "Microsoft.ApiManagement/service/apis/read",
             "Microsoft.ApiManagement/service/apis/write",
             "Microsoft.ApiManagement/service/read",
             "Microsoft.ApiManagement/service/workspaces/toolServers/read",
             "Microsoft.ApiManagement/service/workspaces/toolServers/write"
+        ],
+        "group": "BuiltInRole"
+    },
+    "AI Gateway Contributor": {
+        "permissions": [
+            "Microsoft.ApiManagement/aigateways/workspaces/aliases/*",
+            "Microsoft.ApiManagement/aigateways/workspaces/modelProviders/*",
+            "Microsoft.ApiManagement/aigateways/workspaces/toolServers/*",
+            "Microsoft.Authorization/permissions/read",
+            "Microsoft.Authorization/roleAssignments/read",
+            "Microsoft.Authorization/roleDefinitions/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "AI Gateway Developer": {
+        "permissions": [
+            "Microsoft.ApiManagement/aigateways/workspaces/aliases/read",
+            "Microsoft.ApiManagement/aigateways/workspaces/toolServers/read",
+            "Microsoft.Authorization/permissions/read"
         ],
         "group": "BuiltInRole"
     },
@@ -2725,6 +2747,7 @@
     "Azure Kubernetes Fleet Manager Hub Agent Role": {
         "permissions": [
             "Microsoft.Network/publicIPAddresses/read",
+            "Microsoft.Network/publicIPAddresses/write",
             "Microsoft.Network/trafficManagerProfiles/azureEndpoints/delete",
             "Microsoft.Network/trafficManagerProfiles/azureEndpoints/read",
             "Microsoft.Network/trafficManagerProfiles/azureEndpoints/write",
@@ -5820,7 +5843,11 @@
         "group": "BuiltInRole"
     },
     "Chaos Kubernetes Extension Operator": {
-        "permissions": [],
+        "permissions": [
+            "Microsoft.ContainerService/deploymentSafeguards/read",
+            "Microsoft.ContainerService/managedClusters/read",
+            "Microsoft.KubernetesConfiguration/extensions/read"
+        ],
         "group": "BuiltInRole"
     },
     "Chaos Permissions Admin": {
@@ -6705,6 +6732,10 @@
             "Microsoft.Insights/alertRules/*",
             "Microsoft.Resources/subscriptions/resourceGroups/read"
         ],
+        "group": "BuiltInRole"
+    },
+    "Container Apps Artifact App Operator": {
+        "permissions": [],
         "group": "BuiltInRole"
     },
     "Container Apps Artifact Data Pull": {
@@ -11908,6 +11939,10 @@
             "Microsoft.BillingBenefits/discounts/delete",
             "Microsoft.BillingBenefits/discounts/read",
             "Microsoft.BillingBenefits/discounts/write",
+            "Microsoft.BillingBenefits/flexPlans/cancel/action",
+            "Microsoft.BillingBenefits/flexPlans/read",
+            "Microsoft.BillingBenefits/flexPlans/terms/read",
+            "Microsoft.BillingBenefits/flexPlans/write",
             "Microsoft.BillingBenefits/maccs/cancel/action",
             "Microsoft.BillingBenefits/maccs/chargeShortfall/action",
             "Microsoft.BillingBenefits/maccs/contributors/read",
@@ -12005,6 +12040,10 @@
             "Microsoft.BillingBenefits/discounts/delete",
             "Microsoft.BillingBenefits/discounts/read",
             "Microsoft.BillingBenefits/discounts/write",
+            "Microsoft.BillingBenefits/flexPlans/cancel/action",
+            "Microsoft.BillingBenefits/flexPlans/read",
+            "Microsoft.BillingBenefits/flexPlans/terms/read",
+            "Microsoft.BillingBenefits/flexPlans/write",
             "Microsoft.BillingBenefits/maccs/cancel/action",
             "Microsoft.BillingBenefits/maccs/chargeShortfall/action",
             "Microsoft.BillingBenefits/maccs/contributors/read",
@@ -13918,6 +13957,7 @@
     },
     "Windows 365 Service Connector Administrator": {
         "permissions": [
+            "Microsoft.Windows365/serviceConnectors/delete",
             "Microsoft.Windows365/serviceConnectors/read",
             "Microsoft.Windows365/serviceConnectors/write"
         ],

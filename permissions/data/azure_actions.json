@@ -527,6 +527,28 @@
     "Microsoft.ApiCenter/services/workspaces/apis/versions/definitions/updateAnalysisState/action": {
         "Azure API Center Compliance Manager": 3
     },
+    "Microsoft.ApiManagement/aigateways/read": {
+        "A365 Gateway Policy Operator": 8
+    },
+    "Microsoft.ApiManagement/aigateways/workspaces/aliases/*": {
+        "AI Gateway Contributor": 6
+    },
+    "Microsoft.ApiManagement/aigateways/workspaces/aliases/read": {
+        "AI Gateway Developer": 3
+    },
+    "Microsoft.ApiManagement/aigateways/workspaces/modelProviders/*": {
+        "AI Gateway Contributor": 6
+    },
+    "Microsoft.ApiManagement/aigateways/workspaces/toolServers/*": {
+        "AI Gateway Contributor": 6
+    },
+    "Microsoft.ApiManagement/aigateways/workspaces/toolServers/read": {
+        "A365 Gateway Policy Operator": 8,
+        "AI Gateway Developer": 3
+    },
+    "Microsoft.ApiManagement/aigateways/workspaces/toolServers/write": {
+        "A365 Gateway Policy Operator": 8
+    },
     "Microsoft.ApiManagement/gateways/configConnections/read": {
         "Defender API Security": 22
     },
@@ -556,11 +578,11 @@
         "Defender API Security": 22
     },
     "Microsoft.ApiManagement/service/apis/read": {
-        "A365 Gateway Policy Operator": 5,
+        "A365 Gateway Policy Operator": 8,
         "Defender API Security": 22
     },
     "Microsoft.ApiManagement/service/apis/write": {
-        "A365 Gateway Policy Operator": 5
+        "A365 Gateway Policy Operator": 8
     },
     "Microsoft.ApiManagement/service/authorizationServers/read": {
         "API Management Service Workspace API Developer": 9,
@@ -626,7 +648,7 @@
         "API Management Service Workspace API Product Manager": 12
     },
     "Microsoft.ApiManagement/service/read": {
-        "A365 Gateway Policy Operator": 5,
+        "A365 Gateway Policy Operator": 8,
         "API Management Service Operator Role": 15,
         "API Management Service Reader Role": 8,
         "API Management Service Workspace API Developer": 9,
@@ -748,10 +770,10 @@
         "API Management Workspace API Product Manager": 10
     },
     "Microsoft.ApiManagement/service/workspaces/toolServers/read": {
-        "A365 Gateway Policy Operator": 5
+        "A365 Gateway Policy Operator": 8
     },
     "Microsoft.ApiManagement/service/workspaces/toolServers/write": {
-        "A365 Gateway Policy Operator": 5
+        "A365 Gateway Policy Operator": 8
     },
     "Microsoft.ApiManagement/service/write": {
         "API Management Service Operator Role": 15
@@ -1564,6 +1586,8 @@
         "Operator Nexus Compute Contributor Role (Preview)": 91
     },
     "Microsoft.Authorization/permissions/read": {
+        "AI Gateway Contributor": 6,
+        "AI Gateway Developer": 3,
         "Operator Nexus Compute Contributor Role (Preview)": 91
     },
     "Microsoft.Authorization/policyAssignments/*": {
@@ -1673,6 +1697,7 @@
         "Virtual Machine Data Access Administrator (preview)": 14
     },
     "Microsoft.Authorization/roleAssignments/read": {
+        "AI Gateway Contributor": 6,
         "AVS Orchestrator Role": 56,
         "AVS on Fleet VIS Role": 21,
         "Access Review Operator Service Role": 3,
@@ -1728,6 +1753,7 @@
         "Virtual Machine Data Access Administrator (preview)": 14
     },
     "Microsoft.Authorization/roleDefinitions/read": {
+        "AI Gateway Contributor": 6,
         "Azure Business Continuity DUPI Reader": 3,
         "Azure Business Continuity UPI Reader": 3,
         "Cognitive Services Content Understanding Contributor": 3,
@@ -3476,119 +3502,135 @@
     "Microsoft.Billing/billingProperty/read": {
         "Cost Management Contributor": 10,
         "Cost Management Reader": 10,
-        "Procurement Contributor with Resource Group Permissions": 100,
+        "Procurement Contributor with Resource Group Permissions": 104,
         "Savings plan Purchaser": 10
     },
     "Microsoft.BillingBenefits/conditionalCredits/cancel/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/conditionalCredits/contributors/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/conditionalCredits/delete": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/conditionalCredits/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/conditionalCredits/write": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/credits/cancel/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/credits/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/credits/sources/delete": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/credits/sources/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/credits/sources/write": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/credits/write": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/discounts/cancel/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/discounts/delete": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/discounts/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/discounts/write": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
+    },
+    "Microsoft.BillingBenefits/flexPlans/cancel/action": {
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
+    },
+    "Microsoft.BillingBenefits/flexPlans/read": {
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
+    },
+    "Microsoft.BillingBenefits/flexPlans/terms/read": {
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
+    },
+    "Microsoft.BillingBenefits/flexPlans/write": {
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/maccs/cancel/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/maccs/chargeShortfall/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/maccs/contributors/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/maccs/delete": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/maccs/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/maccs/write": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/maccs/writeOff/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/register/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/savingsPlanOrders/write": {
         "Savings plan Purchaser": 10
     },
     "Microsoft.BillingBenefits/spendPlans/cancel/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/spendPlans/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/spendPlans/terms/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/spendPlans/write": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BizTalkServices/BizTalk/*": {
         "BizTalk Contributor": 7
@@ -5826,6 +5868,9 @@
     "Microsoft.ContainerService/deploymentSafeguards/*": {
         "Azure Kubernetes Service Contributor Role": 9
     },
+    "Microsoft.ContainerService/deploymentSafeguards/read": {
+        "Chaos Kubernetes Extension Operator": 3
+    },
     "Microsoft.ContainerService/fleetMemberships/*": {
         "Azure Kubernetes Fleet Manager Contributor Role": 3
     },
@@ -5924,6 +5969,7 @@
         "Azure Kubernetes Service Cluster Admin Role": 4,
         "Azure Kubernetes Service Cluster Monitoring User": 2,
         "Azure Kubernetes Service Cluster User Role": 2,
+        "Chaos Kubernetes Extension Operator": 3,
         "Defender Containers Sensor": 19,
         "Defender Kubernetes API Access": 11
     },
@@ -7767,24 +7813,24 @@
         "Graph Owner": 14
     },
     "Microsoft.EnterpriseSupport/enterpriseSupports/delete": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.EnterpriseSupport/enterpriseSupports/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.EnterpriseSupport/enterpriseSupports/write": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.EnterpriseSupport/operationStatuses/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.EnterpriseSupport/register/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.EnterpriseSupport/services/delete": {
         "SupportPlan Contributor": 5
@@ -7793,20 +7839,20 @@
         "SupportPlan Contributor": 5
     },
     "Microsoft.EnterpriseSupport/supportPlans/cancel/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.EnterpriseSupport/supportPlans/delete": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.EnterpriseSupport/supportPlans/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.EnterpriseSupport/supportPlans/write": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.EventGrid/*": {
         "EventGrid Contributor": 6
@@ -8173,40 +8219,40 @@
         "HDInsight Cluster Operator": 9
     },
     "Microsoft.Hardware/orderPreview/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.Hardware/orders/delete": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.Hardware/orders/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.Hardware/orders/write": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.Hardware/register/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.Hardware/returnPreview/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.Hardware/returns/delete": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.Hardware/returns/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.Hardware/returns/write": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.Hdinsight/clusterpools/clusters/read": {
         "HDInsight on AKS Cluster Operator": 28
@@ -10008,6 +10054,7 @@
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37,
         "Azure Stack HCI VM Contributor": 80,
+        "Chaos Kubernetes Extension Operator": 3,
         "Defender Kubernetes Agent Operator": 19,
         "Kubernetes Cluster - Azure Arc Onboarding": 13,
         "Kubernetes Extension Contributor": 9,
@@ -11899,7 +11946,7 @@
     },
     "Microsoft.Network/publicIPAddresses/read": {
         "AVS Orchestrator Role": 56,
-        "Azure Kubernetes Fleet Manager Hub Agent Role": 7,
+        "Azure Kubernetes Fleet Manager Hub Agent Role": 8,
         "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Machine API Operator": 35,
         "Defender Servers P2": 19,
@@ -11914,6 +11961,7 @@
     },
     "Microsoft.Network/publicIPAddresses/write": {
         "AVS Orchestrator Role": 56,
+        "Azure Kubernetes Fleet Manager Hub Agent Role": 8,
         "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Machine API Operator": 35,
         "LocalNGFirewallAdministrator role": 35,
@@ -11987,22 +12035,22 @@
         "Traffic Manager Contributor": 7
     },
     "Microsoft.Network/trafficManagerProfiles/azureEndpoints/delete": {
-        "Azure Kubernetes Fleet Manager Hub Agent Role": 7
+        "Azure Kubernetes Fleet Manager Hub Agent Role": 8
     },
     "Microsoft.Network/trafficManagerProfiles/azureEndpoints/read": {
-        "Azure Kubernetes Fleet Manager Hub Agent Role": 7
+        "Azure Kubernetes Fleet Manager Hub Agent Role": 8
     },
     "Microsoft.Network/trafficManagerProfiles/azureEndpoints/write": {
-        "Azure Kubernetes Fleet Manager Hub Agent Role": 7
+        "Azure Kubernetes Fleet Manager Hub Agent Role": 8
     },
     "Microsoft.Network/trafficManagerProfiles/delete": {
-        "Azure Kubernetes Fleet Manager Hub Agent Role": 7
+        "Azure Kubernetes Fleet Manager Hub Agent Role": 8
     },
     "Microsoft.Network/trafficManagerProfiles/read": {
-        "Azure Kubernetes Fleet Manager Hub Agent Role": 7
+        "Azure Kubernetes Fleet Manager Hub Agent Role": 8
     },
     "Microsoft.Network/trafficManagerProfiles/write": {
-        "Azure Kubernetes Fleet Manager Hub Agent Role": 7
+        "Azure Kubernetes Fleet Manager Hub Agent Role": 8
     },
     "Microsoft.Network/unregister/action": {
         "Domain Services Contributor": 69
@@ -12698,36 +12746,36 @@
         "Power Platform Enterprise Policy Contributor": 5
     },
     "Microsoft.ProfessionalService/register/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.ProfessionalService/resources/delete": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.ProfessionalService/resources/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.ProfessionalService/resources/write": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.ProgramEnrollment/eduEnrollments/delete": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.ProgramEnrollment/eduEnrollments/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.ProgramEnrollment/eduEnrollments/write": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.ProgramEnrollment/register/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.ProjectBabylon/accounts/read": {
         "Project Babylon Data Curator": 1,
@@ -14023,7 +14071,7 @@
         "Azure Stack HCI VM Contributor": 80,
         "Domain Services Contributor": 69,
         "Operator Nexus Compute Contributor Role (Preview)": 91,
-        "Procurement Contributor with Resource Group Permissions": 100,
+        "Procurement Contributor with Resource Group Permissions": 104,
         "Windows 365 Network Interface Contributor": 15
     },
     "Microsoft.Resources/deployments/exportTemplate/action": {
@@ -14088,7 +14136,7 @@
         "Logic Apps Standard Reader": 7,
         "Nexus Network Fabric Service Reader": 7,
         "Operator Nexus Compute Contributor Role (Preview)": 91,
-        "Procurement Contributor with Resource Group Permissions": 100,
+        "Procurement Contributor with Resource Group Permissions": 104,
         "Windows 365 Network Interface Contributor": 15
     },
     "Microsoft.Resources/deployments/operationstatuses/read": {
@@ -14108,7 +14156,7 @@
         "Domain Services Contributor": 69,
         "Domain Services Reader": 28,
         "Operator Nexus Compute Contributor Role (Preview)": 91,
-        "Procurement Contributor with Resource Group Permissions": 100,
+        "Procurement Contributor with Resource Group Permissions": 104,
         "Windows 365 Network Interface Contributor": 15
     },
     "Microsoft.Resources/deployments/read": {
@@ -14162,7 +14210,7 @@
         "Microsoft Discovery Platform Reader": 3,
         "Nexus Network Fabric Service Reader": 7,
         "Operator Nexus Compute Contributor Role (Preview)": 91,
-        "Procurement Contributor with Resource Group Permissions": 100,
+        "Procurement Contributor with Resource Group Permissions": 104,
         "Quantum Workspace Data Reader": 6,
         "Windows 365 Network Interface Contributor": 15
     },
@@ -14187,7 +14235,7 @@
         "HDInsight on AKS Cluster Admin": 35,
         "HDInsight on AKS Cluster Pool Admin": 29,
         "Operator Nexus Compute Contributor Role (Preview)": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.Resources/deployments/whatIf/action": {
         "Azure Arc ScVmm Administrator role": 57,
@@ -14237,7 +14285,7 @@
         "HDInsight on AKS Cluster Pool Admin": 29,
         "Kubernetes Cluster - Azure Arc Onboarding": 13,
         "Operator Nexus Compute Contributor Role (Preview)": 91,
-        "Procurement Contributor with Resource Group Permissions": 100,
+        "Procurement Contributor with Resource Group Permissions": 104,
         "ToolchainOrchestrator Admin Role": 6,
         "ToolchainOrchestrator Viewer Role": 6,
         "Windows 365 Network Interface Contributor": 15
@@ -14771,8 +14819,8 @@
         "Power Platform Account Contributor": 5,
         "Power Platform Enterprise Policy Contributor": 5,
         "Private DNS Zone Contributor": 10,
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100,
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104,
         "ProviderHub Contributor": 6,
         "ProviderHub Reader": 4,
         "Quantum Workspace Data Contributor": 6,
@@ -14850,7 +14898,7 @@
         "Defender Containers Sensor": 19,
         "Defender Kubernetes Agent Operator": 19,
         "Kubernetes Agent Subscription Level Operator": 12,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.Resources/subscriptions/resourcegroups/deployments/*": {
         "Azure AI Administrator": 39,
@@ -14964,48 +15012,48 @@
         "Reservation Purchaser": 11
     },
     "Microsoft.SaaS/register/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SaaS/resources/delete": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SaaS/resources/listAccessToken/action": {
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SaaS/resources/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SaaS/resources/write": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SaaSHub/cloudServices/delete": {
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SaaSHub/cloudServices/read": {
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SaaSHub/cloudServices/write": {
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SaaSHub/cloudservices/delete": {
-        "Procurement Contributor": 91,
+        "Procurement Contributor": 95,
         "SaaS Hub Contributor": 4
     },
     "Microsoft.SaaSHub/cloudservices/read": {
-        "Procurement Contributor": 91,
+        "Procurement Contributor": 95,
         "SaaS Hub Contributor": 4
     },
     "Microsoft.SaaSHub/cloudservices/write": {
-        "Procurement Contributor": 91,
+        "Procurement Contributor": 95,
         "SaaS Hub Contributor": 4
     },
     "Microsoft.SaaSHub/register/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.ScVmm/*": {
         "Azure Arc ScVmm Administrator role": 57
@@ -15463,120 +15511,120 @@
         "SignalR AccessKey Reader": 5
     },
     "Microsoft.SoftwarePlan/register/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwareBenefits/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwareLicenses/productDownloadOptions/generateDownloadLinks/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwareLicenses/productDownloadOptions/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwareLicenses/productKeys/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwareLicenses/productKeys/showFullKey/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwareLicenses/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwareLicenses/write": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwarePerpetualProducts/cancel/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwarePerpetualProducts/delete": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwarePerpetualProducts/productDownloadOptions/generateDownloadLinks/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwarePerpetualProducts/productDownloadOptions/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwarePerpetualProducts/productKeys/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwarePerpetualProducts/productKeys/showFullKey/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwarePerpetualProducts/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwarePerpetualProducts/write": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwareSubscriptions/cancel/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwareSubscriptions/delete": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwareSubscriptions/listKeys/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwareSubscriptions/productDownloadOptions/generateDownloadLinks/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwareSubscriptions/productDownloadOptions/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwareSubscriptions/productKeys/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwareSubscriptions/productKeys/showFullKey/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwareSubscriptions/read": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwareSubscriptions/refreshFulfillment/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/softwareSubscriptions/write": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/validateSoftwareLicenseCreate/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/validateSoftwarePerpetualProductCreate/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.SoftwarePlan/validateSoftwareSubscriptionCreate/action": {
-        "Procurement Contributor": 91,
-        "Procurement Contributor with Resource Group Permissions": 100
+        "Procurement Contributor": 95,
+        "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.Solutions/*/action": {
         "Managed Application Operator Role": 3
@@ -16764,12 +16812,15 @@
     "Microsoft.Windows365/*": {
         "Microsoft.Windows365.CloudPcDelegatedMsis Writer User": 1
     },
+    "Microsoft.Windows365/serviceConnectors/delete": {
+        "Windows 365 Service Connector Administrator": 3
+    },
     "Microsoft.Windows365/serviceConnectors/read": {
-        "Windows 365 Service Connector Administrator": 2,
+        "Windows 365 Service Connector Administrator": 3,
         "Windows 365 Service Connector User": 1
     },
     "Microsoft.Windows365/serviceConnectors/write": {
-        "Windows 365 Service Connector Administrator": 2
+        "Windows 365 Service Connector Administrator": 3
     },
     "Microsoft.WorkloadBuilder/migrationAgents/Read": {
         "WorkloadBuilder Migration Agent Role": 2
