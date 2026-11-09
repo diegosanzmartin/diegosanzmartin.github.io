@@ -2457,19 +2457,36 @@
     },
     "Azure Device Registry Administrator": {
         "permissions": [
-            "Microsoft.DeviceRegistry/*"
+            "Microsoft.DeviceRegistry/*",
+            "Microsoft.DeviceUpdate/updateInstances/*"
         ],
         "group": "BuiltInRole"
     },
     "Azure Device Registry Contributor": {
         "permissions": [
+            "microsoft.deviceregistry/assetendpointprofiles/*",
+            "microsoft.deviceregistry/assets/*",
+            "microsoft.deviceregistry/namespaces/assets/*",
+            "microsoft.deviceregistry/namespaces/certificateAuthorities/certificatePolicies/read",
+            "microsoft.deviceregistry/namespaces/certificateAuthorities/read",
             "microsoft.deviceregistry/namespaces/credentials/policies/read",
             "microsoft.deviceregistry/namespaces/credentials/read",
             "microsoft.deviceregistry/namespaces/devices/*",
+            "microsoft.deviceregistry/namespaces/discoveredAssets/*",
             "microsoft.deviceregistry/namespaces/discovereddevices/*",
+            "microsoft.deviceregistry/namespaces/generateReport/action",
+            "microsoft.deviceregistry/namespaces/getLatestReport/action",
+            "microsoft.deviceregistry/namespaces/groups/*",
+            "microsoft.deviceregistry/namespaces/jobRuns/*",
+            "microsoft.deviceregistry/namespaces/jobs/*",
+            "microsoft.deviceregistry/namespaces/migrate/action",
             "microsoft.deviceregistry/namespaces/read",
+            "microsoft.deviceregistry/namespaces/registryDevices/*",
+            "microsoft.deviceregistry/namespaces/write",
+            "microsoft.deviceregistry/schemaRegistries/*",
             "microsoft.devices/iothubs/certificates/*",
-            "microsoft.devices/iothubs/read"
+            "microsoft.devices/iothubs/read",
+            "microsoft.deviceupdate/updateinstances/read"
         ],
         "group": "BuiltInRole"
     },
@@ -3476,6 +3493,7 @@
             "Microsoft.DependencyMap/maps/*/action",
             "Microsoft.Insights/alertRules/*",
             "Microsoft.Migrate/*/read",
+            "Microsoft.Migrate/migrateProjects/runbooks/*",
             "Microsoft.Migrate/migrateProjects/taskSummary/action",
             "Microsoft.MySQLDiscovery/*/read",
             "Microsoft.Network/networkInterfaces/delete",
@@ -3530,6 +3548,9 @@
             "Microsoft.DependencyMap/*",
             "Microsoft.GuestConfiguration/register/action",
             "Microsoft.HybridCompute/machines/delete",
+            "Microsoft.HybridCompute/machines/extensions/delete",
+            "Microsoft.HybridCompute/machines/extensions/read",
+            "Microsoft.HybridCompute/machines/extensions/write",
             "Microsoft.HybridCompute/machines/read",
             "Microsoft.HybridCompute/machines/write",
             "Microsoft.HybridCompute/register/action",
@@ -6061,6 +6082,10 @@
         "permissions": [],
         "group": "BuiltInRole"
     },
+    "Cloud Device Platform Data Owner": {
+        "permissions": [],
+        "group": "BuiltInRole"
+    },
     "Cloud Device Platform Sandbox Partner Data Contributor": {
         "permissions": [],
         "group": "BuiltInRole"
@@ -8529,6 +8554,22 @@
         ],
         "group": "BuiltInRole"
     },
+    "DiskSnapshotImmutabilityAdmin Service Role": {
+        "permissions": [
+            "Microsoft.Compute/snapshots/read",
+            "Microsoft.Compute/snapshots/updateImmutabilityPolicyLock/action",
+            "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "DiskSnapshotImmutabilityOperator Service Role": {
+        "permissions": [
+            "Microsoft.Compute/snapshots/read",
+            "Microsoft.Compute/snapshots/updateImmutabilityPolicy/action",
+            "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "group": "BuiltInRole"
+    },
     "DocumentDB Account Contributor": {
         "permissions": [
             "Microsoft.Authorization/*/read",
@@ -9161,6 +9202,7 @@
             "Microsoft.Insights/logDefinitions/read",
             "Microsoft.Insights/metricdefinitions/read",
             "Microsoft.Insights/metrics/read",
+            "Microsoft.PolicyInsights/*/read",
             "Microsoft.ResourceHealth/availabilityStatuses/read",
             "Microsoft.Resources/deployments/*",
             "Microsoft.Resources/deployments/operations/read",
@@ -9190,6 +9232,7 @@
             "Microsoft.Insights/activityLogAlerts/*",
             "Microsoft.Insights/metricalerts/*",
             "Microsoft.Insights/scheduledqueryrules/*",
+            "Microsoft.PolicyInsights/*/read",
             "Microsoft.ResourceHealth/availabilityStatuses/read",
             "Microsoft.Resources/deployments/*",
             "Microsoft.Resources/deployments/operations/read",
@@ -9210,6 +9253,7 @@
             "Microsoft.CognitiveServices/accounts/projects/*",
             "Microsoft.CognitiveServices/locations/*/read",
             "Microsoft.Insights/alertRules/*",
+            "Microsoft.PolicyInsights/*/read",
             "Microsoft.Resources/deployments/*",
             "Microsoft.Resources/subscriptions/resourceGroups/read"
         ],
@@ -9230,6 +9274,7 @@
             "Microsoft.Insights/logDefinitions/read",
             "Microsoft.Insights/metricdefinitions/read",
             "Microsoft.Insights/metrics/read",
+            "Microsoft.PolicyInsights/*/read",
             "Microsoft.ResourceHealth/availabilityStatuses/read",
             "Microsoft.Resources/deployments/*",
             "Microsoft.Resources/subscriptions/operationresults/read",
@@ -12516,6 +12561,21 @@
             "Microsoft.App/agents/read",
             "Microsoft.Authorization/*/read",
             "Microsoft.Insights/alertRules/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "SRE Agent Session Contributor": {
+        "permissions": [
+            "Microsoft.App/agentSessions/delete",
+            "Microsoft.App/agentSessions/provision/action",
+            "Microsoft.App/agentSessions/read",
+            "Microsoft.App/agentSessions/write"
+        ],
+        "group": "BuiltInRole"
+    },
+    "SRE Agent Session Reader": {
+        "permissions": [
+            "Microsoft.App/agentSessions/read"
         ],
         "group": "BuiltInRole"
     },

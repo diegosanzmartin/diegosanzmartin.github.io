@@ -469,12 +469,12 @@
         "Issue Contributor": 7
     },
     "Microsoft.AlertsManagement/actionRules/*": {
-        "Foundry Owner": 20,
+        "Foundry Owner": 21,
         "Monitoring Contributor": 46,
         "Monitoring Policy Contributor": 47
     },
     "Microsoft.AlertsManagement/alerts/*": {
-        "Foundry Owner": 20,
+        "Foundry Owner": 21,
         "Issue Contributor": 7,
         "Monitoring Contributor": 46,
         "Monitoring Policy Contributor": 47
@@ -488,7 +488,7 @@
         "Monitoring Policy Contributor": 47
     },
     "Microsoft.AlertsManagement/issues/*": {
-        "Foundry Owner": 20,
+        "Foundry Owner": 21,
         "Monitoring Contributor": 46,
         "Monitoring Policy Contributor": 47
     },
@@ -497,12 +497,12 @@
         "Monitoring Policy Contributor": 47
     },
     "Microsoft.AlertsManagement/prometheusRuleGroups/*": {
-        "Foundry Owner": 20,
+        "Foundry Owner": 21,
         "Monitoring Contributor": 46,
         "Monitoring Policy Contributor": 47
     },
     "Microsoft.AlertsManagement/smartDetectorAlertRules/*": {
-        "Foundry Owner": 20,
+        "Foundry Owner": 21,
         "Monitoring Contributor": 46,
         "Monitoring Policy Contributor": 47
     },
@@ -778,6 +778,19 @@
     "Microsoft.ApiManagement/service/write": {
         "API Management Service Operator Role": 15
     },
+    "Microsoft.App/agentSessions/delete": {
+        "SRE Agent Session Contributor": 4
+    },
+    "Microsoft.App/agentSessions/provision/action": {
+        "SRE Agent Session Contributor": 4
+    },
+    "Microsoft.App/agentSessions/read": {
+        "SRE Agent Session Contributor": 4,
+        "SRE Agent Session Reader": 1
+    },
+    "Microsoft.App/agentSessions/write": {
+        "SRE Agent Session Contributor": 4
+    },
     "Microsoft.App/agents/*/action": {
         "SRE Agent Administrator": 8
     },
@@ -1038,11 +1051,11 @@
     "Microsoft.ApplicationMigration/*": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68
+        "Azure Migrate Owner": 71
     },
     "Microsoft.ApplicationMigration/*/read": {
         "Azure Local Migrate Execute Expert": 41,
-        "Azure Migrate Execute Expert": 46,
+        "Azure Migrate Execute Expert": 47,
         "Azure Migrate Service Reader": 13
     },
     "Microsoft.Approvals/approvalSettings/delete": {
@@ -1250,8 +1263,8 @@
         "Azure Managed Redis Reader": 9,
         "Azure Maps Contributor": 4,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Azure Migrate Service Reader": 13,
         "Azure Monitor Pipeline Contributor": 5,
         "Azure Monitor Pipeline Reader": 5,
@@ -1405,10 +1418,10 @@
         "Firmware Analysis Reader": 5,
         "Firmware Analysis User": 4,
         "Flux Configurations Contributor": 8,
-        "Foundry Account Owner": 20,
-        "Foundry Owner": 20,
-        "Foundry Project Manager": 9,
-        "Foundry User": 15,
+        "Foundry Account Owner": 21,
+        "Foundry Owner": 21,
+        "Foundry Project Manager": 10,
+        "Foundry User": 16,
         "GeoCatalog Administrator": 6,
         "GeoCatalog Reader": 6,
         "GroupQuota Reader": 10,
@@ -1561,8 +1574,8 @@
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Locks Contributor": 3,
         "Storage Account Backup Contributor": 18,
         "Storage File Backup Contributor": 10
@@ -1576,8 +1589,8 @@
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Locks Contributor": 3,
         "Storage Account Backup Contributor": 18,
         "Storage File Backup Contributor": 10
@@ -1677,8 +1690,8 @@
         "Access Review Operator Service Role": 3,
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Azure Resilience Management Drills Administrator": 18,
         "Azure Resilience Management Drills Assets Administrator": 49,
         "Azure Resilience Management Drills Target Resource Administrator": 17,
@@ -1687,9 +1700,9 @@
         "Defender CSPM Storage Scanner Operator": 13,
         "Defender for Storage Scanner Operator": 23,
         "DevCenter Owner": 6,
-        "Foundry Account Owner": 20,
-        "Foundry Owner": 20,
-        "Foundry Project Manager": 9,
+        "Foundry Account Owner": 21,
+        "Foundry Owner": 21,
+        "Foundry Project Manager": 10,
         "Key Vault Data Access Administrator": 9,
         "Microsoft Discovery Platform Administrator": 13,
         "Role Based Access Control Administrator": 4,
@@ -1731,8 +1744,8 @@
         "Azure IoT Operations Onboarding": 10,
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Azure Resilience Management Drills Administrator": 18,
         "Azure Resilience Management Drills Assets Administrator": 49,
         "Azure Resilience Management Drills Target Resource Administrator": 17,
@@ -1743,9 +1756,9 @@
         "Defender CSPM Storage Scanner Operator": 13,
         "Defender for Storage Scanner Operator": 23,
         "DevCenter Owner": 6,
-        "Foundry Account Owner": 20,
-        "Foundry Owner": 20,
-        "Foundry Project Manager": 9,
+        "Foundry Account Owner": 21,
+        "Foundry Owner": 21,
+        "Foundry Project Manager": 10,
         "Key Vault Data Access Administrator": 9,
         "Microsoft Discovery Platform Administrator": 13,
         "Role Based Access Control Administrator": 4,
@@ -2728,7 +2741,7 @@
     "Microsoft.AzureArcData/register/action": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68
+        "Azure Migrate Owner": 71
     },
     "Microsoft.AzureArcData/sqlServerInstances/availabilityGroups/getDetailView/action": {
         "Azure Hybrid Database Administrator - Read Only Service Role": 10,
@@ -4390,8 +4403,8 @@
         "Azure AI Administrator": 39,
         "Cognitive Services Contributor": 18,
         "Cognitive Services Security Integration Admin": 1,
-        "Foundry Account Owner": 20,
-        "Foundry Owner": 20
+        "Foundry Account Owner": 21,
+        "Foundry Owner": 21
     },
     "Microsoft.CognitiveServices/*/read": {
         "Cognitive Services Content Understanding Contributor": 3,
@@ -4418,10 +4431,10 @@
         "Cognitive Services Speech Contributor": 3,
         "Cognitive Services Speech User": 3,
         "Cognitive Services User": 14,
-        "Foundry User": 15
+        "Foundry User": 16
     },
     "Microsoft.CognitiveServices/accounts/*/read": {
-        "Foundry Project Manager": 9
+        "Foundry Project Manager": 10
     },
     "Microsoft.CognitiveServices/accounts/commitmentplans/delete": {
         "Cognitive Services OpenAI Contributor": 11
@@ -4455,7 +4468,7 @@
         "Cognitive Services LUIS Owner": 4,
         "Cognitive Services Language Owner": 4,
         "Cognitive Services User": 14,
-        "Foundry User": 15
+        "Foundry User": 16
     },
     "Microsoft.CognitiveServices/accounts/privateEndpointConnections/read": {
         "Azure AI Enterprise Network Connection Approver": 90
@@ -4467,11 +4480,11 @@
         "Azure AI Enterprise Network Connection Approver": 90
     },
     "Microsoft.CognitiveServices/accounts/projects/*": {
-        "Foundry Project Manager": 9
+        "Foundry Project Manager": 10
     },
     "Microsoft.CognitiveServices/accounts/projects/connections/listsecrets/action": {
         "Cognitive Services User": 14,
-        "Foundry User": 15
+        "Foundry User": 16
     },
     "Microsoft.CognitiveServices/accounts/raiPolicies/delete": {
         "Cognitive Services OpenAI Contributor": 11
@@ -4487,7 +4500,7 @@
         "Defender AI": 7
     },
     "Microsoft.CognitiveServices/locations/*/read": {
-        "Foundry Project Manager": 9
+        "Foundry Project Manager": 10
     },
     "Microsoft.CognitiveServices/locations/usages/read": {
         "Cognitive Services Usages Reader": 1
@@ -4619,16 +4632,16 @@
         "Azure Center for SAP solutions administrator": 57,
         "Azure Center for SAP solutions reader": 43,
         "Azure Center for SAP solutions service role": 55,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
         "Azure Red Hat OpenShift Machine API Operator": 35,
         "Desktop Virtualization Virtual Machine Contributor": 58,
         "DevTest Labs User": 32
     },
     "Microsoft.Compute/availabilitySets/vmSizes/read": {
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Desktop Virtualization Virtual Machine Contributor": 58
     },
     "Microsoft.Compute/availabilitySets/write": {
@@ -4652,8 +4665,8 @@
     "Microsoft.Compute/diskEncryptionSets/read": {
         "Azure Batch Service Orchestration Role": 34,
         "Azure Kubernetes Service Policy Add-on Deployment": 6,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
         "Azure Red Hat OpenShift Machine API Operator": 35,
@@ -4676,8 +4689,8 @@
     },
     "Microsoft.Compute/disks/delete": {
         "Azure Backup Snapshot Contributor": 11,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
         "Azure Red Hat OpenShift Machine API Operator": 35,
@@ -4697,8 +4710,8 @@
         "Azure Center for SAP solutions administrator": 57,
         "Azure Center for SAP solutions reader": 43,
         "Azure Center for SAP solutions service role": 55,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
         "Azure Stack HCI VM Contributor": 80,
@@ -4715,8 +4728,8 @@
     "Microsoft.Compute/disks/write": {
         "Azure Backup Snapshot Contributor": 11,
         "Azure Center for SAP solutions service role": 55,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
         "Azure Stack HCI VM Contributor": 80,
@@ -4840,8 +4853,8 @@
         "Azure Kubernetes Service Policy Add-on Deployment": 6
     },
     "Microsoft.Compute/register/action": {
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Reservation Purchaser": 11
     },
     "Microsoft.Compute/restorePointCollections/read": {
@@ -4858,8 +4871,8 @@
     },
     "Microsoft.Compute/skus/read": {
         "Azure Center for SAP solutions service role": 55,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Machine API Operator": 35,
         "Desktop Virtualization Virtual Machine Contributor": 58
     },
@@ -4879,8 +4892,16 @@
     "Microsoft.Compute/snapshots/read": {
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
         "Disk Snapshot Contributor": 8,
+        "DiskSnapshotImmutabilityAdmin Service Role": 3,
+        "DiskSnapshotImmutabilityOperator Service Role": 3,
         "Elastic SAN Snapshot Exporter": 15,
         "Elastic SAN Volume Importer": 14
+    },
+    "Microsoft.Compute/snapshots/updateImmutabilityPolicy/action": {
+        "DiskSnapshotImmutabilityOperator Service Role": 3
+    },
+    "Microsoft.Compute/snapshots/updateImmutabilityPolicyLock/action": {
+        "DiskSnapshotImmutabilityAdmin Service Role": 3
     },
     "Microsoft.Compute/snapshots/write": {
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
@@ -5015,8 +5036,8 @@
         "DevTest Labs User": 32
     },
     "Microsoft.Compute/virtualMachines/delete": {
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
         "Azure Red Hat OpenShift Machine API Operator": 35,
         "Desktop Virtualization Virtual Machine Contributor": 58,
@@ -5084,8 +5105,8 @@
         "Azure Center for SAP solutions administrator": 57,
         "Azure Center for SAP solutions reader": 43,
         "Azure Center for SAP solutions service role": 55,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
@@ -5130,8 +5151,8 @@
     "Microsoft.Compute/virtualMachines/write": {
         "Azure Backup Snapshot Contributor": 11,
         "Azure Center for SAP solutions service role": 55,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
         "Azure Red Hat OpenShift Machine API Operator": 35,
@@ -6666,12 +6687,12 @@
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68
+        "Azure Migrate Owner": 71
     },
     "Microsoft.DataReplication/register/action": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68
+        "Azure Migrate Owner": 71
     },
     "Microsoft.DataReplication/replicationFabrics/*": {
         "Azure Local Migrate Owner": 64
@@ -6693,7 +6714,7 @@
     },
     "Microsoft.DataReplication/replicationVaults/write": {
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68
+        "Azure Migrate Owner": 71
     },
     "Microsoft.Databox/*": {
         "Data Box Contributor": 6
@@ -6821,15 +6842,15 @@
     "Microsoft.DependencyMap/*": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68
+        "Azure Migrate Owner": 71
     },
     "Microsoft.DependencyMap/*/read": {
         "Azure Local Migrate Execute Expert": 41,
-        "Azure Migrate Execute Expert": 46
+        "Azure Migrate Execute Expert": 47
     },
     "Microsoft.DependencyMap/maps/*/action": {
         "Azure Local Migrate Execute Expert": 41,
-        "Azure Migrate Execute Expert": 46
+        "Azure Migrate Execute Expert": 47
     },
     "Microsoft.DesktopVirtualization/*": {
         "Desktop Virtualization Contributor": 6
@@ -7047,7 +7068,7 @@
         "Azure Device Onboarding Contributor": 11
     },
     "Microsoft.DeviceRegistry/*": {
-        "Azure Device Registry Administrator": 1
+        "Azure Device Registry Administrator": 2
     },
     "Microsoft.DeviceRegistry/AssetEndpointProfiles/*": {
         "Azure IoT Operations Administrator": 13
@@ -7135,6 +7156,9 @@
     },
     "Microsoft.DeviceUpdate/linkedAccounts/read": {
         "Device Update Administrator": 8
+    },
+    "Microsoft.DeviceUpdate/updateInstances/*": {
+        "Azure Device Registry Administrator": 2
     },
     "Microsoft.DeviceUpdate/updateInstances/delete": {
         "Device Update Contributor": 20
@@ -8041,7 +8065,7 @@
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Enclave Reader Role": 20,
-        "Foundry Account Owner": 20,
+        "Foundry Account Owner": 21,
         "Storage Account Backup Contributor": 18
     },
     "Microsoft.Features/providers/features/read": {
@@ -8057,14 +8081,14 @@
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Enclave Reader Role": 20,
-        "Foundry Account Owner": 20,
+        "Foundry Account Owner": 21,
         "Storage Account Backup Contributor": 18
     },
     "Microsoft.Features/providers/features/register/action": {
         "Azure AI Administrator": 39,
         "Cognitive Services Contributor": 18,
         "Defender Kubernetes API Access": 11,
-        "Foundry Account Owner": 20
+        "Foundry Account Owner": 21
     },
     "Microsoft.GcpConnector/Locations/OperationStatuses/write": {
         "Gcp Connector contributor role": 13
@@ -8131,7 +8155,7 @@
     "Microsoft.GuestConfiguration/register/action": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Owner": 71,
         "Azure Stack HCI Administrator": 103
     },
     "Microsoft.HDInsight/*/read": {
@@ -8526,7 +8550,7 @@
         "Azure Connected Machine Resource Manager": 35,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Owner": 71,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Connected InfraVMs": 7,
         "Azure Stack HCI VM Contributor": 80,
@@ -8542,6 +8566,7 @@
         "Azure Arc VMware Administrator role ": 58,
         "Azure Arc VMware VM Contributor": 56,
         "Azure Connected Machine Resource Manager": 35,
+        "Azure Migrate Owner": 71,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Connected InfraVMs": 7,
         "Azure Stack HCI VM Contributor": 80,
@@ -8557,6 +8582,7 @@
         "Azure Arc VMware VM Contributor": 56,
         "Azure Connected Machine Resource Manager": 35,
         "Azure Hybrid Database Administrator - Read Only Service Role": 10,
+        "Azure Migrate Owner": 71,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Connected InfraVMs": 7,
         "Azure Stack HCI VM Contributor": 80,
@@ -8576,6 +8602,7 @@
         "Azure Arc VMware VM Contributor": 56,
         "Azure Connected Machine Resource Manager": 35,
         "Azure Extension for SQL Server Deployment": 2,
+        "Azure Migrate Owner": 71,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Connected InfraVMs": 7,
         "Azure Stack HCI VM Contributor": 80,
@@ -8684,7 +8711,7 @@
         "Azure Local Infrastructure Reader": 16,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Owner": 71,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 80,
         "Azure Stack HCI VM Reader": 42,
@@ -8738,7 +8765,7 @@
         "Azure Connected Machine Resource Manager": 35,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Owner": 71,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Connected InfraVMs": 7,
         "Azure Stack HCI VM Contributor": 80,
@@ -8788,7 +8815,7 @@
     "Microsoft.HybridCompute/register/action": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Owner": 71,
         "Azure Stack HCI Administrator": 103
     },
     "Microsoft.HybridCompute/settings/*": {
@@ -8868,7 +8895,7 @@
     "Microsoft.HybridConnectivity/register/action": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Owner": 71,
         "Azure Resource Bridge Deployment Role": 36,
         "Azure Stack HCI Administrator": 103
     },
@@ -9297,7 +9324,7 @@
         "Monitoring Policy Contributor": 47
     },
     "Microsoft.Insights/activityLogAlerts/*": {
-        "Foundry Owner": 20,
+        "Foundry Owner": 21,
         "Monitoring Contributor": 46,
         "Monitoring Policy Contributor": 47
     },
@@ -9355,8 +9382,8 @@
         "Azure Local Migrate Owner": 64,
         "Azure Managed Redis Contributor": 9,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Azure Migrate Service Reader": 13,
         "Azure Monitor Pipeline Contributor": 5,
         "Azure Programmable Connectivity Gateway Dataplane User": 5,
@@ -9433,8 +9460,8 @@
         "EventGrid TopicSpaces Publisher": 5,
         "EventGrid TopicSpaces Subscriber": 5,
         "Flux Configurations Contributor": 8,
-        "Foundry Account Owner": 20,
-        "Foundry Project Manager": 9,
+        "Foundry Account Owner": 21,
+        "Foundry Project Manager": 10,
         "GeoCatalog Administrator": 6,
         "GeoCatalog Reader": 6,
         "HDInsight Cluster Operator": 9,
@@ -9553,7 +9580,7 @@
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Enclave Reader Role": 20,
-        "Foundry User": 15,
+        "Foundry User": 16,
         "GroupQuota Reader": 10,
         "GroupQuota Request Operator": 10,
         "Operator Nexus Compute Contributor Role (Preview)": 91,
@@ -9641,7 +9668,7 @@
         "Automation Contributor": 11,
         "Azure AI Administrator": 39,
         "Cognitive Services Contributor": 18,
-        "Foundry Account Owner": 20,
+        "Foundry Account Owner": 21,
         "Log Analytics Contributor": 13,
         "Logic App Contributor": 21,
         "Storage Account Contributor": 9
@@ -9656,7 +9683,7 @@
     "Microsoft.Insights/diagnosticSettings/read": {
         "Azure Batch Service Orchestration Role": 34,
         "Cognitive Services User": 14,
-        "Foundry User": 15,
+        "Foundry User": 16,
         "HDInsight on AKS Cluster Operator": 28
     },
     "Microsoft.Insights/eventtypes/*": {
@@ -9675,8 +9702,8 @@
         "Azure AI Administrator": 39,
         "Cognitive Services Contributor": 18,
         "Cognitive Services User": 14,
-        "Foundry Account Owner": 20,
-        "Foundry User": 15
+        "Foundry Account Owner": 21,
+        "Foundry User": 16
     },
     "Microsoft.Insights/logdefinitions/*": {
         "Logic App Contributor": 21
@@ -9715,7 +9742,7 @@
         "SQL Server Contributor": 10
     },
     "Microsoft.Insights/metricalerts/*": {
-        "Foundry Owner": 20,
+        "Foundry Owner": 21,
         "Monitoring Contributor": 46,
         "Monitoring Policy Contributor": 47
     },
@@ -9723,8 +9750,8 @@
         "Azure AI Administrator": 39,
         "Cognitive Services Contributor": 18,
         "Cognitive Services User": 14,
-        "Foundry Account Owner": 20,
-        "Foundry User": 15
+        "Foundry Account Owner": 21,
+        "Foundry User": 16
     },
     "Microsoft.Insights/metrics/read": {
         "Azure AI Administrator": 39,
@@ -9732,8 +9759,8 @@
         "Azure Center for SAP solutions reader": 43,
         "Cognitive Services Contributor": 18,
         "Cognitive Services User": 14,
-        "Foundry Account Owner": 20,
-        "Foundry User": 15,
+        "Foundry Account Owner": 21,
+        "Foundry User": 16,
         "HDInsight on AKS Cluster Admin": 35,
         "HDInsight on AKS Cluster Operator": 28,
         "HDInsight on AKS Cluster Pool Admin": 29,
@@ -9783,7 +9810,7 @@
     "Microsoft.Insights/scheduledqueryrules/*": {
         "Application Insights Component Contributor": 13,
         "Azure AI Administrator": 39,
-        "Foundry Owner": 20,
+        "Foundry Owner": 21,
         "Monitoring Contributor": 46,
         "Monitoring Policy Contributor": 47
     },
@@ -9876,7 +9903,7 @@
     "Microsoft.KeyVault/checkNameAvailability/read": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Owner": 71,
         "Key Vault Administrator": 10,
         "Key Vault Certificates Officer": 10,
         "Key Vault Crypto Officer": 10,
@@ -9932,12 +9959,12 @@
     "Microsoft.KeyVault/register/action": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68
+        "Azure Migrate Owner": 71
     },
     "Microsoft.KeyVault/vaults/*": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68
+        "Azure Migrate Owner": 71
     },
     "Microsoft.KeyVault/vaults/*/read": {
         "Key Vault Administrator": 10,
@@ -10661,16 +10688,19 @@
     "Microsoft.Migrate/*": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68
+        "Azure Migrate Owner": 71
     },
     "Microsoft.Migrate/*/read": {
         "Azure Local Migrate Execute Expert": 41,
-        "Azure Migrate Execute Expert": 46,
+        "Azure Migrate Execute Expert": 47,
         "Azure Migrate Service Reader": 13
+    },
+    "Microsoft.Migrate/migrateProjects/runbooks/*": {
+        "Azure Migrate Execute Expert": 47
     },
     "Microsoft.Migrate/migrateProjects/taskSummary/action": {
         "Azure Local Migrate Execute Expert": 41,
-        "Azure Migrate Execute Expert": 46
+        "Azure Migrate Execute Expert": 47
     },
     "Microsoft.Mission/Locations/OperationStatuses/read": {
         "Community Contributor Role": 34,
@@ -10940,11 +10970,11 @@
     "Microsoft.MySQLDiscovery/*": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68
+        "Azure Migrate Owner": 71
     },
     "Microsoft.MySQLDiscovery/*/read": {
         "Azure Local Migrate Execute Expert": 41,
-        "Azure Migrate Execute Expert": 46,
+        "Azure Migrate Execute Expert": 47,
         "Azure Migrate Service Reader": 13
     },
     "Microsoft.NetApp/*/action": {
@@ -11616,8 +11646,8 @@
     },
     "Microsoft.Network/networkInterfaces/delete": {
         "AVS Orchestrator Role": 56,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
         "Azure Red Hat OpenShift Machine API Operator": 35,
         "Desktop Virtualization Virtual Machine Contributor": 58,
@@ -11668,8 +11698,8 @@
         "Azure Center for SAP solutions administrator": 57,
         "Azure Center for SAP solutions reader": 43,
         "Azure Center for SAP solutions service role": 55,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
         "Azure Red Hat OpenShift Image Registry Operator": 25,
@@ -11692,8 +11722,8 @@
         "AVS on Fleet VIS Role": 21,
         "Avere Operator": 11,
         "Azure Center for SAP solutions service role": 55,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
         "Azure Red Hat OpenShift Machine API Operator": 35,
@@ -11739,7 +11769,7 @@
         "Azure Center for SAP solutions administrator": 57,
         "Azure Container Storage Operator": 12,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift First Party Network": 11,
@@ -11825,14 +11855,14 @@
     "Microsoft.Network/privateDnsZones/A/write": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Cluster Ingress Operator": 6,
         "Azure Red Hat OpenShift Image Registry Operator": 25
     },
     "Microsoft.Network/privateDnsZones/join/action": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift Image Registry Operator": 25
     },
@@ -11848,7 +11878,7 @@
     "Microsoft.Network/privateDnsZones/virtualNetworkLinks/write": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift Hosted Control Planes Service Managed Identity": 18,
         "Azure Red Hat OpenShift Image Registry Operator": 25
@@ -11856,21 +11886,21 @@
     "Microsoft.Network/privateDnsZones/write": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift Image Registry Operator": 25
     },
     "Microsoft.Network/privateEndpoints/privateDnsZoneGroups/read": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift Image Registry Operator": 25
     },
     "Microsoft.Network/privateEndpoints/privateDnsZoneGroups/write": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift Image Registry Operator": 25
     },
@@ -11890,7 +11920,7 @@
         "Azure Center for SAP solutions service role": 55,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift Image Registry Operator": 25
     },
@@ -11898,7 +11928,7 @@
         "Azure Center for SAP solutions service role": 55,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift Image Registry Operator": 25
     },
@@ -11974,7 +12004,7 @@
     "Microsoft.Network/register/action": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Owner": 71,
         "Domain Services Contributor": 69
     },
     "Microsoft.Network/routeTables/*": {
@@ -12092,7 +12122,7 @@
         "Azure Container Storage Operator": 12,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift Hosted Control Planes Service Managed Identity": 18,
         "Azure Red Hat OpenShift Image Registry Operator": 25,
@@ -12129,8 +12159,8 @@
         "Azure Center for SAP solutions service role": 55,
         "Azure Container Storage Operator": 12,
         "Azure Local Migrate Owner": 64,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift First Party Network": 11,
         "Azure Red Hat OpenShift Hosted Control Planes Control Plane Operator": 3,
         "Azure Red Hat OpenShift Hosted Control Planes Service Managed Identity": 18,
@@ -12184,7 +12214,7 @@
         "Azure Kubernetes Service Policy Add-on Deployment": 6,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Cluster Ingress Operator": 6,
         "Azure Red Hat OpenShift File Storage Operator": 30,
@@ -12231,8 +12261,8 @@
         "Azure Container Storage Operator": 12,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Cluster Ingress Operator": 6,
         "Azure Red Hat OpenShift File Storage Operator": 30,
@@ -12282,7 +12312,7 @@
         "Azure Container Storage Operator": 12,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift First Party Network": 11,
@@ -12480,11 +12510,11 @@
     "Microsoft.OffAzure/*": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Owner": 68
+        "Azure Migrate Owner": 71
     },
     "Microsoft.OffAzure/*/read": {
         "Azure Local Migrate Execute Expert": 41,
-        "Azure Migrate Execute Expert": 46,
+        "Azure Migrate Execute Expert": 47,
         "Azure Migrate Service Reader": 13
     },
     "Microsoft.OffAzureSpringBoot/*": {
@@ -12705,6 +12735,12 @@
     "Microsoft.PolicyInsights/*": {
         "Policy Enrollments Contributor": 4,
         "Resource Policy Contributor": 9
+    },
+    "Microsoft.PolicyInsights/*/read": {
+        "Foundry Account Owner": 21,
+        "Foundry Owner": 21,
+        "Foundry Project Manager": 10,
+        "Foundry User": 16
     },
     "Microsoft.PolicyInsights/policyStates/queryResults/action": {
         "App Compliance Automation Administrator": 28
@@ -13299,8 +13335,8 @@
     },
     "Microsoft.RecoveryServices/operations/read": {
         "Azure Local Migrate Owner": 64,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Backup Contributor": 88,
         "Backup Operator": 100,
         "Backup Reader": 62
@@ -13308,14 +13344,14 @@
     "Microsoft.RecoveryServices/register/action": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71
     },
     "Microsoft.RecoveryServices/vaults/*": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71
     },
     "Microsoft.RecoveryServices/vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints/accessToken/action": {
         "Backup Operator": 100
@@ -13656,9 +13692,9 @@
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Enclave Reader Role": 20,
-        "Foundry Account Owner": 20,
-        "Foundry Owner": 20,
-        "Foundry User": 15,
+        "Foundry Account Owner": 21,
+        "Foundry Owner": 21,
+        "Foundry User": 16,
         "HDInsight Cluster Admin": 48,
         "HDInsight on AKS Cluster Admin": 35,
         "HDInsight on AKS Cluster Operator": 28,
@@ -13747,8 +13783,8 @@
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71
     },
     "Microsoft.Resources/dataBoundaries/write": {
         "Data Boundary Tenant Administrator": 4
@@ -13757,15 +13793,15 @@
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71
     },
     "Microsoft.Resources/deploymentScripts/write": {
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71
     },
     "Microsoft.Resources/deploymentStacks/*": {
         "Azure Deployment Stack Owner": 6
@@ -13833,8 +13869,8 @@
         "Azure Managed Redis Contributor": 9,
         "Azure Maps Contributor": 4,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Azure Migrate Service Reader": 13,
         "Azure Monitor Pipeline Contributor": 5,
         "Azure Programmable Connectivity Gateway Dataplane User": 5,
@@ -13914,10 +13950,10 @@
         "EventGrid EventSubscription Contributor": 9,
         "Firmware Analysis Admin": 4,
         "Flux Configurations Contributor": 8,
-        "Foundry Account Owner": 20,
-        "Foundry Owner": 20,
-        "Foundry Project Manager": 9,
-        "Foundry User": 15,
+        "Foundry Account Owner": 21,
+        "Foundry Owner": 21,
+        "Foundry Project Manager": 10,
+        "Foundry User": 16,
         "GeoCatalog Administrator": 6,
         "Guest Configuration Resource Contributor": 4,
         "Healthcare Apis contributor": 6,
@@ -14122,8 +14158,8 @@
         "DevTest Labs User": 32,
         "Domain Services Contributor": 69,
         "Domain Services Reader": 28,
-        "Foundry Account Owner": 20,
-        "Foundry Owner": 20,
+        "Foundry Account Owner": 21,
+        "Foundry Owner": 21,
         "HDInsight Cluster Admin": 48,
         "HDInsight Cluster Operator": 9,
         "HDInsight on AKS Cluster Admin": 35,
@@ -14294,15 +14330,15 @@
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71
     },
     "Microsoft.Resources/links/write": {
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71
     },
     "Microsoft.Resources/resources/read": {
         "App Compliance Automation Administrator": 28
@@ -14311,8 +14347,8 @@
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71
     },
     "Microsoft.Resources/subscriptions/operationresults/read": {
         "Azure AI Administrator": 39,
@@ -14367,9 +14403,9 @@
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Enclave Reader Role": 20,
-        "Foundry Account Owner": 20,
-        "Foundry Owner": 20,
-        "Foundry User": 15,
+        "Foundry Account Owner": 21,
+        "Foundry Owner": 21,
+        "Foundry User": 16,
         "HDInsight Cluster Admin": 48,
         "HDInsight on AKS Cluster Admin": 35,
         "HDInsight on AKS Cluster Operator": 28,
@@ -14438,8 +14474,8 @@
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Azure Sphere Owner": 12,
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI VM Contributor": 80,
@@ -14461,9 +14497,9 @@
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
         "Enclave Reader Role": 20,
-        "Foundry Account Owner": 20,
-        "Foundry Owner": 20,
-        "Foundry User": 15,
+        "Foundry Account Owner": 21,
+        "Foundry Owner": 21,
+        "Foundry User": 16,
         "HDInsight Cluster Admin": 48,
         "HDInsight on AKS Cluster Operator": 28,
         "Key Vault Data Access Administrator": 9,
@@ -14593,8 +14629,8 @@
         "Azure Managed Redis Reader": 9,
         "Azure Maps Contributor": 4,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Azure Migrate Service Reader": 13,
         "Azure Monitor Dashboards with Grafana Contributor": 15,
         "Azure Monitor Pipeline Contributor": 5,
@@ -14709,6 +14745,8 @@
         "Disk Pool Operator": 6,
         "Disk Restore Operator": 6,
         "Disk Snapshot Contributor": 8,
+        "DiskSnapshotImmutabilityAdmin Service Role": 3,
+        "DiskSnapshotImmutabilityOperator Service Role": 3,
         "DocumentDB Account Contributor": 8,
         "Domain Services Contributor": 69,
         "Domain Services Reader": 28,
@@ -14735,10 +14773,10 @@
         "Firmware Analysis Reader": 5,
         "Firmware Analysis User": 4,
         "Flux Configurations Contributor": 8,
-        "Foundry Account Owner": 20,
-        "Foundry Owner": 20,
-        "Foundry Project Manager": 9,
-        "Foundry User": 15,
+        "Foundry Account Owner": 21,
+        "Foundry Owner": 21,
+        "Foundry Project Manager": 10,
+        "Foundry User": 16,
         "GeoCatalog Administrator": 6,
         "GeoCatalog Reader": 6,
         "HDInsight Cluster Admin": 48,
@@ -14890,8 +14928,8 @@
         "Azure Center for SAP solutions service role": 55,
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Azure Resilience Management Drills Assets Administrator": 49,
         "Azure Resilience Management Drills Assets Contributor": 47,
         "Azure Stack HCI Administrator": 103,
@@ -14906,8 +14944,8 @@
         "Azure Center for SAP solutions service role": 55,
         "Backup MUA Admin": 26,
         "Cognitive Services Contributor": 18,
-        "Foundry Account Owner": 20,
-        "Foundry Owner": 20,
+        "Foundry Account Owner": 21,
+        "Foundry Owner": 21,
         "Log Analytics Contributor": 13
     },
     "Microsoft.Resources/subscriptions/resourcegroups/deployments/operations/read": {
@@ -15980,18 +16018,18 @@
         "Avere Contributor": 20,
         "Azure AI Administrator": 39,
         "Azure Local Migrate Owner": 64,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Owner": 71,
         "Storage Account Contributor": 9
     },
     "Microsoft.Storage/storageAccounts/*/read": {
         "Azure Local Migrate Execute Expert": 41,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 46
+        "Azure Migrate Execute Expert": 47
     },
     "Microsoft.Storage/storageAccounts/*/write": {
         "Azure Local Migrate Execute Expert": 41,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 46
+        "Azure Migrate Execute Expert": 47
     },
     "Microsoft.Storage/storageAccounts/ListAccountSas/action": {
         "Reader and Data Access": 3
@@ -16154,7 +16192,7 @@
         "App Compliance Automation Administrator": 28,
         "Azure Local Migrate Execute Expert": 41,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 46,
+        "Azure Migrate Execute Expert": 47,
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift Image Registry Operator": 25,
         "Azure Red Hat OpenShift Service Operator": 10,
@@ -16389,8 +16427,8 @@
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 46,
-        "Azure Migrate Owner": 68,
+        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Owner": 71,
         "Azure Sphere Owner": 12,
         "Azure Stack HCI Administrator": 103,
         "Backup Contributor": 88,
@@ -16442,9 +16480,9 @@
         "DocumentDB Account Contributor": 8,
         "EventGrid Contributor": 6,
         "EventGrid EventSubscription Contributor": 9,
-        "Foundry Account Owner": 20,
-        "Foundry Owner": 20,
-        "Foundry User": 15,
+        "Foundry Account Owner": 21,
+        "Foundry Owner": 21,
+        "Foundry User": 16,
         "HDInsight Cluster Operator": 9,
         "Integration Service Environment Contributor": 3,
         "Integration Service Environment Developer": 4,
@@ -17352,6 +17390,21 @@
         "Container Apps Jobs Operator": 13,
         "Container Apps Jobs Reader": 3
     },
+    "microsoft.deviceregistry/assetendpointprofiles/*": {
+        "Azure Device Registry Contributor": 23
+    },
+    "microsoft.deviceregistry/assets/*": {
+        "Azure Device Registry Contributor": 23
+    },
+    "microsoft.deviceregistry/namespaces/assets/*": {
+        "Azure Device Registry Contributor": 23
+    },
+    "microsoft.deviceregistry/namespaces/certificateAuthorities/certificatePolicies/read": {
+        "Azure Device Registry Contributor": 23
+    },
+    "microsoft.deviceregistry/namespaces/certificateAuthorities/read": {
+        "Azure Device Registry Contributor": 23
+    },
     "microsoft.deviceregistry/namespaces/credentials/*": {
         "Azure Device Registry Credentials Contributor": 3
     },
@@ -17359,29 +17412,62 @@
         "Azure Device Registry Credentials Contributor": 3
     },
     "microsoft.deviceregistry/namespaces/credentials/policies/read": {
-        "Azure Device Registry Contributor": 7
+        "Azure Device Registry Contributor": 23
     },
     "microsoft.deviceregistry/namespaces/credentials/read": {
-        "Azure Device Registry Contributor": 7
+        "Azure Device Registry Contributor": 23
     },
     "microsoft.deviceregistry/namespaces/devices/*": {
-        "Azure Device Registry Contributor": 7
+        "Azure Device Registry Contributor": 23
     },
     "microsoft.deviceregistry/namespaces/devices/revoke/action": {
         "Azure Device Registry Credentials Contributor": 3,
         "Azure Device Registry Onboarding": 8
     },
+    "microsoft.deviceregistry/namespaces/discoveredAssets/*": {
+        "Azure Device Registry Contributor": 23
+    },
     "microsoft.deviceregistry/namespaces/discovereddevices/*": {
-        "Azure Device Registry Contributor": 7
+        "Azure Device Registry Contributor": 23
+    },
+    "microsoft.deviceregistry/namespaces/generateReport/action": {
+        "Azure Device Registry Contributor": 23
+    },
+    "microsoft.deviceregistry/namespaces/getLatestReport/action": {
+        "Azure Device Registry Contributor": 23
+    },
+    "microsoft.deviceregistry/namespaces/groups/*": {
+        "Azure Device Registry Contributor": 23
+    },
+    "microsoft.deviceregistry/namespaces/jobRuns/*": {
+        "Azure Device Registry Contributor": 23
+    },
+    "microsoft.deviceregistry/namespaces/jobs/*": {
+        "Azure Device Registry Contributor": 23
+    },
+    "microsoft.deviceregistry/namespaces/migrate/action": {
+        "Azure Device Registry Contributor": 23
     },
     "microsoft.deviceregistry/namespaces/read": {
-        "Azure Device Registry Contributor": 7
+        "Azure Device Registry Contributor": 23
+    },
+    "microsoft.deviceregistry/namespaces/registryDevices/*": {
+        "Azure Device Registry Contributor": 23
+    },
+    "microsoft.deviceregistry/namespaces/write": {
+        "Azure Device Registry Contributor": 23
+    },
+    "microsoft.deviceregistry/schemaRegistries/*": {
+        "Azure Device Registry Contributor": 23
     },
     "microsoft.devices/iothubs/certificates/*": {
-        "Azure Device Registry Contributor": 7
+        "Azure Device Registry Contributor": 23
     },
     "microsoft.devices/iothubs/read": {
-        "Azure Device Registry Contributor": 7
+        "Azure Device Registry Contributor": 23
+    },
+    "microsoft.deviceupdate/updateinstances/read": {
+        "Azure Device Registry Contributor": 23
     },
     "microsoft.insights/workbooks/read": {
         "Workbook Reader": 3
