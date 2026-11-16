@@ -3502,6 +3502,7 @@
             "Microsoft.Network/virtualNetworks/read",
             "Microsoft.Network/virtualNetworks/subnets/read",
             "Microsoft.OffAzure/*/read",
+            "Microsoft.OffAzure/MasterSites/executionAgents/execute/action",
             "Microsoft.RecoveryServices/operations/read",
             "Microsoft.RecoveryServices/register/action",
             "Microsoft.RecoveryServices/vaults/*",
@@ -5518,6 +5519,7 @@
             "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/operationResults/read",
             "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/operationsStatus/read",
             "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/read",
+            "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints/listInstantItemRecoveryOperationResult/action",
             "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints/provisionInstantItemRecovery/action",
             "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints/read",
             "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints/restore/action",
@@ -5627,7 +5629,8 @@
             "Microsoft.RecoveryServices/Vaults/extendedInformation/read",
             "Microsoft.RecoveryServices/Vaults/monitoringAlerts/read",
             "Microsoft.RecoveryServices/Vaults/monitoringAlerts/write",
-            "Microsoft.RecoveryServices/Vaults/monitoringConfigurations/*",
+            "Microsoft.RecoveryServices/Vaults/monitoringConfigurations/read",
+            "Microsoft.RecoveryServices/Vaults/monitoringConfigurations/write",
             "Microsoft.RecoveryServices/Vaults/read",
             "Microsoft.RecoveryServices/Vaults/registeredIdentities/operationResults/read",
             "Microsoft.RecoveryServices/Vaults/registeredIdentities/read",
@@ -5865,6 +5868,7 @@
     },
     "Chaos Kubernetes Extension Operator": {
         "permissions": [
+            "Microsoft.Authorization/*/read",
             "Microsoft.ContainerService/deploymentSafeguards/read",
             "Microsoft.ContainerService/managedClusters/read",
             "Microsoft.KubernetesConfiguration/extensions/read"
@@ -6082,11 +6086,51 @@
         "permissions": [],
         "group": "BuiltInRole"
     },
+    "Cloud Device Platform Collection Administrator": {
+        "permissions": [],
+        "group": "BuiltInRole"
+    },
+    "Cloud Device Platform Collection Reader": {
+        "permissions": [],
+        "group": "BuiltInRole"
+    },
     "Cloud Device Platform Data Owner": {
         "permissions": [],
         "group": "BuiltInRole"
     },
+    "Cloud Device Platform Data Reader": {
+        "permissions": [],
+        "group": "BuiltInRole"
+    },
+    "Cloud Device Platform Device Administrator": {
+        "permissions": [],
+        "group": "BuiltInRole"
+    },
+    "Cloud Device Platform Device Operator": {
+        "permissions": [],
+        "group": "BuiltInRole"
+    },
+    "Cloud Device Platform Device Reader": {
+        "permissions": [],
+        "group": "BuiltInRole"
+    },
+    "Cloud Device Platform Device Start Operator": {
+        "permissions": [],
+        "group": "BuiltInRole"
+    },
+    "Cloud Device Platform Network Administrator": {
+        "permissions": [],
+        "group": "BuiltInRole"
+    },
+    "Cloud Device Platform Network Reader": {
+        "permissions": [],
+        "group": "BuiltInRole"
+    },
     "Cloud Device Platform Sandbox Partner Data Contributor": {
+        "permissions": [],
+        "group": "BuiltInRole"
+    },
+    "Cloud Device Platform Snapshot Exporter": {
         "permissions": [],
         "group": "BuiltInRole"
     },
@@ -8554,7 +8598,7 @@
         ],
         "group": "BuiltInRole"
     },
-    "DiskSnapshotImmutabilityAdmin Service Role": {
+    "Disk Snapshot Immutability Admin": {
         "permissions": [
             "Microsoft.Compute/snapshots/read",
             "Microsoft.Compute/snapshots/updateImmutabilityPolicyLock/action",
@@ -8562,7 +8606,7 @@
         ],
         "group": "BuiltInRole"
     },
-    "DiskSnapshotImmutabilityOperator Service Role": {
+    "Disk Snapshot Immutability Operator": {
         "permissions": [
             "Microsoft.Compute/snapshots/read",
             "Microsoft.Compute/snapshots/updateImmutabilityPolicy/action",
@@ -9172,6 +9216,13 @@
             "Microsoft.IoTFirmwareDefense/*",
             "Microsoft.Resources/deployments/read",
             "Microsoft.Resources/subscriptions/resourceGroups/read"
+        ],
+        "group": "BuiltInRole"
+    },
+    "Flex Plan Reader": {
+        "permissions": [
+            "Microsoft.BillingBenefits/flexPlans/read",
+            "Microsoft.BillingBenefits/flexPlans/terms/read"
         ],
         "group": "BuiltInRole"
     },

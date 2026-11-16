@@ -1055,7 +1055,7 @@
     },
     "Microsoft.ApplicationMigration/*/read": {
         "Azure Local Migrate Execute Expert": 41,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Service Reader": 13
     },
     "Microsoft.Approvals/approvalSettings/delete": {
@@ -1263,7 +1263,7 @@
         "Azure Managed Redis Reader": 9,
         "Azure Maps Contributor": 4,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Azure Migrate Service Reader": 13,
         "Azure Monitor Pipeline Contributor": 5,
@@ -1299,8 +1299,8 @@
         "Backup Contributor": 88,
         "Backup MUA Admin": 26,
         "Backup MUA Operator": 3,
-        "Backup Operator": 100,
-        "Backup Reader": 62,
+        "Backup Operator": 101,
+        "Backup Reader": 63,
         "Billing Reader": 7,
         "BizTalk Contributor": 7,
         "Blueprint Contributor": 5,
@@ -1309,6 +1309,7 @@
         "CDN Endpoint Reader": 9,
         "CDN Profile Contributor": 8,
         "CDN Profile Reader": 11,
+        "Chaos Kubernetes Extension Operator": 4,
         "Chaos Studio Experiment Contributor": 5,
         "Chaos Studio Operator": 10,
         "Chaos Studio Reader": 6,
@@ -1574,7 +1575,7 @@
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Locks Contributor": 3,
         "Storage Account Backup Contributor": 18,
@@ -1589,7 +1590,7 @@
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Locks Contributor": 3,
         "Storage Account Backup Contributor": 18,
@@ -1690,7 +1691,7 @@
         "Access Review Operator Service Role": 3,
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Azure Resilience Management Drills Administrator": 18,
         "Azure Resilience Management Drills Assets Administrator": 49,
@@ -1744,7 +1745,7 @@
         "Azure IoT Operations Onboarding": 10,
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Azure Resilience Management Drills Administrator": 18,
         "Azure Resilience Management Drills Assets Administrator": 49,
@@ -3583,10 +3584,12 @@
         "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/flexPlans/read": {
+        "Flex Plan Reader": 2,
         "Procurement Contributor": 95,
         "Procurement Contributor with Resource Group Permissions": 104
     },
     "Microsoft.BillingBenefits/flexPlans/terms/read": {
+        "Flex Plan Reader": 2,
         "Procurement Contributor": 95,
         "Procurement Contributor with Resource Group Permissions": 104
     },
@@ -4632,7 +4635,7 @@
         "Azure Center for SAP solutions administrator": 57,
         "Azure Center for SAP solutions reader": 43,
         "Azure Center for SAP solutions service role": 55,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
         "Azure Red Hat OpenShift Machine API Operator": 35,
@@ -4640,7 +4643,7 @@
         "DevTest Labs User": 32
     },
     "Microsoft.Compute/availabilitySets/vmSizes/read": {
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Desktop Virtualization Virtual Machine Contributor": 58
     },
@@ -4665,7 +4668,7 @@
     "Microsoft.Compute/diskEncryptionSets/read": {
         "Azure Batch Service Orchestration Role": 34,
         "Azure Kubernetes Service Policy Add-on Deployment": 6,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
@@ -4689,7 +4692,7 @@
     },
     "Microsoft.Compute/disks/delete": {
         "Azure Backup Snapshot Contributor": 11,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
@@ -4710,7 +4713,7 @@
         "Azure Center for SAP solutions administrator": 57,
         "Azure Center for SAP solutions reader": 43,
         "Azure Center for SAP solutions service role": 55,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
@@ -4728,7 +4731,7 @@
     "Microsoft.Compute/disks/write": {
         "Azure Backup Snapshot Contributor": 11,
         "Azure Center for SAP solutions service role": 55,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
@@ -4853,7 +4856,7 @@
         "Azure Kubernetes Service Policy Add-on Deployment": 6
     },
     "Microsoft.Compute/register/action": {
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Reservation Purchaser": 11
     },
@@ -4871,7 +4874,7 @@
     },
     "Microsoft.Compute/skus/read": {
         "Azure Center for SAP solutions service role": 55,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Machine API Operator": 35,
         "Desktop Virtualization Virtual Machine Contributor": 58
@@ -4892,16 +4895,16 @@
     "Microsoft.Compute/snapshots/read": {
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
         "Disk Snapshot Contributor": 8,
-        "DiskSnapshotImmutabilityAdmin Service Role": 3,
-        "DiskSnapshotImmutabilityOperator Service Role": 3,
+        "Disk Snapshot Immutability Admin": 3,
+        "Disk Snapshot Immutability Operator": 3,
         "Elastic SAN Snapshot Exporter": 15,
         "Elastic SAN Volume Importer": 14
     },
     "Microsoft.Compute/snapshots/updateImmutabilityPolicy/action": {
-        "DiskSnapshotImmutabilityOperator Service Role": 3
+        "Disk Snapshot Immutability Operator": 3
     },
     "Microsoft.Compute/snapshots/updateImmutabilityPolicyLock/action": {
-        "DiskSnapshotImmutabilityAdmin Service Role": 3
+        "Disk Snapshot Immutability Admin": 3
     },
     "Microsoft.Compute/snapshots/write": {
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
@@ -5036,7 +5039,7 @@
         "DevTest Labs User": 32
     },
     "Microsoft.Compute/virtualMachines/delete": {
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
         "Azure Red Hat OpenShift Machine API Operator": 35,
@@ -5105,7 +5108,7 @@
         "Azure Center for SAP solutions administrator": 57,
         "Azure Center for SAP solutions reader": 43,
         "Azure Center for SAP solutions service role": 55,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
@@ -5151,7 +5154,7 @@
     "Microsoft.Compute/virtualMachines/write": {
         "Azure Backup Snapshot Contributor": 11,
         "Azure Center for SAP solutions service role": 55,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Disk Storage Operator": 16,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
@@ -5890,7 +5893,7 @@
         "Azure Kubernetes Service Contributor Role": 9
     },
     "Microsoft.ContainerService/deploymentSafeguards/read": {
-        "Chaos Kubernetes Extension Operator": 3
+        "Chaos Kubernetes Extension Operator": 4
     },
     "Microsoft.ContainerService/fleetMemberships/*": {
         "Azure Kubernetes Fleet Manager Contributor Role": 3
@@ -5990,7 +5993,7 @@
         "Azure Kubernetes Service Cluster Admin Role": 4,
         "Azure Kubernetes Service Cluster Monitoring User": 2,
         "Azure Kubernetes Service Cluster User Role": 2,
-        "Chaos Kubernetes Extension Operator": 3,
+        "Chaos Kubernetes Extension Operator": 4,
         "Defender Containers Sensor": 19,
         "Defender Kubernetes API Access": 11
     },
@@ -6468,57 +6471,57 @@
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/backup/action": {
         "Backup Contributor": 88,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/delete": {
         "Backup Contributor": 88
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/findRestorableTimeRanges/action": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/operationResults/read": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/read": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/recoveryPoints/read": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/restore/action": {
         "Backup Contributor": 88,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/resumeProtection/action": {
         "Backup Contributor": 88
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/validateForModifyBackup/action": {
         "Backup Contributor": 88,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/validateRestore/action": {
         "Backup Contributor": 88,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.DataProtection/backupVaults/backupInstances/write": {
         "Backup Contributor": 88,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.DataProtection/backupVaults/backupPolicies/delete": {
         "Backup Contributor": 88
     },
     "Microsoft.DataProtection/backupVaults/backupPolicies/read": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.DataProtection/backupVaults/backupPolicies/write": {
         "Backup Contributor": 88
@@ -6526,26 +6529,26 @@
     "Microsoft.DataProtection/backupVaults/backupResourceGuardProxies/delete": {
         "Backup Contributor": 88,
         "Backup MUA Admin": 26,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.DataProtection/backupVaults/backupResourceGuardProxies/read": {
         "Backup Contributor": 88,
         "Backup MUA Admin": 26,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.DataProtection/backupVaults/backupResourceGuardProxies/unlockDelete/action": {
         "Backup Contributor": 88,
         "Backup MUA Admin": 26,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.DataProtection/backupVaults/backupResourceGuardProxies/write": {
         "Backup Contributor": 88,
         "Backup MUA Admin": 26,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.DataProtection/backupVaults/crossTenantVaultMappingStatus/action": {
         "Backup Contributor": 88,
-        "Backup Reader": 62
+        "Backup Reader": 63
     },
     "Microsoft.DataProtection/backupVaults/crossTenantVaultMappings/backupInstances/findRestorableTimeRanges/action": {
         "CTR Contributor": 33
@@ -6582,31 +6585,31 @@
     },
     "Microsoft.DataProtection/backupVaults/deletedBackupInstances/read": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.DataProtection/backupVaults/deletedBackupInstances/undelete/action": {
         "Backup Contributor": 88
     },
     "Microsoft.DataProtection/backupVaults/operationResults/read": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.DataProtection/backupVaults/operationStatus/read": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.DataProtection/backupVaults/read": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62,
+        "Backup Operator": 101,
+        "Backup Reader": 63,
         "CTR Creator": 4
     },
     "Microsoft.DataProtection/backupVaults/validateForBackup/action": {
         "Backup Contributor": 88,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.DataProtection/backupVaults/write": {
         "Backup Contributor": 88
@@ -6614,8 +6617,8 @@
     "Microsoft.DataProtection/locations/checkFeatureSupport/action": {
         "Backup Contributor": 88,
         "Backup MUA Admin": 26,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.DataProtection/locations/checkNameAvailability/action": {
         "Backup Contributor": 88
@@ -6623,53 +6626,53 @@
     "Microsoft.DataProtection/locations/getBackupStatus/action": {
         "Backup Contributor": 88,
         "Backup MUA Admin": 26,
-        "Backup Reader": 62
+        "Backup Reader": 63
     },
     "Microsoft.DataProtection/locations/operationResults/read": {
         "Backup Contributor": 88,
         "Backup MUA Admin": 26,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.DataProtection/locations/operationStatus/read": {
         "Backup Contributor": 88,
         "Backup MUA Admin": 26,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.DataProtection/operations/read": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.DataProtection/subscriptions/providers/resourceGuards/read": {
         "Backup MUA Admin": 26
     },
     "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/crossRegionRestore/action": {
         "Backup Contributor": 88,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/fetchCrossRegionRestoreJob/action": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/fetchCrossRegionRestoreJobs/action": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/fetchSecondaryRecoveryPoints/action": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/operationStatus/read": {
         "Backup MUA Admin": 26
     },
     "Microsoft.DataProtection/subscriptions/resourceGroups/providers/locations/validateCrossRegionRestore/action": {
         "Backup Contributor": 88,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.DataProtection/subscriptions/resourceGroups/providers/resourceGuards/delete": {
         "Backup MUA Admin": 26
@@ -6846,11 +6849,11 @@
     },
     "Microsoft.DependencyMap/*/read": {
         "Azure Local Migrate Execute Expert": 41,
-        "Azure Migrate Execute Expert": 47
+        "Azure Migrate Execute Expert": 48
     },
     "Microsoft.DependencyMap/maps/*/action": {
         "Azure Local Migrate Execute Expert": 41,
-        "Azure Migrate Execute Expert": 47
+        "Azure Migrate Execute Expert": 48
     },
     "Microsoft.DesktopVirtualization/*": {
         "Desktop Virtualization Contributor": 6
@@ -9382,7 +9385,7 @@
         "Azure Local Migrate Owner": 64,
         "Azure Managed Redis Contributor": 9,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Azure Migrate Service Reader": 13,
         "Azure Monitor Pipeline Contributor": 5,
@@ -10081,7 +10084,7 @@
         "Azure Stack HCI Administrator": 103,
         "Azure Stack HCI Device Management Role": 37,
         "Azure Stack HCI VM Contributor": 80,
-        "Chaos Kubernetes Extension Operator": 3,
+        "Chaos Kubernetes Extension Operator": 4,
         "Defender Kubernetes Agent Operator": 19,
         "Kubernetes Cluster - Azure Arc Onboarding": 13,
         "Kubernetes Extension Contributor": 9,
@@ -10692,15 +10695,15 @@
     },
     "Microsoft.Migrate/*/read": {
         "Azure Local Migrate Execute Expert": 41,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Service Reader": 13
     },
     "Microsoft.Migrate/migrateProjects/runbooks/*": {
-        "Azure Migrate Execute Expert": 47
+        "Azure Migrate Execute Expert": 48
     },
     "Microsoft.Migrate/migrateProjects/taskSummary/action": {
         "Azure Local Migrate Execute Expert": 41,
-        "Azure Migrate Execute Expert": 47
+        "Azure Migrate Execute Expert": 48
     },
     "Microsoft.Mission/Locations/OperationStatuses/read": {
         "Community Contributor Role": 34,
@@ -10974,7 +10977,7 @@
     },
     "Microsoft.MySQLDiscovery/*/read": {
         "Azure Local Migrate Execute Expert": 41,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Service Reader": 13
     },
     "Microsoft.NetApp/*/action": {
@@ -11646,7 +11649,7 @@
     },
     "Microsoft.Network/networkInterfaces/delete": {
         "AVS Orchestrator Role": 56,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
         "Azure Red Hat OpenShift Machine API Operator": 35,
@@ -11698,7 +11701,7 @@
         "Azure Center for SAP solutions administrator": 57,
         "Azure Center for SAP solutions reader": 43,
         "Azure Center for SAP solutions service role": 55,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
@@ -11722,7 +11725,7 @@
         "AVS on Fleet VIS Role": 21,
         "Avere Operator": 11,
         "Azure Center for SAP solutions service role": 55,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Hosted Control Planes Cluster API Provider": 16,
@@ -12159,14 +12162,14 @@
         "Azure Center for SAP solutions service role": 55,
         "Azure Container Storage Operator": 12,
         "Azure Local Migrate Owner": 64,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift First Party Network": 11,
         "Azure Red Hat OpenShift Hosted Control Planes Control Plane Operator": 3,
         "Azure Red Hat OpenShift Hosted Control Planes Service Managed Identity": 18,
         "Azure Red Hat OpenShift Network Operator": 7,
         "Backup Contributor": 88,
-        "Backup Operator": 100,
+        "Backup Operator": 101,
         "Container Registry Configuration Reader and Data Access Configuration Reader": 33,
         "Container Registry Contributor and Data Access Configuration Administrator": 59,
         "DNS Resolver Contributor": 39,
@@ -12261,7 +12264,7 @@
         "Azure Container Storage Operator": 12,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Azure Red Hat OpenShift Cloud Controller Manager": 30,
         "Azure Red Hat OpenShift Cluster Ingress Operator": 6,
@@ -12514,8 +12517,11 @@
     },
     "Microsoft.OffAzure/*/read": {
         "Azure Local Migrate Execute Expert": 41,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Service Reader": 13
+    },
+    "Microsoft.OffAzure/MasterSites/executionAgents/execute/action": {
+        "Azure Migrate Execute Expert": 48
     },
     "Microsoft.OffAzureSpringBoot/*": {
         "Microsoft.OffAzureSpringBoot Service Owner": 1
@@ -12875,7 +12881,7 @@
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappingStatus/action": {
         "Backup Contributor": 88,
-        "Backup Reader": 62
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/backupCrossTenantVaultMappings/backupFabrics/getRecoveryPoints/action": {
         "CTR Contributor": 33
@@ -12951,144 +12957,147 @@
     },
     "Microsoft.RecoveryServices/Vaults/backupEngines/read": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/backupProtectionIntent/*": {
         "Backup Contributor": 88
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/backupProtectionIntent/read": {
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/backupProtectionIntent/write": {
-        "Backup Operator": 100,
+        "Backup Operator": 101,
         "Virtual Machine Contributor": 45
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/getRPExtendedInfo/action": {
         "Backup Contributor": 88,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/getRPExtendedInfoOperationResult/read": {
         "Backup Contributor": 88,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/operationResults/*": {
         "Backup Contributor": 88
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/operationResults/read": {
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/operationsStatus/read": {
-        "Backup Reader": 62
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectableContainers/read": {
         "Backup Contributor": 88,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/*": {
         "Backup Contributor": 88
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/inquire/action": {
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/items/read": {
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/operationResults/read": {
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/*/read": {
         "Virtual Machine Contributor": 45
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/backup/action": {
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/operationResults/read": {
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/operationsStatus/read": {
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/read": {
-        "Backup Operator": 100,
-        "Backup Reader": 62,
+        "Backup Operator": 101,
+        "Backup Reader": 63,
         "Virtual Machine Contributor": 45
     },
+    "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints/listInstantItemRecoveryOperationResult/action": {
+        "Backup Operator": 101
+    },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints/provisionInstantItemRecovery/action": {
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints/read": {
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints/restore/action": {
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints/revokeInstantItemRecovery/action": {
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/protectedItems/write": {
-        "Backup Operator": 100,
+        "Backup Operator": 101,
         "Virtual Machine Contributor": 45
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/read": {
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/protectionContainers/write": {
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/backupFabrics/refreshContainers/action": {
         "Backup Contributor": 88,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/backupJobs/*": {
         "Backup Contributor": 88,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/backupJobs/operationResults/read": {
-        "Backup Reader": 62
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/backupJobs/read": {
-        "Backup Reader": 62
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/backupJobsExport/action": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/backupOperationResults/*": {
         "Backup Contributor": 88,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/backupOperationResults/read": {
-        "Backup Reader": 62
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/backupOperations/read": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/backupPolicies/*": {
         "Backup Contributor": 88
     },
     "Microsoft.RecoveryServices/Vaults/backupPolicies/operationResults/read": {
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/backupPolicies/operations/read": {
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/backupPolicies/read": {
-        "Backup Operator": 100,
-        "Backup Reader": 62,
+        "Backup Operator": 101,
+        "Backup Reader": 63,
         "Virtual Machine Contributor": 45
     },
     "Microsoft.RecoveryServices/Vaults/backupPolicies/write": {
@@ -13096,82 +13105,82 @@
     },
     "Microsoft.RecoveryServices/Vaults/backupProtectableItems/*": {
         "Backup Contributor": 88,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/backupProtectedItems/*": {
         "Backup Contributor": 88
     },
     "Microsoft.RecoveryServices/Vaults/backupProtectedItems/read": {
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/backupProtectionContainers/*": {
         "Backup Contributor": 88
     },
     "Microsoft.RecoveryServices/Vaults/backupProtectionContainers/read": {
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/backupProtectionIntents/read": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/backupResourceGuardProxies/delete": {
         "Backup Contributor": 88,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/backupResourceGuardProxies/read": {
         "Backup Contributor": 88,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/backupResourceGuardProxies/unlockDelete/action": {
         "Backup Contributor": 88,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/backupResourceGuardProxies/write": {
         "Backup Contributor": 88,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/backupSecurityPIN/*": {
         "Backup Contributor": 88
     },
     "Microsoft.RecoveryServices/Vaults/backupTriggerValidateOperation/action": {
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/backupUsageSummaries/read": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/backupValidateOperation/action": {
         "Backup Contributor": 88,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/backupValidateOperationResults/read": {
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/backupValidateOperationsStatuses/read": {
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/backupconfig/*": {
         "Backup Contributor": 88
     },
     "Microsoft.RecoveryServices/Vaults/backupconfig/read": {
-        "Backup Reader": 62
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/backupstorageconfig/*": {
         "Backup Contributor": 88,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/backupstorageconfig/read": {
-        "Backup Reader": 62
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/certificates/*": {
         "Backup Contributor": 88
     },
     "Microsoft.RecoveryServices/Vaults/certificates/write": {
-        "Backup Operator": 100,
+        "Backup Operator": 101,
         "Site Recovery Contributor": 29
     },
     "Microsoft.RecoveryServices/Vaults/extendedInformation/*": {
@@ -13179,13 +13188,13 @@
         "Site Recovery Contributor": 29
     },
     "Microsoft.RecoveryServices/Vaults/extendedInformation/read": {
-        "Backup Operator": 100,
-        "Backup Reader": 62,
+        "Backup Operator": 101,
+        "Backup Reader": 63,
         "Site Recovery Operator": 59,
         "Site Recovery Reader": 32
     },
     "Microsoft.RecoveryServices/Vaults/extendedInformation/write": {
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/monitoringAlerts/*": {
         "Site Recovery Contributor": 29,
@@ -13193,29 +13202,34 @@
     },
     "Microsoft.RecoveryServices/Vaults/monitoringAlerts/read": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62,
+        "Backup Operator": 101,
+        "Backup Reader": 63,
         "Site Recovery Reader": 32
     },
     "Microsoft.RecoveryServices/Vaults/monitoringAlerts/write": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/Vaults/monitoringConfigurations/*": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/monitoringConfigurations/notificationConfiguration/read": {
         "Site Recovery Contributor": 29,
         "Site Recovery Operator": 59,
         "Site Recovery Reader": 32
     },
+    "Microsoft.RecoveryServices/Vaults/monitoringConfigurations/read": {
+        "Backup Reader": 63
+    },
+    "Microsoft.RecoveryServices/Vaults/monitoringConfigurations/write": {
+        "Backup Reader": 63
+    },
     "Microsoft.RecoveryServices/Vaults/read": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62,
+        "Backup Operator": 101,
+        "Backup Reader": 63,
         "CTR Creator": 4,
         "Site Recovery Contributor": 29,
         "Site Recovery Operator": 59,
@@ -13232,19 +13246,19 @@
         "Site Recovery Contributor": 29
     },
     "Microsoft.RecoveryServices/Vaults/registeredIdentities/operationResults/read": {
-        "Backup Operator": 100,
-        "Backup Reader": 62,
+        "Backup Operator": 101,
+        "Backup Reader": 63,
         "Site Recovery Operator": 59,
         "Site Recovery Reader": 32
     },
     "Microsoft.RecoveryServices/Vaults/registeredIdentities/read": {
-        "Backup Operator": 100,
-        "Backup Reader": 62,
+        "Backup Operator": 101,
+        "Backup Reader": 63,
         "Site Recovery Operator": 59,
         "Site Recovery Reader": 32
     },
     "Microsoft.RecoveryServices/Vaults/registeredIdentities/write": {
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/Vaults/storageConfig/*": {
         "Site Recovery Contributor": 29
@@ -13262,8 +13276,8 @@
         "Backup Contributor": 88
     },
     "Microsoft.RecoveryServices/Vaults/usages/read": {
-        "Backup Operator": 100,
-        "Backup Reader": 62,
+        "Backup Operator": 101,
+        "Backup Reader": 63,
         "Site Recovery Contributor": 29,
         "Site Recovery Operator": 59,
         "Site Recovery Reader": 32,
@@ -13287,74 +13301,74 @@
         "Site Recovery Operator": 59
     },
     "Microsoft.RecoveryServices/locations/allocatedStamp/read": {
-        "Backup Reader": 62,
+        "Backup Reader": 63,
         "Site Recovery Contributor": 29,
         "Site Recovery Operator": 59,
         "Site Recovery Reader": 32
     },
     "Microsoft.RecoveryServices/locations/backupAadProperties/read": {
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/locations/backupCrossRegionRestore/action": {
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/locations/backupCrrJob/action": {
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/locations/backupCrrJobs/action": {
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/locations/backupCrrOperationResults/read": {
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/locations/backupCrrOperationsStatus/read": {
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/locations/backupPreValidateProtection/action": {
         "Backup Contributor": 88,
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/locations/backupStatus/action": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/locations/backupValidateFeatures/action": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/locations/operationStatus/read": {
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/operations/read": {
         "Azure Local Migrate Owner": 64,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Backup Contributor": 88,
-        "Backup Operator": 100,
-        "Backup Reader": 62
+        "Backup Operator": 101,
+        "Backup Reader": 63
     },
     "Microsoft.RecoveryServices/register/action": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71
     },
     "Microsoft.RecoveryServices/vaults/*": {
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71
     },
     "Microsoft.RecoveryServices/vaults/backupFabrics/protectionContainers/protectedItems/recoveryPoints/accessToken/action": {
-        "Backup Operator": 100
+        "Backup Operator": 101
     },
     "Microsoft.RecoveryServices/vaults/operationResults/read": {
         "Backup Contributor": 88
@@ -13783,7 +13797,7 @@
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71
     },
     "Microsoft.Resources/dataBoundaries/write": {
@@ -13793,14 +13807,14 @@
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71
     },
     "Microsoft.Resources/deploymentScripts/write": {
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71
     },
     "Microsoft.Resources/deploymentStacks/*": {
@@ -13869,7 +13883,7 @@
         "Azure Managed Redis Contributor": 9,
         "Azure Maps Contributor": 4,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Azure Migrate Service Reader": 13,
         "Azure Monitor Pipeline Contributor": 5,
@@ -13884,7 +13898,7 @@
         "Azure Stack HCI Administrator": 103,
         "Backup Contributor": 88,
         "Backup MUA Admin": 26,
-        "Backup Operator": 100,
+        "Backup Operator": 101,
         "BizTalk Contributor": 7,
         "Blueprint Contributor": 5,
         "Blueprint Operator": 5,
@@ -14330,14 +14344,14 @@
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71
     },
     "Microsoft.Resources/links/write": {
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71
     },
     "Microsoft.Resources/resources/read": {
@@ -14347,7 +14361,7 @@
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71
     },
     "Microsoft.Resources/subscriptions/operationresults/read": {
@@ -14474,7 +14488,7 @@
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Azure Sphere Owner": 12,
         "Azure Stack HCI Administrator": 103,
@@ -14629,7 +14643,7 @@
         "Azure Managed Redis Reader": 9,
         "Azure Maps Contributor": 4,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Azure Migrate Service Reader": 13,
         "Azure Monitor Dashboards with Grafana Contributor": 15,
@@ -14659,7 +14673,7 @@
         "Azure Stack HCI VM Reader": 42,
         "Backup Contributor": 88,
         "Backup MUA Admin": 26,
-        "Backup Operator": 100,
+        "Backup Operator": 101,
         "BizTalk Contributor": 7,
         "Blueprint Contributor": 5,
         "Blueprint Operator": 5,
@@ -14745,8 +14759,8 @@
         "Disk Pool Operator": 6,
         "Disk Restore Operator": 6,
         "Disk Snapshot Contributor": 8,
-        "DiskSnapshotImmutabilityAdmin Service Role": 3,
-        "DiskSnapshotImmutabilityOperator Service Role": 3,
+        "Disk Snapshot Immutability Admin": 3,
+        "Disk Snapshot Immutability Operator": 3,
         "DocumentDB Account Contributor": 8,
         "Domain Services Contributor": 69,
         "Domain Services Reader": 28,
@@ -14928,7 +14942,7 @@
         "Azure Center for SAP solutions service role": 55,
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Azure Resilience Management Drills Assets Administrator": 49,
         "Azure Resilience Management Drills Assets Contributor": 47,
@@ -16024,12 +16038,12 @@
     "Microsoft.Storage/storageAccounts/*/read": {
         "Azure Local Migrate Execute Expert": 41,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 47
+        "Azure Migrate Execute Expert": 48
     },
     "Microsoft.Storage/storageAccounts/*/write": {
         "Azure Local Migrate Execute Expert": 41,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 47
+        "Azure Migrate Execute Expert": 48
     },
     "Microsoft.Storage/storageAccounts/ListAccountSas/action": {
         "Reader and Data Access": 3
@@ -16192,7 +16206,7 @@
         "App Compliance Automation Administrator": 28,
         "Azure Local Migrate Execute Expert": 41,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Red Hat OpenShift File Storage Operator": 30,
         "Azure Red Hat OpenShift Image Registry Operator": 25,
         "Azure Red Hat OpenShift Service Operator": 10,
@@ -16257,7 +16271,7 @@
         "Azure Red Hat OpenShift Image Registry Operator": 25,
         "Azure Red Hat OpenShift Service Operator": 10,
         "Backup Contributor": 88,
-        "Backup Operator": 100,
+        "Backup Operator": 101,
         "Defender CSPM Storage Scanner Operator": 13,
         "Defender Sensitive Data Discovery": 9,
         "Defender Storage Malware Operator": 14,
@@ -16427,12 +16441,12 @@
         "Azure Local Migrate Execute Expert": 41,
         "Azure Local Migrate Owner": 64,
         "Azure Migrate Decide and Plan Expert": 51,
-        "Azure Migrate Execute Expert": 47,
+        "Azure Migrate Execute Expert": 48,
         "Azure Migrate Owner": 71,
         "Azure Sphere Owner": 12,
         "Azure Stack HCI Administrator": 103,
         "Backup Contributor": 88,
-        "Backup Operator": 100,
+        "Backup Operator": 101,
         "Billing Reader": 7,
         "BizTalk Contributor": 7,
         "Blueprint Contributor": 5,
