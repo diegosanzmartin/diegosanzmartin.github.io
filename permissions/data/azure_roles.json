@@ -1,4 +1,16 @@
 {
+    "A365 Content Safety Policy Operator": {
+        "permissions": [
+            "Microsoft.CognitiveServices/accounts/raiPolicies/delete",
+            "Microsoft.CognitiveServices/accounts/raiPolicies/read",
+            "Microsoft.CognitiveServices/accounts/raiPolicies/write",
+            "Microsoft.CognitiveServices/accounts/raiRegos/delete",
+            "Microsoft.CognitiveServices/accounts/raiRegos/read",
+            "Microsoft.CognitiveServices/accounts/raiRegos/write",
+            "Microsoft.CognitiveServices/accounts/read"
+        ],
+        "group": "BuiltInRole"
+    },
     "A365 Gateway Policy Operator": {
         "permissions": [
             "Microsoft.ApiManagement/aigateways/read",
@@ -8,7 +20,8 @@
             "Microsoft.ApiManagement/service/apis/write",
             "Microsoft.ApiManagement/service/read",
             "Microsoft.ApiManagement/service/workspaces/toolServers/read",
-            "Microsoft.ApiManagement/service/workspaces/toolServers/write"
+            "Microsoft.ApiManagement/service/workspaces/toolServers/write",
+            "Microsoft.Authorization/roleAssignments/read"
         ],
         "group": "BuiltInRole"
     },
@@ -11952,6 +11965,18 @@
         ],
         "group": "BuiltInRole"
     },
+    "PostgreSQL Database Agent Administrator": {
+        "permissions": [],
+        "group": "BuiltInRole"
+    },
+    "PostgreSQL Database Agent Contributor": {
+        "permissions": [],
+        "group": "BuiltInRole"
+    },
+    "PostgreSQL Database Agent Reader": {
+        "permissions": [],
+        "group": "BuiltInRole"
+    },
     "PostgreSQL Flexible Server Long Term Retention Backup Role": {
         "permissions": [
             "Microsoft.DBforPostgreSQL/flexibleServers/ltrBackup/action",
@@ -12599,6 +12624,10 @@
         ],
         "group": "BuiltInRole"
     },
+    "SRE Agent Agent-to-Agent Caller": {
+        "permissions": [],
+        "group": "BuiltInRole"
+    },
     "SRE Agent Author": {
         "permissions": [
             "Microsoft.App/agents/read",
@@ -12884,6 +12913,7 @@
             "Microsoft.Security/serviceEntitlementSettings/delete",
             "Microsoft.Security/serviceEntitlementSettings/read",
             "Microsoft.Security/serviceEntitlementSettings/write",
+            "Microsoft.Security/serviceEntitlements/delete",
             "Microsoft.Security/serviceEntitlements/read",
             "Microsoft.Security/serviceEntitlements/write"
         ],
@@ -13883,18 +13913,7 @@
         "group": "BuiltInRole"
     },
     "Virtual Enclave Owner Role": {
-        "permissions": [
-            "Microsoft.Mission/Locations/OperationStatuses/read",
-            "Microsoft.Mission/Locations/OperationStatuses/write",
-            "Microsoft.Mission/Operations/read",
-            "Microsoft.Mission/communities/read",
-            "Microsoft.Mission/virtualEnclaves/delete",
-            "Microsoft.Mission/virtualEnclaves/read",
-            "Microsoft.Mission/virtualEnclaves/workloads/delete",
-            "Microsoft.Mission/virtualEnclaves/workloads/read",
-            "Microsoft.Mission/virtualEnclaves/workloads/write",
-            "Microsoft.Mission/virtualEnclaves/write"
-        ],
+        "permissions": [],
         "group": "BuiltInRole"
     },
     "Virtual Machine Administrator Login": {

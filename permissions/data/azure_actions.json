@@ -528,7 +528,7 @@
         "Azure API Center Compliance Manager": 3
     },
     "Microsoft.ApiManagement/aigateways/read": {
-        "A365 Gateway Policy Operator": 8
+        "A365 Gateway Policy Operator": 9
     },
     "Microsoft.ApiManagement/aigateways/workspaces/aliases/*": {
         "AI Gateway Contributor": 6
@@ -543,11 +543,11 @@
         "AI Gateway Contributor": 6
     },
     "Microsoft.ApiManagement/aigateways/workspaces/toolServers/read": {
-        "A365 Gateway Policy Operator": 8,
+        "A365 Gateway Policy Operator": 9,
         "AI Gateway Developer": 3
     },
     "Microsoft.ApiManagement/aigateways/workspaces/toolServers/write": {
-        "A365 Gateway Policy Operator": 8
+        "A365 Gateway Policy Operator": 9
     },
     "Microsoft.ApiManagement/gateways/configConnections/read": {
         "Defender API Security": 22
@@ -578,11 +578,11 @@
         "Defender API Security": 22
     },
     "Microsoft.ApiManagement/service/apis/read": {
-        "A365 Gateway Policy Operator": 8,
+        "A365 Gateway Policy Operator": 9,
         "Defender API Security": 22
     },
     "Microsoft.ApiManagement/service/apis/write": {
-        "A365 Gateway Policy Operator": 8
+        "A365 Gateway Policy Operator": 9
     },
     "Microsoft.ApiManagement/service/authorizationServers/read": {
         "API Management Service Workspace API Developer": 9,
@@ -648,7 +648,7 @@
         "API Management Service Workspace API Product Manager": 12
     },
     "Microsoft.ApiManagement/service/read": {
-        "A365 Gateway Policy Operator": 8,
+        "A365 Gateway Policy Operator": 9,
         "API Management Service Operator Role": 15,
         "API Management Service Reader Role": 8,
         "API Management Service Workspace API Developer": 9,
@@ -770,10 +770,10 @@
         "API Management Workspace API Product Manager": 10
     },
     "Microsoft.ApiManagement/service/workspaces/toolServers/read": {
-        "A365 Gateway Policy Operator": 8
+        "A365 Gateway Policy Operator": 9
     },
     "Microsoft.ApiManagement/service/workspaces/toolServers/write": {
-        "A365 Gateway Policy Operator": 8
+        "A365 Gateway Policy Operator": 9
     },
     "Microsoft.ApiManagement/service/write": {
         "API Management Service Operator Role": 15
@@ -1711,6 +1711,7 @@
         "Virtual Machine Data Access Administrator (preview)": 14
     },
     "Microsoft.Authorization/roleAssignments/read": {
+        "A365 Gateway Policy Operator": 9,
         "AI Gateway Contributor": 6,
         "AVS Orchestrator Role": 56,
         "AVS on Fleet VIS Role": 21,
@@ -4490,15 +4491,28 @@
         "Foundry User": 16
     },
     "Microsoft.CognitiveServices/accounts/raiPolicies/delete": {
+        "A365 Content Safety Policy Operator": 7,
         "Cognitive Services OpenAI Contributor": 11
     },
     "Microsoft.CognitiveServices/accounts/raiPolicies/read": {
+        "A365 Content Safety Policy Operator": 7,
         "Cognitive Services OpenAI Contributor": 11
     },
     "Microsoft.CognitiveServices/accounts/raiPolicies/write": {
+        "A365 Content Safety Policy Operator": 7,
         "Cognitive Services OpenAI Contributor": 11
     },
+    "Microsoft.CognitiveServices/accounts/raiRegos/delete": {
+        "A365 Content Safety Policy Operator": 7
+    },
+    "Microsoft.CognitiveServices/accounts/raiRegos/read": {
+        "A365 Content Safety Policy Operator": 7
+    },
+    "Microsoft.CognitiveServices/accounts/raiRegos/write": {
+        "A365 Content Safety Policy Operator": 7
+    },
     "Microsoft.CognitiveServices/accounts/read": {
+        "A365 Content Safety Policy Operator": 7,
         "Azure AI Enterprise Network Connection Approver": 90,
         "Defender AI": 7
     },
@@ -10711,15 +10725,13 @@
         "Community Reader Role": 20,
         "Enclave Approver Role": 12,
         "Enclave Contributor Role": 31,
-        "Enclave Owner Role": 38,
-        "Virtual Enclave Owner Role": 10
+        "Enclave Owner Role": 38
     },
     "Microsoft.Mission/Locations/OperationStatuses/write": {
         "Community Contributor Role": 34,
         "Community Owner Role": 44,
         "Enclave Contributor Role": 31,
-        "Enclave Owner Role": 38,
-        "Virtual Enclave Owner Role": 10
+        "Enclave Owner Role": 38
     },
     "Microsoft.Mission/Operations/read": {
         "Community Contributor Role": 34,
@@ -10728,8 +10740,7 @@
         "Enclave Approver Role": 12,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
-        "Enclave Reader Role": 20,
-        "Virtual Enclave Owner Role": 10
+        "Enclave Reader Role": 20
     },
     "Microsoft.Mission/approvals/delete": {
         "Community Owner Role": 44,
@@ -10795,8 +10806,7 @@
         "Enclave Approver Role": 12,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
-        "Enclave Reader Role": 20,
-        "Virtual Enclave Owner Role": 10
+        "Enclave Reader Role": 20
     },
     "Microsoft.Mission/communities/setMaintenanceMode/action": {
         "Community Owner Role": 44
@@ -10856,8 +10866,7 @@
     },
     "Microsoft.Mission/virtualEnclaves/delete": {
         "Community Owner Role": 44,
-        "Enclave Owner Role": 38,
-        "Virtual Enclave Owner Role": 10
+        "Enclave Owner Role": 38
     },
     "Microsoft.Mission/virtualEnclaves/enclaveEndpoints/connect/action": {
         "Enclave Owner Role": 38
@@ -10895,8 +10904,7 @@
         "Enclave Approver Role": 12,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
-        "Enclave Reader Role": 20,
-        "Virtual Enclave Owner Role": 10
+        "Enclave Reader Role": 20
     },
     "Microsoft.Mission/virtualEnclaves/setEnclaveRoleAssignments/action": {
         "Community Contributor Role": 34,
@@ -10915,8 +10923,7 @@
         "Enclave Owner Role": 38
     },
     "Microsoft.Mission/virtualEnclaves/workloads/delete": {
-        "Enclave Owner Role": 38,
-        "Virtual Enclave Owner Role": 10
+        "Enclave Owner Role": 38
     },
     "Microsoft.Mission/virtualEnclaves/workloads/read": {
         "Community Contributor Role": 34,
@@ -10925,20 +10932,17 @@
         "Enclave Approver Role": 12,
         "Enclave Contributor Role": 31,
         "Enclave Owner Role": 38,
-        "Enclave Reader Role": 20,
-        "Virtual Enclave Owner Role": 10
+        "Enclave Reader Role": 20
     },
     "Microsoft.Mission/virtualEnclaves/workloads/write": {
         "Enclave Contributor Role": 31,
-        "Enclave Owner Role": 38,
-        "Virtual Enclave Owner Role": 10
+        "Enclave Owner Role": 38
     },
     "Microsoft.Mission/virtualEnclaves/write": {
         "Community Contributor Role": 34,
         "Community Owner Role": 44,
         "Enclave Contributor Role": 31,
-        "Enclave Owner Role": 38,
-        "Virtual Enclave Owner Role": 10
+        "Enclave Owner Role": 38
     },
     "Microsoft.Mission/virtualenclaves/setMaintenanceMode/action": {
         "Enclave Owner Role": 38
@@ -15290,19 +15294,22 @@
         "Defender for Storage Threat Protection": 6
     },
     "Microsoft.Security/serviceEntitlementSettings/delete": {
-        "Security Service Entitlements Contributor": 5
+        "Security Service Entitlements Contributor": 6
     },
     "Microsoft.Security/serviceEntitlementSettings/read": {
-        "Security Service Entitlements Contributor": 5
+        "Security Service Entitlements Contributor": 6
     },
     "Microsoft.Security/serviceEntitlementSettings/write": {
-        "Security Service Entitlements Contributor": 5
+        "Security Service Entitlements Contributor": 6
+    },
+    "Microsoft.Security/serviceEntitlements/delete": {
+        "Security Service Entitlements Contributor": 6
     },
     "Microsoft.Security/serviceEntitlements/read": {
-        "Security Service Entitlements Contributor": 5
+        "Security Service Entitlements Contributor": 6
     },
     "Microsoft.Security/serviceEntitlements/write": {
-        "Security Service Entitlements Contributor": 5
+        "Security Service Entitlements Contributor": 6
     },
     "Microsoft.Security/sqlVulnerabilityAssessments/*": {
         "SQL Security Manager": 65
